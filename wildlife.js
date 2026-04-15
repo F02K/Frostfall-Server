@@ -24,53 +24,144 @@ const ZONE_SPAWN_COOLDOWN_MS  = 60_000       // min time between spawn events in
 const MIN_SPAWN_DIST          = 1_400        // don't spawn within this distance of any player (~200m, outside visual pop-in range)
 const SPAWN_Z_OFFSET          = -256         // place actors this many units below the spawn point so Skyrim's ground-finding kicks in before the player sees them
 
-// ── Biome system ──────────────────────────────────────────────────────────────
-// mp.place() creates the actor at [0,0,0] and fires subscription updates before
-// mp.set(locationalData) is called, so clients near the origin briefly see the
-// actor there. SPAWN_Z_OFFSET puts new actors underground until Skyrim places
-// them on the navmesh surface.
-//
-// Biome tags control which creatures can spawn in a given region:
-//   'any'   — no restriction
-//   'snow'  — cold northern Skyrim (Pale, Winterhold, Haafingar, northern Eastmarch)
-//   'coast' — far-northern coastline only (Dawnstar, Winterhold shore)
-//
-// Biome is derived from the Tamriel worldspace Y coordinate at the zone centre.
-// Interior cells (cellOrWorld ≠ TAMRIEL_ID) get only 'any' entries for now.
-const TAMRIEL_ID        = 0x3C
-const SNOW_BIOME_MIN_Y  = 20_000   // roughly north of Whiterun/Eastmarch line
-const COAST_BIOME_MIN_Y = 38_000   // far northern coast (Dawnstar / Winterhold shore)
+// Note: mp.place() creates the actor at [0,0,0] and fires subscription updates
+// before mp.set(locationalData) is called, so clients near the origin briefly
+// see the actor there. SPAWN_Z_OFFSET puts new actors underground until Skyrim
+// places them on the navmesh surface.
+
+const TAMRIEL_ID = 0x3C
 
 // ── Spawn table ───────────────────────────────────────────────────────────────
 // formId: base NPC record in Skyrim.esm (verify with xEdit if a creature misbehaves)
-// weight: relative spawn chance
+// weight: relative spawn chance within any zone that lists this species
 // minGroup / maxGroup: creatures spawned per spawn event
 
 // formIds sourced from skyrim-esm-data/npcs.json export. Each entry notes its EditorID for cross-reference.
 const SPAWN_TABLE = [
-  // Common — wolves
-  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncWolfRed   — throughout Skyrim
-  { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00023ABF, weight: 15, minGroup: 1, maxGroup: 2, biomes: ['snow']  }, // EncWolfIce   — cold northern regions only
+  // Wolves
+  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 2 }, // EncWolfRed
+  { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00023ABF, weight: 15, minGroup: 1, maxGroup: 2 }, // EncWolfIce
 
-  // Bears — solitary
-  { id: 'bear_black',  name: 'Bear (Black)',formId: 0x00023A8B, weight: 10, minGroup: 1, maxGroup: 1, biomes: ['any']   }, // EncBearCave  — throughout Skyrim
-  { id: 'bear_brown',  name: 'Bear (Brown)',formId: 0x00023A8A, weight: 10, minGroup: 1, maxGroup: 1, biomes: ['any']   }, // EncBear      — throughout Skyrim
-  { id: 'bear_snow',   name: 'Bear (Snow)', formId: 0x00023A8C, weight:  5, minGroup: 1, maxGroup: 1, biomes: ['snow']  }, // EncBearSnow  — cold northern regions only
+  // Bears
+  { id: 'bear_black',  name: 'Bear (Black)',formId: 0x00023A8B, weight: 10, minGroup: 1, maxGroup: 1 }, // EncBearCave
+  { id: 'bear_brown',  name: 'Bear (Brown)',formId: 0x00023A8A, weight: 10, minGroup: 1, maxGroup: 1 }, // EncBear
+  { id: 'bear_snow',   name: 'Bear (Snow)', formId: 0x00023A8C, weight:  5, minGroup: 1, maxGroup: 1 }, // EncBearSnow
 
-  // Peaceful — deer and elk
-  { id: 'deer',        name: 'Deer',        formId: 0x000CF89D, weight: 25, minGroup: 1, maxGroup: 3, biomes: ['any']   }, // EncDeer
-  { id: 'elk',         name: 'Elk',         formId: 0x00023A91, weight: 15, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncElk
+  // Peaceful
+  { id: 'deer',        name: 'Deer',        formId: 0x000CF89D, weight: 25, minGroup: 1, maxGroup: 3 }, // EncDeer
+  { id: 'elk',         name: 'Elk',         formId: 0x00023A91, weight: 15, minGroup: 1, maxGroup: 2 }, // EncElk
 
-  // Small creatures
-  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncMudcrabMedium
-  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncSkeever   — farms, wilderness, anywhere
+  // Small
+  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 2 }, // EncMudcrabMedium
+  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 2 }, // EncSkeever
 
-  // Apex — rare
-  { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00023AB5, weight:  8, minGroup: 1, maxGroup: 1, biomes: ['any']   }, // EncSabreCat
-  { id: 'horker',      name: 'Horker',      formId: 0x00023AB1, weight: 10, minGroup: 1, maxGroup: 3, biomes: ['coast'] }, // EncHorker    — northern coastline only
+  // Apex
+  { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00023AB5, weight:  8, minGroup: 1, maxGroup: 1 }, // EncSabreCat
+  { id: 'horker',      name: 'Horker',      formId: 0x00023AB1, weight: 10, minGroup: 1, maxGroup: 3 }, // EncHorker
 ]
 
-// Weighted random pick from an arbitrary entry list (used with biome-filtered subsets)
+// ── Spawn zones ───────────────────────────────────────────────────────────────
+// WoW-style geographic regions. Each defines the creature roster for that area.
+// Zones are checked in order — first bounds match wins.
+// Only applies to the Tamriel worldspace (0x3C); other worldspaces use 'default'.
+//
+// Coordinates are approximate Skyrim worldspace units (~14cm per unit).
+// Use xEdit's View → Set Active Cell to verify positions if in doubt.
+const SPAWN_ZONES = [
+  // ── Far north — coastline along the Sea of Ghosts ─────────────────────────
+  {
+    name: 'Northern Coastline',
+    bounds: { minX: -55000, maxX: 70000, minY: 43000, maxY: 70000 },
+    species: ['horker', 'wolf_timber', 'bear_snow'],
+  },
+
+  // ── Northeast — Winterhold and surrounding tundra ─────────────────────────
+  {
+    name: 'Winterhold',
+    bounds: { minX: 28000, maxX: 70000, minY: 28000, maxY: 43000 },
+    species: ['wolf_timber', 'bear_snow', 'wolf', 'skeever'],
+  },
+
+  // ── North-central — The Pale (Dawnstar hold) ──────────────────────────────
+  {
+    name: 'The Pale',
+    bounds: { minX: -20000, maxX: 28000, minY: 28000, maxY: 43000 },
+    species: ['wolf', 'wolf_timber', 'bear_snow', 'deer'],
+  },
+
+  // ── Northwest — Haafingar (Solitude hold) ────────────────────────────────
+  {
+    name: 'Haafingar',
+    bounds: { minX: -55000, maxX: -15000, minY: 28000, maxY: 43000 },
+    species: ['wolf', 'bear_brown', 'bear_snow', 'deer', 'elk'],
+  },
+
+  // ── West-central — Hjaalmarch (Morthal, swampy marshland) ─────────────────
+  {
+    name: 'Hjaalmarch',
+    bounds: { minX: -40000, maxX: -5000, minY: 10000, maxY: 28000 },
+    species: ['skeever', 'mudcrab', 'wolf', 'bear_black'],
+  },
+
+  // ── East — Eastmarch (Windhelm hold, volcanic tundra) ────────────────────
+  {
+    name: 'Eastmarch',
+    bounds: { minX: 28000, maxX: 65000, minY: 5000, maxY: 28000 },
+    species: ['wolf', 'bear_brown', 'skeever', 'deer'],
+  },
+
+  // ── Centre — Whiterun Hold (open tundra plains) ───────────────────────────
+  {
+    name: 'Whiterun Hold',
+    bounds: { minX: -10000, maxX: 28000, minY: -15000, maxY: 20000 },
+    species: ['wolf', 'sabrecat', 'deer', 'elk', 'mudcrab'],
+  },
+
+  // ── West — The Reach (rocky canyons, Markarth hold) ──────────────────────
+  {
+    name: 'The Reach',
+    bounds: { minX: -70000, maxX: -25000, minY: -30000, maxY: 28000 },
+    species: ['wolf', 'bear_brown', 'bear_black', 'sabrecat'],
+  },
+
+  // ── Southeast — The Rift (Riften hold, autumnal forest) ──────────────────
+  {
+    name: 'The Rift',
+    bounds: { minX: 20000, maxX: 65000, minY: -40000, maxY: 5000 },
+    species: ['wolf', 'bear_black', 'skeever', 'deer', 'elk', 'sabrecat'],
+  },
+
+  // ── South — Falkreath Hold (dense pine forest) ───────────────────────────
+  {
+    name: 'Falkreath Hold',
+    bounds: { minX: -25000, maxX: 20000, minY: -55000, maxY: -15000 },
+    species: ['wolf', 'bear_black', 'bear_brown', 'deer', 'elk', 'mudcrab'],
+  },
+
+  // ── Fallback — any unmatched position (gaps, border areas) ───────────────
+  {
+    name: 'default',
+    bounds: null,
+    species: ['wolf', 'deer', 'elk', 'mudcrab', 'skeever'],
+  },
+]
+
+// Returns the SPAWN_ZONES entry whose bounds contain the zone centre.
+// Falls back to the 'default' entry for unmatched positions and non-Tamriel worldspaces.
+function getSpawnZone(zone) {
+  if (zone.cellOrWorld === TAMRIEL_ID) {
+    const [x, y] = zone.center
+    const match = SPAWN_ZONES.find(z =>
+      z.bounds &&
+      x >= z.bounds.minX && x <= z.bounds.maxX &&
+      y >= z.bounds.minY && y <= z.bounds.maxY
+    )
+    if (match) return match
+  }
+  return SPAWN_ZONES.find(z => z.name === 'default')
+}
+
+// Weighted random pick from an arbitrary subset of SPAWN_TABLE entries
 function pickWeightedRandom(entries) {
   let r = Math.random() * entries.reduce((s, e) => s + e.weight, 0)
   for (const entry of entries) {
@@ -78,18 +169,6 @@ function pickWeightedRandom(entries) {
     if (r <= 0) return entry
   }
   return entries[entries.length - 1]
-}
-
-// Returns the set of biome tags that apply to a zone based on worldspace + position
-function getZoneBiomes(zone) {
-  const biomes = new Set(['any'])
-  if (zone.cellOrWorld === TAMRIEL_ID) {
-    const y = zone.center[1]
-    if (y > SNOW_BIOME_MIN_Y)  biomes.add('snow')
-    if (y > COAST_BIOME_MIN_Y) biomes.add('coast')
-  }
-  // Interior cells (cellOrWorld ≠ TAMRIEL_ID) only get 'any' for now
-  return biomes
 }
 
 // ── State ─────────────────────────────────────────────────────────────────────
@@ -285,9 +364,9 @@ function tick(mp) {
     }
     if (aliveCount >= MAX_PER_ZONE) continue
 
-    // Filter species to those that belong in this zone's biome
-    const zoneBiomes = getZoneBiomes(zone)
-    const eligible   = SPAWN_TABLE.filter(e => e.biomes.some(b => zoneBiomes.has(b)))
+    // Resolve the geographic spawn zone and build the eligible species list
+    const spawnZone = getSpawnZone(zone)
+    const eligible  = SPAWN_TABLE.filter(e => spawnZone.species.includes(e.id))
     if (eligible.length === 0) continue
 
     // Pick a random species from eligible entries, respecting death cooldowns

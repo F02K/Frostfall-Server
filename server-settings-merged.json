@@ -17,7 +17,7 @@
   "offlineMode": true,
   "port": 7777,
   "discordAuth": {
-    "clientId": "1493774407951454319",
-    "clientSecret": "6QdbXf6OWIU37_5Jy5dwtxVxCOoarUum"
+    "clientId": "id",
+    "clientSecret": "secret"
   }
 }

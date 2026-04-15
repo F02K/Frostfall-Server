@@ -1,0 +1,1313 @@
+{
+	"shouts": [
+		{
+			"formid": "0010FE24",
+			"edid": "L_DragonFrostIceStormShout",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE23",
+			"edid": "L_DragonFrostBreathShout",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE22",
+			"edid": "L_DragonFireBallShout",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE21",
+			"edid": "L_DragonFireBreathShout",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE1B",
+			"edid": "LShoutDragonFrostBreath",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F734",
+			"edid": "GreybeardElementalFuryShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F733",
+			"edid": "GreybeardDismay",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F732",
+			"edid": "GreybeardUnrelentingForceShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F731",
+			"edid": "GreybeardWhirlwindSprintShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F730",
+			"edid": "GreybeardIceFormShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F72F",
+			"edid": "GreybeardFrostBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F72E",
+			"edid": "GreybeardFireBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F72D",
+			"edid": "GreybeardDisarmShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010E755",
+			"edid": "crCenturionBreathWeaponMal",
+			"name": "Dampfatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4E2",
+			"edid": "DragonFrostIceStormShout05",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4E1",
+			"edid": "DragonFrostBreathShout05",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4E0",
+			"edid": "DragonFireBreathShout05",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4DF",
+			"edid": "DragonFireBallShout05",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00107580",
+			"edid": "MQ101DragonUnrelentingForceShout",
+			"name": "Unerbittliche Macht",
+			"description": "Stößt Ziele zurück und wirft lose Objekte um.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00101CEC",
+			"edid": "MQ206AlduinFirestormShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000FF8D8",
+			"edid": "MQAlduinResurrectShout",
+			"name": "ResurrectionShout",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000FEAA0",
+			"edid": "DragonFireBallShout03",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000FEA9D",
+			"edid": "DragonFireBreathShout03",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F810B",
+			"edid": "DragonFrostIceStormShout04",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F810A",
+			"edid": "DragonFrostBreathShout04",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8109",
+			"edid": "DragonFireBreathShout04",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8108",
+			"edid": "DragonFireBallShout04",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8101",
+			"edid": "DragonFrostIceStormShout03",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8100",
+			"edid": "DragonFrostBreathShout03",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80FB",
+			"edid": "DragonFrostBreathShout01",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80F9",
+			"edid": "DragonFrostIceStormShout01",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80F8",
+			"edid": "DragonFireBreathShout02",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80F7",
+			"edid": "DragonFireBallShout02",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000DD607",
+			"edid": "DragonFrostIceStormShout02",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000B2387",
+			"edid": "dunCGDragonStormCallShout",
+			"name": "Dragon Storm Call",
+			"description": "Ändert gutes Wetter in stürmisches Wetter.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0009DE93",
+			"edid": "UnrelentingForceShoutDraugr",
+			"name": "Unerbittliche Macht",
+			"description": "Stößt Ziele zurück und wirft lose Objekte um.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0004C40B",
+			"edid": "AlduinFirestormShout",
+			"name": "Dragon Storm Call",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00016CF0",
+			"edid": "DragonUnrelentingForceShout",
+			"name": "Unerbittliche Macht",
+			"description": "Stößt Ziele zurück und wirft lose Objekte um.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00016C40",
+			"edid": "DragonDisarmShout",
+			"name": "Dragon Disarm",
+			"description": "Ziele lassen mitten im Schlag ihre Waffe fallen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007A4C8",
+			"edid": "MQ105WhirlwindSprintShout",
+			"name": "Wirbelwindsprint",
+			"description": "Du stürmst fast ohne Verzögerung vorwärts.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E5F68",
+			"edid": "HowlWerewolfCallOfTheWild",
+			"name": "Ruf der Wildnis",
+			"description": "An area effect knockdown with a slight regen component.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E4908",
+			"edid": "dunCGAlduinFireBreathShout",
+			"name": "Feueratem (nur für DRACHEN)",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E40D1",
+			"edid": "WoodElfBeastTongue",
+			"name": "Biestzunge",
+			"description": "Einmal am Tag werden betroffene Tiere zu deinen Verbündeten.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E40CB",
+			"edid": "ImperialVoiceOfTheEmperor",
+			"name": "Stimme des Kaisers",
+			"description": "Einmal am Tag kannst du Personen in deiner Nähe besänftigen, sodass sie keinen Kampf anfangen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E40C4",
+			"edid": "NordBattleCry",
+			"name": "Kampfschrei",
+			"description": "Einmal am Tag verursachen betroffene Feinde nur halben Schaden.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000CF79B",
+			"edid": "HowlWerewolfSummonWolves",
+			"name": "Heulen des Rudels",
+			"description": "Durch sein Heulen ruft ein Werwolf seine Gefährten.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000CF790",
+			"edid": "HowlWerewolfFear",
+			"name": "Heulen des Schreckens",
+			"description": "Durch sein Heulen versetzt ein Werwolf alle lebenden Kreaturen in seiner Nähe in Angst und Schrecken.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000CE218",
+			"edid": "HowlWerewolfDetectLife",
+			"name": "Scent Of Blood",
+			"description": "Durch sein Heulen erspürt ein Werwolf das Blut lebender Kreaturen in seiner Nähe.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000A82BC",
+			"edid": "crCenturionBreathWeapon",
+			"name": "Dampfatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00070981",
+			"edid": "DisarmShout",
+			"name": "Entwaffnen",
+			"description": "Schrei schlägt Stahl: Du entreißt einem Gegner die Waffe.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00070980",
+			"edid": "IceFormShout",
+			"name": "Eisform",
+			"description": "Dein Thu'um friert einen Gegner komplett ein.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097F",
+			"edid": "ThrowVoiceShout",
+			"name": "Druckwelle",
+			"description": "Deine Gegner hören dein Thu'um, kennen jedoch nicht seinen Ursprung, den sie daraufhin zu suchen beginnen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097E",
+			"edid": "KynesPeaceShout",
+			"name": "Kynes Frieden",
+			"description": "Tiere in deiner Nähe werden dich weder angreifen noch vor dir fliehen. Mehr Worte verlängern die Reichweite und Dauer.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097D",
+			"edid": "StormCallShout",
+			"name": "Sturmruf",
+			"description": "Ein Schrei in den Himmel, ein Ruf in die Wolken, der die zerstörerische Kraft der Blitze von Himmelsrand beschwört.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097C",
+			"edid": "MarkedforDeathShout",
+			"name": "Todeszeichen",
+			"description": "Schrei, und deine Stimme wird zum Bote des Untergangs, der Rüstungswert und Lebenskraft eines Gegners schwächt.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097B",
+			"edid": "AuraWhisperShout",
+			"name": "Auraflüstern",
+			"description": "Deine Stimme ist kein Schrei, sondern ein Wispern, das die Lebenskraft aller Freunde und Feinde enthüllt.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0002395A",
+			"edid": "Dismay",
+			"name": "Unbehagen",
+			"description": "Und die Schwachen sollen den Thu'um fürchten und vor Schrecken fliehen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0005FC77",
+			"edid": "animalAllegianceShout",
+			"name": "Tierfreundschaft",
+			"description": "Ein Schrei, der wilde Tiere zu Hilfe ruft, die herbei eilen, um dir im Kampf beizustehen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0005D16B",
+			"edid": "FrostBreathShout",
+			"name": "Frostatem",
+			"description": "Dein Atem ist Winter, dein Thu'um ein Schneesturm.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00059327",
+			"edid": "DA13AfflictedBreathShout",
+			"name": "Fäulnisbrodem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000549B2",
+			"edid": "DragonFrostBreathShout02",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000549B1",
+			"edid": "MQDragonIceSpikeVolleyShout",
+			"name": "Eisstachel (nur für DRACHEN)",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0004DBA5",
+			"edid": "DragonFireBallShout01",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0005196A",
+			"edid": "CallofValorShout",
+			"name": "Ruf der Tapferkeit",
+			"description": "Die Helden von Sovngarde hören deine Stimme und reisen durch Raum und Zeit, um dir zu helfen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00048AC9",
+			"edid": "SlowTimeShout",
+			"name": "Zeit verlangsamen",
+			"description": "Schrei die Zeit an und befiehl ihr zu gehorchen, dann steht die Welt um dich herum still.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00046B8C",
+			"edid": "CallDragonShout",
+			"name": "Drachenruf",
+			"description": "Odahviing! Höre meine Stimme und erscheine. Ich rufe dich herbei in meiner Zeit der Not.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00044250",
+			"edid": "DragonrendShout",
+			"name": "Drachenfall",
+			"description": "Deine Stimme trifft die Seele eines Drachen und zwingt die Bestie dadurch zur Landung.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0003F9EA",
+			"edid": "FireBreathShout",
+			"name": "Feueratem",
+			"description": "Atme Luft ein, atme Feuer aus - der Thu'um erschafft ein Flammenmeer.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0003CD34",
+			"edid": "ClearSkiesShout",
+			"name": "Wolkenlose Himmel",
+			"description": "Himmelsrand selbst beugt sich dem Thu'um, mit dem du Nebel und schlechtes Wetter vertreibst.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00032921",
+			"edid": "ElementalFuryShout",
+			"name": "Elementare Raserei",
+			"description": "Der Thu'um erfüllt deine Arme mit der Geschwindigkeit des Windes und ermöglicht schnellere Schläge deiner Waffen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00032920",
+			"edid": "BecomeEtherealShout",
+			"name": "Ätherische Gestalt",
+			"description": "Der Thu'um greift in die Leere selbst und verändert deine Form: Du kannst weder verletzt werden noch jemanden verletzen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0002F7BA",
+			"edid": "WhirlwindSprintShout",
+			"name": "Wirbelwindsprint",
+			"description": "Der Thu'um rast voran und reißt dich mit sich - mit der Geschwindigkeit eines Sturmwindes.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0002F2DF",
+			"edid": "MQ105PhantomFormShout",
+			"name": "Phantomgestalt",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000252C0",
+			"edid": "DragonFireBreathShout01",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00013E07",
+			"edid": "UnrelentingForceShout",
+			"name": "Unerbittliche Macht",
+			"description": "Deine Stimme ist ungezügelte Energie und stößt alles und jeden zur Seite, der sich dir in den Weg stellt.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0201A165",
+			"edid": "DLC1DragonUndeadSummonShout",
+			"name": "Seelengrabbeschwörung",
+			"description": "Untoten aus dem Seelengrab beschwören",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02018244",
+			"edid": "DLC1DragonDrainVitalityShout02",
+			"name": "Lebenskraft entziehen",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020181B8",
+			"edid": "DLC1DragonDrainVitalityShout03",
+			"name": "Lebenskraft entziehen",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020181B7",
+			"edid": "DLC1DragonDrainVitalityShout04",
+			"name": "Lebenskraft entziehen",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020181B6",
+			"edid": "DLC1DragonDrainVitalityShout05",
+			"name": "Lebenskraft entziehen",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4D",
+			"edid": "DLC1LD_ForgemasterFireballShout03",
+			"name": "Meisterschmiedfeuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4C",
+			"edid": "DLC1LD_ForgemasterFireBreathShout03",
+			"name": "Meisterschmiedfeueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4B",
+			"edid": "DLC1LD_ForgemasterFireballShout02",
+			"name": "Meisterschmiedfeuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4A",
+			"edid": "DLC1LD_ForgemasterFireBreathShout02",
+			"name": "Meisterschmiedfeueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C43",
+			"edid": "DLC1LD_ForgemasterFlameCloakShout",
+			"name": "Meisterschmiedflammenmantel",
+			"description": "Ziele lassen mitten im Schlag ihre Waffe fallen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C3E",
+			"edid": "DLC1LD_ForgemasterFireBreathShout01",
+			"name": "Meisterschmiedfeueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C39",
+			"edid": "DLC1LD_ForgemasterFireballShout01",
+			"name": "Meisterschmiedfeuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200C5FB",
+			"edid": "DLC1DragonFrostBreathShout07",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200C5FA",
+			"edid": "DLC1DragonFireBreathShout07",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200C5F9",
+			"edid": "DLC1DragonDrainVitalityShout07",
+			"name": "Lebenskraft entziehen",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200BFED",
+			"edid": "DLC1VQ05DurnehviirShout",
+			"name": "Tote erwecken",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02008A62",
+			"edid": "DLC1DrainVitalityShout",
+			"name": "Lebenskraft entziehen",
+			"description": "Entzieht deinem hilflosen Gegner gleichzeitig magische und sterbliche Energien.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02008442",
+			"edid": "DLC1DragonDrainVitalityShout06",
+			"name": "Lebenskraft entziehen",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843D",
+			"edid": "DLC1DragonFrostIceStormShout06",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843C",
+			"edid": "DLC1DragonFrostBreathShout06",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843B",
+			"edid": "DLC1DragonFireBreathShout06",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843A",
+			"edid": "DLC1DragonFireBallShout06",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02007CB6",
+			"edid": "DLC1SoulTearShout",
+			"name": "Seelenreißer",
+			"description": "Dein Thu'um trennt Mark und Bein und zerstört Seelen, während er den Gefallenen Befehle gibt.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020030D2",
+			"edid": "DLC1SummonDragonShout",
+			"name": "Durnehviir beschwören",
+			"description": "Durnehviir! Hört meine Stimme und erscheint aus dem Seelengrab. Ich rufe Euch herbei in meiner Zeit der Not.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02039D28",
+			"edid": "dlc2MKMiraakMaskShoutShout",
+			"name": "Benthischer Schrei",
+			"description": "Die Macht deiner Stimme ist durch den Einfluss Harmaeus Moras geschwächt.\r\n",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0F",
+			"edid": "DLC2MiraakDragonAspectShout",
+			"name": "Drachenform",
+			"description": "Du kannst dich einmal pro Tag in die mächtige Form eines Drachen verwandeln, kolossale Schläge austeilen, besitzt eine gepanzerte Körperoberfläche und mächtigere Schreie.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0E",
+			"edid": "DLC2MiraakUnrelentingForceShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0D",
+			"edid": "DLC2MiraakFrostBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0C",
+			"edid": "DLC2MiraakFireBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0B",
+			"edid": "DLC2MiraakElementalFuryShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020382F9",
+			"edid": "DLC2MiraakFakeKillShout",
+			"name": "Wirbelwindsprint",
+			"description": "Du stürmst fast ohne Verzögerung vorwärts.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02036132",
+			"edid": "DLC2DragonFireBallShout06",
+			"name": "Feuerball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02036131",
+			"edid": "DLC2DragonFireBreathShout06",
+			"name": "Feueratem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0203612C",
+			"edid": "DLC2DragonFrostIceStormShout06",
+			"name": "Eissturm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0203612B",
+			"edid": "DLC2DragonFrostBreathShout06",
+			"name": "Frostatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0203547B",
+			"edid": "DLC2MiraakWhirlwindSprintShout",
+			"name": "Wirbelwindsprint",
+			"description": "Du stürmst fast ohne Verzögerung vorwärts.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0202AD09",
+			"edid": "DLC2BattleFuryShout",
+			"name": "Kampfeswut",
+			"description": "Dein Thu'um verzaubert die Waffen von Verbündeten in der Nähe und ermöglicht ihnen dadurch schnellere Angriffe.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02023F7A",
+			"edid": "DLC2MiraakBecomeEtherealShout",
+			"name": "Ätherische Gestalt",
+			"description": "Der Thu'um greift in die Leere selbst und verändert deine Form: Du kannst weder verletzt werden noch jemanden verletzen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02023F79",
+			"edid": "DLC2MiraakCycloneShout",
+			"name": "Zyklon",
+			"description": "Dein Thu'um erzeugt einen wirbelnden Zyklon, der Chaos unter deinen Feinden verbreitet.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020200C0",
+			"edid": "DLC2CycloneShout",
+			"name": "Zyklon",
+			"description": "Dein Thu'um erzeugt einen wirbelnden Zyklon, der Chaos unter deinen Feinden verbreitet.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0201DF92",
+			"edid": "DLC2DragonAspectShout",
+			"name": "Drachenform",
+			"description": "Du kannst einmal pro Tag eine Drachenform mit kolossalen Schlägen, einer Panzerhaut und mächtigeren Schreien annehmen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020179D8",
+			"edid": "DLC2BendWillShout",
+			"name": "Willen beugen",
+			"description": "Deine Stimme beugt mit zunehmender Stärke den Willen von Steinen, Tieren, Menschen und sogar Drachen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0500390E",
+			"edid": "DLCDwarvenPuzzleDungeon_FrostBreath",
+			"name": "Gefrorener Dampfatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "04000AB7",
+			"edid": "ccBGSSE008_CenturionSpell",
+			"name": "Blitzatem",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		}
+	]
+}

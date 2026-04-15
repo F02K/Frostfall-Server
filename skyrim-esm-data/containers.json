@@ -1,0 +1,5191 @@
+{
+	"containers": [
+		{
+			"formid": "0010FDE6",
+			"edid": "MerchantWhiterunEorlundChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010FBF6",
+			"edid": "MS12bBriarHeartStorage",
+			"name": "Dornenherz-Speicher",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010DD41",
+			"edid": "TGGuildChest",
+			"name": "Gildentruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010EE0C",
+			"edid": "TreasCWImperialChestCWMission07",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010EE0B",
+			"edid": "TreasCWSonsChestCWMission07",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010EB29",
+			"edid": "wispCorpseContainer",
+			"name": "Irrlichtkern",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E88A",
+			"edid": "MiscSack02SmallFlat_NoRespawn",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E889",
+			"edid": "MiscSack02Small_NoRespawn",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E888",
+			"edid": "MiscSack02LargeFlat_NoRespawn",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E887",
+			"edid": "MiscSackLargeFlat02_NoRespawn",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E886",
+			"edid": "MiscSackLarge_NoRespawn",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E885",
+			"edid": "BarrelIngredientUncommon01_NoRespawn",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E884",
+			"edid": "BarrelIngredientCommon01_NoRespawn",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E883",
+			"edid": "MiscSackLargeFlat01_NoRespawn",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E882",
+			"edid": "BarrelFood01_NoRespawn",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E7E5",
+			"edid": "RiftenConfiscatedGoodsChest",
+			"name": "Konfiszierte Waren",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010E05E",
+			"edid": "dunTreasMapTreasChestSpecial",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010DE03",
+			"edid": "TG03Strongbox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010D9FF",
+			"edid": "QASkillBookContainer",
+			"name": "Alle Lehrbücher",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010D9C1",
+			"edid": "BarrelMeat01",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010CD5B",
+			"edid": "BarrelFish01",
+			"name": "Fischfass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010C430",
+			"edid": "MerchantWCollegeUragChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010C1D5",
+			"edid": "MerchantWhiterunFraliaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010ACB6",
+			"edid": "RiftenPawnedPrawnSafe",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010AAD2",
+			"edid": "TreasStrongBox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00109D86",
+			"edid": "WinterholdBookCase01",
+			"name": "Bücherschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00108D36",
+			"edid": "EvidenceChestPlayerInventory",
+			"name": "Gefangenentruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00108B2F",
+			"edid": "dunPurewaterRunSkillBookChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0010798C",
+			"edid": "TGStrongbox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00105821",
+			"edid": "fcHawkGO",
+			"name": "Falke",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00105024",
+			"edid": "NobleChestDrawers02NoName",
+			"name": "",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "001046B1",
+			"edid": "MQ101Barrel",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00103397",
+			"edid": "TGREndSafe",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00103241",
+			"edid": "SkyHavenArmoryChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00102EB8",
+			"edid": "TGTQ02RedWaveSafe",
+			"name": "Tresor der Roten Woge",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00101C95",
+			"edid": "BlackBriarMeadBarrel01",
+			"name": "Schwarz-Dorn-Metfass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FF20A",
+			"edid": "TG09NystromsSatchel",
+			"name": "Nystroms Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FE485",
+			"edid": "CWQuartermasterChestSons",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FDBD0",
+			"edid": "TGCacheBarrel",
+			"name": "Diebesversteck",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FD834",
+			"edid": "CWFortSoldierWoundedTentChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FCB25",
+			"edid": "TreasExplorerLootChestSnow",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FB9CC",
+			"edid": "BarrelIngredientUncommon01_Snow",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FB9CB",
+			"edid": "BarrelIngredientCommon01_Snow",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FB9CA",
+			"edid": "BarrelEmpty01_Snow",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FB9C9",
+			"edid": "BarrelFood01_Snow",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F93DD",
+			"edid": "WinhelmBurialUrn",
+			"name": "Begräbnisurne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F8478",
+			"edid": "TreasChestSmallEMPTYNoRespawn",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F8477",
+			"edid": "TreasRuinsUrnLargeEmptyNoRespawn",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F8476",
+			"edid": "LargeChestNoRespawn",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F8120",
+			"edid": "MarkarthBurialUrn",
+			"name": "Begräbnisurne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F6A96",
+			"edid": "WHcoffin01",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F68AE",
+			"edid": "TGTributeChest",
+			"name": "Tributstruhe des Gildenmeisters",
+			"flags": "11",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F6892",
+			"edid": "MarkarthCoffin02container",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F6891",
+			"edid": "MarkarthCoffin01container",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F684D",
+			"edid": "MQ201ElenwenOfficeChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F4A19",
+			"edid": "dunTreasMapDBridgeSatchel",
+			"name": "Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F4A01",
+			"edid": "dunTreasMapTreasChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F3AF7",
+			"edid": "TreasDwarvenChestLargeEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F3923",
+			"edid": "PlayerHouseChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EBE06",
+			"edid": "DesecratedStormCloak",
+			"name": "Verweste Leiche",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EBAD8",
+			"edid": "DesecratedImperial",
+			"name": "Verweste Leiche",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EB093",
+			"edid": "CommonCoffin01",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F1F66",
+			"edid": "TreasBanditChestSnow",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F1461",
+			"edid": "PlayerPotionRackContainer",
+			"name": "Trankbord",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F0402",
+			"edid": "dunAlftandSullasPack",
+			"name": "Sulla Trebatius' Tasche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000F03EE",
+			"edid": "dunAlftandJzharsPack",
+			"name": "J'zhars Tasche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EF5F6",
+			"edid": "POIYisraBurnt",
+			"name": "Yisra",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EF578",
+			"edid": "TG04GulumEiKillChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EF052",
+			"edid": "TreasExplorerLootChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EE9F7",
+			"edid": "MerchantWCollegeEnthirChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EC74D",
+			"edid": "RTCoffin01",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EA722",
+			"edid": "TGRStrongbox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000EA299",
+			"edid": "UnownedChest",
+			"name": "Herrenlose Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E3EA1",
+			"edid": "FFMF01Chest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E317B",
+			"edid": "CompanionsKodlakNightTable01",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E3135",
+			"edid": "CRSpawnContainer",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DB358",
+			"edid": "C05FragmentBox",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DB047",
+			"edid": "TreasDraugrAmbushCorpseSitting",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D8E4D",
+			"edid": "TGFenceMerchantChestCaravanZaynabi",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D8E4C",
+			"edid": "TGFenceMerchantChestCaravanMajhad",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D8E4B",
+			"edid": "TGFenceMerchantChestCaravanAtahba",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D8831",
+			"edid": "TGFenceMerchantChestMallus",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D8830",
+			"edid": "TGFenceMerchantChestEnthir",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D882F",
+			"edid": "TGFenceMerchantChestEndon",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D882E",
+			"edid": "TGFenceMerchantChestNiranye",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D882D",
+			"edid": "TGFenceMerchantChestGulumEi",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D7770",
+			"edid": "TGTQ04NiranyesSafe",
+			"name": "Niranyes Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D762F",
+			"edid": "MGHoldingChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D6AA4",
+			"edid": "MerchantSolitudeEastEmpireCompany",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D6712",
+			"edid": "CWMission04ChestContainer",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D4FFD",
+			"edid": "POICorpseFrozenMammoth",
+			"name": "Mammut",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D0753",
+			"edid": "MGRitual04PlayerItemChest",
+			"name": "Unsichtbare Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D069C",
+			"edid": "T02RiftenTempleChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C04C0",
+			"edid": "FVDStrongbox",
+			"name": "Valds Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BBCD0",
+			"edid": "WEMerchantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B8F4B",
+			"edid": "RiftenBrynjolfSatchel",
+			"name": "Brynjolfs Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B8F48",
+			"edid": "RiftenBrynjolfStrongbox",
+			"name": "Brynjolfs Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B8F40",
+			"edid": "RiftenMadesiSatchel",
+			"name": "Madesis Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B8F32",
+			"edid": "RiftenGrelkaStrongbox",
+			"name": "Grelkas Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B8589",
+			"edid": "DA07JorgenChest",
+			"name": "Jorgens Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B1176",
+			"edid": "TreasFalmerChestBossDwarven",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AF265",
+			"edid": "FFI02ReydaSatchel",
+			"name": "Reydas Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AD06D",
+			"edid": "E3DemoTreasHallofStories",
+			"name": "Begräbnisurne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A9198",
+			"edid": "BeeHiveVacant",
+			"name": "Leerer Bienenstock",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A918C",
+			"edid": "BeeHive",
+			"name": "Bienenstock",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6F8B",
+			"edid": "C01ObserverWerewolfStorage",
+			"name": "Werwolfsversteck",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A0E42",
+			"edid": "DelphineSecretRoomChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A0DB5",
+			"edid": "MQ201PlayerContainerNoResetNEW",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00099D87",
+			"edid": "HHChest01",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00099AE5",
+			"edid": "E3DemoPreCreekChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00099A50",
+			"edid": "E3DemoTrollChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000998C2",
+			"edid": "e3DEMOBanditChestSmall01",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009424C",
+			"edid": "StrongBox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006EA48",
+			"edid": "dunKatariahCaptainsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006EA46",
+			"edid": "dunKatariahEmperorsChest",
+			"name": "Truhe",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00016ACA",
+			"edid": "CWQuartermasterChestImperial",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00087900",
+			"edid": "FFRiften08BrandSheiChest",
+			"name": "Wassergetränkte Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000861A4",
+			"edid": "SCoffinPoor01",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008618C",
+			"edid": "SCoffin01",
+			"name": "Sarg",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008617F",
+			"edid": "SBurialUrn01",
+			"name": "Begräbnisurne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00085D53",
+			"edid": "FFRiften20SarthisSatchel",
+			"name": "Sarthis' Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00081DD9",
+			"edid": "TGREvidenceChestUpper",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00081DD8",
+			"edid": "TGREvidenceChestNoble",
+			"name": "Truhe",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007AA90",
+			"edid": "TreasBanditChestBossEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00072786",
+			"edid": "MerchantFalkreathBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006A876",
+			"edid": "MerchantFalkreathGraveConcoctionsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00066181",
+			"edid": "MS11CalixtoChestREF",
+			"name": "Calixtos Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00065C36",
+			"edid": "MerchantRiftenBeeandBarbTalenChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00064923",
+			"edid": "DBTortureVictimContainer4",
+			"name": "Ausgehöhlter Baumstumpf",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00064922",
+			"edid": "DBTortureVictimContainer3",
+			"name": "Ausgehöhlter Felsen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00064921",
+			"edid": "DBTortureVictimContainer2",
+			"name": "Ausgehöhlter Baumstumpf",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006491F",
+			"edid": "DBTortureVictimContainer1",
+			"name": "Ausgehöhlter Felsen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006479F",
+			"edid": "MerchantMarkarthCastleBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006479C",
+			"edid": "MerchantMarkarthAntonsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00043E2D",
+			"edid": "FFFRiften14Satchel03",
+			"name": "Wylandriahs Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00043E2C",
+			"edid": "FFFRiften14Satchel02",
+			"name": "Wylandriahs Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00043E29",
+			"edid": "FFFRiften14Satchel01",
+			"name": "Wylandriahs Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042DBB",
+			"edid": "OrcDresser01",
+			"name": "Kommode",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042D91",
+			"edid": "OrcEndTable01",
+			"name": "Beistelltisch",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0003C59C",
+			"edid": "FFRiften04IngunChest",
+			"name": "Inguns Alchemietruhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0003C50F",
+			"edid": "FFRiften02SibbiChest",
+			"name": "Truhe",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00035A5F",
+			"edid": "MQ101BarracksChest02",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00035A5C",
+			"edid": "MQ101BarracksChest01",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000305A1",
+			"edid": "TreasFalmerChestEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002BA17",
+			"edid": "PlayerWerewolfStorage",
+			"name": "Werwolfsversteck",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00015BAB",
+			"edid": "SeptimusSignusCupboard",
+			"name": "Schrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E82C2",
+			"edid": "FFRiften08BrandiSheiStrongbox",
+			"name": "Brand-Sheis Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E7BCD",
+			"edid": "MerchantWinterholdNelacarChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E7A36",
+			"edid": "dunGeirmundCorpse",
+			"name": "Erzmagier Geirmund",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E6CC4",
+			"edid": "dunFolgunthurAdventurer6",
+			"name": "Abenteurer",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E4AE9",
+			"edid": "WRCoffin01",
+			"name": "Sarg",
+			"flags": "001",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E4258",
+			"edid": "WRBurialUrn01",
+			"name": "Begräbnisurne",
+			"flags": "001",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000E3F97",
+			"edid": "MQ201InterrogationChamberChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DDEF7",
+			"edid": "dunMiddenVelehkRewardChest",
+			"name": "Velehk Sains Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DDCE2",
+			"edid": "DB08PapersBarrel",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DD061",
+			"edid": "MQ104BurntCorpse03",
+			"name": "Verbrannte Leiche",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DD060",
+			"edid": "MQ104BurntCorpse04",
+			"name": "Verbrannte Leiche",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DC9E7",
+			"edid": "PlayerBookShelfContainer",
+			"name": "Bücherregal",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000DC173",
+			"edid": "TGTQ02SabineChest",
+			"name": "Sabines Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D89C6",
+			"edid": "TreasHouseNobleChest",
+			"name": "Truhe",
+			"flags": "11",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D54C5",
+			"edid": "TGFenceMerchantChestTonilia",
+			"name": "Thieves Guild Fence Chest",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D30D1",
+			"edid": "dunMiddenRelicContainer",
+			"name": "Daedrisches Relikt",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D30CC",
+			"edid": "dunMiddenInvestigationChest",
+			"name": "Forschertruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D1478",
+			"edid": "DBPenitusOutpostChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000D1259",
+			"edid": "TreasTreashunterChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000CE739",
+			"edid": "dunMiddenAtronachForgeBox",
+			"name": "Opferstock",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C674B",
+			"edid": "defaultGhostCorpse",
+			"name": "Überreste",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C644F",
+			"edid": "MerchantSpouseMiscVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C644E",
+			"edid": "MerchantSpouseSpellsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C644D",
+			"edid": "MerchantSpouseInnkeeperChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C644C",
+			"edid": "MerchantSpouseApothecaryChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C644B",
+			"edid": "MerchantSpouseBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C4DDA",
+			"edid": "DA04TowerOfMzarkCubeStorage",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C4D4F",
+			"edid": "NobleCupboard02",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C4D4E",
+			"edid": "NobleCupboard01",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C4493",
+			"edid": "RiftenTempleCharityChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2D3B",
+			"edid": "QABooksContainer",
+			"name": "Alle Bücher",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CE2",
+			"edid": "QAPotionContainer",
+			"name": "Alle Tränke",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CE1",
+			"edid": "QAScrollContainer",
+			"name": "Alle Schriftrollen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CE0",
+			"edid": "QAWeaponContainer",
+			"name": "Alle normalen Waffen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CDF",
+			"edid": "QAEnchantedWeaponContainer",
+			"name": "Alle verzauberten Waffen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CDE",
+			"edid": "QAStaffContainer",
+			"name": "Alle Stäbe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CDD",
+			"edid": "QASoulGemContainer",
+			"name": "Alle Seelensteine",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CDC",
+			"edid": "QAMiscItemContainer",
+			"name": "Alle sonstigen Gegenstände",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CDB",
+			"edid": "QAKeyContainer",
+			"name": "Alle Schlüssel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CDA",
+			"edid": "QAIngredientContainer",
+			"name": "Alle Zutaten",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CD9",
+			"edid": "QASpellTomeContainer",
+			"name": "Alle Zauberbücher",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CD8",
+			"edid": "QAClothingJewelryContainer",
+			"name": "Alle Kleidung und aller Schmuck",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CD7",
+			"edid": "QAEnchantedArmorContainer",
+			"name": "Alle verzauberten Rüstungen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CD6",
+			"edid": "QAArmorContainer",
+			"name": "Alle normalen Rüstungen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2CD4",
+			"edid": "QAAmmoContainer",
+			"name": "Alle Munition",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2A06",
+			"edid": "NobleNightTable01",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2A05",
+			"edid": "NobleChestDrawers01",
+			"name": "Kleiderschrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000C2A04",
+			"edid": "NobleChestDrawers02",
+			"name": "Kleiderschrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BAD05",
+			"edid": "TreasCorpseMammoth",
+			"name": "Mammut",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00094F10",
+			"edid": "TreasDwarvenChestSmallEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00094F0E",
+			"edid": "TreasDwarvenChestBossEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000774C9",
+			"edid": "TreasOrcChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000774C8",
+			"edid": "TreasOrcChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000774C6",
+			"edid": "TreasGiantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000774BF",
+			"edid": "TreasGiantChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006B30E",
+			"edid": "NobleChest01",
+			"name": "Truhe",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006B303",
+			"edid": "NobleWardrobe01",
+			"name": "Kleiderschrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00018E73",
+			"edid": "MS05_SvaknirsCorpse",
+			"name": "Svaknir",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001722D",
+			"edid": "MQ101TorturerSatchel",
+			"name": "Tornister",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000997FF",
+			"edid": "SpitPotClosedLoose01AlchemyCommon",
+			"name": "Vase",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000997FE",
+			"edid": "SpitPotClosed01AlchemyCommon",
+			"name": "Topf",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000954CB",
+			"edid": "DA05Skinbox",
+			"name": "Pelzkiste",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00092B13",
+			"edid": "BarrelIngredientUncommon01",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00092B10",
+			"edid": "BarrelIngredientCommon01",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008B6F8",
+			"edid": "T03SapBox",
+			"name": "Harzbehälter",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008B6F6",
+			"edid": "T02LibraryBox",
+			"name": "Love Repository",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434E",
+			"edid": "MerchantCaravanCChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434D",
+			"edid": "MerchantCaravanBChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434B",
+			"edid": "MerchantCaravanAChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00060752",
+			"edid": "SovBarrel01",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0005CB12",
+			"edid": "HonningbrewMeadBarrelEmpty",
+			"name": "Honigbräu-Metfass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00052B5A",
+			"edid": "TGREvidenceChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0004EC4F",
+			"edid": "RoriksteadFreeformMralkisChest",
+			"name": "Mralkis Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042749",
+			"edid": "TreasBurntCorpse05",
+			"name": "Verbrannte Leiche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042748",
+			"edid": "TreasBurntCorpse04",
+			"name": "Verbrannte Leiche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042747",
+			"edid": "TreasBurntCorpse03",
+			"name": "Verbrannte Leiche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042746",
+			"edid": "TreasBurntCorpse02",
+			"name": "Verbrannte Leiche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00042745",
+			"edid": "TreasBurntCorpse01",
+			"name": "Verbrannte Leiche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002B034",
+			"edid": "MS11ButcherChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001EDDD",
+			"edid": "DweDresser01",
+			"name": "Kommode",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BF147",
+			"edid": "TreasRuinsUrnSmall02EMPTY",
+			"name": "Begräbnisurne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BF146",
+			"edid": "TreasRuinsUrnSmall01EMPTY",
+			"name": "Begräbnisurne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BF145",
+			"edid": "TreasRuinsUrnLarge02EMPTY",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BF144",
+			"edid": "TreasRuinsUrnLarge01EMPTY",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BCD2F",
+			"edid": "DEMODraugrChestLarge04",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BCD2E",
+			"edid": "DEMODraugrChestSmall03",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BCD2D",
+			"edid": "DEMOBanditChestSmall01",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BCD2C",
+			"edid": "DEMODraugrChestLarge02",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000BB9A7",
+			"edid": "MammothContainer01",
+			"name": "",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B9F8E",
+			"edid": "DONOTUSEFalmerContainer",
+			"name": "Chauruskiste",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B7879",
+			"edid": "TreasKnapsack",
+			"name": "Tornister",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B622D",
+			"edid": "MQ101WardenChest",
+			"name": "Truhe des Wächters",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B3FE1",
+			"edid": "MerchantNarzulburBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B3FE0",
+			"edid": "MerchantNarzulburWiseWomanChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B31E8",
+			"edid": "MerchantHonningbrewPostChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B2989",
+			"edid": "MerchantHonningbrewChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B2035",
+			"edid": "MerchantSolitudeFletcher",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AF6AF",
+			"edid": "TreasAlchemySatchelRare",
+			"name": "Trankmischerbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AF6AE",
+			"edid": "TreasAlchemySatchelUncommon",
+			"name": "Trankmischerbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AF6AC",
+			"edid": "TreasAlchemySatchelCommon",
+			"name": "Trankmischerbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AF632",
+			"edid": "MerchantWindhelmWhitePhialChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AD6D4",
+			"edid": "TreasDraugrChestEMPTYSmall",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ACD6F",
+			"edid": "TreasSatchel",
+			"name": "Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ACB6F",
+			"edid": "MerchantLargashburBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ACB6C",
+			"edid": "MerchantLargashburAtubChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AC9DC",
+			"edid": "MerchantTGVanrythChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AC9DB",
+			"edid": "MerchantTGHerluinChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AC9DA",
+			"edid": "MerchantTGArnskarChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AC9D9",
+			"edid": "MerchantTGSyndusChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000AC9CE",
+			"edid": "MerchantFilnjarBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ABD9E",
+			"edid": "MerchantDBSanctuaryMerchantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ABB40",
+			"edid": "MerchantWhiterunCarlottaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ABB3E",
+			"edid": "MerchantWhiterunAnoriathChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A7922",
+			"edid": "MQ201PlayerContainerNoResetOLD",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C10",
+			"edid": "MerchantSolitudeFruitEvette",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C0F",
+			"edid": "MerchantSolitudeFruitJala",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C0E",
+			"edid": "MerchantSolitudeFishAddvar",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C08",
+			"edid": "MerchantSolitudeStables",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C07",
+			"edid": "MerchantSolitudeBlacksmith",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C06",
+			"edid": "MerchantSolitudeBitsAndPieces",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C05",
+			"edid": "MerchantSolitudeAngelinesAromatics",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6C04",
+			"edid": "MerchantSolitudeRadiantRaiments",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6BFC",
+			"edid": "MerchantFalkreathGrayPineGoodsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6BF3",
+			"edid": "MerchantFalkreathDeadMansDrinkChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6BF1",
+			"edid": "MerchantDragonBridgeFourShieldsTavernChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A6BF0",
+			"edid": "MerchantSolitudeWinkingSkeeverChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F25",
+			"edid": "MerchantKynesgroveBraidwoodInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F1B",
+			"edid": "MerchantWindhelmWuunferthsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F17",
+			"edid": "MerchantWindhelmBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F14",
+			"edid": "MerchantWindhelmCornerclubChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F10",
+			"edid": "MerchantWindhelmRevynSadriChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F0C",
+			"edid": "MerchantWindhelmHilleviChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F09",
+			"edid": "MerchantWindhelmAvalAtheronChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F05",
+			"edid": "MerchantWindhelmNiranyeChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3F02",
+			"edid": "MerchantKynesgroveDravyneaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A3EFF",
+			"edid": "MerchantWindhelmCandlehearthHallChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A31B7",
+			"edid": "MerchantRiftenGrandPlazaMadesiChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A31B6",
+			"edid": "MerchantRiftenGrandPlazaMariseChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A31B5",
+			"edid": "MerchantRiftenGrandPlazaBrandishChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A31B4",
+			"edid": "MerchantRiftenGrandPlazaGrelkaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A31AF",
+			"edid": "MerchantRiftenScorchedHammerBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A31AE",
+			"edid": "MerchantRiftenElgrimsElixirsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A29AE",
+			"edid": "MerchantRiftenRaggedFlagonChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A29AD",
+			"edid": "MerchantRiftenPawnedPrawnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A29AC",
+			"edid": "MerchantRiftenBlackBriarMeadery",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A298A",
+			"edid": "MerchantWhiterunFarengarsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A2989",
+			"edid": "MerchantSolitudeSybilleStentorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A2988",
+			"edid": "MerchantRiftenWylandriahsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A2987",
+			"edid": "MerchantDawnstarMadenasChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A0706",
+			"edid": "MerchantIvarsteadVilemyrInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000A0703",
+			"edid": "MerchantRiftenBeeandBarbChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009F810",
+			"edid": "WE19BanditLootChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009F257",
+			"edid": "MerchantWhiterunDrunkenHuntsmanChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009F250",
+			"edid": "MerchantRoriksteadFrostFruitInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E491",
+			"edid": "MerchantHeljarchenApothecaryChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E48E",
+			"edid": "MerchantHeljarchenBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E48B",
+			"edid": "MerchantNightgateInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E46D",
+			"edid": "MerchantMorKhazgurBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E469",
+			"edid": "MerchantMorKhazgurWiseWomanChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E45F",
+			"edid": "MerchantOldHroldanHangedManInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E129",
+			"edid": "MerchantDushnikhYalWiseWomanChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E128",
+			"edid": "MerchantDushnikhYalBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E0DA",
+			"edid": "MerchantDawnstarMortarPestleChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E0D9",
+			"edid": "MerchantMarkarthArnleifandSonsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E0D8",
+			"edid": "MerchantMarkarthBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009E0D7",
+			"edid": "MerchantMarkarthHagsCureChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA63",
+			"edid": "MerchantWinterholdBirnaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA5F",
+			"edid": "MerchantWinterholdFrozenHearthChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA5C",
+			"edid": "MerchantStonehillsAleucChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA59",
+			"edid": "MerchantMorthalLamisChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA56",
+			"edid": "MerchantMorthalFalionsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA53",
+			"edid": "MerchantMorthalMoorsideInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA46",
+			"edid": "MerchantDawnstarWindpeakInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009DA3F",
+			"edid": "MerchantDawnstarRustleifsBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009CD45",
+			"edid": "MerchantWhiterunArcadiasCauldronChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009CAFD",
+			"edid": "MerchantWhiterunWarmaidensBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009CAFA",
+			"edid": "MerchantWhiterunBannerdMareChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009CAF8",
+			"edid": "MerchantWhiterunBelethorsGoodsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009AF19",
+			"edid": "PersonalChestSmall",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009AF14",
+			"edid": "VendorMiscChestSmall",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00098BA4",
+			"edid": "MerchantWCollegeTolfdirChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00098BA3",
+			"edid": "MerchantWCollegeColetteChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00098BA2",
+			"edid": "MerchantWCollegePhinisChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00098BA1",
+			"edid": "MerchantWCollegeFaraldaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00098B9E",
+			"edid": "MerchantWCollegeDrevisChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F78",
+			"edid": "DB03Barrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F70",
+			"edid": "MiscSackLargeFlat03",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F6E",
+			"edid": "MiscSackLargeFlat02",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F6C",
+			"edid": "MiscSackLargeFlat01",
+			"name": "Großer Sack",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F6A",
+			"edid": "MiscSack02SmallFlat",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F68",
+			"edid": "MiscSack02LargeFlat",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F66",
+			"edid": "MiscSack02Small",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F64",
+			"edid": "MiscSack02Large",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F54",
+			"edid": "MiscSackLarge",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00097F51",
+			"edid": "MiscSackSmall",
+			"name": "Kleiner Sack",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009438A",
+			"edid": "MerchantMarkarthWizardsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00094384",
+			"edid": "MerchantMarkarthSilverFishInnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009437C",
+			"edid": "MerchantMarkarthBolisChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0009437A",
+			"edid": "MerchantMarkarthKerahsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008EA5E",
+			"edid": "TreasAfflictedChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008EA5D",
+			"edid": "TreasAfflictedChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008B1F1",
+			"edid": "TreasCWSonsChestBossLarge",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008B1F0",
+			"edid": "TreasCWImperialChestBossLarge",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008B1E9",
+			"edid": "TreasCWSonsChestBossSmall",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008B1E8",
+			"edid": "TreasCWImperialChestBossSmall",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008A3B6",
+			"edid": "TreasCWSonsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008A3B4",
+			"edid": "TreasCWImperialChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0006A0DB",
+			"edid": "MGRConvector",
+			"name": "Dwemerkonvektor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00069E50",
+			"edid": "WRinteractiveBookshelfContainer",
+			"name": "Bücherregal",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002069A",
+			"edid": "TreasDwarvenChestLarge",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001D13C",
+			"edid": "TreasUpperChestEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008836C",
+			"edid": "HonningbrewMeadBarrel01",
+			"name": "Honigbräu-Metfass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008836B",
+			"edid": "MeadBarrel02",
+			"name": "Metfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008771D",
+			"edid": "BarrelEmpty01",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000813B8",
+			"edid": "TG03SabjornChest",
+			"name": "Sabjorns Kommode",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000800E0",
+			"edid": "SafewithLock",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00080094",
+			"edid": "TreasDraugrAmbushCorpse07",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00080093",
+			"edid": "TreasDraugrAmbushCorpse06",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00080092",
+			"edid": "TreasDraugrAmbushCorpse05",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00080091",
+			"edid": "TreasDraugrAmbushCorpse04",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00080090",
+			"edid": "TreasDraugrAmbushCorpse03",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008008F",
+			"edid": "TreasDraugrAmbushCorpse02",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008008E",
+			"edid": "TreasDraugrAmbushCorpseWrapped02",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0008008D",
+			"edid": "TreasDraugrAmbushCorpseWrapped01",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007DF28",
+			"edid": "UpperEndTable02",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007CD37",
+			"edid": "TGTQ02CaptainsFootlocker",
+			"name": "Kapitänstruhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00078C0E",
+			"edid": "MerchantRiverwoodSleepingGiantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00078C0D",
+			"edid": "MerchantRiverwoodAlvorBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00078C0C",
+			"edid": "MerchantRiverwoodTraderChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00076F13",
+			"edid": "TG00MadesiChest",
+			"name": "Madesis Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00021366",
+			"edid": "UpperEndTable01",
+			"name": "Beistelltisch",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00021365",
+			"edid": "UpperDresser01",
+			"name": "Kommode",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00021364",
+			"edid": "UpperCupboard01",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00021363",
+			"edid": "TreasUpperChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00021362",
+			"edid": "UpperWardrobe01",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020673",
+			"edid": "TreasBanditChestEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020672",
+			"edid": "TreasDraugrChestEMPTYLarge",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020671",
+			"edid": "TreasDraugrChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020670",
+			"edid": "TreasDraugrChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002066A",
+			"edid": "TreasSpiderWebSac",
+			"name": "Spinnennetzbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020669",
+			"edid": "TreasSpiderWebSacSkeever",
+			"name": "Spinnennetzbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020668",
+			"edid": "TreasSpiderWebCorpseHuman",
+			"name": "Mumifizierte Leiche",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020667",
+			"edid": "TreasHagravenChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020665",
+			"edid": "TreasHagravenChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020664",
+			"edid": "TreasVampireChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020662",
+			"edid": "TreasVampireChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020661",
+			"edid": "TreasWerewolfChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002065F",
+			"edid": "TreasWerewolfChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002065D",
+			"edid": "TreasWarlockChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002065B",
+			"edid": "TreasFalmerChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020659",
+			"edid": "TreasFalmerChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020658",
+			"edid": "TreasForswornChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020654",
+			"edid": "TreasForswornChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020653",
+			"edid": "TreasDwarvenJewelryBox",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020652",
+			"edid": "TreasDwarvenChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020650",
+			"edid": "TreasDwarvenChestSmall",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002064F",
+			"edid": "TreasBanditChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00075CE6",
+			"edid": "DBFestusKrexBody",
+			"name": "Festus Krex",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00070479",
+			"edid": "MQ201GearContainerNEW",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00062F5F",
+			"edid": "FFWinterholdBChest02",
+			"name": "Wassergetränkte Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00062F5D",
+			"edid": "FFWinterholdBChest01",
+			"name": "Wassergetränkte Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00023969",
+			"edid": "TreasDraugrAmbushCorpse01",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00056AD4",
+			"edid": "SpitPotClosed02",
+			"name": "Topf",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0005418E",
+			"edid": "TreasWarlockChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00054175",
+			"edid": "SpitPotClosed01",
+			"name": "Topf",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00054174",
+			"edid": "SpitPotClosedLoose01",
+			"name": "Topf",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00051618",
+			"edid": "DA07QuestObjectChest",
+			"name": "Unsichtbare Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0004FDAE",
+			"edid": "DB11LargeUrn",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0004C6C6",
+			"edid": "TG02AringothSafe",
+			"name": "Aringoths Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0003AC21",
+			"edid": "TreasBanditChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0003FA7D",
+			"edid": "TreasSpiderEggSac01",
+			"name": "Eibeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0000000E",
+			"edid": "TreasBag",
+			"name": "Sack",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0003BB12",
+			"edid": "DarkwaterJarWithKey",
+			"name": "Kanopenkrug",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00039FB8",
+			"edid": "WICourierContainer",
+			"name": "Kurierausrüstung",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0003278A",
+			"edid": "DA04DwemerLockbox",
+			"name": "Dwemerschatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00024CA7",
+			"edid": "CommonWardrobe01",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00024CA6",
+			"edid": "EndTable01",
+			"name": "Beistelltisch",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00024CA5",
+			"edid": "Dresser01",
+			"name": "Kommode",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00024CA4",
+			"edid": "Cupboard01",
+			"name": "Schrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020FBB",
+			"edid": "MS01CIldenesWardrobe",
+			"name": "Ildenes Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00020FB9",
+			"edid": "MS01CRhiadasWardrobe",
+			"name": "Rhiadas Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0002AC72",
+			"edid": "DA15Container",
+			"name": "Abgegebene Sachen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000267E7",
+			"edid": "EvidenceChestStolenGoods",
+			"name": "Truhe mit Beweisen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000252A6",
+			"edid": "DA07SilusChest",
+			"name": "Silus' Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00023A6D",
+			"edid": "MS07Treasure",
+			"name": "Schiffswrackbeute",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001CD65",
+			"edid": "TreasRuinsUrnSmall02",
+			"name": "Begräbnisurne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001CD63",
+			"edid": "TreasRuinsUrnSmall01",
+			"name": "Begräbnisurne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001C4AC",
+			"edid": "TreasRuinsUrnLarge01",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0001C4AA",
+			"edid": "TreasRuinsUrnLarge02",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00000845",
+			"edid": "BarrelFood01",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0100327E",
+			"edid": "WEMerchantHunterChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "01003165",
+			"edid": "BarrelEmpty01_NoRespawn",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0100315C",
+			"edid": "ccBGS_ARChest02LootSpecial",
+			"name": "Ayleïdenreliquienbehälter",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0100315B",
+			"edid": "ccBGS_ARChest02Loot",
+			"name": "Ayleïdenfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0100315A",
+			"edid": "ccBGS_ARChest01Potions",
+			"name": "Ayleïdenfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "01003159",
+			"edid": "ccBGS_ARChest01Loot",
+			"name": "Ayleïdenfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00098BA2",
+			"edid": "MerchantWCollegePhinisChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "01003079",
+			"edid": "ccBGS_RootHollowedStump",
+			"name": "Ausgehöhlter Stumpf",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000B2035",
+			"edid": "MerchantSolitudeFletcher",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000ABD9E",
+			"edid": "MerchantDBSanctuaryMerchantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "00078C0C",
+			"edid": "MerchantRiverwoodTraderChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02011E39",
+			"edid": "DLC1VQ08CleanUpChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02010F28",
+			"edid": "DLC1VampireCastleHoldingChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200EA8C",
+			"edid": "DLC01VQ05GemChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200D056",
+			"edid": "DLC1FalmerValleyTreasSatchelLockPick",
+			"name": "Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200CAB7",
+			"edid": "DLC01QAAllItems",
+			"name": "Alle sonstigen oder anderen Gegenstände der Dämmerwacht",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200CAB5",
+			"edid": "DLC01QAAllWeaponsAndArmor",
+			"name": "Alle Waffen und Rüstungsgegenstände der Dämmerwacht",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200689A",
+			"edid": "DLC01SoulcairnHuskSack",
+			"name": "Großer Sack",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020040A5",
+			"edid": "DLC01SC_ChestBoss",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02002992",
+			"edid": "DLC1BoneHawkGO",
+			"name": "Knochenhabicht",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201A3B9",
+			"edid": "DLC1DarkfallPassageTreasSatchelWB",
+			"name": "Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02019DD6",
+			"edid": "DLC01TreasSnowElfChestBoss",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201692A",
+			"edid": "DLC1TreasSoulCairnChest02",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020162CB",
+			"edid": "DLC1FalmerValleyTreasKnapsack",
+			"name": "Tornister",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201611F",
+			"edid": "DLC01SC_Chest02",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02015FDF",
+			"edid": "DLC01SC_Chest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02015FDD",
+			"edid": "DLC01TreasSnowElfChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02015BC3",
+			"edid": "DLC1HoldingCellSafe",
+			"name": "Kerkerzellentresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02015461",
+			"edid": "DLC1TreasSoulCairnChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02014F0C",
+			"edid": "DLC1LD_AetheriumForgeMaterialsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02013E3C",
+			"edid": "DLC1FVTreasSatchelRare",
+			"name": "Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02013941",
+			"edid": "DLC1dunRedwaterDenMerchantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201047A",
+			"edid": "DLC1VendorChestRonthil",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02010479",
+			"edid": "DLC1VendorChestFeran",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02010477",
+			"edid": "DLC1VendorChestHestla",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200F82B",
+			"edid": "DLC1VendorChestFlorentius",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200F828",
+			"edid": "DLC1VendorChestGunmar",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200F7CA",
+			"edid": "DLC1HunterIntroSatchel",
+			"name": "Sorines Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200F1A5",
+			"edid": "DLC1VendorChestSorineJurard",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200DCE7",
+			"edid": "DLC1TreasChestDarkFall01",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434E",
+			"edid": "MerchantCaravanCChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434D",
+			"edid": "MerchantCaravanBChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434B",
+			"edid": "MerchantCaravanAChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200739B",
+			"edid": "DLC1VQ07TempBowChest",
+			"name": "Wegschreintruhe",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200A904",
+			"edid": "DLC01defaultSoulCorpse",
+			"name": "Seelenglut",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02009054",
+			"edid": "DLC1VQ06Strongbox",
+			"name": "Mottenpriesterwerkzeuge",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02004BD9",
+			"edid": "DLC1VQ05KeeperTemp",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020034FA",
+			"edid": "DLC1_WESC_DawnguardCache",
+			"name": "Dämmerwachttruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02000C44",
+			"edid": "BYOHHouseVendorChestSmall",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007DF28",
+			"edid": "UpperEndTable02",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434E",
+			"edid": "MerchantCaravanCChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434D",
+			"edid": "MerchantCaravanBChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0007434B",
+			"edid": "MerchantCaravanAChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200080E",
+			"edid": "BYOHHouseVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02012A54",
+			"edid": "BYOHBYOHApiary",
+			"name": "Bienenhaus",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200D90D",
+			"edid": "BYOHHouseBarrelFish01_NoRespawn",
+			"name": "Fischfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02009B89",
+			"edid": "BYOHHouseUpperEndTable01",
+			"name": "Beistelltisch",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02009868",
+			"edid": "BYOHHouseStrongBox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200837E",
+			"edid": "BYOHHouseNobleChestDrawers01",
+			"name": "Kleiderschrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200837D",
+			"edid": "BYOHHouseNobleCupboard02",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200837C",
+			"edid": "BYOHHouseNobleWardrobe01",
+			"name": "Kleiderschrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200837B",
+			"edid": "BYOHHouseUpperEndTable02",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200837A",
+			"edid": "BYOHHouseNobleCupboard01",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008379",
+			"edid": "BYOHHouseNobleNightTable01",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008378",
+			"edid": "BYOHHouseUpperWardrobe01",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008377",
+			"edid": "BYOHHouseUpperCupboard01",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008376",
+			"edid": "BYOHHouseKnapsack",
+			"name": "Tornister",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008375",
+			"edid": "BYOHHouseNobleChestDrawers02",
+			"name": "Kleiderschrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008374",
+			"edid": "BYOHHouseSatchel",
+			"name": "Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008373",
+			"edid": "BYOHHouseUpperDresser01",
+			"name": "Kommode",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008372",
+			"edid": "BYOHHouseNobleChest01",
+			"name": "Truhe",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008370",
+			"edid": "BYOHHouseUpperChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02008241",
+			"edid": "BYOHPlanterContainer",
+			"name": "Pflanzgefäß",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020059D1",
+			"edid": "BYOHHouseSafewithLockPlayer",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02004111",
+			"edid": "TreasSatchelEMPTY",
+			"name": "Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02004038",
+			"edid": "BYOHUrchin_SofieChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02003055",
+			"edid": "BYOHHouseCraftingChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203D2A1",
+			"edid": "DLC2dunBloodskalTreasChestLure",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203CD8D",
+			"edid": "DLC2fcTernGO",
+			"name": "Felsaad Tern",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203C366",
+			"edid": "BarrelFish01_NoRespawn",
+			"name": "Fischfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203C365",
+			"edid": "BarrelMeat01_NoRespawn",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203C364",
+			"edid": "DLC2DarkElfUrn01Food_NoRespawn",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203C363",
+			"edid": "DLC2DarkElfUrn01Ingredients_NoRespawn",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203C361",
+			"edid": "PersonalChestSmall_NoRespawn",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203C250",
+			"edid": "DLC2FrosselSafewithLock",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203B016",
+			"edid": "DLC2MQ06BookPuzzleChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203ABE4",
+			"edid": "DLC2TGCacheBarrel",
+			"name": "Diebesversteck",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203ABE1",
+			"edid": "DLC2GloverLootChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "000FDBD0",
+			"edid": "TGCacheBarrel",
+			"name": "Diebesversteck",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203AB51",
+			"edid": "DLC2DarkElfUrn01Ingredients",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203AB50",
+			"edid": "DLC2DarkElfUrn01AshYams",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203A609",
+			"edid": "DLC2DarkElfUrn01Food",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203A4D6",
+			"edid": "DLC2WhiteRidgeKnapsack",
+			"name": "Tornister",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203A2B6",
+			"edid": "DLC2dunKolbjornTreasDraugrChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02039F87",
+			"edid": "TreasKnapsackEmpty",
+			"name": "Tornister",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02035E25",
+			"edid": "DLC2dunFrostmoonTreasChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0203572E",
+			"edid": "DLC2ElmusVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02034B39",
+			"edid": "DLC2TreasRieklingChestSnow",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02034022",
+			"edid": "DLC2WB01JournalChest",
+			"name": "LetterStorage",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02031DB4",
+			"edid": "dlc2MerchMerchantsChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02030CA0",
+			"edid": "DLC2MaximianPack",
+			"name": "Maximians Tornister",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C467",
+			"edid": "DLC2TreasAlchemySatchelUncommon",
+			"name": "Trankmischerbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C466",
+			"edid": "DLC2TreasAlchemySatchelRare",
+			"name": "Trankmischerbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C465",
+			"edid": "DLC2TreasAlchemySatchelCommon",
+			"name": "Trankmischerbeutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C464",
+			"edid": "DLC2TreasStrongBox",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C463",
+			"edid": "DLC2TreasExplorerLootChestSnow",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C462",
+			"edid": "DLC2TreasExplorerLootChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C461",
+			"edid": "DLC2TreasApocryphaChestBoss",
+			"name": "Behälter",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C460",
+			"edid": "DLC2TreasApocryphaChest",
+			"name": "Kokon",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C45F",
+			"edid": "DLC2TreasWerebearChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C45E",
+			"edid": "DLC2TreasWerebearChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C45A",
+			"edid": "DLC2TreasWerewolfChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C458",
+			"edid": "DLC2TreasWerewolfChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C456",
+			"edid": "DLC2TreasWarlockChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202C455",
+			"edid": "DLC2TreasWarlockChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202B113",
+			"edid": "DLC2RR03GratianSatchel",
+			"name": "Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AAC2",
+			"edid": "DLC2TreasDraugrChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AAC1",
+			"edid": "DLC2TreasDraugrChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AAC0",
+			"edid": "DLC2TreasBanditChestSnow",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AABF",
+			"edid": "DLC2TreasBanditChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AABE",
+			"edid": "DLC2TreasBanditChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AABD",
+			"edid": "DLC2TreasDwarvenJewelryBox",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AABC",
+			"edid": "DLC2TreasDwarvenChestSmall",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AABB",
+			"edid": "DLC2TreasDwarvenChestLarge",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202AABA",
+			"edid": "DLC2TreasDwarvenChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020292A6",
+			"edid": "DLC2RR02BossChest",
+			"name": "Vendil Ulens Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02028EA8",
+			"edid": "DLC2ExpSpiderEggAlbino",
+			"name": "Albinospinnenei",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02028211",
+			"edid": "TreasRieklingChestEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02027E09",
+			"edid": "DLC2SV02AncarionChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02027108",
+			"edid": "DLC2ThirskBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B69",
+			"edid": "DLC02QASpellTomeContainer",
+			"name": "Drachenblut: Alle Zauberbücher",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B68",
+			"edid": "DLC02QAScrollContainer",
+			"name": "Drachenblut: Alle Schriftrollen",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B67",
+			"edid": "DLC02QABooksContainer",
+			"name": "Drachenblut: Alle Bücher",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B66",
+			"edid": "DLC02QAMiscItemContainer",
+			"name": "Drachenblut: Alle sonstigen Gegenstände",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B65",
+			"edid": "DLC02QAPotionContainer",
+			"name": "Drachenblut: Alle Tränke",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B64",
+			"edid": "DLC02QAIngredientContainer",
+			"name": "Drachenblut: Alle Zutaten",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B63",
+			"edid": "DLC02QAArmorContainer",
+			"name": "Drachenblut: Alle Rüstungsgegenstände",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B62",
+			"edid": "DLC02QAAmmoContainer",
+			"name": "Drachenblut: Alle Munitionstypen",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02026B61",
+			"edid": "DLC02QAWeaponContainer",
+			"name": "Drachenblut: Alle Waffen",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02025E48",
+			"edid": "DLC2TreasRieklingChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02025E46",
+			"edid": "DLC2TreasRieklingChestBoss",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02025020",
+			"edid": "DLC2RRFethisVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202501F",
+			"edid": "DLC2RRGarynVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202501E",
+			"edid": "DLC2RRGeldisVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202501D",
+			"edid": "DLC2RRGloverVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0202501C",
+			"edid": "DLC2RRMiloreVendorChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02024FA5",
+			"edid": "DLC2RRF05Strongbox",
+			"name": "Schatulle der Ost-Kaiserlichen Handelsgesellschaft",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02024DE2",
+			"edid": "DLC2RRF01Barrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020248B8",
+			"edid": "DLC02QAKeyContainer",
+			"name": "Drachenblut: Alle Schlüssel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02024027",
+			"edid": "DLC2dunHaknirChest",
+			"name": "Uralte Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02020A41",
+			"edid": "DLC2RRHoldingSafe",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201F897",
+			"edid": "DLC2SkaalBlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201F88D",
+			"edid": "DLC2SkaalMerchantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201F31C",
+			"edid": "DLC2RR02Safe",
+			"name": "Tresor der Severin-Familie",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201EEC0",
+			"edid": "DLC2MerchantDremoraChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201DC65",
+			"edid": "DLC2dunFrostmoonVendorChest",
+			"name": "",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201DA1E",
+			"edid": "DLC2ExpSpiderCraftingBooksContainer",
+			"name": "Rezeptbücher",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02018CD2",
+			"edid": "testPhilSlotMachineSlot",
+			"name": "Payout",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02018CB9",
+			"edid": "testPhilArcaneConverterOutput",
+			"name": "Arkaner Umwandler: Ausgabe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02018CB8",
+			"edid": "testPhilArcaneConverterInput",
+			"name": "Arkaner Umwandler: Eingabe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02018C3B",
+			"edid": "DLC2TreasDraugrAmbushCorpseWrapped01EMPTY",
+			"name": "Draugr",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02018427",
+			"edid": "DLC2RieklingTent01",
+			"name": "Rieklinghütte",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020177C1",
+			"edid": "DLC2MerchantTelMithrynNelothChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020177C0",
+			"edid": "DLC2MerchantTelMithrynTalvasChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020177BE",
+			"edid": "DLC2MerchantTelMithrynElyneasChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020173BD",
+			"edid": "DLC2dunNchardakCubeChest",
+			"name": "Würfelaufbewahrungstruhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0201705C",
+			"edid": "DLC2ExpSpiderCraftingChest",
+			"name": "Durchdringungskammer",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000F1D",
+			"edid": "ccASVSSE001_DLC2fcTernGO",
+			"name": "Felsaad Tern",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05001016",
+			"edid": "ccASVSSE001_CaretakerChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05001172",
+			"edid": "ccASVSSE001_BlacksmithChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05182095",
+			"edid": "ccASVSSE001_TreasBanditChestBossNoRespawn",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "051964A0",
+			"edid": "ccASVSSE001_TreasDwarvenChestSmallEMPTY",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000EBF",
+			"edid": "ccASVSSE001_AlchemistChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B62",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestRift",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B5A",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestFalkreath",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "051223DA",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestWhiterunBelethor",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050EA5C4",
+			"edid": "ccBGSSSE001_BarrelCrabMeat",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000FFC",
+			"edid": "ccBGSSSE001_FishTankSmallChest",
+			"name": "Kleines Fischbecken",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000CAC",
+			"edid": "ccBGSSSE001_BYOHHouseSatchelPearls",
+			"name": "Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000FBA",
+			"edid": "ccBGSSSE001_FishTankLargeChest",
+			"name": "Großes Fischbecken",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000EBD",
+			"edid": "ccBGSSSE001_MerchantRiftenGrandPlazaViriyaChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000CAB",
+			"edid": "ccBGSSSE001_BYOHHouseKnapsack_FishingGear",
+			"name": "Tornister",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0508A1FC",
+			"edid": "ccBGSSSE001_TestEquipContainer",
+			"name": "Angelprüfungsfass (gesamte Ausrüstung)",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000EB8",
+			"edid": "ccBGSSSE001_RiftenViriyaStrongbox",
+			"name": "Viriyas Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008EA",
+			"edid": "ccBGSSSE001_MiscWhiterunChest",
+			"name": "Schatulle",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000CAD",
+			"edid": "ccBGSSSE001_MiscSack02LargeEmpty_NoRespawn",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000DDB",
+			"edid": "ccBGSSSE001_TestCatchContainer",
+			"name": "Angelprüfungsfass (alle Fische)",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050EA5C5",
+			"edid": "ccBGSSSE001_BarrelCrabMeat_NoRespawn",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B5C",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestHaafingar",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B5D",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestWhiterun",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B5E",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestEastmarch",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B5F",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestPaleWinterhold",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05173B61",
+			"edid": "ccBGSSSE001_FishingSuppliesVendorChestReach",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02000882",
+			"edid": "ccBGSSSE014_BossChestSpellTomesAll",
+			"name": "Uralte Zauberbuchtruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02000881",
+			"edid": "ccBGSSSE_TomesStrongBox_QA",
+			"name": "Schatulle BGSSSE014",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "03000817",
+			"edid": "ccBGSSSE021_ChestLordsMail",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008AC",
+			"edid": "DLCDwarvenPuzzleDungeonWheatChest",
+			"name": "Ausrüstungs-Aufbewahrungstruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080C",
+			"edid": "EEJSSE001_LargeSackNRS",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080F",
+			"edid": "EEJSSE001_Safe",
+			"name": "Tresor",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05084A84",
+			"edid": "ccEEJSSE001_WinterholdBookCase01LessBooks",
+			"name": "Bücherschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000810",
+			"edid": "EEJSSE001_NobleCupboard",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000804",
+			"edid": "EEJSSE001_AlchemySatchel",
+			"name": "Trankmischerbeutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000809",
+			"edid": "EEJSSE001_BYOHHouseNobleCupboard01",
+			"name": "Kommode",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000918",
+			"edid": "EEJSSE001_SmallChest",
+			"name": "Kleine Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008DA",
+			"edid": "EEJSSE001_IngredientsCupboard",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008DC",
+			"edid": "EEJSSE001_SmithingChestNRS",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000807",
+			"edid": "EEJSSE001_BookcaseLOW",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02000811",
+			"edid": "ccFSVSSE001_QAChestBackpacks",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000CEE",
+			"edid": "ccEEJSSE002_TestStongBox",
+			"name": "Testgegenstände",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500085B",
+			"edid": "ccEEJSSE002_NobleCupboard",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500083A",
+			"edid": "ccEEJSSE002_Bookcase",
+			"name": "Bücherschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500098A",
+			"edid": "ccEEJSSE002_UrnSilver",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500098E",
+			"edid": "ccEEJSSE002_SoulGemBarrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000995",
+			"edid": "ccEEJSSE002_SackSmallFlat_NRS",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000994",
+			"edid": "ccEEJSSE002_LargeFlat_NRS",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000993",
+			"edid": "ccEEJSSE002_SackEmptyNRS",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500099D",
+			"edid": "ccEEJSSE002_Barrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000991",
+			"edid": "ccEEJSSE002_Curio1",
+			"name": "Schrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000808",
+			"edid": "ccEEJSSE002_IngredientsCupboard",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000809",
+			"edid": "ccEEJSSE002_LargeSackNRS",
+			"name": "Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000989",
+			"edid": "ccEEJSSE002_Curio2",
+			"name": "Schrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000821",
+			"edid": "ccEDHSSE001_CraftsmanSatchel",
+			"name": "Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000830",
+			"edid": "ccBGSSSE037_QA_CuriosChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000828",
+			"edid": "ccBGSSSE045_ModigAlchemySatchel",
+			"name": "Modigs Beutel",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0400081C",
+			"edid": "ccBGSSE008_WraithguardChest1",
+			"name": "Alte Karawanentruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0400081B",
+			"edid": "ccBGSSE008_WraithguardChest3",
+			"name": "Alte Karawanentruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0400081D",
+			"edid": "ccBGSSE008_WraithguardChest2",
+			"name": "Alte Karawanentruhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000865",
+			"edid": "ccFFBSSE001_ChestStormcloak",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000866",
+			"edid": "ccFFBSSE001_ChestImperial",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000810",
+			"edid": "ccMTYSSE002_Chest",
+			"name": "Wächter-Vollstrecker-Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "03000805",
+			"edid": "ccBGSSSE043_KragrashBodyContainer3",
+			"name": "Aschenhaufen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "02000809",
+			"edid": "ccVSVSSE001_MerchantPack",
+			"name": "Tornister",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0200080A",
+			"edid": "ccVSVSSE001_MerchantChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000806",
+			"edid": "ccEEJSSE003_NobleCupboard",
+			"name": "Schrank",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000802",
+			"edid": "ccEEJSSE003_MiscSackLargeFlat03",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000803",
+			"edid": "ccEEJSSE003_Barrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500089E",
+			"edid": "ccEEJSSE003_SmallUrn",
+			"name": "Kleine Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008EC",
+			"edid": "ccEEJSSE003_Bookcase",
+			"name": "Bücherschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000805",
+			"edid": "ccEEJSSE003_MiscSackLargeNRS",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008F5",
+			"edid": "ccEEJSSE003_SmallUrn2",
+			"name": "Kleine Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000804",
+			"edid": "ccEEJSSE002_SmithingChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000851",
+			"edid": "ccEEJSSE003_TestItems",
+			"name": "Testgegenstände",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000EB8",
+			"edid": "ccEEJSSE003_LargeChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000904",
+			"edid": "ccBGSSSE031_UpperWardrobeScrub",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000907",
+			"edid": "ccBGSSSE031_UpperWardrobeBoatswain",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050009C5",
+			"edid": "ccBGSSSE031_BarrelEmpty01",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050009E8",
+			"edid": "ccBGSSSE031_TreasSatchel",
+			"name": "Beutel",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000A01",
+			"edid": "ccBGSSSE031_MiscSackSmallNRS",
+			"name": "Kleiner Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000A06",
+			"edid": "ccBGSSSE031_TreasExplorerLootChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500095B",
+			"edid": "ccBGSSSE031_MiscSackSmall",
+			"name": "Kleiner Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000901",
+			"edid": "ccBGSSSE031_UpperWardrobeCaptain",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500081B",
+			"edid": "ccBGSSSE054_YakhtuTreasBanditChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050008AD",
+			"edid": "ccBGSSSE041_SpitPotClosed01",
+			"name": "Topf",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000811",
+			"edid": "ccEDHSSE002_MarkarthCoffin01container",
+			"name": "Grab",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000D7F",
+			"edid": "ccEDHSSE002_QAChest",
+			"name": "Truhe des Bannritters",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0504D785",
+			"edid": "ccBGSSSE067_ContainerPunished01",
+			"name": "Die Bestraften",
+			"flags": "11",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05071150",
+			"edid": "ccBGSSSE067_ContainerPunished02",
+			"name": "Die Bestraften",
+			"flags": "11",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "051CC50B",
+			"edid": "ccBGSSSE067_TreasAyleidUrn01",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "051CC50C",
+			"edid": "ccBGSSSE067_TreasAyleidUrn02",
+			"name": "Urne",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05227FBC",
+			"edid": "ccBGSSSE067_ARUrn01LootSpecial",
+			"name": "Ayleïdenurne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05227FC0",
+			"edid": "ccBGSSSE067_ARUrn01Loot",
+			"name": "Ayleïdenurne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "01003159",
+			"edid": "ccBGS_ARChest01Loot",
+			"name": "Ayleïdenfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0100315B",
+			"edid": "ccBGS_ARChest02Loot",
+			"name": "Ayleïdenfass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0100315C",
+			"edid": "ccBGS_ARChest02LootSpecial",
+			"name": "Ayleïdenreliquienbehälter",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0504D783",
+			"edid": "ccbgssse067_ContainerFleshyPod01",
+			"name": "Fleischiger Behälter",
+			"flags": "11",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0504D784",
+			"edid": "ccbgssse067_ContainerFleshyPod02",
+			"name": "Fleischiger Behälter",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080A",
+			"edid": "ccBGSSSE069_GrenwulfSpiderWeb",
+			"name": "Grenwulf der Schläger",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000809",
+			"edid": "ccBGSSSE069_HolrikSpiderWeb",
+			"name": "Holrik Frost-Schwert",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "040008F1",
+			"edid": "ccVSVSSE003_QAChest",
+			"name": "Totenbeschwörerkünste-Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000819",
+			"edid": "ccVSVSSE004_CONT_ChestCommonEmpty_noRespawn",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500081A",
+			"edid": "ccVSVSSE004_QAChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500081B",
+			"edid": "ccVSVSSE004_CONT_FancyEndTable",
+			"name": "Beistelltisch",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000876",
+			"edid": "ccVSVSSE004_CONT_PantryCupboard",
+			"name": "Vorratsschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000877",
+			"edid": "ccVSVSSE004_CONT_FancyWardrobe",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000878",
+			"edid": "ccVSVSSE004_CONT_CommonEndTableLong",
+			"name": "Beistelltisch",
+			"flags": "1",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000879",
+			"edid": "ccVSVSSE004_CONT_Apiary",
+			"name": "Bienenhaus",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "051B6934",
+			"edid": "ccBGSSSE025_BarrelTongs",
+			"name": "Fass",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500087C",
+			"edid": "ccBGSSSE025_QAChest",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "01003079",
+			"edid": "ccBGS_RootHollowedStump",
+			"name": "Ausgehöhlter Stumpf",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000A2B",
+			"edid": "ccRMSSSE001NecroSummonerContainer",
+			"name": "Altaropfergaben",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "020008A6",
+			"edid": "ccEDHSSE003_RedguardEliteSupplyChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000808",
+			"edid": "ccEEJSSE004_BarrelEmpty_Snow",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000807",
+			"edid": "ccEEJSSE004_Wardrobe",
+			"name": "Kleiderschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000806",
+			"edid": "ccEEJSSE004_ChestSnow",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000805",
+			"edid": "ccEEJSSE004_BarrelFood01_Snow",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000851",
+			"edid": "ccEEJSSE004_TestItems",
+			"name": "Test Items",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05000809",
+			"edid": "ccEEJSSE004_NarrowDresser",
+			"name": "Schubladen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500098F",
+			"edid": "ccEEJSSE004_RuinsUrnEmpty",
+			"name": "Begräbnisurne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080C",
+			"edid": "ccEEJSSE004_UrnBronze",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080D",
+			"edid": "ccEEJSSE004_Urn",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080A",
+			"edid": "ccEEJSSE004_Bookcase",
+			"name": "Bücherschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500080B",
+			"edid": "ccEEJSSE004_Drawers",
+			"name": "Schubladen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050758BF",
+			"edid": "ccEEJSSE005_MiscSackLargeFlat02NRS",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050A36A8",
+			"edid": "ccEEJSSE005_TestItems",
+			"name": "Testgegenstände anzeigen",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05084D58",
+			"edid": "ccEEJSSE005_UrnLg",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050612ED",
+			"edid": "ccEEJSSE005_BookCase01",
+			"name": "Bücherschrank",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05089EFF",
+			"edid": "ccEEJSSE005_Barrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05075889",
+			"edid": "ccEEJSSE005_OreBarrel",
+			"name": "Fass",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0507588A",
+			"edid": "ccEEJSSE005_IngotChest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "050758BE",
+			"edid": "ccEEJSSE005_MiscSackLargeNRS",
+			"name": "Großer Sack",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0506B652",
+			"edid": "ccEEJSSE005_Urn",
+			"name": "Urne",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "05089EDD",
+			"edid": "ccEEJSSE005_Chest",
+			"name": "Truhe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "0500081D",
+			"edid": "ccCBHSSE001_QAChest",
+			"name": "Alle unbewaffneten Angriffe",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "03000096",
+			"edid": "RP_TreasBanditChestBossSand01",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		},
+		{
+			"formid": "03000093",
+			"edid": "RP_TreasExplorerLootChestSand01",
+			"name": "Truhe",
+			"flags": "01",
+			"weight": "0.0000"
+		}
+	]
+}

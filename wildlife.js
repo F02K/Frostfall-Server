@@ -22,6 +22,24 @@ const DEATH_COOLDOWN_MS       = 5 * 60_000   // after a creature dies, its speci
 const SPAWN_CHANCE            = 0.20         // probability per zone per tick that a spawn attempt is made
 const ZONE_SPAWN_COOLDOWN_MS  = 60_000       // min time between spawn events in a given worldspace
 const MIN_SPAWN_DIST          = 1_400        // don't spawn within this distance of any player (~200m, outside visual pop-in range)
+const SPAWN_Z_OFFSET          = -256         // place actors this many units below the spawn point so Skyrim's ground-finding kicks in before the player sees them
+
+// ── Biome system ──────────────────────────────────────────────────────────────
+// mp.place() creates the actor at [0,0,0] and fires subscription updates before
+// mp.set(locationalData) is called, so clients near the origin briefly see the
+// actor there. SPAWN_Z_OFFSET puts new actors underground until Skyrim places
+// them on the navmesh surface.
+//
+// Biome tags control which creatures can spawn in a given region:
+//   'any'   — no restriction
+//   'snow'  — cold northern Skyrim (Pale, Winterhold, Haafingar, northern Eastmarch)
+//   'coast' — far-northern coastline only (Dawnstar, Winterhold shore)
+//
+// Biome is derived from the Tamriel worldspace Y coordinate at the zone centre.
+// Interior cells (cellOrWorld ≠ TAMRIEL_ID) get only 'any' entries for now.
+const TAMRIEL_ID        = 0x3C
+const SNOW_BIOME_MIN_Y  = 20_000   // roughly north of Whiterun/Eastmarch line
+const COAST_BIOME_MIN_Y = 38_000   // far northern coast (Dawnstar / Winterhold shore)
 
 // ── Spawn table ───────────────────────────────────────────────────────────────
 // formId: base NPC record in Skyrim.esm (verify with xEdit if a creature misbehaves)
@@ -31,42 +49,47 @@ const MIN_SPAWN_DIST          = 1_400        // don't spawn within this distance
 // formIds sourced from skyrim-esm-data/npcs.json export. Each entry notes its EditorID for cross-reference.
 const SPAWN_TABLE = [
   // Common — wolves
-  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 2 }, // EncWolfRed
-  { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00023ABF, weight: 15, minGroup: 1, maxGroup: 2 }, // EncWolfIce
+  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncWolfRed   — throughout Skyrim
+  { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00023ABF, weight: 15, minGroup: 1, maxGroup: 2, biomes: ['snow']  }, // EncWolfIce   — cold northern regions only
 
   // Bears — solitary
-  { id: 'bear_black',  name: 'Bear (Black)',formId: 0x00023A8B, weight: 10, minGroup: 1, maxGroup: 1 }, // EncBearCave
-  { id: 'bear_brown',  name: 'Bear (Brown)',formId: 0x00023A8A, weight: 10, minGroup: 1, maxGroup: 1 }, // EncBear
-  { id: 'bear_snow',   name: 'Bear (Snow)', formId: 0x00023A8C, weight:  5, minGroup: 1, maxGroup: 1 }, // EncBearSnow
+  { id: 'bear_black',  name: 'Bear (Black)',formId: 0x00023A8B, weight: 10, minGroup: 1, maxGroup: 1, biomes: ['any']   }, // EncBearCave  — throughout Skyrim
+  { id: 'bear_brown',  name: 'Bear (Brown)',formId: 0x00023A8A, weight: 10, minGroup: 1, maxGroup: 1, biomes: ['any']   }, // EncBear      — throughout Skyrim
+  { id: 'bear_snow',   name: 'Bear (Snow)', formId: 0x00023A8C, weight:  5, minGroup: 1, maxGroup: 1, biomes: ['snow']  }, // EncBearSnow  — cold northern regions only
 
   // Peaceful — deer and elk
-  { id: 'deer',        name: 'Deer',        formId: 0x000CF89D, weight: 25, minGroup: 1, maxGroup: 3 }, // EncDeer
-  { id: 'elk',         name: 'Elk',         formId: 0x00023A91, weight: 15, minGroup: 1, maxGroup: 2 }, // EncElk
+  { id: 'deer',        name: 'Deer',        formId: 0x000CF89D, weight: 25, minGroup: 1, maxGroup: 3, biomes: ['any']   }, // EncDeer
+  { id: 'elk',         name: 'Elk',         formId: 0x00023A91, weight: 15, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncElk
 
   // Small creatures
-  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 2 }, // EncMudcrabMedium
-  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 2 }, // EncSkeever
+  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncMudcrabMedium
+  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 2, biomes: ['any']   }, // EncSkeever   — farms, wilderness, anywhere
 
   // Apex — rare
-  { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00023AB5, weight:  8, minGroup: 1, maxGroup: 1 }, // EncSabreCat
-  { id: 'horker',      name: 'Horker',      formId: 0x00023AB1, weight: 10, minGroup: 1, maxGroup: 3 }, // EncHorker
+  { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00023AB5, weight:  8, minGroup: 1, maxGroup: 1, biomes: ['any']   }, // EncSabreCat
+  { id: 'horker',      name: 'Horker',      formId: 0x00023AB1, weight: 10, minGroup: 1, maxGroup: 3, biomes: ['coast'] }, // EncHorker    — northern coastline only
 ]
 
-// Pre-compute cumulative weight table for O(log n) weighted random selection
-const _totalWeight = SPAWN_TABLE.reduce((s, e) => s + e.weight, 0)
-const _cumulative  = []
-let   _acc = 0
-for (const entry of SPAWN_TABLE) {
-  _acc += entry.weight
-  _cumulative.push({ threshold: _acc / _totalWeight, entry })
+// Weighted random pick from an arbitrary entry list (used with biome-filtered subsets)
+function pickWeightedRandom(entries) {
+  let r = Math.random() * entries.reduce((s, e) => s + e.weight, 0)
+  for (const entry of entries) {
+    r -= entry.weight
+    if (r <= 0) return entry
+  }
+  return entries[entries.length - 1]
 }
 
-function pickRandomEntry() {
-  const r = Math.random()
-  for (const c of _cumulative) {
-    if (r <= c.threshold) return c.entry
+// Returns the set of biome tags that apply to a zone based on worldspace + position
+function getZoneBiomes(zone) {
+  const biomes = new Set(['any'])
+  if (zone.cellOrWorld === TAMRIEL_ID) {
+    const y = zone.center[1]
+    if (y > SNOW_BIOME_MIN_Y)  biomes.add('snow')
+    if (y > COAST_BIOME_MIN_Y) biomes.add('coast')
   }
-  return SPAWN_TABLE[SPAWN_TABLE.length - 1]
+  // Interior cells (cellOrWorld ≠ TAMRIEL_ID) only get 'any' for now
+  return biomes
 }
 
 // ── State ─────────────────────────────────────────────────────────────────────
@@ -262,17 +285,22 @@ function tick(mp) {
     }
     if (aliveCount >= MAX_PER_ZONE) continue
 
-    // Pick a random species, respecting death cooldowns
+    // Filter species to those that belong in this zone's biome
+    const zoneBiomes = getZoneBiomes(zone)
+    const eligible   = SPAWN_TABLE.filter(e => e.biomes.some(b => zoneBiomes.has(b)))
+    if (eligible.length === 0) continue
+
+    // Pick a random species from eligible entries, respecting death cooldowns
     let entry = null
-    for (let attempt = 0; attempt < SPAWN_TABLE.length; attempt++) {
-      const candidate   = pickRandomEntry()
+    for (let attempt = 0; attempt < eligible.length; attempt++) {
+      const candidate   = pickWeightedRandom(eligible)
       const cooldownKey = `${candidate.id}:${zone.cellOrWorld}`
       if (!deathCooldowns.has(cooldownKey) || now >= deathCooldowns.get(cooldownKey)) {
         entry = candidate
         break
       }
     }
-    if (!entry) continue // all species on cooldown in this worldspace
+    if (!entry) continue // all eligible species on cooldown in this worldspace
 
     const groupSize = Math.min(
       randInt(entry.minGroup, entry.maxGroup),
@@ -291,8 +319,13 @@ function tick(mp) {
         // a formId directly, which conflicts with ESM records — don't use it for wildlife.
         const newId = mp.place(entry.formId)
         if (newId) {
+          // SPAWN_Z_OFFSET shifts the actor underground at the spawn position.
+          // mp.place() fires subscription updates before this set() call, so
+          // without the offset clients briefly see the actor at [0,0,0]. The
+          // negative Z puts it below the surface; Skyrim's ground-placement
+          // moves it up to the navmesh when the cell loads.
           mp.set(newId, 'locationalData', {
-            pos:             spawnPos,
+            pos:             [spawnPos[0], spawnPos[1], spawnPos[2] + SPAWN_Z_OFFSET],
             rot:             [0, 0, randAngle()],
             cellOrWorldDesc: mp.getDescFromId(zone.cellOrWorld),
           })

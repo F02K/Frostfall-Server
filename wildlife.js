@@ -25,28 +25,28 @@ const DEATH_COOLDOWN_MS  = 5 * 60_000   // after a creature dies, its species wo
 // weight: relative spawn chance
 // minGroup / maxGroup: creatures spawned per spawn event
 
-// Note: all formIds are currently placeholders (0x00000) since we don't have a way to reference Skyrim records yet. We'll need to replace these with actual formIds once we can, and verify that the spawns work as intended.
+// formIds sourced from skyrim-esm-data/npcs.json export. Each entry notes its EditorID for cross-reference.
 const SPAWN_TABLE = [
   // Common — wolves
-  { id: 'wolf',        name: 'Wolf',        formId: 0x00000, weight: 30, minGroup: 1, maxGroup: 3 },
-  { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00000, weight: 15, minGroup: 1, maxGroup: 2 },
+  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 3 }, // EncWolfRed
+  { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00023ABF, weight: 15, minGroup: 1, maxGroup: 2 }, // EncWolfIce
 
   // Bears — solitary
-  { id: 'bear_black',  name: 'Bear (Black)',formId: 0x00000, weight: 10, minGroup: 1, maxGroup: 1 },
-  { id: 'bear_brown',  name: 'Bear (Brown)',formId: 0x00000, weight: 10, minGroup: 1, maxGroup: 1 },
-  { id: 'bear_snow',   name: 'Bear (Snow)', formId: 0x00000, weight:  5, minGroup: 1, maxGroup: 1 },
+  { id: 'bear_black',  name: 'Bear (Black)',formId: 0x00023A8B, weight: 10, minGroup: 1, maxGroup: 1 }, // EncBearCave
+  { id: 'bear_brown',  name: 'Bear (Brown)',formId: 0x00023A8A, weight: 10, minGroup: 1, maxGroup: 1 }, // EncBear
+  { id: 'bear_snow',   name: 'Bear (Snow)', formId: 0x00023A8C, weight:  5, minGroup: 1, maxGroup: 1 }, // EncBearSnow
 
   // Peaceful — deer and elk
-  { id: 'deer',        name: 'Deer',        formId: 0x00000, weight: 25, minGroup: 1, maxGroup: 3 },
-  { id: 'elk',         name: 'Elk',         formId: 0x00000, weight: 15, minGroup: 1, maxGroup: 2 },
+  { id: 'deer',        name: 'Deer',        formId: 0x000CF89D, weight: 25, minGroup: 1, maxGroup: 3 }, // EncDeer
+  { id: 'elk',         name: 'Elk',         formId: 0x00023A91, weight: 15, minGroup: 1, maxGroup: 2 }, // EncElk
 
   // Small creatures
-  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x00000, weight: 20, minGroup: 1, maxGroup: 4 },
-  { id: 'skeever',     name: 'Skeever',     formId: 0x00000, weight: 20, minGroup: 1, maxGroup: 3 },
+  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 4 }, // EncMudcrabMedium
+  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 3 }, // EncSkeever
 
   // Apex — rare
-  { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00000, weight:  8, minGroup: 1, maxGroup: 1 },
-  { id: 'horker',      name: 'Horker',      formId: 0x00000, weight: 10, minGroup: 1, maxGroup: 3 },
+  { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00023AB5, weight:  8, minGroup: 1, maxGroup: 1 }, // EncSabreCat
+  { id: 'horker',      name: 'Horker',      formId: 0x00023AB1, weight: 10, minGroup: 1, maxGroup: 3 }, // EncHorker
 ]
 
 // Pre-compute cumulative weight table for O(log n) weighted random selection
@@ -77,6 +77,9 @@ const deathCooldowns = new Map()
 
 // formId → ms timestamp after which the actor may be despawned (grace window)
 const despawnGraceMap = new Map()
+
+// Connected userIds — populated via mp.on("connect"/"disconnect")
+const onlineUserIds = new Set()
 
 // ── Math helpers ──────────────────────────────────────────────────────────────
 
@@ -191,11 +194,12 @@ function tick(mp) {
   const now = Date.now()
 
   // 1. Collect online player positions
-  const onlineIds = mp.get(0, 'onlinePlayers') || []
-  const players   = []
+  const players = []
 
-  for (const actorId of onlineIds) {
+  for (const userId of onlineUserIds) {
     try {
+      const actorId    = mp.getUserActor(userId)
+      if (!actorId) continue
       const pos        = mp.getActorPos(actorId)
       const cellOrWorld = mp.getActorCellOrWorld(actorId)
       if (pos && cellOrWorld) players.push({ actorId, pos, cellOrWorld })
@@ -273,7 +277,7 @@ function tick(mp) {
           })
         }
       } catch (err) {
-        mp.writeLogs('warn', `[wildlife] createActor failed for ${entry.name} (0x${entry.formId.toString(16)}): ${err.message}`)
+        console.error(`[wildlife] createActor failed for ${entry.name} (0x${entry.formId.toString(16)}): ${err.message}`)
       }
     }
   }
@@ -282,28 +286,39 @@ function tick(mp) {
 // ── Public init ───────────────────────────────────────────────────────────────
 
 function init(mp) {
-  mp.writeLogs('info', '[wildlife] Initializing')
+  console.log('[wildlife] Initializing')
 
-  // When one of our wildlife dies, set a respawn cooldown for that species
-  // in that worldspace, then remove it from tracking (server handles the corpse)
-  mp.on('onDeath', (dyingId, _killerId) => {
-    if (!spawnedActors.has(dyingId)) return
+  // Track connected players — mp.on("connect"/"disconnect")
+  mp.on('connect', (userId) => onlineUserIds.add(userId))
+  mp.on('disconnect', (userId) => onlineUserIds.delete(userId))
 
-    const info        = spawnedActors.get(dyingId)
-    const cooldownKey = `${info.entryId}:${info.cellOrWorld}`
+  // Detect wildlife deaths via a client-side event source.
+  // actorKill fires on the client whenever any actor is killed nearby.
+  // The server receives the formId of the player whose client observed the kill.
+  mp.makeEventSource('_onActorDeath', `
+    ctx.sp.on('actorKill', () => {
+      ctx.sendEvent();
+    });
+  `)
+  mp._onActorDeath = (pcFormId) => {
+    const worldspace = mp.getActorCellOrWorld(pcFormId)
+    for (const [id, info] of spawnedActors) {
+      if (info.cellOrWorld !== worldspace) continue
+      try { mp.getActorPos(id) } catch {
+        // Actor is gone — apply cooldown and stop tracking it
+        const cooldownKey = `${info.entryId}:${info.cellOrWorld}`
+        deathCooldowns.set(cooldownKey, Date.now() + DEATH_COOLDOWN_MS)
+        spawnedActors.delete(id)
+        despawnGraceMap.delete(id)
+        console.log(`[wildlife] ${info.entryId} gone (id=0x${id.toString(16)}), cooldown ${DEATH_COOLDOWN_MS / 1000}s`)
+      }
+    }
+  }
 
-    deathCooldowns.set(cooldownKey, Date.now() + DEATH_COOLDOWN_MS)
-    spawnedActors.delete(dyingId)
-    despawnGraceMap.delete(dyingId)
-
-    mp.writeLogs('info', `[wildlife] ${info.entryId} died (id=0x${dyingId.toString(16)}), cooldown ${DEATH_COOLDOWN_MS / 1000}s`)
-  })
-
-  // Recursive setTimeout — safer than setInterval (won't stack if a tick runs long)
   const scheduleTick = () => {
     setTimeout(() => {
       try { tick(mp) } catch (err) {
-        mp.writeLogs('warn', `[wildlife] Tick error: ${err.message}`)
+        console.error(`[wildlife] Tick error: ${err.message}`)
       }
       scheduleTick()
     }, TICK_INTERVAL_MS)
@@ -311,7 +326,7 @@ function init(mp) {
 
   scheduleTick()
 
-  mp.writeLogs('info',
+  console.log(
     `[wildlife] Started — ${SPAWN_TABLE.length} species, zone radius ${ZONE_RADIUS}u, ` +
     `max ${MAX_PER_ZONE}/zone, tick ${TICK_INTERVAL_MS}ms`
   )

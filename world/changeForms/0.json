@@ -1,8 +1,8 @@
 {
   "angle": [
-    14.062541007995605,
+    14.685480117797852,
     0.0,
-    9.847506523132324
+    57.68622589111328
   ],
   "appearanceDump": {
     "hairColor": 1711132,
@@ -348,9 +348,9 @@
   "magickaRespawnPercentage": 1.0,
   "nextRelootDatetime": 0,
   "position": [
-    173299.359375,
-    -99038.7890625,
-    11124.8212890625
+    176465.109375,
+    -73331.5390625,
+    7618.65087890625
   ],
   "profileId": 1,
   "recType": 1,
@@ -366,7 +366,7 @@
     0.0,
     72.0
   ],
-  "staminaPercentage": 0.9802150130271912,
+  "staminaPercentage": 0.0,
   "staminaRespawnPercentage": 1.0,
-  "worldOrCellDesc": "16bb4:Skyrim.esm"
+  "worldOrCellDesc": "3c:Skyrim.esm"
 }

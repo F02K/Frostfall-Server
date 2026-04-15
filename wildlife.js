@@ -13,12 +13,15 @@
 
 // ── Configuration ─────────────────────────────────────────────────────────────
 
-const TICK_INTERVAL_MS   = 5_000        // how often the system updates
-const ZONE_RADIUS        = 3_000        // spawn radius per player (Skyrim units, ~1u = 14cm)
-const MERGE_THRESHOLD    = ZONE_RADIUS * 2  // two zones merge when centers are closer than this
-const MAX_PER_ZONE       = 8            // max alive wildlife per merged zone
-const DESPAWN_GRACE_MS   = 15_000       // keep creatures alive this long after a player leaves the area
-const DEATH_COOLDOWN_MS  = 5 * 60_000   // after a creature dies, its species won't respawn in that worldspace for this long
+const TICK_INTERVAL_MS        = 5_000        // how often the system updates
+const ZONE_RADIUS             = 3_000        // spawn radius per player (Skyrim units, ~1u = 14cm)
+const MERGE_THRESHOLD         = ZONE_RADIUS * 2  // two zones merge when centers are closer than this
+const MAX_PER_ZONE            = 5            // max alive wildlife per merged zone
+const DESPAWN_GRACE_MS        = 15_000       // keep creatures alive this long after a player leaves the area
+const DEATH_COOLDOWN_MS       = 5 * 60_000   // after a creature dies, its species won't respawn in that worldspace for this long
+const SPAWN_CHANCE            = 0.20         // probability per zone per tick that a spawn attempt is made
+const ZONE_SPAWN_COOLDOWN_MS  = 60_000       // min time between spawn events in a given worldspace
+const MIN_SPAWN_DIST          = 1_400        // don't spawn within this distance of any player (~200m, outside visual pop-in range)
 
 // ── Spawn table ───────────────────────────────────────────────────────────────
 // formId: base NPC record in Skyrim.esm (verify with xEdit if a creature misbehaves)
@@ -28,7 +31,7 @@ const DEATH_COOLDOWN_MS  = 5 * 60_000   // after a creature dies, its species wo
 // formIds sourced from skyrim-esm-data/npcs.json export. Each entry notes its EditorID for cross-reference.
 const SPAWN_TABLE = [
   // Common — wolves
-  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 3 }, // EncWolfRed
+  { id: 'wolf',        name: 'Wolf',        formId: 0x0010FE05, weight: 30, minGroup: 1, maxGroup: 2 }, // EncWolfRed
   { id: 'wolf_timber', name: 'Timber Wolf', formId: 0x00023ABF, weight: 15, minGroup: 1, maxGroup: 2 }, // EncWolfIce
 
   // Bears — solitary
@@ -41,8 +44,8 @@ const SPAWN_TABLE = [
   { id: 'elk',         name: 'Elk',         formId: 0x00023A91, weight: 15, minGroup: 1, maxGroup: 2 }, // EncElk
 
   // Small creatures
-  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 4 }, // EncMudcrabMedium
-  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 3 }, // EncSkeever
+  { id: 'mudcrab',     name: 'Mudcrab',     formId: 0x000E4010, weight: 20, minGroup: 1, maxGroup: 2 }, // EncMudcrabMedium
+  { id: 'skeever',     name: 'Skeever',     formId: 0x00023AB7, weight: 20, minGroup: 1, maxGroup: 2 }, // EncSkeever
 
   // Apex — rare
   { id: 'sabrecat',    name: 'Sabre Cat',   formId: 0x00023AB5, weight:  8, minGroup: 1, maxGroup: 1 }, // EncSabreCat
@@ -81,6 +84,9 @@ const despawnGraceMap = new Map()
 // Connected userIds — populated via mp.on("connect"/"disconnect")
 const onlineUserIds = new Set()
 
+// cellOrWorld → ms timestamp after which a new spawn event is allowed in that worldspace
+const zoneSpawnCooldowns = new Map()
+
 // ── Math helpers ──────────────────────────────────────────────────────────────
 
 function dist3D(a, b) {
@@ -105,6 +111,16 @@ function randPosInCircle(center, radius) {
     center[1] + Math.sin(angle) * r,
     center[2],
   ]
+}
+
+// Find a spawn position that is at least MIN_SPAWN_DIST away from every player.
+// Returns null if no valid position is found after maxAttempts tries.
+function findSpawnPos(zone, players, maxAttempts = 10) {
+  for (let i = 0; i < maxAttempts; i++) {
+    const pos = randPosInCircle(zone.center, zone.radius)
+    if (players.every(p => dist3D(pos, p.pos) >= MIN_SPAWN_DIST)) return pos
+  }
+  return null
 }
 
 // ── Zone merging ──────────────────────────────────────────────────────────────
@@ -232,16 +248,21 @@ function tick(mp) {
 
   // 4. Spawn wildlife into each zone up to MAX_PER_ZONE
   for (const zone of zones) {
-    // Count alive tracked actors inside this zone
+    // Gate 1: per-worldspace spawn cooldown — prevents burst-filling after a player joins
+    const spawnCooldownExpiry = zoneSpawnCooldowns.get(zone.cellOrWorld)
+    if (spawnCooldownExpiry && now < spawnCooldownExpiry) continue
+
+    // Gate 2: random chance — only a fraction of ticks actually trigger a spawn attempt
+    if (Math.random() > SPAWN_CHANCE) continue
+
+    // Gate 3: zone already at capacity
     let aliveCount = 0
     for (const [, info] of spawnedActors) {
       if (isInZone(info.pos, zone)) aliveCount++
     }
-
     if (aliveCount >= MAX_PER_ZONE) continue
 
     // Pick a random species, respecting death cooldowns
-    // Try up to SPAWN_TABLE.length times to find a species not on cooldown
     let entry = null
     for (let attempt = 0; attempt < SPAWN_TABLE.length; attempt++) {
       const candidate   = pickRandomEntry()
@@ -251,7 +272,6 @@ function tick(mp) {
         break
       }
     }
-
     if (!entry) continue // all species on cooldown in this worldspace
 
     const groupSize = Math.min(
@@ -259,26 +279,39 @@ function tick(mp) {
       MAX_PER_ZONE - aliveCount
     )
 
+    let spawned = 0
     for (let g = 0; g < groupSize; g++) {
-      const spawnPos = randPosInCircle(zone.center, zone.radius)
+      // Only spawn at positions outside player visual range
+      const spawnPos = findSpawnPos(zone, players)
+      if (!spawnPos) break // couldn't find a safe position, abort this group
+
       try {
-        const newId = mp.createActor(
-          entry.formId,
-          spawnPos,
-          randAngle(),
-          zone.cellOrWorld
-        )
+        // mp.place(baseFormId) creates an actor from the NPC_ ESM record and
+        // auto-assigns a dynamic formId (0xff000000+). mp.createActor() assigns
+        // a formId directly, which conflicts with ESM records — don't use it for wildlife.
+        const newId = mp.place(entry.formId)
         if (newId) {
-          spawnedActors.set(newId, {
-            entryId:    entry.id,
-            pos:        spawnPos,
-            cellOrWorld: zone.cellOrWorld,
-            spawnedAt:  now,
+          mp.set(newId, 'locationalData', {
+            pos:             spawnPos,
+            rot:             [0, 0, randAngle()],
+            cellOrWorldDesc: mp.getDescFromId(zone.cellOrWorld),
           })
+          spawnedActors.set(newId, {
+            entryId:     entry.id,
+            pos:         spawnPos,
+            cellOrWorld: zone.cellOrWorld,
+            spawnedAt:   now,
+          })
+          spawned++
         }
       } catch (err) {
-        console.error(`[wildlife] createActor failed for ${entry.name} (0x${entry.formId.toString(16)}): ${err.message}`)
+        console.error(`[wildlife] place failed for ${entry.name} (0x${entry.formId.toString(16)}): ${err.message}`)
       }
+    }
+
+    if (spawned > 0) {
+      // Lock this worldspace from spawning again for a while
+      zoneSpawnCooldowns.set(zone.cellOrWorld, now + ZONE_SPAWN_COOLDOWN_MS)
     }
   }
 }

@@ -13,8 +13,21 @@
 const path = require('path')
 const fs   = require('fs')
 
-// Load .env from the repo root (one level up from scripts/)
-require('dotenv').config({ path: path.join(__dirname, '..', '.env') })
+// Load .env from the repo root without requiring an external dependency.
+// Existing process.env values are never overwritten (same behaviour as dotenv).
+;(function loadEnv(filePath) {
+  try {
+    for (const line of fs.readFileSync(filePath, 'utf8').split('\n')) {
+      const t = line.trim()
+      if (!t || t.startsWith('#')) continue
+      const eq = t.indexOf('=')
+      if (eq === -1) continue
+      const key = t.slice(0, eq).trim()
+      const val = t.slice(eq + 1).trim()
+      if (key && !(key in process.env)) process.env[key] = val
+    }
+  } catch { /* .env absent — fall back to real env vars */ }
+}(path.join(__dirname, '..', '.env')))
 
 const e = process.env
 

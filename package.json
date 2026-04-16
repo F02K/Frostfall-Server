@@ -4,11 +4,14 @@
   "description": "",
   "license": "AGPL-3.0",
   "scripts": {
+    "generate": "node scripts/generate-settings.js",
+    "start":    "node scripts/generate-settings.js && node dist_back/skymp5-server.js",
     "build-ts": "tsc --noEmit && esbuild ts/index.ts --loader:.node=copy --bundle --platform=node --target=node16 --keep-names --minify --sourcemap --target=es2022 --outfile=../build/dist/server/dist_back/skymp5-server.js"
   },
   "author": "Leonid Pospelov <pospelovlm@yandex.ru>",
   "dependencies": {
     "@octokit/rest": "^20.0.2",
+    "dotenv": "^16.4.5",
     "@types/lodash": "^4.14.202",
     "@types/node": "^22.10.2",
     "argparse": "^2.0.1",

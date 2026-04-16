@@ -1,3 +1,10 @@
 /.claude
 /world
-/world
+
+# Generated from .env — contains credentials, never commit
+/server-settings.json
+/server-settings-merged.json
+/server-settings-dump.json
+
+# Local environment variables
+/.env

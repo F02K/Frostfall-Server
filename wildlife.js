@@ -29,7 +29,7 @@ const SPAWN_Z_OFFSET          = -256         // place actors this many units bel
 // see the actor there. SPAWN_Z_OFFSET puts new actors underground until Skyrim
 // places them on the navmesh surface.
 
-const TAMRIEL_ID = 0x3C
+const TAMRIEL_ID = 0x0000003C
 
 // ── Spawn table ───────────────────────────────────────────────────────────────
 // formId: base NPC record in Skyrim.esm (verify with xEdit if a creature misbehaves)
@@ -63,7 +63,7 @@ const SPAWN_TABLE = [
 // ── Spawn zones ───────────────────────────────────────────────────────────────
 // WoW-style geographic regions. Each defines the creature roster for that area.
 // Zones are checked in order — first bounds match wins.
-// Only applies to the Tamriel worldspace (0x3C); other worldspaces use 'default'.
+// Only applies to the Tamriel worldspace (0x0000003C); other worldspaces use 'default'.
 //
 // Coordinates are approximate Skyrim worldspace units (~14cm per unit).
 // Use xEdit's View → Set Active Cell to verify positions if in doubt.

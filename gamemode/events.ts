@@ -1,31 +1,59 @@
 import type { GameEvent, GameEventType } from './types';
 
-type EventHandler = (event: GameEvent<unknown>) => void;
+type EventHandler<T = unknown> = (event: GameEvent<T>) => void;
 
 /**
- * Internal typed event bus.
+ * Extended typed event bus.
  * Systems communicate exclusively through this — never by calling each other directly.
- * One bus instance is created in index.ts and passed to every system's init().
+ *
+ * Supports:
+ *   - Typed handlers per event type
+ *   - Wildcard '*' listener (receives all events)
+ *   - One-time handlers via once()
+ *   - Error isolation (one bad handler won't stop others)
  */
-export class EventBus {
-  private listeners: Map<GameEventType, Set<EventHandler>> = new Map();
+export class ExtendedEventBus {
+  private listeners = new Map<GameEventType | '*', Set<EventHandler<unknown>>>();
 
-  on(type: GameEventType, handler: EventHandler): void {
+  on<T = unknown>(type: GameEventType | '*', handler: EventHandler<T>): () => void {
     if (!this.listeners.has(type)) {
       this.listeners.set(type, new Set());
     }
-    this.listeners.get(type)!.add(handler);
+    this.listeners.get(type)!.add(handler as EventHandler<unknown>);
+    // Return unsubscribe function
+    return () => this.off(type, handler);
   }
 
-  off(type: GameEventType, handler: EventHandler): void {
-    this.listeners.get(type)?.delete(handler);
-  }
-
-  dispatch(event: GameEvent<unknown>): void {
-    const handlers = this.listeners.get(event.type);
-    if (!handlers) return;
-    for (const handler of handlers) {
+  once<T = unknown>(type: GameEventType | '*', handler: EventHandler<T>): void {
+    const wrapper: EventHandler<T> = (event) => {
+      this.off(type, wrapper);
       handler(event);
+    };
+    this.on(type, wrapper);
+  }
+
+  off<T = unknown>(type: GameEventType | '*', handler: EventHandler<T>): void {
+    this.listeners.get(type)?.delete(handler as EventHandler<unknown>);
+  }
+
+  dispatch<T = unknown>(event: GameEvent<T>): void {
+    const targeted = this.listeners.get(event.type);
+    const wildcard = this.listeners.get('*');
+
+    const all = [
+      ...(targeted ? [...targeted] : []),
+      ...(wildcard ? [...wildcard] : []),
+    ];
+
+    for (const handler of all) {
+      try {
+        handler(event as GameEvent<unknown>);
+      } catch (e) {
+        console.error(`[EventBus] Uncaught error in handler for "${event.type}":`, e);
+      }
     }
   }
 }
+
+// Re-export old name for backward compat with existing systems
+export { ExtendedEventBus as EventBus };

@@ -1,0 +1,1 @@
+export { MerchantsModule } from './MerchantsModule';

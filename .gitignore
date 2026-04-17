@@ -11,3 +11,5 @@
 Dawnguard.esm
 *.esm
 *.esp
+/node_modules
+package-lock.json

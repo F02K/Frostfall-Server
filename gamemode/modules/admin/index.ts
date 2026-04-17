@@ -1,0 +1,1 @@
+export { AdminModule } from './AdminModule';

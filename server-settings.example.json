@@ -1,0 +1,22 @@
+{
+  "dataDir" : "data",
+  "loadOrder" :
+  [
+    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Skyrim.esm",
+    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Update.esm",
+    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Dawnguard.esm",
+    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/HearthFires.esm",
+    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Dragonborn.esm"
+  ],
+  "master" : "",
+  "maxPlayers" : 100,
+  "name" : "Frostfall Roleplay",
+  "npcEnabled" : false,
+  "npcSettings" : {},
+  "offlineMode" : true,
+  "port" : 7777,
+  "discordAuth" : {
+    "clientId" : "YOUR_DISCORD_CLIENT_ID",
+    "clientSecret" : "YOUR_DISCORD_CLIENT_SECRET"
+  }
+}

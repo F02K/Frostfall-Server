@@ -1,8 +1,8 @@
 {
   "angle": [
-    15.94970703125,
+    13.860074996948242,
     0.0,
-    184.42352294921875
+    192.51565551757813
   ],
   "appearanceDump": {
     "hairColor": 1711132,
@@ -339,7 +339,7 @@
   },
   "isDead": false,
   "isDeleted": false,
-  "isDisabled": true,
+  "isDisabled": false,
   "isHarvested": false,
   "isOpen": false,
   "isRaceMenuOpen": false,
@@ -348,9 +348,9 @@
   "magickaRespawnPercentage": 1.0,
   "nextRelootDatetime": 0,
   "position": [
-    1038.8702392578125,
-    7516.3349609375,
-    -131.0521697998047
+    177766.59375,
+    -29236.603515625,
+    1593.630859375
   ],
   "profileId": 1,
   "recType": 1,
@@ -366,7 +366,7 @@
     0.0,
     72.0
   ],
-  "staminaPercentage": 0.30039429664611816,
+  "staminaPercentage": 0.7405464053153992,
   "staminaRespawnPercentage": 1.0,
-  "worldOrCellDesc": "152c0:Skyrim.esm"
+  "worldOrCellDesc": "3c:Skyrim.esm"
 }

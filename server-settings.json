@@ -1,22 +1,25 @@
 {
-  "dataDir" : "data",
-  "loadOrder" :
-  [
-    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Skyrim.esm",
-    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Update.esm",
-    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Dawnguard.esm",
-    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/HearthFires.esm",
-    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Dragonborn.esm"
+  "dataDir": "data",
+  "gamemode": "gamemode.js",
+  "loadOrder": [
+    "Skyrim.esm",
+    "Update.esm",
+    "Dawnguard.esm",
+    "HearthFires.esm",
+    "Dragonborn.esm",
+    "SkyUI_SE.esp",
+    "EnhancedLightsandFX.esp",
+    "ELFX - Exteriors.esp",
+    "ELFX - Weathers.esp",
+    "IcePenguinWorldMap.esp",
+    "ELFX - Hardcore.esp"
   ],
-  "master" : "",
-  "maxPlayers" : 100,
-  "name" : "My Server",
-  "npcEnabled" : false,
-  "npcSettings" : {},
-  "offlineMode" : true,
-  "port" : 7777,
-  "discordAuth" : {
-    "clientId" : "id",
-    "clientSecret" : "secret"
-  }
+  "master": "http://127.0.0.1:4000",
+  "masterKey": "frostfall",
+  "maxPlayers": 100,
+  "name": "Frostfall Roleplay",
+  "npcEnabled": false,
+  "npcSettings": {},
+  "offlineMode": true,
+  "port": 7777
 }

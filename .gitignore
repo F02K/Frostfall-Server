@@ -8,3 +8,6 @@
 
 # Local environment variables
 /.env
+Dawnguard.esm
+*.esm
+*.esp

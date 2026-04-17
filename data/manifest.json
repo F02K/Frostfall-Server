@@ -24,6 +24,36 @@
             "crc32": 287315548,
             "filename": "Dragonborn.esm",
             "size": 64663863
+        },
+        {
+            "crc32": -1027491691,
+            "filename": "SkyUI_SE.esp",
+            "size": 2433
+        },
+        {
+            "crc32": -587172981,
+            "filename": "EnhancedLightsandFX.esp",
+            "size": 7579984
+        },
+        {
+            "crc32": -1690762349,
+            "filename": "ELFX - Exteriors.esp",
+            "size": 1307927
+        },
+        {
+            "crc32": 251832608,
+            "filename": "ELFX - Weathers.esp",
+            "size": 317372
+        },
+        {
+            "crc32": -1403184126,
+            "filename": "IcePenguinWorldMap.esp",
+            "size": 2748
+        },
+        {
+            "crc32": 1590441225,
+            "filename": "ELFX - Hardcore.esp",
+            "size": 1918635
         }
     ],
     "versionMajor": 1,
@@ -32,6 +62,12 @@
         "Update.esm",
         "Dawnguard.esm",
         "HearthFires.esm",
-        "Dragonborn.esm"
+        "Dragonborn.esm",
+        "SkyUI_SE.esp",
+        "EnhancedLightsandFX.esp",
+        "ELFX - Exteriors.esp",
+        "ELFX - Weathers.esp",
+        "IcePenguinWorldMap.esp",
+        "ELFX - Hardcore.esp"
     ]
 }

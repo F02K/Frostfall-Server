@@ -1,0 +1,2460 @@
+{
+	"scrolls": [
+		{
+			"formid": "001076EC",
+			"edid": "MGR21ScrollMagicka",
+			"name": "Shalidor's Insights: Magicka",
+			"description": "",
+			"base_cost": 12200,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000FB98E",
+					"effect_edid": "FortifyMagickaFFSelf",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 120
+				},
+				{
+					"effect_formid": "001058A6",
+					"effect_edid": "FoodFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 120
+				}
+			]
+		},
+		{
+			"formid": "001076EB",
+			"edid": "MGR21ScrollConjuration",
+			"name": "Shalidor's Insights: Conjuration",
+			"description": "",
+			"base_cost": 323,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "001076EF",
+					"effect_edid": "MGR21ConjurationEffect",
+					"effect_name": "Modify Conjuration",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 120
+				}
+			]
+		},
+		{
+			"formid": "001076EA",
+			"edid": "MGR21ScrollRestoration",
+			"name": "Shalidor's Insights: Restoration",
+			"description": "",
+			"base_cost": 15,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "001076ED",
+					"effect_edid": "MGR21RestorationEffect",
+					"effect_name": "Modify Restoration",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 120
+				}
+			]
+		},
+		{
+			"formid": "001076E9",
+			"edid": "MGR21ScrollAlteration",
+			"name": "Shalidor's Insights: Alteration",
+			"description": "",
+			"base_cost": 15,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "001076EE",
+					"effect_edid": "MGR21AlterationEffect",
+					"effect_name": "Modify Alteration",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 120
+				}
+			]
+		},
+		{
+			"formid": "001076E8",
+			"edid": "MGR21ScrollIllusion",
+			"name": "Shalidor's Insights: Illusion",
+			"description": "",
+			"base_cost": 1538,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "001076FF",
+					"effect_edid": "MGR21IllusionEffect",
+					"effect_name": "Modify Illusion",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 120
+				}
+			]
+		},
+		{
+			"formid": "001076E7",
+			"edid": "MGR21ScrollDestruction",
+			"name": "Shalidor's Insights: Destruction",
+			"description": "",
+			"base_cost": 49,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "001076F6",
+					"effect_edid": "MGR21DesrtuctionEffect",
+					"effect_name": "Modify Destruction",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 120
+				}
+			]
+		},
+		{
+			"formid": "001019AE",
+			"edid": "TGDetectLifeScroll",
+			"name": "Scroll of Detect Life",
+			"description": "Nearby living creatures, but not undead, machines or daedra, can be seen through walls.",
+			"base_cost": 312,
+			"cast_type": "Concentration",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "001019D8",
+					"effect_edid": "DetectLifeEnemyExteriorSelfFF",
+					"effect_name": "Detect Life Enemy Exterior",
+					"magnitude": "0.0000",
+					"area": 200,
+					"duration": 15
+				},
+				{
+					"effect_formid": "001019D9",
+					"effect_edid": "DetectLifeEnemyInteriorSelfFF",
+					"effect_name": "Detect Life Enemy Interior",
+					"magnitude": "0.0000",
+					"area": 100,
+					"duration": 15
+				},
+				{
+					"effect_formid": "001019DA",
+					"effect_edid": "DetectLifeFriendExteriorSelfFF",
+					"effect_name": "Detect Life Friend Exterior",
+					"magnitude": "0.0000",
+					"area": 200,
+					"duration": 15
+				},
+				{
+					"effect_formid": "001019DB",
+					"effect_edid": "DetectLifeFriendInteriorSelfFF",
+					"effect_name": "Detect Life Friend Interior",
+					"magnitude": "0.0000",
+					"area": 100,
+					"duration": 15
+				}
+			]
+		},
+		{
+			"formid": "000E0CD6",
+			"edid": "DragonhideScroll",
+			"name": "Scroll of Dragonhide",
+			"description": "Caster ignores 90% of all physical damage for <30> seconds.",
+			"base_cost": 162133,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000CDB75",
+					"effect_edid": "ArmorFFSelf100",
+					"effect_name": "Armor - Dragonhide",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 3600
+				}
+			]
+		},
+		{
+			"formid": "000E0CD5",
+			"edid": "GuardianCircleScroll",
+			"name": "Scroll of Guardian Circle",
+			"description": "",
+			"base_cost": 334,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000E0CD0",
+					"effect_edid": "GuardianCircleFFSelf",
+					"effect_name": "Guardian Circle",
+					"magnitude": "35.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "000218F2",
+			"edid": "BaneOfTheUndeadScroll",
+			"name": "Scroll of Bane of the Undead",
+			"description": "",
+			"base_cost": 423,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0008C1AA",
+					"effect_edid": "TurnUndeadFFMassSelfArea",
+					"effect_name": "Turn Greater Undead",
+					"magnitude": "30.0000",
+					"area": 80,
+					"duration": 30
+				},
+				{
+					"effect_formid": "000C5C0A",
+					"effect_edid": "FireDamageFFSelfAreaUndead",
+					"effect_name": "Bane of the Undead",
+					"magnitude": "50.0000",
+					"area": 80,
+					"duration": 0
+				},
+				{
+					"effect_formid": "000C5C0B",
+					"effect_edid": "StaggerAttackAreaEffectUndead80",
+					"effect_name": "Stagger Area Attack",
+					"magnitude": "0.0500",
+					"area": 80,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "00021876",
+			"edid": "MassParalysisScroll",
+			"name": "Scroll of Mass Paralysis",
+			"description": "",
+			"base_cost": 500,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000B62E5",
+					"effect_edid": "ParalysisFFSelfArea",
+					"effect_name": "Paralyze",
+					"magnitude": "0.0000",
+					"area": 40,
+					"duration": 10
+				},
+				{
+					"effect_formid": "000B8F52",
+					"effect_edid": "StaggerAttackAreaEffect40",
+					"effect_name": "Stagger Area Attack",
+					"magnitude": "0.0500",
+					"area": 40,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "000B64B3",
+			"edid": "CureWoundsScroll",
+			"name": "Scroll of Cure Wounds",
+			"description": "",
+			"base_cost": 79,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000B62F0",
+					"effect_edid": "RestoreHealthFFSelf50",
+					"effect_name": "Restore Health",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44C6",
+			"edid": "TurnGreaterUndeadScroll",
+			"name": "Scroll of Turn Greater Undead",
+			"description": "",
+			"base_cost": 72,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0005DD5C",
+					"effect_edid": "TurnUndeadFFAimed75",
+					"effect_name": "Turn Greater Undead",
+					"magnitude": "12.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0004D3F9",
+					"effect_edid": "TurnUndeadPushFFAimed",
+					"effect_name": "Turn Undead Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44C5",
+			"edid": "RepelUndeadScroll",
+			"name": "Scroll of Repel Undead",
+			"description": "",
+			"base_cost": 164,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0005DD5F",
+					"effect_edid": "TurnUndeadFFAimedArea75",
+					"effect_name": "Repel Undead",
+					"magnitude": "8.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0004D3F9",
+					"effect_edid": "TurnUndeadPushFFAimed",
+					"effect_name": "Turn Undead Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44C4",
+			"edid": "GrandHealingScroll",
+			"name": "Scroll of Grand Healing",
+			"description": "",
+			"base_cost": 237,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000B62ED",
+					"effect_edid": "RestoreHealthFFSelfArea",
+					"effect_name": "Restore Health Area",
+					"magnitude": "100.0000",
+					"area": 15,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44C3",
+			"edid": "CircleOfProtectionScroll",
+			"name": "Scroll of Circle of Protection",
+			"description": "",
+			"base_cost": 164,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0005312C",
+					"effect_edid": "CircleProtectionFFSelf",
+					"effect_name": "Circle of Protection",
+					"magnitude": "8.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "000A44C2",
+			"edid": "RepelLesserUndeadScroll",
+			"name": "Scroll of Repel Lesser Undead",
+			"description": "",
+			"base_cost": 27,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0004D3F7",
+					"effect_edid": "TurnUndeadFFAimedArea50",
+					"effect_name": "Repel Lesser Undead",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0004D3F9",
+					"effect_edid": "TurnUndeadPushFFAimed",
+					"effect_name": "Turn Undead Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44C1",
+			"edid": "HealOtherScroll",
+			"name": "Scroll of Heal Other",
+			"description": "",
+			"base_cost": 32,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEA7",
+					"effect_edid": "RestoreHealthFFActor",
+					"effect_name": "Restore Health",
+					"magnitude": "45.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44BF",
+			"edid": "TurnLesserUndeadScroll",
+			"name": "Scroll of Turn Lesser Undead",
+			"description": "",
+			"base_cost": 21,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0004B145",
+					"effect_edid": "TurnUndeadFFAimed25",
+					"effect_name": "Turn Lesser Undead",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0004D3F9",
+					"effect_edid": "TurnUndeadPushFFAimed",
+					"effect_name": "Turn Undead Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44BE",
+			"edid": "CallToArmsScroll",
+			"name": "Scroll of Call to Arms",
+			"description": "Targets have improved combat skills, health and stamina for <10> minutes.",
+			"base_cost": 654,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0008BB2D",
+					"effect_edid": "CallToARmsFortifyMarksman100",
+					"effect_name": "Fortify Marksman",
+					"magnitude": "25.0000",
+					"area": 100,
+					"duration": 600
+				},
+				{
+					"effect_formid": "0008BB2B",
+					"effect_edid": "CallToArmsFortifyOneHanded100",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "25.0000",
+					"area": 100,
+					"duration": 600
+				},
+				{
+					"effect_formid": "0008BB2C",
+					"effect_edid": "CallToArmsFortifyTwoHanded100",
+					"effect_name": "Fortify Two-handed",
+					"magnitude": "25.0000",
+					"area": 100,
+					"duration": 600
+				}
+			]
+		},
+		{
+			"formid": "000A44BD",
+			"edid": "HysteriaScroll",
+			"name": "Scroll of Hysteria",
+			"description": "",
+			"base_cost": 198,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E8D8",
+					"effect_edid": "InfluenceConfDownFFSelfArea250",
+					"effect_name": "Hysteria",
+					"magnitude": "12.0000",
+					"area": 250,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44BC",
+			"edid": "HarmonyScroll",
+			"name": "Scroll of Harmony",
+			"description": "",
+			"base_cost": 331,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E8DC",
+					"effect_edid": "InfluenceAggDownFFSelfArea250",
+					"effect_name": "Harmony",
+					"magnitude": "12.0000",
+					"area": 250,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000A44BB",
+			"edid": "MayhemScroll",
+			"name": "Scroll of Mayhem",
+			"description": "",
+			"base_cost": 253,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E8D6",
+					"effect_edid": "InfluenceAggUpFFSelfArea250",
+					"effect_name": "Mayhem",
+					"magnitude": "12.0000",
+					"area": 250,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44BA",
+			"edid": "RoutScroll",
+			"name": "Scroll of Rout",
+			"description": "",
+			"base_cost": 154,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA7A",
+					"effect_edid": "InfluenceConfDownFFAimedArea",
+					"effect_name": "Rout",
+					"magnitude": "12.0000",
+					"area": 15,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44B9",
+			"edid": "PacifyScroll",
+			"name": "Scroll of Pacify",
+			"description": "",
+			"base_cost": 36,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0004DEDF",
+					"effect_edid": "InfluenceAggDownFFAimedArea",
+					"effect_name": "Pacify",
+					"magnitude": "12.0000",
+					"area": 15,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44B7",
+			"edid": "InvisibilityScroll",
+			"name": "Scroll of Invisibility",
+			"description": "",
+			"base_cost": 167,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA6A",
+					"effect_edid": "InvisibillityFFSelf",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44B6",
+			"edid": "FrenzyScroll",
+			"name": "Scroll of Frenzy",
+			"description": "",
+			"base_cost": 70,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA78",
+					"effect_edid": "InfluenceAggUpFFAimedArea",
+					"effect_name": "Frenzy",
+					"magnitude": "8.0000",
+					"area": 15,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44B5",
+			"edid": "RallyScroll",
+			"name": "Scroll of Rally",
+			"description": "",
+			"base_cost": 4,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA76",
+					"effect_edid": "InfluenceConfUpFFAimedArea",
+					"effect_name": "Rally",
+					"magnitude": "10.0000",
+					"area": 15,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44B2",
+			"edid": "BlizzardScroll",
+			"name": "Scroll of Blizzard",
+			"description": "",
+			"base_cost": 512,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000B72A1",
+					"effect_edid": "FrostSlowFFSelfArea100",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 100,
+					"duration": 10
+				},
+				{
+					"effect_formid": "000B79FE",
+					"effect_edid": "FrostDamageHazardArea40",
+					"effect_name": "Blizzard",
+					"magnitude": "20.0000",
+					"area": 40,
+					"duration": 10
+				}
+			]
+		},
+		{
+			"formid": "000A44B1",
+			"edid": "FireStormScroll",
+			"name": "Scroll of Fire Storm",
+			"description": "",
+			"base_cost": 358,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007A82A",
+					"effect_edid": "FireDamageFFSelfArea100",
+					"effect_name": "Fire Storm 100",
+					"magnitude": "75.0000",
+					"area": 100,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00082A33",
+					"effect_edid": "FireDamageFFSelfArea65",
+					"effect_name": "Fire Storm 65",
+					"magnitude": "75.0000",
+					"area": 65,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00082A32",
+					"effect_edid": "FireDamageFFSelfArea25",
+					"effect_name": "Fire Storm 25",
+					"magnitude": "50.0000",
+					"area": 25,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44B0",
+			"edid": "ChainLightningScroll",
+			"name": "Scroll of Chain Lightning",
+			"description": "",
+			"base_cost": 129,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0005DBAE",
+					"effect_edid": "ShockDamageFFAimedArea",
+					"effect_name": "Chain Lightning",
+					"magnitude": "50.0000",
+					"area": 20,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "000A44AF",
+			"edid": "IceStormScroll",
+			"name": "Scroll of Ice Storm",
+			"description": "",
+			"base_cost": 147,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEA3",
+					"effect_edid": "FrostDamageFFAimedArea",
+					"effect_name": "Ice Storm",
+					"magnitude": "50.0000",
+					"area": 15,
+					"duration": 0
+				},
+				{
+					"effect_formid": "000B729F",
+					"effect_edid": "FrostSlowFFAimed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44AE",
+			"edid": "FireballScroll",
+			"name": "Scroll of Fireball",
+			"description": "",
+			"base_cost": 88,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEA1",
+					"effect_edid": "FireDamageFFAimedArea",
+					"effect_name": "Fireball",
+					"magnitude": "50.0000",
+					"area": 15,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44AD",
+			"edid": "LightningCloakScroll",
+			"name": "Scroll of Lightning Cloak",
+			"description": "",
+			"base_cost": 189,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0003AEA1",
+					"effect_edid": "ShockCloakFFSelf",
+					"effect_name": "Shock Cloak",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44AC",
+			"edid": "FrostCloakScroll",
+			"name": "Scroll of Frost Cloak",
+			"description": "",
+			"base_cost": 126,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0003AEA0",
+					"effect_edid": "FrostCloakFFSelf",
+					"effect_name": "Frost Cloak",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44AB",
+			"edid": "FlameCloakScroll",
+			"name": "Scroll of Flame Cloak",
+			"description": "",
+			"base_cost": 147,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0003AE9E",
+					"effect_edid": "FireCloakFFSelf",
+					"effect_name": "Flame Cloak",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44AA",
+			"edid": "StormThrallScroll",
+			"name": "Scroll of Storm Thrall",
+			"description": "",
+			"base_cost": 4262725,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E5D4",
+					"effect_edid": "SummonStormThrall",
+					"effect_name": "Conjure Storm Thrall",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44A9",
+			"edid": "FrostThrallScroll",
+			"name": "Scroll of Frost Thrall",
+			"description": "",
+			"base_cost": 4262725,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E5D3",
+					"effect_edid": "SummonFrostThrall",
+					"effect_name": "Conjure Frost Thrall",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44A8",
+			"edid": "FlameThrallScroll",
+			"name": "Scroll of Flame Thrall",
+			"description": "",
+			"base_cost": 0,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E5D2",
+					"effect_edid": "SummonFlameThrall",
+					"effect_name": "Conjure Flame Thrall",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44A7",
+			"edid": "DeadThrallScroll",
+			"name": "Scroll of Dead Thrall",
+			"description": "",
+			"base_cost": 335310944,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0007E8E0",
+					"effect_edid": "ReanimateThrallFFAimed",
+					"effect_name": "Reanimate Thrall",
+					"magnitude": "15.0000",
+					"area": 0,
+					"duration": 86313600
+				},
+				{
+					"effect_formid": "0008BB2A",
+					"effect_edid": "crSummonThrallFortifyHealRate",
+					"effect_name": "Fortified Healing",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			]
+		},
+		{
+			"formid": "000A44A6",
+			"edid": "ExpelDaedraScroll",
+			"name": "Scroll of Expel Daedra",
+			"description": "",
+			"base_cost": 75,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0006F951",
+					"effect_edid": "BanishFFActor75",
+					"effect_name": "Banish",
+					"magnitude": "10.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0006D22D",
+					"effect_edid": "DaedraPushFFActor",
+					"effect_name": "Banish/Command Daedra Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "000A44A5",
+			"edid": "DreadZombieScroll",
+			"name": "Scroll of Dread Zombie",
+			"description": "",
+			"base_cost": 165,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00065BD6",
+					"effect_edid": "ReanimateFFAimed0",
+					"effect_name": "Reanimate",
+					"magnitude": "12.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0008BB2A",
+					"effect_edid": "crSummonThrallFortifyHealRate",
+					"effect_name": "Fortified Healing",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000A44A4",
+			"edid": "CommandDaedraScroll",
+			"name": "Scroll of Command Daedra",
+			"description": "",
+			"base_cost": 113,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0006F954",
+					"effect_edid": "CommandFFActor",
+					"effect_name": "Command",
+					"magnitude": "10.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0006D22D",
+					"effect_edid": "DaedraPushFFActor",
+					"effect_name": "Banish/Command Daedra Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "000A44A3",
+			"edid": "RevenantScroll",
+			"name": "Scroll of Revanant",
+			"description": "",
+			"base_cost": 120,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00065BD6",
+					"effect_edid": "ReanimateFFAimed0",
+					"effect_name": "Reanimate",
+					"magnitude": "9.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44A1",
+			"edid": "ConjureStormAtronachScroll",
+			"name": "Scroll of Conjure Storm Atronach",
+			"description": "",
+			"base_cost": 322,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEAC",
+					"effect_edid": "SummonStormAtronach",
+					"effect_name": "Conjure Storm Atronach",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000A44A0",
+			"edid": "ConjureFrostAtronachScroll",
+			"name": "Scroll of Conjure Frost Atronach",
+			"description": "",
+			"base_cost": 229,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEAB",
+					"effect_edid": "SummonFrostAtronach",
+					"effect_name": "Conjure Frost Atronach",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000A449F",
+			"edid": "BanishDaedraScroll",
+			"name": "Scroll of Banish Daedra",
+			"description": "",
+			"base_cost": 42,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0006D22B",
+					"effect_edid": "BanishFFActor50",
+					"effect_name": "Banish",
+					"magnitude": "7.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0006D22D",
+					"effect_edid": "DaedraPushFFActor",
+					"effect_name": "Banish/Command Daedra Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "000A449E",
+			"edid": "EbonyFleshScroll",
+			"name": "Scroll of Ebonyflesh",
+			"description": "",
+			"base_cost": 250,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00059B7C",
+					"effect_edid": "ArmorFFSelf75",
+					"effect_name": "Armor - Ebony",
+					"magnitude": "35.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000A449D",
+			"edid": "ParalyzeScroll",
+			"name": "Scroll of Paralyze",
+			"description": "",
+			"base_cost": 300,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA6E",
+					"effect_edid": "ParalysisFFAimed",
+					"effect_name": "Paralyze",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "000A44C0",
+					"effect_edid": "StaggerPushFFAimed",
+					"effect_name": "Stagger Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A449C",
+			"edid": "WaterBreathingScroll",
+			"name": "Scroll of Waterbreathing",
+			"description": "",
+			"base_cost": 71,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA73",
+					"effect_edid": "WaterbreathingFFSelf",
+					"effect_name": "Waterbreathing",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A449B",
+			"edid": "IronFleshScroll",
+			"name": "Scroll of Ironflesh",
+			"description": "",
+			"base_cost": 166,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00059B7B",
+					"effect_edid": "ArmorFFSelf50",
+					"effect_name": "Armor - Iron",
+					"magnitude": "30.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000967E3",
+			"edid": "MGRJzargo1Scroll",
+			"name": "J'zargo's Flame Cloak Scroll",
+			"description": "",
+			"base_cost": 147,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00097EE2",
+					"effect_edid": "MGRJZargoFireCloakFFSelf",
+					"effect_name": "J'zargo's Flame Cloak",
+					"magnitude": "10.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965B0",
+			"edid": "TurnUndeadScroll",
+			"name": "Scroll of Turn Undead",
+			"description": "",
+			"base_cost": 98,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0005DD5B",
+					"effect_edid": "TurnUndeadFFAimed50",
+					"effect_name": "Turn Undead",
+					"magnitude": "8.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0004D3F9",
+					"effect_edid": "TurnUndeadPushFFAimed",
+					"effect_name": "Turn Undead Push",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965AF",
+			"edid": "FastHealingScroll",
+			"name": "Scroll of Fast Healing",
+			"description": "",
+			"base_cost": 32,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEA6",
+					"effect_edid": "RestoreHealthFFSelf",
+					"effect_name": "Restore Health",
+					"magnitude": "45.0000",
+					"area": 0,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "000965AE",
+			"edid": "FearScroll",
+			"name": "Scroll of Fear",
+			"description": "",
+			"base_cost": 36,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA77",
+					"effect_edid": "InfluenceConfDownFFAimed",
+					"effect_name": "Fear",
+					"magnitude": "8.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965AD",
+			"edid": "CalmScroll",
+			"name": "Scroll of Calm",
+			"description": "",
+			"base_cost": 39,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0004DEE7",
+					"effect_edid": "InfluenceAggDownFFAimed",
+					"effect_name": "Calm",
+					"magnitude": "8.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "000965AB",
+			"edid": "MuffleScroll",
+			"name": "Scroll of Muffle",
+			"description": "",
+			"base_cost": 144,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0008F3EA",
+					"effect_edid": "MuffleFFSelf",
+					"effect_name": "Muffle",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 180
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965AA",
+			"edid": "ShockRuneScroll",
+			"name": "Scroll of Lightning Rune",
+			"description": "",
+			"base_cost": 190,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0006796E",
+					"effect_edid": "RuneShockFFLocation",
+					"effect_name": "Shock Rune",
+					"magnitude": "40.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A9",
+			"edid": "FrostRuneScroll",
+			"name": "Scroll of Frost Rune",
+			"description": "",
+			"base_cost": 173,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0006796D",
+					"effect_edid": "RuneFrostFFLocation",
+					"effect_name": "Frost Rune",
+					"magnitude": "40.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A8",
+			"edid": "FireRuneScroll",
+			"name": "Scroll of Fire Rune",
+			"description": "",
+			"base_cost": 156,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0005DB8F",
+					"effect_edid": "RuneFireFFLocation",
+					"effect_name": "Fire Rune",
+					"magnitude": "40.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A7",
+			"edid": "SoulTrapScroll",
+			"name": "Scroll of Soul Trap",
+			"description": "",
+			"base_cost": 43,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0004DBA3",
+					"effect_edid": "SoulTrapFFActor",
+					"effect_name": "Soul Trap",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A5",
+			"edid": "ConjureFlameAtronachScroll",
+			"name": "Scroll of Conjure Flame Atronach",
+			"description": "",
+			"base_cost": 157,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEAA",
+					"effect_edid": "SummonFlameAtronach",
+					"effect_name": "Conjure Flame Atronach",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000965A4",
+			"edid": "ReanimateCorpseScroll",
+			"name": "Scroll of Reanimate Corpse",
+			"description": "",
+			"base_cost": 77,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00065BD6",
+					"effect_edid": "ReanimateFFAimed0",
+					"effect_name": "Reanimate",
+					"magnitude": "6.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A3",
+			"edid": "StonefleshScroll",
+			"name": "Scroll of Stoneflesh",
+			"description": "",
+			"base_cost": 99,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00059B7A",
+					"effect_edid": "ArmorFFSelf25",
+					"effect_name": "Armor - Stone",
+					"magnitude": "25.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A2",
+			"edid": "MagelightScroll",
+			"name": "Scroll of Magelight",
+			"description": "",
+			"base_cost": 84,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA6D",
+					"effect_edid": "LightFFAimed",
+					"effect_name": "Magelight",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A1",
+			"edid": "FuryScroll",
+			"name": "Scroll of Fury",
+			"description": "",
+			"base_cost": 18,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0004DEE6",
+					"effect_edid": "InfluenceAggUpFFAimed",
+					"effect_name": "Fury",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000965A0",
+			"edid": "CourageScroll",
+			"name": "Scroll of Courage",
+			"description": "",
+			"base_cost": 1,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA79",
+					"effect_edid": "InfluenceConfUpFFAimed",
+					"effect_name": "Courage",
+					"magnitude": "6.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "0009659F",
+			"edid": "ConjureFamiliarScroll",
+			"name": "Scroll of Conjure Familiar",
+			"description": "",
+			"base_cost": 107,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "000640B4",
+					"effect_edid": "SummonFamiliar",
+					"effect_name": "Conjure Familiar",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "0009659E",
+			"edid": "RaiseZombieScroll",
+			"name": "Scroll of Raise Zombie",
+			"description": "",
+			"base_cost": 49,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00065BD6",
+					"effect_edid": "ReanimateFFAimed0",
+					"effect_name": "Reanimate",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0009659C",
+			"edid": "OakfleshScroll",
+			"name": "Scroll of Oakflesh",
+			"description": "",
+			"base_cost": 48,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00051B15",
+					"effect_edid": "ArmorFFSelf0",
+					"effect_name": "Armor - Oak",
+					"magnitude": "20.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0009659B",
+			"edid": "CandlelightScroll",
+			"name": "Scroll of Candlelight",
+			"description": "",
+			"base_cost": 42,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001EA6C",
+					"effect_edid": "LightFFSelf",
+					"effect_name": "Candlelight",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "0009659A",
+			"edid": "LightningBoltScroll",
+			"name": "Scroll of Lightning Bolt",
+			"description": "",
+			"base_cost": 373,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEA8",
+					"effect_edid": "ShockDamageFFAimed",
+					"effect_name": "Lightning Bolt",
+					"magnitude": "15.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "00096599",
+			"edid": "IceSpikeScroll",
+			"name": "Scroll of Ice Spike",
+			"description": "",
+			"base_cost": 29,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001CEA2",
+					"effect_edid": "FrostDamageFFAimed",
+					"effect_name": "Ice Spike",
+					"magnitude": "15.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "000A44C0",
+					"effect_edid": "StaggerPushFFAimed",
+					"effect_name": "Stagger Push",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "00096598",
+			"edid": "FireboltScroll",
+			"name": "Scroll of Firebolt",
+			"description": "",
+			"base_cost": 25,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "00012F03",
+					"effect_edid": "FireDamageFFAimed",
+					"effect_name": "Firebolt",
+					"magnitude": "15.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44AA",
+			"edid": "StormThrallScroll",
+			"name": "Scroll of Storm Thrall",
+			"description": "",
+			"base_cost": 4262725,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "01000845",
+					"effect_edid": "EnchSummonStormThrall",
+					"effect_name": "Conjure Storm Thrall",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44A9",
+			"edid": "FrostThrallScroll",
+			"name": "Scroll of Frost Thrall",
+			"description": "",
+			"base_cost": 4262725,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "01000844",
+					"effect_edid": "EnchSummonFrostThrall",
+					"effect_name": "Conjure Frost Thrall",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "000A44A8",
+			"edid": "FlameThrallScroll",
+			"name": "Scroll of Flame Thrall",
+			"description": "",
+			"base_cost": 0,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "01000843",
+					"effect_edid": "EnchSummonFlameThrall",
+					"effect_name": "Conjure Flame Thrall",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 86313600
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02014042",
+			"edid": "DLC1dunRedwaterDenTelekinesisScroll",
+			"name": "Scroll of Telekinesis",
+			"description": "",
+			"base_cost": 170,
+			"cast_type": "Concentration",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0001A4CB",
+					"effect_edid": "TelekinesisEffect",
+					"effect_name": "Telekinesis Effect",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020331A1",
+			"edid": "DLC2ExpSpiderEmptyScroll05",
+			"name": "Cloaking Flame Spider",
+			"description": "",
+			"base_cost": 170,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201952D",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFF",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "50.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020331A0",
+			"edid": "DLC2ExpSpiderEmptyScroll04",
+			"name": "Cloaking Flame Spider",
+			"description": "",
+			"base_cost": 170,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201952D",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFF",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "50.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0203319F",
+			"edid": "DLC2ExpSpiderEmptyScroll03",
+			"name": "Cloaking Flame Spider",
+			"description": "",
+			"base_cost": 170,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201952D",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFF",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "50.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0203319E",
+			"edid": "DLC2ExpSpiderEmptyScroll02",
+			"name": "Cloaking Flame Spider",
+			"description": "",
+			"base_cost": 170,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201952D",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFF",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "50.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020285D1",
+			"edid": "DLC2ExpSpiderFireJumpingScrollENEMY",
+			"name": "",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020285D2",
+					"effect_edid": "DLC2ExpSpiderFireJumpingScrollFFENEMY",
+					"effect_name": "Jumping Flame Spider",
+					"magnitude": "10.0000",
+					"area": 5,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020285CF",
+			"edid": "DLC2ExpSpiderFireCloakScrollENEMY",
+			"name": "",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020285CD",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFFENEMY",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020285C8",
+			"edid": "DLC2ExpSpiderFireBombScrollENEMY",
+			"name": "",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020285C9",
+					"effect_edid": "DLC2ExpSpiderFireBombScrollFFENEMY",
+					"effect_name": "Exploding Flame Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020274A5",
+			"edid": "DLC2ExpSpiderPackmuleScroll",
+			"name": "Pack Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020274A6",
+					"effect_edid": "DLC2ExpSpiderPackmuleScrollFF",
+					"effect_name": "Pack Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0202749D",
+			"edid": "DLC2ExpSpiderOilScroll",
+			"name": "Oil Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0202749E",
+					"effect_edid": "DLC2ExpSpiderOilScrollFF",
+					"effect_name": "Oil Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02027490",
+			"edid": "DLC2ExpSpiderGlowingScroll",
+			"name": "Glowing Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02027491",
+					"effect_edid": "DLC2ExpSpiderGlowingScrollFF",
+					"effect_name": "Glowing Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02020961",
+			"edid": "DLC2ExpSpiderShockJumpingScroll",
+			"name": "Jumping Shock Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02020964",
+					"effect_edid": "DLC2ExpSpiderShockJumpingScrollFF",
+					"effect_name": "Exploding Frost Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02020960",
+			"edid": "DLC2ExpSpiderShockCloakScroll",
+			"name": "Shock Cloaked Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02020963",
+					"effect_edid": "DLC2ExpSpiderShockCloakingScrollFF",
+					"effect_name": "Poison Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0202095F",
+			"edid": "DLC2ExpSpiderShockBombScroll",
+			"name": "Exploding Shock Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02020962",
+					"effect_edid": "DLC2ExpSpiderShockBombScrollFF",
+					"effect_name": "Exploding Frost Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020206DB",
+			"edid": "DLC2ExpSpiderFrostJumpingScroll",
+			"name": "Jumping Frost Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020206D8",
+					"effect_edid": "DLC2ExpSpiderFrostJumpingScrollFF",
+					"effect_name": "Jumping Frost Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020206D9",
+			"edid": "DLC2ExpSpiderFrostCloakScroll",
+			"name": "Frost Cloaked Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020206D7",
+					"effect_edid": "DLC2ExpSpiderFrostCloakingScrollFF",
+					"effect_name": "Frost Cloaked Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "020206D3",
+			"edid": "DLC2ExpSpiderFrostBombScroll",
+			"name": "Exploding Frost Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "020206D1",
+					"effect_edid": "DLC2ExpSpiderFrostBombScrollFF",
+					"effect_name": "Exploding Frost Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0201DA03",
+			"edid": "DLC2ExpSpiderEmptyScroll01",
+			"name": "Cloaking Flame Spider",
+			"description": "",
+			"base_cost": 170,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201952D",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFF",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "50.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0201CAB0",
+			"edid": "DLC2ExpSpiderPoisonCloakScroll",
+			"name": "Poison Cloaked Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201CAB1",
+					"effect_edid": "DLC2ExpSpiderPoisonCloakingScrollFF",
+					"effect_name": "Poison Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02019534",
+			"edid": "DLC2ExpSpiderFireBombScroll",
+			"name": "Exploding Flame Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02019535",
+					"effect_edid": "DLC2ExpSpiderFireBombScrollFF",
+					"effect_name": "Exploding Flame Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0201952C",
+			"edid": "DLC2ExpSpiderFireCloakScroll",
+			"name": "Flame Cloaked Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201952D",
+					"effect_edid": "DLC2ExpSpiderFireCloakingScrollFF",
+					"effect_name": "Flame Cloaked Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0201707B",
+			"edid": "DLC2ExpSpiderPoisonBombScroll",
+			"name": "Exploding Poison Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201707C",
+					"effect_edid": "DLC2ExpSpiderPoisonBombScrollFF",
+					"effect_name": "Exploding Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02016E1C",
+			"edid": "DLC2ExpSpiderZombieScroll",
+			"name": "Mind Control Spider",
+			"description": "",
+			"base_cost": 849,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02016E1B",
+					"effect_edid": "DLC2ExpSpiderZombieFFAimed",
+					"effect_name": "Zombie by Spider",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "02014480",
+			"edid": "DLC2ExpSpiderFireJumpingScroll",
+			"name": "Jumping Flame Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "02014481",
+					"effect_edid": "DLC2ExpSpiderFireJumpingScrollFF",
+					"effect_name": "Jumping Flame Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		},
+		{
+			"formid": "0201445E",
+			"edid": "DLC2ExpSpiderPoisonJumpingScroll",
+			"name": "Jumping Poison Spider",
+			"description": "",
+			"base_cost": 2,
+			"cast_type": "Scroll",
+			"delivery": "",
+			"magic_school": "",
+			"effects": [
+				{
+					"effect_formid": "0201445F",
+					"effect_edid": "DLC2ExpSpiderPoisonJumpingScrollFF",
+					"effect_name": "Exploding Spider",
+					"magnitude": "0.0000",
+					"area": 5,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemScroll"
+			]
+		}
+	]
+}

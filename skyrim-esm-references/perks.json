@@ -1,0 +1,5234 @@
+{
+	"perks": [
+		{
+			"formid": "0001711E",
+			"edid": "TGWellFitted",
+			"name": "Well Fitted",
+			"description": "+25 Armor bonus if wearing all Nightingale Armor",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0001711C",
+			"edid": "DBWellFitted",
+			"name": "Well Fitted",
+			"description": "+25 Armor bonus if wearing all Shrouded Armor",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010FE04",
+			"edid": "IrilethVsDragons",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010FCFA",
+			"edid": "AugmentedShock60",
+			"name": "Augmented Shock",
+			"description": "Shock spells do 50% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010FCF9",
+			"edid": "AugmentedFrost60",
+			"name": "Augmented Frost",
+			"description": "Frost spells do 50% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010FCF8",
+			"edid": "AugmentedFlames60",
+			"name": "Augmented Flames",
+			"description": "Fire spells do 50% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010FAED",
+			"edid": "DA08EbonyBladePerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010F9DB",
+			"edid": "MGArchMageVendorPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010F934",
+			"edid": "DualFlurryActive",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0010F21E",
+			"edid": "TG00Pickpockethelper",
+			"name": "TG00 Pickpocket Boost",
+			"description": "Pickpocketing bonus of 30%. Only for use in TG00 on Brand-Shei.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010F1EC",
+			"edid": "VampireSkillsPerk02",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "0010F13F",
+			"edid": "TGSkeletonKeyPerk",
+			"name": "Skeleton Key Perk",
+			"description": "Lockpicks never break.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010EC8D",
+			"edid": "crReduceDamage075",
+			"name": "Reduced Damage 0.75",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010E001",
+			"edid": "MQ101SpiderReduceDamage",
+			"name": "Reduce Damage",
+			"description": "Reduce incoming damage by 50%",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0010D96A",
+			"edid": "RestedMarriagePerk",
+			"name": "Loved",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "0010D969",
+			"edid": "RestedWellPerk",
+			"name": "Well Rested",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "0010D685",
+			"edid": "SilverPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010D1E1",
+			"edid": "crExtraDamage0112",
+			"name": "Extra Damage 1.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010CB92",
+			"edid": "dunFrostflowAbyssPerk",
+			"name": "Sailor's Repose",
+			"description": "Healing spells cure 10% more.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010C708",
+			"edid": "MS02IncreaseDamage",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0010C041",
+			"edid": "crNerfDamage05",
+			"name": "Extra Damage 1.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010BF7D",
+			"edid": "CWGuardExtraDamageToPlayer",
+			"name": "Extra Damage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0010BF0A",
+			"edid": "NN01Perk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0010BEA8",
+			"edid": "crWoundedSpider",
+			"name": "Wounded Spider Damage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0010B1D9",
+			"edid": "CWSoldierExtraDamageToPlayer",
+			"name": "Extra Damage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "00109D85",
+			"edid": "crFalmerPoison05",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00109D84",
+			"edid": "crFalmerPoison04",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00109D83",
+			"edid": "crFalmerPoison03",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00109D82",
+			"edid": "crFalmerPoison02",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00109D7A",
+			"edid": "crFalmerPoison01",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00109D0D",
+			"edid": "crSprigganResistDamageWhileRegenerating",
+			"name": "Spriggan's Resilience",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00109C1B",
+			"edid": "MQ101BearReduceDamage",
+			"name": "Reduce Attack Damage",
+			"description": "Reduce attack damage by 80%",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "00109639",
+			"edid": "DragonhideSpellPerk",
+			"name": "Dragonhide",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001090A5",
+			"edid": "MasterTrader",
+			"name": "Master Trader",
+			"description": "Every merchant in the world gains 1000 gold for bartering.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001090A4",
+			"edid": "TempPers2",
+			"name": "Bribery",
+			"description": "Can bribe guards to ignore crimes.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001090A3",
+			"edid": "TempPers1",
+			"name": "Bribery",
+			"description": "Can bribe guards to ignore crimes.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001090A2",
+			"edid": "Persuasion",
+			"name": "Persuasion",
+			"description": "Persuasion attempts are 30% easier.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00108A44",
+			"edid": "SoulSiphon",
+			"name": "Soul Siphon",
+			"description": "Death blows to creatures, but not people, trap 5% of the victim's soul, recharging the weapon.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00107E2C",
+			"edid": "dunHunterQstPerk",
+			"name": "Kyne's Blessing",
+			"description": "Damage taken from animals is reduced by 10%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00107E29",
+			"edid": "crReduceDamage05",
+			"name": "Reduced Damage 0.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00107832",
+			"edid": "MatchingSetHeavy",
+			"name": "Matching Set",
+			"description": "Additional 25% Armor bonus if wearing a matched set of Heavy Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00107831",
+			"edid": "DeftMovement",
+			"name": "Deft Movement",
+			"description": "10% chance of avoiding all damage from a melee attack while wearing all Light Armor: head, chest, hands, feet.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00107830",
+			"edid": "WaxKey",
+			"name": "Wax Key",
+			"description": "Automatically gives you a copy of a picked lock's key if it has one.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001076FE",
+			"edid": "MGR21RestorationMag",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076FD",
+			"edid": "MGR21RestorationCost",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076FC",
+			"edid": "MGR21IllusionDur",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076FB",
+			"edid": "MGR21IllusionCost",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076FA",
+			"edid": "MGR21ConjurationDur",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076F9",
+			"edid": "MGR21ConjurationCost",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076F8",
+			"edid": "MGR21AlterationDur",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076F7",
+			"edid": "MGR21AlterationCost",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001076F5",
+			"edid": "MGR21DestructionMag",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "00106AD2",
+			"edid": "MGR21DestructionCost",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "001069BB",
+			"edid": "MS02ReduceDamage",
+			"name": "Reduce Damage",
+			"description": "Reduce incoming damage by 75%",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "00106259",
+			"edid": "QuickHands",
+			"name": "Quick Hands",
+			"description": "Able to pick locks without being noticed.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00106258",
+			"edid": "DualSavagery",
+			"name": "Dual Savagery",
+			"description": "Dual wielding power attacks do 50% bonus damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00106257",
+			"edid": "DualFlurry50",
+			"name": "Dual Flurry",
+			"description": "Dual wielding attacks are 35% faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00106256",
+			"edid": "DualFlurry30",
+			"name": "Dual Flurry",
+			"description": "Dual wielding attacks are 20% faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00106253",
+			"edid": "BlockRunner",
+			"name": "Block Runner",
+			"description": "Able to move faster with a shield raised.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00106092",
+			"edid": "doomRitualPerk",
+			"name": "MultipleSummons",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F33",
+			"edid": "ReflectBlows",
+			"name": "Reflect Blows",
+			"description": "10% chance to reflect melee damage back to the enemy while wearing all Heavy Armor: head, chest, hands, feet.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F32",
+			"edid": "RuneMaster",
+			"name": "Rune Master",
+			"description": "Can place runes five times farther away.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F31",
+			"edid": "Summoner70",
+			"name": "Summoner",
+			"description": "Can summon atronachs or raise undead three times as far away.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F30",
+			"edid": "Summoner30",
+			"name": "Summoner",
+			"description": "Can summon atronachs or raise undead twice as far away.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F2F",
+			"edid": "ConcentratedPoison",
+			"name": "Concentrated Poison",
+			"description": "Poisons applied to weapons last for twice as many hits.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F2E",
+			"edid": "GreenThumb",
+			"name": "Green Thumb",
+			"description": "Two ingredients are gathered from plants.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F2C",
+			"edid": "Snakeblood",
+			"name": "Snakeblood",
+			"description": "50% resistance to all poisons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F2B",
+			"edid": "Experimenter90",
+			"name": "Experimenter",
+			"description": "Eating an ingredient reveals all it's effects.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F2A",
+			"edid": "Experimenter70",
+			"name": "Experimenter",
+			"description": "Eating an ingredient reveals first three effects.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F29",
+			"edid": "Intimidation",
+			"name": "Intimidation",
+			"description": "Intimidation is twice as successful.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F28",
+			"edid": "Poisoned",
+			"name": "Poisoned",
+			"description": "Silently harm enemies by placing poisons in their pockets.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F26",
+			"edid": "TreasureHunter",
+			"name": "Treasure Hunter",
+			"description": "50% greater chance of finding special treasure.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F24",
+			"edid": "Silence",
+			"name": "Silence",
+			"description": "Walking and running does not affect detection.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F23",
+			"edid": "SilentRoll",
+			"name": "Silent Roll",
+			"description": "Sprinting while sneaking executes a silent forward roll.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F22",
+			"edid": "WindWalker",
+			"name": "Wind Walker",
+			"description": "Stamina regenerates 50% faster in all Light Armor: head, chest, hands, feet.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F1F",
+			"edid": "CriticalShot90",
+			"name": "Critical Shot",
+			"description": "20% chance of a critical hit that does 50% more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F1E",
+			"edid": "CriticalShot60",
+			"name": "Critical Shot",
+			"description": "15% chance of a critical hit that does 25% more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F1C",
+			"edid": "CriticalShot30",
+			"name": "Critical Shot",
+			"description": "10% chance of a critical hit that does extra damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F1A",
+			"edid": "TrickShot",
+			"name": "TrickShot",
+			"description": "25% chance to disarm an opponent.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F19",
+			"edid": "QuickShot",
+			"name": "Quick Shot",
+			"description": "Can draw a bow 30% faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105A03",
+			"edid": "dunKatariahScimitarPerk",
+			"name": "Windshear Bash Perk",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105874",
+			"edid": "TGNightingaleShadowPerk",
+			"name": "Nightingale Shadow Perk",
+			"description": "This Perk is applied automatically when Nightingale Shadow Ability is chosen.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0010582A",
+			"edid": "dunTargeOfTheBloodedPerk",
+			"name": "Targe Bashing Bleeding",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001046BD",
+			"edid": "crDragonResistNPCs",
+			"name": "Dragonskin",
+			"description": "Negate 50% of incoming damage, except from the Dragonborn.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001041A9",
+			"edid": "MQ101IncreaseDetection",
+			"name": "Increase Detection",
+			"description": "Double Detection",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "00103ADB",
+			"edid": "SteadyHand60",
+			"name": "Steady Hand",
+			"description": "Zooming in with a bow slows time by 50%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00103ADA",
+			"edid": "SteadyHand40",
+			"name": "Steady Hand",
+			"description": "Zooming in with a bow slows time by 25%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00103A92",
+			"edid": "crExtraDamage045",
+			"name": "Extra Damage 4.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00103A91",
+			"edid": "crExtraDamage035",
+			"name": "Extra Damage 3.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00103A90",
+			"edid": "crExtraDamage025",
+			"name": "Extra Damage 2.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00103A8F",
+			"edid": "crExtraDamage015",
+			"name": "Extra Damage 1.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "001036F0",
+			"edid": "DeadlyAim",
+			"name": "Deadly Aim",
+			"description": "Sneak attacks with bows now do three times damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00101076",
+			"edid": "crExtraDamage06",
+			"name": "Extra Damage 6",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00101075",
+			"edid": "crExtraDamage02",
+			"name": "Extra Damage 2",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000FF15B",
+			"edid": "DBBackstab",
+			"name": "Backstab",
+			"description": "Double sneak attack damage with one-handed weapons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000FE304",
+			"edid": "TorchBashPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000FB980",
+			"edid": "RestedPerk",
+			"name": "Rested",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000FA2C6",
+			"edid": "crExtraDamage05",
+			"name": "Extra Damage 5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000FA2C5",
+			"edid": "crExtraDamage03",
+			"name": "Extra Damage 3",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000FA2C4",
+			"edid": "crExtraDamage04",
+			"name": "Extra Damage 4",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F8308",
+			"edid": "C06BladeOfYsgramorPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000F8307",
+			"edid": "T03KynarethReward",
+			"name": "Agent of Kynareth",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F8305",
+			"edid": "DA05HircinesRingCursedPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000F8303",
+			"edid": "DA05HircinesRingPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000F5FF9",
+			"edid": "MQBladesDragonInfusion",
+			"name": "Dragon Infusion",
+			"description": "Dragons do 25% less melee damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000F5FF7",
+			"edid": "MarriageMealPerk",
+			"name": "Homecooked Meal",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000F5D2F",
+			"edid": "dunMossMotherPerk",
+			"name": "Valdr's Dagger",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F5B56",
+			"edid": "VampireSkillsPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000F3F0E",
+			"edid": "Disintegrate",
+			"name": "Disintegrate",
+			"description": "Shock damage disintegrates targets if their health is low.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F3933",
+			"edid": "DeepFreeze",
+			"name": "Deep Freeze",
+			"description": "Frost damage paralyzes targets if their health is low.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F392E",
+			"edid": "IntenseFlames",
+			"name": "Intense Flames",
+			"description": "Fire damage causes targets to flee if their health is low.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F392A",
+			"edid": "NoviceLocks00",
+			"name": "Novice Locks",
+			"description": "Novice locks are much easier to pick.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F2CAA",
+			"edid": "RestorationNovice00",
+			"name": "Novice Restoration",
+			"description": "Cast Novice level Restoration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F2CA9",
+			"edid": "IllusionNovice00",
+			"name": "Novice Illusion",
+			"description": "Cast Novice level Illusion spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F2CA8",
+			"edid": "DestructionNovice00",
+			"name": "Novice Destruction",
+			"description": "Cast Novice level Destruction spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F2CA7",
+			"edid": "ConjurationNovice00",
+			"name": "Novice Conjuration",
+			"description": "Cast Novice level Conjuration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000F2CA6",
+			"edid": "AlterationNovice00",
+			"name": "Novice Alteration",
+			"description": "Cast Novice level Alteration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E863F",
+			"edid": "MQ105PhantomFormPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "000F11A9",
+			"edid": "AllowShoutingPerk",
+			"name": "Allow Shouting",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000F0833",
+			"edid": "PowerNordBattleCryPerk",
+			"name": "Nord Battle Cry Perk",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000EE5C3",
+			"edid": "DA11Cannibalism",
+			"name": "Cannibalism",
+			"description": "Allows feeding from corpses.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000EB24A",
+			"edid": "InvulnerableActorZeroIncomingDamage",
+			"name": "Immunity to damage",
+			"description": "Make actor immune to incoming damage to block skill uses being added",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "000E997B",
+			"edid": "MQ304IncreaseAlduinDamage",
+			"name": "Increase Damage from Alduin",
+			"description": "Increase incoming damage from Alduin by 10x",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "000D55F7",
+			"edid": "MS11InvestigationBlockActivationPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000CC799",
+			"edid": "T02MaraReward",
+			"name": "Agent of Mara",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000AEC05",
+			"edid": "PlayerUnderforgeAccessPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000A725C",
+			"edid": "AlchemySkillBoosts",
+			"name": "",
+			"description": "Unified perk for applying alchemy effects",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0001BAC9",
+			"edid": "doomSteedEncumberPerk",
+			"name": "The Steed",
+			"description": "Increases the player's maximum carry weight as well as removes the penalty to movement from being encumbered.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "00079AF5",
+			"edid": "DA04BloodHarvestPerk",
+			"name": "Blood Harvest",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "000727FB",
+			"edid": "T01DibellaReward",
+			"name": "Agent of Dibella",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0006BC37",
+			"edid": "MGEnthirVendorPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "00068BCC",
+			"edid": "wardAbsorb",
+			"name": "Ward Absorb",
+			"description": "Wards recharge your magicka when hit with spells.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005CEC0",
+			"edid": "MQ101ReduceAttackDamage",
+			"name": "Reduce Attack Damage",
+			"description": "Reduce attack damage by 50%",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0005CEBE",
+			"edid": "MQ101ReduceDamage",
+			"name": "Reduce Damage",
+			"description": "Reduce incoming damage by 50%",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0002BA1D",
+			"edid": "PlayerWerewolfFeed",
+			"name": "Feed",
+			"description": "Feed on dead NPCs to retain the beast form. ",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "000153D2",
+			"edid": "Impact",
+			"name": "Impact",
+			"description": "Most destruction spells will stagger an opponent when dual cast.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000153D1",
+			"edid": "RestorationDualCasting",
+			"name": "Restoration Dual Casting",
+			"description": "Dual casting a Restoration spell overcharges the effects into an even more powerful version.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000153D0",
+			"edid": "IllusionDualCasting",
+			"name": "Illusion Dual Casting",
+			"description": "Dual casting an Illusion spell overcharges the effects into an even more powerful version.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000153CF",
+			"edid": "DestructionDualCasting",
+			"name": "Destruction Dual Casting",
+			"description": "Dual casting a Destruction spell overcharges the effects into an even more powerful version.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000153CE",
+			"edid": "ConjurationDualCasting",
+			"name": "Conjuration Dual Casting",
+			"description": "Dual casting a Conjuration spell overcharges the spell, allowing it to last longer.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000153CD",
+			"edid": "AlterationDualCasting",
+			"name": "Alteration Dual Casting",
+			"description": "Dual casting an Alteration spell overcharges the effects into an even more powerful version.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E827B",
+			"edid": "MQGreybeardsYol",
+			"name": "The Fire Within",
+			"description": "Fire Breath shout deals 25% more damage",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E827A",
+			"edid": "MQGreybeardsFeim",
+			"name": "Eternal Spirit",
+			"description": "While Ethereal, you recover health 25% faster",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E8279",
+			"edid": "MQGreybeardsFus",
+			"name": "Force Without Effort",
+			"description": "You stagger 25% less and foes stagger 25% more",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E7509",
+			"edid": "Headsman",
+			"name": "Headsman",
+			"description": "Chance to decapitate with a dual wielding power attack.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E7326",
+			"edid": "doomTowerPerk",
+			"name": "Tower",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E6DF0",
+			"edid": "MQBladesDragonResearch",
+			"name": "Dragon Research",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000E6805",
+			"edid": "MQBladesBlessing",
+			"name": "Dragonslayer's Blessing",
+			"description": "Gives bonus 10% critical hit chance vs. dragons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000E5F60",
+			"edid": "doomSteedPerk",
+			"name": "The Steed",
+			"description": "Increases the player's maximum carry weight as well as removes the penalty to movement from being encumbered.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E5F57",
+			"edid": "doomLoverPerk",
+			"name": "Lover",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E5F4F",
+			"edid": "doomAtronachPerk",
+			"name": "Atronach",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E5F4A",
+			"edid": "doomWarriorPerk",
+			"name": "Warrior",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E5F49",
+			"edid": "doomMagePerk",
+			"name": "Mage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E5F46",
+			"edid": "doomThiefPerk",
+			"name": "Thief",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000E40C0",
+			"edid": "PowerOrcBerserk",
+			"name": "Berserk",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D8C33",
+			"edid": "QuickReflexes",
+			"name": "Quick Reflexes",
+			"description": "Time slows down if you are blocking during an enemy's power attack.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D79A0",
+			"edid": "KeyMaster",
+			"name": "Keymaster",
+			"description": "Pickpocketing keys almost always works.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D799E",
+			"edid": "SoulStealer",
+			"name": "Soul Stealer",
+			"description": "Bound weapons cast Soul Trap on targets.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D799C",
+			"edid": "OblivionBinding",
+			"name": "Oblivion Binding",
+			"description": "Bound weapons will banish summoned creatures and turn raised ones.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D799B",
+			"edid": "MageArmor70",
+			"name": "Mage Armor",
+			"description": "Protection spells like Stoneflesh are three times as strong if not wearing armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D799A",
+			"edid": "MageArmor50",
+			"name": "Mage Armor",
+			"description": "Protection spells like Stoneflesh are 2.5 times as strong if not wearing armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D7999",
+			"edid": "MageArmor30",
+			"name": "Mage Armor",
+			"description": "Protection spells like Stoneflesh are twice as strong if not wearing armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D5F1C",
+			"edid": "TwinSouls",
+			"name": "Twin Souls",
+			"description": "You can have two atronachs or reanimated zombies.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D205B",
+			"edid": "ghostHalfDamagePerk",
+			"name": "Ghost Half Damage Perk",
+			"description": "Ghosts take half damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D2059",
+			"edid": "ghostExtraDamagePerk",
+			"name": "Ghost Extra Damage Perk",
+			"description": "Turn weapons do 2x damage to ghosts",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CF788",
+			"edid": "PerkSkillBoosts",
+			"name": "Skill Boosts",
+			"description": "Unified perk for applying skill benefits from perks",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CF02C",
+			"edid": "VampireFeed",
+			"name": "Thirst for Blood",
+			"description": "Allows feeding from NPCs when they're asleep.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000CB41A",
+			"edid": "ElementalPotency",
+			"name": "Elemental Potency",
+			"description": "Conjured Atronachs are 50% more powerful.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB419",
+			"edid": "Atromancy",
+			"name": "Atromancy",
+			"description": "Double duration for conjured Atronachs.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB414",
+			"edid": "AdvancedArmors",
+			"name": "Advanced Armors",
+			"description": "Can create Scaled and Plate armor at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB413",
+			"edid": "DaedricSmithing",
+			"name": "Daedric Smithing",
+			"description": "Can create Daedric armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB412",
+			"edid": "EbonySmithing",
+			"name": "Ebony Smithing",
+			"description": "Can create Ebony armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB411",
+			"edid": "GlassSmithing",
+			"name": "Glass Smithing",
+			"description": "Can create Glass armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB410",
+			"edid": "OrcishSmithing",
+			"name": "Orcish Smithing",
+			"description": "Can create Orcish armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB40F",
+			"edid": "ElvenSmithing",
+			"name": "Elven Smithing",
+			"description": "Can create Elven armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB40E",
+			"edid": "DwarvenSmithing",
+			"name": "Dwarven Smithing",
+			"description": "Can create Dwarven armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB40D",
+			"edid": "SteelSmithing",
+			"name": "Steel Smithing",
+			"description": "Can create Steel armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB407",
+			"edid": "GreatCriticalCharge",
+			"name": "Great Critical Charge",
+			"description": "Can do a two-handed power attack while sprinting that does double critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB406",
+			"edid": "CriticalCharge",
+			"name": "Critical Charge",
+			"description": "Can do a one-handed power attack while sprinting that does double critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CB405",
+			"edid": "SavageBlows",
+			"name": "Savage Blows",
+			"description": "Dual wielding power attacks do extra damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C07",
+			"edid": "Limbsplitter90",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C06",
+			"edid": "Limbsplitter60",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C05",
+			"edid": "Limbsplitter30",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5BFF",
+			"edid": "LightTouch80",
+			"name": "Light Touch",
+			"description": "Picking locks is twice as easy.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5BFE",
+			"edid": "LightTouch60",
+			"name": "Light Touch",
+			"description": "Picking locks is 80% easier.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5BFD",
+			"edid": "LightTouch40",
+			"name": "Light Touch",
+			"description": "Picking locks is 60% easier.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5BFC",
+			"edid": "LightTouch20",
+			"name": "Light Touch",
+			"description": "Picking locks is 40% easier.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5BFB",
+			"edid": "LightTouch00",
+			"name": "Light Touch",
+			"description": "Picking locks is 20% easier.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44CA",
+			"edid": "RestorationMaster100",
+			"name": "Master Restoration",
+			"description": "Cast Master level Restoration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C9",
+			"edid": "RestorationExpert75",
+			"name": "Expert Restoration",
+			"description": "Cast Expert level Restoration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C8",
+			"edid": "RestorationAdept50",
+			"name": "Adept Restoration",
+			"description": "Cast Adept level Restoration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C7",
+			"edid": "RestorationApprentice25",
+			"name": "Apprentice Restoration",
+			"description": "Cast Apprentice level Restoration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C6",
+			"edid": "IllusionMaster100",
+			"name": "Master Illusion",
+			"description": "Cast Master level Illusion spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C5",
+			"edid": "IllusionExpert75",
+			"name": "Expert Illusion",
+			"description": "Cast Expert level Illusion spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C4",
+			"edid": "IllusionAdept50",
+			"name": "Adept Illusion",
+			"description": "Cast Adept level Illusion spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C3",
+			"edid": "IllusionApprentice25",
+			"name": "Apprentice Illusion",
+			"description": "Cast Apprentice level Illusion spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C2",
+			"edid": "DestructionMaster100",
+			"name": "Master Destruction",
+			"description": "Cast Master level Destruction spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C1",
+			"edid": "DestructionExpert75",
+			"name": "Expert Destruction",
+			"description": "Cast Expert level Destruction spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44C0",
+			"edid": "DestructionAdept50",
+			"name": "Adept Destruction",
+			"description": "Cast Adept level Destruction spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44BF",
+			"edid": "DestructionApprentice25",
+			"name": "Apprentice Destruction",
+			"description": "Cast Apprentice level Destruction spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44BE",
+			"edid": "ConjurationMaster100",
+			"name": "Master Conjuration",
+			"description": "Cast Master level Conjuration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44BD",
+			"edid": "ConjurationExpert75",
+			"name": "Expert Conjuration",
+			"description": "Cast Expert level Conjuration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44BC",
+			"edid": "ConjurationAdept50",
+			"name": "Adept Conjuration",
+			"description": "Cast Adept level Conjuration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44BB",
+			"edid": "ConjurationApprentice25",
+			"name": "Apprentice Conjuration",
+			"description": "Cast Apprentice level Conjuration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44BA",
+			"edid": "AlterationMaster100",
+			"name": "Master Alteration",
+			"description": "Cast Master level Alteration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44B9",
+			"edid": "AlterationExpert75",
+			"name": "Expert Alteration",
+			"description": "Cast Expert level Alteration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44B8",
+			"edid": "AlterationAdept50",
+			"name": "Adept Alteration",
+			"description": "Cast Adept level Alteration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44B7",
+			"edid": "AlterationApprentice25",
+			"name": "Apprentice Alteration",
+			"description": "Cast Apprentice level Alteration spells for half magicka.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C44B5",
+			"edid": "Rage",
+			"name": "Rage",
+			"description": "Frenzy spells work on higher level opponents. Cumulative with Kindred Mage and Animage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3682",
+			"edid": "MasterLocks100",
+			"name": "Master Locks",
+			"description": "Master locks are much easier to pick.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3681",
+			"edid": "ExpertLocks75",
+			"name": "Expert Locks",
+			"description": "Expert locks are much easier to pick.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3680",
+			"edid": "AdeptLocks50",
+			"name": "Adept Locks",
+			"description": "Adept locks are much easier to pick.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C367F",
+			"edid": "Enchanter80",
+			"name": "Enchanter",
+			"description": "New enchantments are 100% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C367E",
+			"edid": "Enchanter60",
+			"name": "Enchanter",
+			"description": "New enchantments are 80% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C367D",
+			"edid": "Enchanter40",
+			"name": "Enchanter",
+			"description": "New enchantments are 60% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C367C",
+			"edid": "Enchanter20",
+			"name": "Enchanter",
+			"description": "New enchantments are 40% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3679",
+			"edid": "HackAndSlash90",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3678",
+			"edid": "HackAndSlash60",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E97",
+			"edid": "Skullcrusher90",
+			"name": "Skullcrusher",
+			"description": "Attacks with warhammers ignore 75% of armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E96",
+			"edid": "Skullcrusher60",
+			"name": "Skullcrusher",
+			"description": "Attacks with warhammers ignore 50% of armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E95",
+			"edid": "DeepWounds90",
+			"name": "Deep Wounds",
+			"description": "Attacks with greatswords have a 20% chance of doing even more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E94",
+			"edid": "DeepWounds60",
+			"name": "Deep Wounds",
+			"description": "Attacks with greatswords have a 15% chance of doing more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E93",
+			"edid": "BoneBreaker90",
+			"name": "Bone Breaker",
+			"description": "Attacks with maces ignore 75% of armor.\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E92",
+			"edid": "BoneBreaker60",
+			"name": "Bone Breaker",
+			"description": "Attacks with maces ignore 50% of armor.\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E91",
+			"edid": "Bladesman90",
+			"name": "Bladesman",
+			"description": "Attacks with a swords have a 20% chance of doing even more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E90",
+			"edid": "Bladesman60",
+			"name": "Bladesman",
+			"description": "Attacks with swords have a 15% chance of doing more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07D1",
+			"edid": "Haggling80",
+			"name": "Haggling",
+			"description": "Buying and selling prices are 30% better.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07D0",
+			"edid": "Haggling60",
+			"name": "Haggling",
+			"description": "Buying and selling prices are 25% better.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07CF",
+			"edid": "Haggling40",
+			"name": "Haggling",
+			"description": "Buying and selling prices are 20% better.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07CE",
+			"edid": "Haggling20",
+			"name": "Haggling",
+			"description": "Buying and selling prices are 15% better.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07CD",
+			"edid": "Alchemist80",
+			"name": "Alchemist",
+			"description": "Potions and poisons you make are twice as strong.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07CC",
+			"edid": "Alchemist60",
+			"name": "Alchemist",
+			"description": "Potions and poisons you make are 80% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07CB",
+			"edid": "Alchemist40",
+			"name": "Alchemist",
+			"description": "Potions and poisons you make are 60% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07CA",
+			"edid": "Alchemist20",
+			"name": "Alchemist",
+			"description": "Potions and poisons you make are 40% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07C9",
+			"edid": "Stealth80",
+			"name": "Stealth",
+			"description": "You are 40% harder to detect when sneaking.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07C8",
+			"edid": "Stealth60",
+			"name": "Stealth",
+			"description": "You are 35% harder to detect when sneaking.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07C7",
+			"edid": "Stealth40",
+			"name": "Stealth",
+			"description": "You are 30% harder to detect when sneaking.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C07C6",
+			"edid": "Stealth20",
+			"name": "Stealth",
+			"description": "You are 25% harder to detect when sneaking.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00018E6D",
+			"edid": "LightFingers80",
+			"name": "Light Fingers",
+			"description": "Pickpocketing bonus of 100%. Item weight and value reduce pickpocketing odds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00018E6C",
+			"edid": "LightFingers60",
+			"name": "Light Fingers",
+			"description": "Pickpocketing bonus of 80%. Item weight and value reduce pickpocketing odds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00018E6B",
+			"edid": "LightFingers40",
+			"name": "Light Fingers",
+			"description": "Pickpocketing bonus of 60%. Item weight and value reduce pickpocketing odds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00018E6A",
+			"edid": "LightFingers20",
+			"name": "Light Fingers",
+			"description": "Pickpocketing bonus of 40%. Item weight and value reduce pickpocketing odds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079392",
+			"edid": "AgileDefender80",
+			"name": "Agile Defender",
+			"description": "Increase armor rating for Light armor by 100%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079391",
+			"edid": "AgileDefender60",
+			"name": "Agile Defender",
+			"description": "Increase armor rating for Light armor by 80%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079389",
+			"edid": "AgileDefender40",
+			"name": "Agile Defender",
+			"description": "Increase armor rating for Light armor by 60%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079376",
+			"edid": "AgileDefender20",
+			"name": "Agile Defender",
+			"description": "Increase armor rating for Light armor by 40%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079374",
+			"edid": "Juggernaut80",
+			"name": "Juggernaut",
+			"description": "Increases armor rating for Heavy Armor by 100%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079362",
+			"edid": "Juggernaut60",
+			"name": "Juggernaut",
+			"description": "Increases armor rating for Heavy Armor by 80%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079361",
+			"edid": "Juggernaut40",
+			"name": "Juggernaut",
+			"description": "Increases armor rating for Heavy Armor by 60%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0007935E",
+			"edid": "Juggernaut20",
+			"name": "Juggernaut",
+			"description": "Increases armor rating for Heavy Armor by 40%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079358",
+			"edid": "ShieldWall80",
+			"name": "Shield Wall",
+			"description": "Blocking is 40% more effective.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079357",
+			"edid": "ShieldWall60",
+			"name": "Shield Wall",
+			"description": "Blocking is 35% more effective.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079356",
+			"edid": "ShieldWall40",
+			"name": "Shield Wall",
+			"description": "Blocking is 30% more effective.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079355",
+			"edid": "ShieldWall20",
+			"name": "Shield Wall",
+			"description": "Blocking is 25% more effective.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079354",
+			"edid": "Overdraw80",
+			"name": "Overdraw",
+			"description": "Bows do twice as much damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0007934D",
+			"edid": "Overdraw60",
+			"name": "Overdraw",
+			"description": "Bows do 80% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0007934B",
+			"edid": "Overdraw40",
+			"name": "Overdraw",
+			"description": "Bows do 60% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0007934A",
+			"edid": "Overdraw20",
+			"name": "Overdraw",
+			"description": "Bows do 40% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079349",
+			"edid": "Barbarian80",
+			"name": "Barbarian",
+			"description": "Two-Handed weapons do twice as much damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079348",
+			"edid": "Barbarian60",
+			"name": "Barbarian",
+			"description": "Two-Handed weapons do 80% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079347",
+			"edid": "Barbarian40",
+			"name": "Barbarian",
+			"description": "Two-Handed weapons do 60% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079346",
+			"edid": "Barbarian20",
+			"name": "Barbarian",
+			"description": "Two-Handed weapons do 40% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079345",
+			"edid": "Armsman80",
+			"name": "Armsman",
+			"description": "One-Handed weapons do twice as much damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079344",
+			"edid": "Armsman60",
+			"name": "Armsman",
+			"description": "One-Handed weapons do 80% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079343",
+			"edid": "Armsman20",
+			"name": "Armsman",
+			"description": "One-Handed weapons do 40% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00079342",
+			"edid": "Armsman40",
+			"name": "Armsman",
+			"description": "One-Handed weapons do 60% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BEE97",
+			"edid": "Enchanter00",
+			"name": "Enchanter",
+			"description": "New enchantments are 20% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BE128",
+			"edid": "Haggling00",
+			"name": "Haggling",
+			"description": "Buying and selling prices are 10% better.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BE127",
+			"edid": "Alchemist00",
+			"name": "Alchemist",
+			"description": "Potions and poisons you make are 20% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BE126",
+			"edid": "Stealth00",
+			"name": "Stealth",
+			"description": "You are 20% harder to detect when sneaking.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BE125",
+			"edid": "ApprenticeLocks25",
+			"name": "Apprentice Locks",
+			"description": "Apprentice locks are much easier to pick.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BE124",
+			"edid": "LightFingers00",
+			"name": "Light Fingers",
+			"description": "Pickpocketing bonus of 20%. Item weight and value reduce pickpocketing odds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BE123",
+			"edid": "AgileDefender00",
+			"name": "Agile Defender",
+			"description": "Increase armor rating for Light armor by 20%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BCD2B",
+			"edid": "Cushioned",
+			"name": "Cushioned",
+			"description": "Half damage from falling if wearing all Heavy Armor: head, chest, hands, feet.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BCD2A",
+			"edid": "Juggernaut00",
+			"name": "Juggernaut",
+			"description": "Increases armor rating for Heavy Armor by 20%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BCCAE",
+			"edid": "ShieldWall00",
+			"name": "Shield Wall",
+			"description": "Blocking is 20% more effective.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BABED",
+			"edid": "Overdraw00",
+			"name": "Overdraw",
+			"description": "Bows do 20% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BABE8",
+			"edid": "Barbarian00",
+			"name": "Barbarian",
+			"description": "Two-Handed weapons do 20% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000BABE4",
+			"edid": "Armsman00",
+			"name": "Armsman",
+			"description": "One-Handed weapons do 20% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000A3F64",
+			"edid": "AvoidDeath",
+			"name": "Avoid Death",
+			"description": "Once a day, heals 250 points automatically if you fall below 10% health.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00096590",
+			"edid": "ExtraPockets",
+			"name": "Extra Pockets",
+			"description": "Carrying capacity is increased by 100.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003FFFA",
+			"edid": "HackAndSlash30",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000640B3",
+			"edid": "MysticBinding",
+			"name": "Mystic Binding",
+			"description": "Bound weapons do more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005F594",
+			"edid": "DeadlyBash",
+			"name": "Deadly Bash",
+			"description": "Bashing does five times more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005F592",
+			"edid": "BoneBreaker30",
+			"name": "Bone Breaker",
+			"description": "Attacks with maces ignore 25% of armor.\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005F56F",
+			"edid": "Bladesman30",
+			"name": "Bladesman",
+			"description": "Attacks with swords have a 10% chance of doing critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00052D52",
+			"edid": "DevastatingBlow",
+			"name": "Devastating Blow",
+			"description": "Standing power attacks do 25% bonus damage with a chance to decapitate your enemies.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00052D51",
+			"edid": "ChampionsStance",
+			"name": "Champion's Stance",
+			"description": "Power attacks with two-handed weapons cost 25% less stamina.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00052D50",
+			"edid": "FightingStance",
+			"name": "Fighting Stance",
+			"description": "Power attacks with one-handed weapons cost 25% less stamina.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00059B78",
+			"edid": "AspectOfTerror",
+			"name": "Aspect of Terror",
+			"description": "Fear spells work on higher level opponents. Cumulative with Kindred Mage and Animage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00059B77",
+			"edid": "HypnoticGaze",
+			"name": "Hypnotic Gaze",
+			"description": "Calm spells now work on higher level opponents. Cumulative with Kindred Mage and Animage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00059B76",
+			"edid": "MasterOfTheMind",
+			"name": "Master of the Mind",
+			"description": "Illusion spells work on undead, daedra and automatons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F82",
+			"edid": "StormEnchanter",
+			"name": "Storm Enchanter",
+			"description": "Shock enchantments on weapons and armor are 25% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F81",
+			"edid": "FrostEnchanter",
+			"name": "Frost Enchanter",
+			"description": "Frost enchantments on weapons and armor are 25% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F80",
+			"edid": "FireEnchanter",
+			"name": "Fire Enchanter",
+			"description": "Fire enchantments on weapons and armor are 25% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F7F",
+			"edid": "ExtraEffect",
+			"name": "Extra Effect",
+			"description": "Can put two enchantments on the same item.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F7E",
+			"edid": "InsightfulEnchanter",
+			"name": "Insightful Enchanter",
+			"description": "Skill enchantments on armor are 25% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F7D",
+			"edid": "CorpusEnchanter",
+			"name": "Corpus Enchanter",
+			"description": "Health, magicka, and stamina enchantments on armor are 25% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F7C",
+			"edid": "SoulSqueezer",
+			"name": "Soul Squeezer",
+			"description": "Soul gems provide extra magicka for recharging.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F7B",
+			"edid": "Investor",
+			"name": "Investor",
+			"description": "Can invest 500 gold with a shopkeeper to increase his available gold permanently.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F7A",
+			"edid": "Merchant",
+			"name": "Merchant",
+			"description": "Can sell any type of item to any kind of merchant.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F79",
+			"edid": "fence",
+			"name": "Fence",
+			"description": "Can barter stolen goods with any merchant you have invested in.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F78",
+			"edid": "SilverTongue",
+			"name": "Silver Tongue",
+			"description": "Small favors are free.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F75",
+			"edid": "Allure",
+			"name": "Allure",
+			"description": "10% better prices with the opposite sex.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F72",
+			"edid": "Bribery",
+			"name": "Bribery",
+			"description": "Can bribe guards to ignore crimes.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F6F",
+			"edid": "WellFitted",
+			"name": "Well Fitted",
+			"description": "25% Armor bonus if wearing all Heavy Armor: head, chest, hands, feet.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F6E",
+			"edid": "FistsOfSteel",
+			"name": "Fists of Steel",
+			"description": "Unarmed attacks with Heavy Armor gauntlets do their armor rating in extra damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F6D",
+			"edid": "Conditioning",
+			"name": "Conditioning",
+			"description": "Heavy Armor weighs nothing and doesn't slow you down when worn.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F6C",
+			"edid": "TowerOfStrength",
+			"name": "Tower of Strength",
+			"description": "50% less stagger when wearing only Heavy Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F6A",
+			"edid": "ShieldCharge",
+			"name": "Shield Charge",
+			"description": "Sprinting with a shield raised knocks down most targets.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F69",
+			"edid": "ElementalProtection",
+			"name": "Elemental Protection",
+			"description": "Blocking with a shield reduces incoming fire, frost, and shock damage by 50%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F68",
+			"edid": "DeflectArrows",
+			"name": "Deflect Arrows",
+			"description": "Arrows that hit the shield do no damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F67",
+			"edid": "PowerBashPerk",
+			"name": "Power Bash",
+			"description": "Able to do a power bash.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F66",
+			"edid": "DisarmingBash",
+			"name": "Disarming Bash",
+			"description": "Chance to disarm when power bashing.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F64",
+			"edid": "Bullseye",
+			"name": "Bullseye",
+			"description": "15% chance of paralyzing the target for a few seconds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F63",
+			"edid": "Ranger",
+			"name": "Ranger",
+			"description": "Able to move faster with a drawn bow.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F62",
+			"edid": "PowerShot",
+			"name": "Power Shot",
+			"description": "Arrows stagger all but the largest opponents 50% of the time.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F61",
+			"edid": "EagleEye30",
+			"name": "Eagle Eye",
+			"description": "Pressing Block while aiming will zoom in your view.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005821D",
+			"edid": "Purity",
+			"name": "Purity",
+			"description": "All negative effects are removed from created potions, and all positive effects are removed from created poisons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005821B",
+			"edid": "Catalyst",
+			"name": "Catalyst",
+			"description": "Potions you take that have only beneficial effects are 50% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005821A",
+			"edid": "ImprovedVirulity",
+			"name": "Improved Virulity",
+			"description": "Able to remove beneficial effects when making poisons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058219",
+			"edid": "ImprovedRemedy",
+			"name": "Improved Remedy",
+			"description": "Able to eliminate harmful effects when making potions.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058218",
+			"edid": "Experimenter50",
+			"name": "Experimenter",
+			"description": "Eating an ingredient reveals first two effects.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058217",
+			"edid": "Poisoner",
+			"name": "Poisoner",
+			"description": "Poisons you mix are 25% more effective.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058216",
+			"edid": "Benefactor",
+			"name": "Benefactor",
+			"description": "Potions you mix with beneficial effects have an additional 25% greater magnitude.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058215",
+			"edid": "Physician",
+			"name": "Physician",
+			"description": "Potions you mix that restore Health, Magicka or Stamina are 25% more powerful.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058214",
+			"edid": "ShadowWarrior",
+			"name": "Shadow Warrior",
+			"description": "Crouching stops combat for a moment and forces distant opponents to search for a target.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058213",
+			"edid": "MuffledMovement",
+			"name": "Muffled Movement",
+			"description": "Noise from armor is reduced 50%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058211",
+			"edid": "AssassinsBlade",
+			"name": "Assassin's Blade",
+			"description": "Sneak attacks with daggers now do a total of fifteen times normal damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058210",
+			"edid": "Backstab",
+			"name": "Backstab",
+			"description": "Sneak attacks with one-handed weapons now do six times damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005820C",
+			"edid": "LightFoot",
+			"name": "Light Foot",
+			"description": "You won't trigger pressure plates.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005820A",
+			"edid": "GoldenTouch",
+			"name": "Golden Touch",
+			"description": "Find more gold in chests.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058209",
+			"edid": "Unbreakable",
+			"name": "Unbreakable",
+			"description": "Lockpicks never break.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058208",
+			"edid": "Locksmith",
+			"name": "Locksmith",
+			"description": "Pick starts close to the lock opening position.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058205",
+			"edid": "PerfectTouch",
+			"name": "Perfect Touch",
+			"description": "Can pickpocket equipped items.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058204",
+			"edid": "Cutpurse",
+			"name": "Cutpurse",
+			"description": "Pickpocketing gold is 50% easier.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058202",
+			"edid": "NightThief",
+			"name": "Night Thief",
+			"description": "+25% chance to pickpocket if the target is asleep.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058201",
+			"edid": "Misdirection",
+			"name": "Misdirection",
+			"description": "Can pickpocket equipped weapons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058200",
+			"edid": "AugmentedShock",
+			"name": "Augmented Shock",
+			"description": "Shock spells do 25% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581FD",
+			"edid": "QuietCasting",
+			"name": "Quiet Casting",
+			"description": "All spells you cast from any school of magic are silent to others.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581FC",
+			"edid": "Stability",
+			"name": "Stability",
+			"description": "Alteration spells have greater duration.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581F9",
+			"edid": "Respite",
+			"name": "Respite",
+			"description": "Healing spells also restore Stamina.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581F8",
+			"edid": "Regeneration",
+			"name": "Regeneration",
+			"description": "Healing spells cure 50% more.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581F7",
+			"edid": "atronach",
+			"name": "Atronach",
+			"description": "Absorb 30% of the magicka of any spells that hit you.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581F5",
+			"edid": "Recovery50",
+			"name": "Recovery",
+			"description": "Magicka regenerates 50% faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581F4",
+			"edid": "Recovery30",
+			"name": "Recovery",
+			"description": "Magicka regenerates 25% faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581EE",
+			"edid": "StormMastery",
+			"name": "Storm Mastery",
+			"description": "Shock spells cost less to cast.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581ED",
+			"edid": "TestLightningMage",
+			"name": "Lightning Mage",
+			"description": "Shock spells do more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581EC",
+			"edid": "FrostMastery",
+			"name": "Frost Mastery",
+			"description": "Frost spells cost less to cast.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581EB",
+			"edid": "TestFrostMage",
+			"name": "Frost Mage",
+			"description": "Frost spells do more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581EA",
+			"edid": "AugmentedFrost",
+			"name": "Augmented Frost",
+			"description": "Frost spells do 25% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581E9",
+			"edid": "FireMastery",
+			"name": "Fire Mastery",
+			"description": "Fire spells cost less to cast.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581E8",
+			"edid": "TestFireMage",
+			"name": "Fire Mage",
+			"description": "Fire spells do more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581E7",
+			"edid": "AugmentedFlames",
+			"name": "Augmented Flames",
+			"description": "Fire spells do 25% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581E4",
+			"edid": "Necromage",
+			"name": "Necromage",
+			"description": "All spells are more effective against undead.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581E2",
+			"edid": "KindredMage",
+			"name": "Kindred Mage",
+			"description": "All Illusion spells work on higher level people.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581E1",
+			"edid": "Animage",
+			"name": "Animage",
+			"description": "Illusion spells now work on higher level animals.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581DE",
+			"edid": "DarkSouls",
+			"name": "Dark Souls",
+			"description": "Reanimated undead have 100 points more health.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581DD",
+			"edid": "Necromancy",
+			"name": "Necromancy",
+			"description": "Greater duration for reanimated undead.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005312A",
+			"edid": "MagicResistance70",
+			"name": "Magic Resistance",
+			"description": "Blocks 30% of a spell's effects.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00053129",
+			"edid": "MagicResistance50",
+			"name": "Magic Resistance",
+			"description": "Blocks 20% of a spell's effects.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00053128",
+			"edid": "MagicResistance30",
+			"name": " Magic Resistance",
+			"description": "Blocks 10% of a spell's effects.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00052190",
+			"edid": "DragonArmor",
+			"name": "Dragon Armor",
+			"description": "Can create Dragon armor at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005218E",
+			"edid": "ArcaneBlacksmith",
+			"name": "Arcane Blacksmith",
+			"description": "You can improve magical weapons and armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00051B1C",
+			"edid": "Unhindered",
+			"name": "Unhindered",
+			"description": "Light Armor weighs nothing and doesn't slow you down when worn.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00051B1B",
+			"edid": "CustomFit",
+			"name": "Custom Fit",
+			"description": "25% Armor bonus if wearing all Light Armor: head, chest, hands, feet.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00051B1A",
+			"edid": "RangeOfMovement",
+			"name": "Range of Movement",
+			"description": "Reduced movement penalty in light armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00051B17",
+			"edid": "MatchingSet",
+			"name": "Matching Set",
+			"description": "Additional 25% Armor bonus if wearing a matched set of Light Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00051B12",
+			"edid": "HuntersDiscipline",
+			"name": "Hunter's Discipline",
+			"description": "Recover twice as many arrows from dead bodies.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AFA7",
+			"edid": "Warmaster",
+			"name": "Warmaster",
+			"description": "Backwards power attack has a 25% chance to paralyze the target.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AFA6",
+			"edid": "ParalyzingStrike",
+			"name": "Paralyzing Strike",
+			"description": "Backwards power attack has a 25% chance to paralyze the target.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AF9E",
+			"edid": "Sweep",
+			"name": "Sweep",
+			"description": "Sideways power attacks with two-handed weapons hit all targets in front of you.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AF84",
+			"edid": "Skullcrusher30",
+			"name": "Skullcrusher",
+			"description": "Attacks with warhammers ignore 25% of armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AF83",
+			"edid": "DeepWounds30",
+			"name": "Deep Wounds",
+			"description": "Attacks with greatswords have a 10% chance of doing critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AF81",
+			"edid": "SavageStrike",
+			"name": "Savage Strike",
+			"description": "Standing power attacks do 25% bonus damage with a chance to decapitate your enemies.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D5F1C",
+			"edid": "TwinSouls",
+			"name": "Twin Souls",
+			"description": "You can have two atronachs or reanimated zombies.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "01002F1E",
+			"edid": "PetFramework_PetStealth",
+			"name": "Sneak Pet",
+			"description": "Pet is 100% harder to detect.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000EE5C3",
+			"edid": "DA11Cannibalism",
+			"name": "Cannibalism",
+			"description": "Allows feeding from corpses.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "010009D4",
+			"edid": "MS04AncientKnowledge",
+			"name": "Ancient Knowledge",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "00107832",
+			"edid": "MatchingSetHeavy",
+			"name": "Matching Set",
+			"description": "Additional 25% Armor bonus if wearing a matched set of Heavy Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00105F2C",
+			"edid": "Snakeblood",
+			"name": "Snakeblood",
+			"description": "50% resistance to all poisons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005821D",
+			"edid": "Purity",
+			"name": "Purity",
+			"description": "All negative effects are removed from created potions, and all positive effects are removed from created poisons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00051B17",
+			"edid": "MatchingSet",
+			"name": "Matching Set",
+			"description": "Additional 25% Armor bonus if wearing a matched set of Light Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000AEC05",
+			"edid": "PlayerUnderforgeAccessPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000E6DF0",
+			"edid": "MQBladesDragonResearch",
+			"name": "Dragon Research",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C07",
+			"edid": "Limbsplitter90",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C05",
+			"edid": "Limbsplitter30",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F68",
+			"edid": "DeflectArrows",
+			"name": "Deflect Arrows",
+			"description": "Arrows that hit the shield do no damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C06",
+			"edid": "Limbsplitter60",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00018E6D",
+			"edid": "LightFingers80",
+			"name": "Light Fingers",
+			"description": "Pickpocketing bonus of 100%. Item weight and value reduce pickpocketing odds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CF788",
+			"edid": "PerkSkillBoosts",
+			"name": "Skill Boosts",
+			"description": "Unified perk for applying skill benefits from perks",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02014CCE",
+			"edid": "DLC1HarkonTurningImmunity",
+			"name": "Harkon Turning Immunity",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201459D",
+			"edid": "DLC1VampireSeductionBoost",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "020138C3",
+			"edid": "DLC1VyrthurArmorBoost",
+			"name": "Armor Boost",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02011CFB",
+			"edid": "DLC1BestialStrength100Perk",
+			"name": "Bestial Strength",
+			"description": "Do 100% more damage as a werewolf.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02011CFA",
+			"edid": "DLC1BestialStrength75Perk",
+			"name": "Bestial Strength",
+			"description": "Do 75% more damage as a werewolf.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200D83A",
+			"edid": "DLC1DawnguardItemPerk",
+			"name": "",
+			"description": "Dawnguard weapons do extra damage against vampires, and Dawnguard armor protects better vampires.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "02005054",
+			"edid": "DLC1VampireFeedDexionVampireSeduction",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200399B",
+			"edid": "DLC1EnchancedCrossbowArmorPiercingPerk",
+			"name": "Enhanced Crossbow",
+			"description": "When using enhanced cross bows, ignore 50% armor resistance\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C07",
+			"edid": "Limbsplitter90",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C06",
+			"edid": "Limbsplitter60",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C05",
+			"edid": "Limbsplitter30",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3679",
+			"edid": "HackAndSlash90",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3678",
+			"edid": "HackAndSlash60",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003FFFA",
+			"edid": "HackAndSlash30",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201A33C",
+			"edid": "DLC1DurnehviirMultipleSummon",
+			"name": "Multiple Summon",
+			"description": "Ability to have multiple summons",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "0201A189",
+			"edid": "DLC1AurielsArrowsBlocker",
+			"name": "Auriel's Arrows Blocker",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201A172",
+			"edid": "DLC1crExtraDamageScales03",
+			"name": "Extra Damage 3",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201A171",
+			"edid": "DLC1crExtraDamageScales025",
+			"name": "Extra Damage 2.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201A170",
+			"edid": "DLC1crExtraDamageScales015",
+			"name": "Extra Damage 1.5",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201A16F",
+			"edid": "DLC1crExtraDamageScales02",
+			"name": "Extra Damage 2",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00052190",
+			"edid": "DragonArmor",
+			"name": "Dragon Armor",
+			"description": "Can create Dragon armor and Dragonbone weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02016908",
+			"edid": "DLC1GargoylePerk",
+			"name": "Summon Gargoyle",
+			"description": "Blood Magic: Can conjure a gargoyle to fight for you.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000D5F1C",
+			"edid": "TwinSouls",
+			"name": "Twin Souls",
+			"description": "You can have two atronachs or reanimated zombies.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581DE",
+			"edid": "DarkSouls",
+			"name": "Dark Souls",
+			"description": "Reanimated undead have 100 points more health.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000581DD",
+			"edid": "Necromancy",
+			"name": "Necromancy",
+			"description": "Greater duration for reanimated undead.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02015CAE",
+			"edid": "DLC1crFalmerPoison06",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02015C62",
+			"edid": "crReduceDamage035",
+			"name": "Reduced Damage 0.35",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020142AC",
+			"edid": "DLC1LD_AetherialShieldPerk",
+			"name": "Aetherial Shield Perk",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020110CF",
+			"edid": "DLC1VampireActivationBlocker",
+			"name": "Activation Blocker",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AFA7",
+			"edid": "Warmaster",
+			"name": "Warmaster",
+			"description": "Backwards power attack has a 25% chance to paralyze the target.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000AEC05",
+			"edid": "PlayerUnderforgeAccessPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0200D00B",
+			"edid": "DLC1LDPerk",
+			"name": "Avoid Death",
+			"description": "Once a day, heals 250 points automatically if you fall below 10% health.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200D00A",
+			"edid": "DLC1LD_AetherialCrownPerk",
+			"name": "Aetherial Crown",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000CF02C",
+			"edid": "VampireFeed",
+			"name": "Thirst for Blood",
+			"description": "Allows feeding from NPCs when they're asleep.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "0002BA1D",
+			"edid": "PlayerWerewolfFeed",
+			"name": "Feed",
+			"description": "Feed on dead NPCs to retain the beast form. ",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "02008E3F",
+			"edid": "DLC1VampireSleepPerk",
+			"name": "Vampire Sleep Perk",
+			"description": "If you sleep in a coffin, you will gain additional power.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "02008A70",
+			"edid": "DLC1CorpseCursePerk",
+			"name": "Corpse Curse",
+			"description": "Blood Magic: Target is paralyzed.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02008A6E",
+			"edid": "DLC1PlayerWerewolfSavageFeeding",
+			"name": "Savage Feeding",
+			"description": "Feeding extends beast form for longer.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "02007A3F",
+			"edid": "DLC1BestialStrength50Perk",
+			"name": "Bestial Strength",
+			"description": "Do 50% more damage as a werewolf.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059AB",
+			"edid": "DLC1TotemOfTheMoonPerk",
+			"name": "Totem of the Moon",
+			"description": "Werewolf Totem of Brotherhood howl calls werewolves.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059AA",
+			"edid": "DLC1TotemOfIceBrothersPerk",
+			"name": "Totem of Ice Brothers",
+			"description": "Werewolf Totem of Brotherhood howl calls Ice Wolves.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059A9",
+			"edid": "DLC1TotemPredatorPerk",
+			"name": "Totem of the Predator",
+			"description": "Werewolf Totem of the Hunt howl has extended range, and shows whether the targets are not in combat, searching, or actively in combat.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059A8",
+			"edid": "DLC1TotemOfTerrorPerk",
+			"name": "Totem of Terror",
+			"description": "Werewolf Howl of Terror affects even higher level creatures.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059A7",
+			"edid": "DLC1GorgingPerk",
+			"name": "Gorging",
+			"description": "Feeding heals twice as much health.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059A6",
+			"edid": "DLC1SavageFeedingPerk",
+			"name": "Savage Feeding",
+			"description": "Able to feed off most dead creatures. Feeding off creatures instead of people only provides half the extended time.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059A5",
+			"edid": "DLC1AnimalVigorPerk",
+			"name": "Animal Vigor",
+			"description": "100 point bonus to health and stamina in beast form.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020059A4",
+			"edid": "DLC1BestialStrength25Perk",
+			"name": "Bestial Strength",
+			"description": "Do 25% more damage as a werewolf.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200599E",
+			"edid": "DLC1SupernaturalReflexesPerk",
+			"name": "Supernatural Reflexes",
+			"description": "Night Power: Everything slows down while you move faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200599C",
+			"edid": "DLC1MistFormPerk",
+			"name": "Mist Form",
+			"description": "Night Power: Transform into an invulnerable mist, while health, magicka and stamina regenerate.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200599B",
+			"edid": "DLC1DetectLifePerk",
+			"name": "Detect All Creatures",
+			"description": "Night Power: Detect all creatures, even dwarven automatons.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200599A",
+			"edid": "DLC1VampiricGrip",
+			"name": "Vampiric Grip",
+			"description": "Blood Magic: Can pull a creature to you from a distance, and do choking damage once it's close.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02005998",
+			"edid": "DLC1PowerOfTheGrave",
+			"name": "Power of the Grave",
+			"description": "50 point bonus to health, magicka and stamina as Vampire Lord.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02005997",
+			"edid": "DLC1NightCloakPerk",
+			"name": "Night Cloak",
+			"description": "In combat you are surrounded by a cloud of bats that feed on enemies within melee range.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02005996",
+			"edid": "DLC1PoisonTalons",
+			"name": "Poison Talons",
+			"description": "Melee attacks do 20 points of poison damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02005995",
+			"edid": "DLC1UnearthlyWill",
+			"name": "Unearthly Will",
+			"description": "Night Powers and Blood Magic cost 33% less.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02005994",
+			"edid": "DLC1VampiricBite",
+			"name": "Blood Healing",
+			"description": "Killing a person with a power attack bite restores all your health.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0200588B",
+			"edid": "DLC1VampireTurnPerk",
+			"name": "Turn",
+			"description": "Turn someone into a vampire.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "False"
+		},
+		{
+			"formid": "02004295",
+			"edid": "BYOHRestedAdoptionPerk",
+			"name": "Parent's Touch",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "000C5C07",
+			"edid": "Limbsplitter90",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C06",
+			"edid": "Limbsplitter60",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C5C05",
+			"edid": "Limbsplitter30",
+			"name": "Limbsplitter",
+			"description": "Attacks with battle axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3679",
+			"edid": "HackAndSlash90",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause even more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C3678",
+			"edid": "HackAndSlash60",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause more bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E97",
+			"edid": "Skullcrusher90",
+			"name": "Skullcrusher",
+			"description": "Attacks with warhammers ignore 75% of armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E96",
+			"edid": "Skullcrusher60",
+			"name": "Skullcrusher",
+			"description": "Attacks with warhammers ignore 50% of armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E95",
+			"edid": "DeepWounds90",
+			"name": "Deep Wounds",
+			"description": "Attacks with greatswords have a 20% chance of doing even more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E94",
+			"edid": "DeepWounds60",
+			"name": "Deep Wounds",
+			"description": "Attacks with greatswords have a 15% chance of doing more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E93",
+			"edid": "BoneBreaker90",
+			"name": "Bone Breaker",
+			"description": "Attacks with maces ignore 75% of armor.\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E92",
+			"edid": "BoneBreaker60",
+			"name": "Bone Breaker",
+			"description": "Attacks with maces ignore 50% of armor.\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E91",
+			"edid": "Bladesman90",
+			"name": "Bladesman",
+			"description": "Attacks with a swords have a 20% chance of doing even more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "000C1E90",
+			"edid": "Bladesman60",
+			"name": "Bladesman",
+			"description": "Attacks with swords have a 15% chance of doing more critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005F592",
+			"edid": "BoneBreaker30",
+			"name": "Bone Breaker",
+			"description": "Attacks with maces ignore 25% of armor.\r\n",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0005F56F",
+			"edid": "Bladesman30",
+			"name": "Bladesman",
+			"description": "Attacks with swords have a 10% chance of doing critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "00058F64",
+			"edid": "Bullseye",
+			"name": "Bullseye",
+			"description": "15% chance of paralyzing the target for a few seconds.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003FFFA",
+			"edid": "HackAndSlash30",
+			"name": "Hack and Slash",
+			"description": "Attacks with war axes cause extra bleeding damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AFA7",
+			"edid": "Warmaster",
+			"name": "Warmaster",
+			"description": "Backwards power attack has a 25% chance to paralyze the target.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AF84",
+			"edid": "Skullcrusher30",
+			"name": "Skullcrusher",
+			"description": "Attacks with warhammers ignore 25% of armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0003AF83",
+			"edid": "DeepWounds30",
+			"name": "Deep Wounds",
+			"description": "Attacks with greatswords have a 10% chance of doing critical damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0203D5CD",
+			"edid": "DLC2MQ06MiraakExtraDamageDragonsPerk",
+			"name": "Reduce Damage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0203D5B4",
+			"edid": "DLC2MQ06DragonNerfDamageMiraakPerk",
+			"name": "Reduce Damage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0203D597",
+			"edid": "DLC2dunTT2IldariPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0203D291",
+			"edid": "DLC2EbonyWarriorPickPocketMod",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0203CA73",
+			"edid": "DLC2ArrowDefense",
+			"name": "Arrow Defense",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0203BD06",
+			"edid": "DLC2CriticalHit",
+			"name": "Critical Hit",
+			"description": "10% chance of a critical hit that does extra damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0203A32E",
+			"edid": "DLC2Summoner",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02038057",
+			"edid": "DLC2dunHaknirScimitar02Perk",
+			"name": "Soulrender",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "02038055",
+			"edid": "DLC2dunHaknirScimitar01Perk",
+			"name": "Bloodscythe",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "02035B17",
+			"edid": "DLC2dunFrostmoonRingBloodlustBloodlust",
+			"name": "Frostmoon Bloodlust",
+			"description": "While in Beast Form, your attacks do <50>% more damage, but you also take <50>% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02035B16",
+			"edid": "DLC2dunFrostmoonRingMoonMagnifyHowls",
+			"name": "Frostmoon Howl",
+			"description": "Increases the duration of your Howls by <25>%.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0203399F",
+			"edid": "DLC2BlackBookSeekerPerks",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02029EE4",
+			"edid": "DLC2dunKarstaagModifySummonCountPerk",
+			"name": "Karstaag's Summons",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02027330",
+			"edid": "DLC2dunKolbjornGauntletsPerk",
+			"name": "Ahzidal's Warding",
+			"description": "Your Wards are <25>% less effective, but absorb <50>% of the magicka from incoming spells.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02027328",
+			"edid": "DLC2dunKolbjornRingNecromancyPerk",
+			"name": "Ahzidal's Necromancy",
+			"description": "When a creature you have reanimated takes damage, they explode for <50> points of Frost damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02027324",
+			"edid": "DLC2dunKolbjornArmorPerk",
+			"name": "Ahzidal's Retribution",
+			"description": "Enemies who strike you in melee have a small chance of being paralyzed.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020270E9",
+			"edid": "DLC2dunKolbjornHelmPerk",
+			"name": "Ahzidal's Arcana",
+			"description": "Your Conjuration and Rune spells cost <25>% more, but can be cast at greater range.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0202648F",
+			"edid": "DLC2HorksbanePerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "02026233",
+			"edid": "DLC2StalhrimEnchanting",
+			"name": "Stalhrim Enchanting",
+			"description": "Frost enchantments are 10% stronger.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020250E9",
+			"edid": "DLC2AcolyteMaskAugmentShock",
+			"name": "Dukaan's Fury",
+			"description": "Shock spells do 25% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020250E8",
+			"edid": "DLC2AcolyteMaskAugmentFrost",
+			"name": "Zahkriisos' Ire",
+			"description": "Frost spells do 25% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "020250E7",
+			"edid": "DLC2AcolyteMaskAugmentFire",
+			"name": "Ahzidal's Rage",
+			"description": "Fire spells do 25% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0202410A",
+			"edid": "DLC2MatchingSetHeavy",
+			"name": "Matching Set",
+			"description": "Additional 25% Armor bonus if wearing a matched set of Heavy Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "02024109",
+			"edid": "DLC2MatchingSet",
+			"name": "Matching Set",
+			"description": "Additional 25% Armor bonus if wearing a matched set of Light Armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "02024108",
+			"edid": "DLC2Smithing",
+			"name": "Smithing",
+			"description": "Can create Bonemold armor and weapons at forges, and improve them twice as much.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0201EEC7",
+			"edid": "DLC2DremoraPrices",
+			"name": "Dremora Prices",
+			"description": "Buying and selling prices are 10% worse.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0201ED99",
+			"edid": "dlc2BBDrunkenMaster",
+			"name": "Drunken Master",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E801",
+			"edid": "DLC2BlackBookNoFallingDamagePerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7FE",
+			"edid": "DLC2BlackBookHalfDamagePerk",
+			"name": "No damage",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7FB",
+			"edid": "DLC2BlackBookNoMagickaPerk",
+			"name": "Spells, no magicka",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7F8",
+			"edid": "DLC2BlackBookNoStaminaPerk",
+			"name": "Power attacks, no stamina",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7F6",
+			"edid": "DLC2BlackBookFoodPerk",
+			"name": "Food bonus",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7F1",
+			"edid": "DLC2BlackBookHagglingPerk",
+			"name": "Lover's Insight",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7F0",
+			"edid": "DLC2BlackBookCompanionsSafePerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201E7ED",
+			"edid": "DLC2BlackBookSkillBookPerk",
+			"name": "Skill book points",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201DFA9",
+			"edid": "DLC2StandingStoneTreePerk",
+			"name": "Standing Stones - Tree",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201DF9E",
+			"edid": "DLC2StandingStoneEarthPerk",
+			"name": "Standing Stone - Earth",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201DF9B",
+			"edid": "DLC2DragonAspectHeadPerk",
+			"name": "Dragon Aspect - Head",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201DF8F",
+			"edid": "DLC2DragonAspectArmsPerk",
+			"name": "Dragon Aspect - Arms",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "0201CDF0",
+			"edid": "DLC2TTR3aAshExtractionPerk",
+			"name": "Extraction Perk",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201CDE7",
+			"edid": "DLC2TTR4bBlockActivation",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201CAEA",
+			"edid": "DLC2TameDragonActivatePerk",
+			"name": "",
+			"description": "Only allow dragons with a specific keyword to be mounted.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "False"
+		},
+		{
+			"formid": "0201C05B",
+			"edid": "DLC2TTR5BriarheartHarvestPerk",
+			"name": "Briarheart Harvest",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "True",
+			"playable": "True"
+		},
+		{
+			"formid": "020177B4",
+			"edid": "DLC2AshShellDmgPerk",
+			"name": "",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02017745",
+			"edid": "DLC2MageArmor30NPC",
+			"name": "NPC Mage Armor",
+			"description": "Protection spells like Stoneflesh are twice as strong if not wearing armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02017744",
+			"edid": "DLC2MageArmor70NPC",
+			"name": "NPC Mage Armor",
+			"description": "Protection spells like Stoneflesh are three times as strong if not wearing armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02017743",
+			"edid": "DLC2MageArmor50NPC",
+			"name": "NPC Mage Armor",
+			"description": "Protection spells like Stoneflesh are 2.5 times as strong if not wearing armor.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02017742",
+			"edid": "DLC2Recovery50NPC",
+			"name": "NPC Recovery",
+			"description": "Magicka regenerates 50% faster.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02017740",
+			"edid": "DLC2wardAbsorbNPC",
+			"name": "NPC Ward Absorb",
+			"description": "Wards recharge your magicka when hit with spells.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201773F",
+			"edid": "DLC2NecromageNPC",
+			"name": "NPC Necromage",
+			"description": "All spells are more effective against undead.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201773E",
+			"edid": "DLC2Summoner70NPC",
+			"name": "NPC Summoner",
+			"description": "Can summon atronachs or raise undead three times as far away.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201773D",
+			"edid": "DLC2AugmentedShock60NPC",
+			"name": "NPCAugmented Shock",
+			"description": "Shock spells do 50% more damage.",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "0201773C",
+			"edid": "DLC2AugmentedFrost60NPC",
+			"name": "NPC Augmented Frost",
+			"description": "Frost spells do 50% more damage. ",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		},
+		{
+			"formid": "02017739",
+			"edid": "DLC2StaffEnchantingMult",
+			"name": "Staff Enchanting Mult",
+			"description": "",
+			"level": 0,
+			"num_ranks": 0,
+			"hidden": "False",
+			"playable": "True"
+		}
+	]
+}

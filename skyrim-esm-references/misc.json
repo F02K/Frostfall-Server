@@ -1,0 +1,8795 @@
+{
+	"misc": [
+		{
+			"formid": "0010E44B",
+			"edid": "MGRArniel04SoulGem",
+			"name": "Warped Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0010CC6A",
+			"edid": "TG01HaelgaStatuePost",
+			"name": "Statue of Dibella",
+			"weight": "2.0000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0010C762",
+			"edid": "TGTQ03ValueItem",
+			"name": "Do Not Delete",
+			"weight": "0.5000",
+			"value": 500,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "001092B8",
+			"edid": "TG08EyeoftheFalmerRight",
+			"name": "Right Eye of the Falmer",
+			"weight": "5.0000",
+			"value": 2500,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00105A4E",
+			"edid": "MS11YsgramorsSoupSpoon",
+			"name": "Ysgramor's Soup Spoon",
+			"weight": "0.5000",
+			"value": 3
+		},
+		{
+			"formid": "001058AA",
+			"edid": "BalbusForkNonEquip",
+			"name": "Balbus's Fork",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00105177",
+			"edid": "Flute01",
+			"name": "Flute",
+			"weight": "2.0000",
+			"value": 25
+		},
+		{
+			"formid": "00105109",
+			"edid": "DancersFlute",
+			"name": "The Dancer's Flute",
+			"weight": "2.0000",
+			"value": 3
+		},
+		{
+			"formid": "00104B40",
+			"edid": "BasicKnife01",
+			"name": "",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00104B3F",
+			"edid": "BasicFork01",
+			"name": "",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00103370",
+			"edid": "TGCrownValueItem",
+			"name": "Do Not Delete",
+			"weight": "0.5000",
+			"value": 500,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000FED17",
+			"edid": "WineSolitudeSpicedBottleEmpty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000FE6A9",
+			"edid": "WerewolfPelt",
+			"name": "Werewolf Pelt",
+			"weight": "5.0000",
+			"value": 20,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000FBC3D",
+			"edid": "dunUniqueMothInJar",
+			"name": "Moth in a Jar",
+			"weight": "1.0000",
+			"value": 0
+		},
+		{
+			"formid": "000FBC3C",
+			"edid": "dunUniqueButterflyInJar",
+			"name": "Butterfly in a Jar",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "000FBC3B",
+			"edid": "dunUniqueDragonflyInJar",
+			"name": "Dragonfly in a Jar",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "000FBC3A",
+			"edid": "dunUniqueFireflyInJar",
+			"name": "Torchbug in a Jar",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "000F6767",
+			"edid": "dunWaywardPassSkull01",
+			"name": "Ancient Traveler's Skull",
+			"weight": "5.0000",
+			"value": 0
+		},
+		{
+			"formid": "000F5D0A",
+			"edid": "Saw01",
+			"name": "Saw",
+			"weight": "2.0000",
+			"value": 3
+		},
+		{
+			"formid": "000F5D08",
+			"edid": "Pitchfork002",
+			"name": "Pitchfork",
+			"weight": "4.0000",
+			"value": 1
+		},
+		{
+			"formid": "000F5D07",
+			"edid": "Pitchfork001",
+			"name": "Pitchfork",
+			"weight": "4.0000",
+			"value": 1
+		},
+		{
+			"formid": "000F5D06",
+			"edid": "Shovel02",
+			"name": "Shovel",
+			"weight": "4.0000",
+			"value": 3
+		},
+		{
+			"formid": "000F5D05",
+			"edid": "Shovel01",
+			"name": "Shovel",
+			"weight": "4.0000",
+			"value": 3
+		},
+		{
+			"formid": "000F583A",
+			"edid": "SilverPlatter01IdleFood",
+			"name": "",
+			"weight": "1.0000",
+			"value": 15
+		},
+		{
+			"formid": "000F5839",
+			"edid": "SilverPlatter01IdleCups",
+			"name": "",
+			"weight": "1.0000",
+			"value": 15
+		},
+		{
+			"formid": "000F4983",
+			"edid": "DwarvenCenturionDynamo",
+			"name": "Centurion Dynamo Core",
+			"weight": "4.0000",
+			"value": 131
+		},
+		{
+			"formid": "000F257D",
+			"edid": "MS14FlagonA",
+			"name": "Michaela's Flagon",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000D4BE7",
+			"edid": "FoxPeltSnow",
+			"name": "Snow Fox Pelt",
+			"weight": "0.5000",
+			"value": 7,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000D4B35",
+			"edid": "FoxPelt",
+			"name": "Fox Pelt",
+			"weight": "0.5000",
+			"value": 5,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000F2015",
+			"edid": "WineBottle02BEmpty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000F2014",
+			"edid": "WineBottle02AEmpty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000F2013",
+			"edid": "WineBottle01BEmpty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000F2012",
+			"edid": "WineBottle01AEmpty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000F1491",
+			"edid": "CR10SilverHandPlansStatic",
+			"name": "Silver Hand Stratagem",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000F08FB",
+			"edid": "GlazedBowl02Nordic",
+			"name": "Bowl",
+			"weight": "0.5000",
+			"value": 10
+		},
+		{
+			"formid": "000F08FA",
+			"edid": "GlazedBowl01Nordic",
+			"name": "Bowl",
+			"weight": "0.5000",
+			"value": 20
+		},
+		{
+			"formid": "000F08F9",
+			"edid": "GlazedGoblet01Nordic",
+			"name": "Goblet",
+			"weight": "0.5000",
+			"value": 4
+		},
+		{
+			"formid": "000F08F8",
+			"edid": "GlazedCup01Nordic",
+			"name": "Cup",
+			"weight": "0.5000",
+			"value": 4
+		},
+		{
+			"formid": "000F08F7",
+			"edid": "GlazedPot02Nordic",
+			"name": "Pot",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000F08F6",
+			"edid": "GlazedPot01Nordic",
+			"name": "Pot",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000F08F5",
+			"edid": "GlazedPlate01Nordic",
+			"name": "Plate",
+			"weight": "0.5000",
+			"value": 3
+		},
+		{
+			"formid": "000F08F3",
+			"edid": "GlazedJugSmall01Nordic",
+			"name": "Jug",
+			"weight": "0.5000",
+			"value": 0
+		},
+		{
+			"formid": "000F08F1",
+			"edid": "GlazedJugLarge01Nordic",
+			"name": "Jug",
+			"weight": "0.5000",
+			"value": 0
+		},
+		{
+			"formid": "000F03F8",
+			"edid": "dunAlftandEmptySkoomaBottle",
+			"name": "Empty Skooma Bottle",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000ED417",
+			"edid": "dunReachwaterRockEmeraldDragonClaw",
+			"name": "Emerald Dragon Claw",
+			"weight": "0.5000",
+			"value": 600,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000EAFDD",
+			"edid": "MehrunesRazorBlade",
+			"name": "Mehrune's Razor Blade",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000EAFDC",
+			"edid": "MehrunesRazorHilt",
+			"name": "Mehrune's Razor Hilt",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000EAFDB",
+			"edid": "MehrunesRazorGem",
+			"name": "Mehrune's Razor Gem",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000EAFD7",
+			"edid": "MehrunesRazorScabbard",
+			"name": "Mehrune's Razor Scabbard",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000EA5C5",
+			"edid": "TGRGeneralValueItem",
+			"name": "Do Not Delete",
+			"weight": "0.5000",
+			"value": 250,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000E77BB",
+			"edid": "SolitudeToryggWarHorn",
+			"name": "Torygg's War Horn",
+			"weight": "5.0000",
+			"value": 0
+		},
+		{
+			"formid": "000E49F8",
+			"edid": "FFSS02VernerSatchel",
+			"name": "Verner's Satchel",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000E49F7",
+			"edid": "FFSS02SylgjaSatchel",
+			"name": "Sylgja's Satchel",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000E3148",
+			"edid": "CRTotem3",
+			"name": "Werewolf Totem",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000E3147",
+			"edid": "CRTotem2",
+			"name": "Werewolf Totem",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000E3146",
+			"edid": "CRTotem1",
+			"name": "Werewolf Totem",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000DB351",
+			"edid": "C05FragmentSack",
+			"name": "Fragments of Wuuthrad",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DABAB",
+			"edid": "Lute",
+			"name": "Lute",
+			"weight": "4.0000",
+			"value": 25
+		},
+		{
+			"formid": "000DABA9",
+			"edid": "Drum",
+			"name": "Drum",
+			"weight": "4.0000",
+			"value": 10
+		},
+		{
+			"formid": "000DABA7",
+			"edid": "Flute",
+			"name": "Flute",
+			"weight": "2.0000",
+			"value": 25
+		},
+		{
+			"formid": "000DAB04",
+			"edid": "FFI04Sack",
+			"name": "Klimmek's Supplies",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000D955A",
+			"edid": "FlowerBasketDrop",
+			"name": "Flower Basket",
+			"weight": "1.0000",
+			"value": 5
+		},
+		{
+			"formid": "000D8E43",
+			"edid": "TGFenceCaravanSatchel",
+			"name": "Satchel of Moon Sugar",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000D0756",
+			"edid": "MGRDragonHeartScales",
+			"name": "Dragon Heartscales",
+			"weight": "10.0000",
+			"value": 250,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "000C7316",
+			"edid": "TGRFOValueItem",
+			"name": "Do Not Delete",
+			"weight": "0.5000",
+			"value": 200,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000C04BB",
+			"edid": "FVDQuill",
+			"name": "Quill of Gemination",
+			"weight": "0.1000",
+			"value": 150
+		},
+		{
+			"formid": "000BFB09",
+			"edid": "Coal01",
+			"name": "Charcoal",
+			"weight": "1.0000",
+			"value": 5
+		},
+		{
+			"formid": "000BBCD5",
+			"edid": "MQ106DragonParchment",
+			"name": "Map of Dragon Burials",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000B08C7",
+			"edid": "dunUniqueBeeInJar",
+			"name": "Bee in a Jar",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "000AD06F",
+			"edid": "E3DemoMQ103Dragonstone",
+			"name": "Dragonstone",
+			"weight": "25.0000",
+			"value": 0
+		},
+		{
+			"formid": "000AADB7",
+			"edid": "dunRagnTorstensKey",
+			"name": "Torsten's Skull Key",
+			"weight": "0.3000",
+			"value": 100
+		},
+		{
+			"formid": "000AADB6",
+			"edid": "dunRagnSaereksKey",
+			"name": "Saerek's Skull Key",
+			"weight": "0.3000",
+			"value": 100
+		},
+		{
+			"formid": "0009BAF8",
+			"edid": "Basket06",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000999E7",
+			"edid": "E3GoldenClaw",
+			"name": "Golden Claw",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0004C3C8",
+			"edid": "Quill01",
+			"name": "Quill",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "0004C3C6",
+			"edid": "Inkwell01",
+			"name": "Inkwell",
+			"weight": "0.3000",
+			"value": 1
+		},
+		{
+			"formid": "0008632C",
+			"edid": "Glazed02Jug01",
+			"name": "Jug",
+			"weight": "5.0000",
+			"value": 5
+		},
+		{
+			"formid": "0008632A",
+			"edid": "Glazed02Urn01",
+			"name": "",
+			"weight": "4.0000",
+			"value": 5
+		},
+		{
+			"formid": "0006F3AA",
+			"edid": "DA09Crystal",
+			"name": "strange crystal",
+			"weight": "1.0000",
+			"value": 10
+		},
+		{
+			"formid": "00064298",
+			"edid": "YsgramorsBladePiece12",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064296",
+			"edid": "YsgramorsBladePiece11",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064294",
+			"edid": "YsgramorsBladePiece10",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064292",
+			"edid": "YsgramorsBladePiece09",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064290",
+			"edid": "YsgramorsBladePiece08",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "0006428E",
+			"edid": "YsgramorsBladePiece07",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "0006428B",
+			"edid": "YsgramorsBladePiece06",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064289",
+			"edid": "YsgramorsBladePiece05",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064287",
+			"edid": "YsgramorsBladePiece04",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064285",
+			"edid": "YsgramorsBladePiece03",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "00064283",
+			"edid": "YsgramorsBladePiece02",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "0005C09E",
+			"edid": "WRTempleTreeSaplingSample01",
+			"name": "Gildergreen Sapling",
+			"weight": "8.0000",
+			"value": 0
+		},
+		{
+			"formid": "0005B2DF",
+			"edid": "FFRiften17OreSample",
+			"name": "Quicksilver Ore",
+			"weight": "1.0000",
+			"value": 25,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "00043E28",
+			"edid": "FFRiften14Spoon",
+			"name": "Wylandriah's Spoon",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00043E27",
+			"edid": "FFRiften14Ingot",
+			"name": "Orichalcum Ingot",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "00041F95",
+			"edid": "FFRiften11Mark",
+			"name": "Mark of Dibella",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00025D7C",
+			"edid": "DwarvenUrn01",
+			"name": "",
+			"weight": "3.0000",
+			"value": 40
+		},
+		{
+			"formid": "00025CFE",
+			"edid": "DwarvenPot01",
+			"name": "",
+			"weight": "3.0000",
+			"value": 30
+		},
+		{
+			"formid": "00025C68",
+			"edid": "DwarvenBowl03",
+			"name": "Dwemer Bowl",
+			"weight": "2.0000",
+			"value": 20
+		},
+		{
+			"formid": "00025C13",
+			"edid": "DwarvenBowl02",
+			"name": "Dwemer Bowl",
+			"weight": "2.0000",
+			"value": 15
+		},
+		{
+			"formid": "00020949",
+			"edid": "DBTortureTools",
+			"name": "Torture Tools",
+			"weight": "2.0000",
+			"value": 15
+		},
+		{
+			"formid": "000200BA",
+			"edid": "ImperialWarHorn",
+			"name": "Imperial War Horn",
+			"weight": "5.0000",
+			"value": 70,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000200B6",
+			"edid": "NordWarHorn",
+			"name": "Nord War Horn",
+			"weight": "5.0000",
+			"value": 70,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72B0",
+			"edid": "IronSwordBrokenTop",
+			"name": "Broken Iron Sword Blade",
+			"weight": "6.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72AE",
+			"edid": "IronSwordBrokenHandle",
+			"name": "Broken Iron Sword Handle",
+			"weight": "3.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72AC",
+			"edid": "IronMaceBrokenTop",
+			"name": "Broken Iron Mace Head",
+			"weight": "8.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72AA",
+			"edid": "IronMaceBrokenHandle",
+			"name": "Broken Iron Mace Handle",
+			"weight": "5.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72A8",
+			"edid": "IronWarAxeBrokenTop",
+			"name": "Broken Iron War Axe Head",
+			"weight": "6.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72A6",
+			"edid": "IronWarAxeBrokenHandle",
+			"name": "Broken Iron War Axe Handle",
+			"weight": "5.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72A4",
+			"edid": "SteelWarhammerBrokenHandle",
+			"name": "Broken Steel Warhammer Handle",
+			"weight": "10.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72A2",
+			"edid": "SteelWarhammerBrokenTop",
+			"name": "Broken Steel Warhammer Head",
+			"weight": "15.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E72A0",
+			"edid": "SteelBattleAxeBrokenHandle",
+			"name": "Broken Steel Battle Axe Handle",
+			"weight": "9.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E729E",
+			"edid": "SteelBattleAxeBrokenTop",
+			"name": "Broken Steel Battle Axe Head",
+			"weight": "12.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E729C",
+			"edid": "SteelGreatswordBrokenHandle",
+			"name": "Broken Steel Greatsword Handle",
+			"weight": "7.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E729A",
+			"edid": "SteelGreatswordBrokenTop",
+			"name": "Broken Steel Greatsword Blade",
+			"weight": "10.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E7298",
+			"edid": "SteelSwordBrokenHandle",
+			"name": "Broken Steel Sword Handle",
+			"weight": "4.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E7296",
+			"edid": "SteelSwordBrokenTop",
+			"name": "Broken Steel Sword Blade",
+			"weight": "6.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000E4897",
+			"edid": "RuinedBook02",
+			"name": "Ruined Book",
+			"weight": "2.0000",
+			"value": 5
+		},
+		{
+			"formid": "000E42E1",
+			"edid": "SilverCandleStick03Off",
+			"name": "Candlestick",
+			"weight": "1.0000",
+			"value": 25
+		},
+		{
+			"formid": "000E42E0",
+			"edid": "SilverCandleStick02Off",
+			"name": "Candlestick",
+			"weight": "1.0000",
+			"value": 25
+		},
+		{
+			"formid": "000E42DF",
+			"edid": "SilverCandleStick01Off",
+			"name": "Candlestick",
+			"weight": "1.0000",
+			"value": 25
+		},
+		{
+			"formid": "000E3CB7",
+			"edid": "BurnedBook01",
+			"name": "Burned Book",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "000E2618",
+			"edid": "BasicPlate02",
+			"name": "Plate",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000E2617",
+			"edid": "BasicPlate01",
+			"name": "Plate",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000E1FC3",
+			"edid": "DwarvenBowl01",
+			"name": "Dwemer Bowl",
+			"weight": "2.0000",
+			"value": 20
+		},
+		{
+			"formid": "000E1FBD",
+			"edid": "DA16TorporIngredient03a",
+			"name": "Torpor Ingredient 3",
+			"weight": "0.5000",
+			"value": 20,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000E1FBC",
+			"edid": "DA16TorporIngredient02a",
+			"name": "Torpor Ingredient 2",
+			"weight": "0.5000",
+			"value": 20,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000E1FBB",
+			"edid": "DA16TorporIngredient01a",
+			"name": "Torpor Ingredient 1",
+			"weight": "0.5000",
+			"value": 20,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000DF202",
+			"edid": "MQ103Dragonstone",
+			"name": "Dragonstone",
+			"weight": "25.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DC530",
+			"edid": "CWDocumentsImperial",
+			"name": "Imperial Documents",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DC52E",
+			"edid": "CWDocumentsSons",
+			"name": "StormCloak Documents",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DB8A2",
+			"edid": "IngotDwarven",
+			"name": "Dwarven Metal Ingot",
+			"weight": "1.0000",
+			"value": 30,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000DB5D2",
+			"edid": "Leather01",
+			"name": "Leather",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000DA74D",
+			"edid": "TGCrownComplete",
+			"name": "Barenziahs Crown",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DA735",
+			"edid": "dunMiddenRingBalwen",
+			"name": "Balwen's Ornamental Ring",
+			"weight": "3.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DA734",
+			"edid": "dunMiddenRingPithiken",
+			"name": "Pithi's Ornamental Ring",
+			"weight": "3.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DA733",
+			"edid": "dunMiddenRingKatarina",
+			"name": "Katarina's Ornamental Ring",
+			"weight": "3.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DA732",
+			"edid": "dunMiddenRingTreoy",
+			"name": "Treoy's Ornamental Ring",
+			"weight": "3.0000",
+			"value": 0
+		},
+		{
+			"formid": "000D363B",
+			"edid": "sigilStone",
+			"name": "Sigil Stone",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000D284D",
+			"edid": "DeerHide02",
+			"name": "Deer Hide",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000CF89E",
+			"edid": "DeerPelt",
+			"name": "Deer Pelt",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000CE70B",
+			"edid": "RuinedBook",
+			"name": "Ruined Book",
+			"weight": "2.0000",
+			"value": 5
+		},
+		{
+			"formid": "000CC84D",
+			"edid": "BloodyRags01",
+			"name": "Bloody Rags",
+			"weight": "1.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "000C8878",
+			"edid": "DwarvenLargeScrap3",
+			"name": "Large Decorative Dwemer Strut",
+			"weight": "15.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C8874",
+			"edid": "DwarvenLargeScrap2",
+			"name": "Solid Dwemer Metal",
+			"weight": "25.0000",
+			"value": 25,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C8872",
+			"edid": "DwarvenLargeScrap",
+			"name": "Large Dwemer Strut",
+			"weight": "20.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C8870",
+			"edid": "DwarvenScrapLever02",
+			"name": "Small Dwemer Lever",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C886E",
+			"edid": "DwarvenScrapLever",
+			"name": "Dwemer Lever",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C886C",
+			"edid": "DwarvenScrapBent",
+			"name": "Bent Dwemer Scrap Metal",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C886A",
+			"edid": "DwarvenScrapMetal",
+			"name": "Dwemer Scrap Metal",
+			"weight": "2.0000",
+			"value": 15
+		},
+		{
+			"formid": "000C8868",
+			"edid": "DwarvenGyro",
+			"name": "Dwemer Gyro",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C8866",
+			"edid": "DwarvenPlateMetalSmall",
+			"name": "Small Dwemer Plate Metal",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C8864",
+			"edid": "DwarvenPlateMetalLarge",
+			"name": "Large Dwemer Plate Metal",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C8861",
+			"edid": "DwarvenGear",
+			"name": "Dwemer Gear",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000C4F2E",
+			"edid": "MS12PotionBottle",
+			"name": "Nurelion's Mixture",
+			"weight": "5.0000",
+			"value": 15
+		},
+		{
+			"formid": "000B9BE0",
+			"edid": "GlazedCandles01",
+			"name": "",
+			"weight": "1.0000",
+			"value": 5
+		},
+		{
+			"formid": "000B9BDE",
+			"edid": "GlazedJugSmall01",
+			"name": "Jug",
+			"weight": "0.5000",
+			"value": 0
+		},
+		{
+			"formid": "000B9BDC",
+			"edid": "GlazedCup01",
+			"name": "Cup",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "000B9BDA",
+			"edid": "GlazedGoblet01",
+			"name": "Goblet",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "000B9BD8",
+			"edid": "GlazedBowl02",
+			"name": "Bowl",
+			"weight": "0.5000",
+			"value": 15
+		},
+		{
+			"formid": "000B9BD6",
+			"edid": "GlazedJugLarge01",
+			"name": "Jug",
+			"weight": "0.5000",
+			"value": 0
+		},
+		{
+			"formid": "000B9BD4",
+			"edid": "GlazedPot02",
+			"name": "Pot",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000B9BD2",
+			"edid": "GlazedPot01",
+			"name": "Pot",
+			"weight": "3.0000",
+			"value": 5
+		},
+		{
+			"formid": "000B9BD0",
+			"edid": "GlazedPlate01",
+			"name": "Plate",
+			"weight": "0.5000",
+			"value": 3
+		},
+		{
+			"formid": "000B9BCC",
+			"edid": "GlazedBowl01",
+			"name": "Bowl",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "000ABD30",
+			"edid": "BasketCarry",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 2,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00019958",
+			"edid": "TGLT02QueenBeeStatue",
+			"name": "Queen Bee Statue",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00019954",
+			"edid": "TGLT07GrayFoxBust",
+			"name": "Bust of the Gray Fox",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00019952",
+			"edid": "TGLT03HonningbrewDecanter",
+			"name": "Honningbrew Decanter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0001994F",
+			"edid": "TGLT08EyeoftheFalmerLeft",
+			"name": "Left Eye of the Falmer",
+			"weight": "5.0000",
+			"value": 2500
+		},
+		{
+			"formid": "00044E8B",
+			"edid": "TGRShipModel",
+			"name": "Golden Ship Model",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00044E70",
+			"edid": "Flagon",
+			"name": "Flagon",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "00044E6E",
+			"edid": "TGRPitcher",
+			"name": "Jeweled Pitcher",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00044E6C",
+			"edid": "TGRGoblet",
+			"name": "Jeweled Goblet",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00044E6A",
+			"edid": "TGRCandlestick",
+			"name": "Jeweled Candlestick",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00044E67",
+			"edid": "TGRFlagon",
+			"name": "Jeweled Flagon",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00044E65",
+			"edid": "TGRDrinkingHorn",
+			"name": "Ornate Drinking Horn",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00044E63",
+			"edid": "TGRGoldenUrn",
+			"name": "Golden Urn",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0003A3E4",
+			"edid": "MS04DweLexiconCubeCorrupt01",
+			"name": "Lexicon",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0003A3DD",
+			"edid": "DA04DweLexiconCubeRunes01",
+			"name": "Runed Lexicon",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0003A3D2",
+			"edid": "DA04DweLexiconCubeBlank01",
+			"name": "Blank Lexicon",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00098627",
+			"edid": "SilverBowl02",
+			"name": "Bowl",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "00098626",
+			"edid": "SilverBowl01",
+			"name": "Bowl",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "00098625",
+			"edid": "SilverPlatter01",
+			"name": "Platter",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "00098624",
+			"edid": "SilverPlate01",
+			"name": "Plate",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "00098623",
+			"edid": "SilverJug01",
+			"name": "Jug",
+			"weight": "2.0000",
+			"value": 10
+		},
+		{
+			"formid": "00098621",
+			"edid": "SilverGoblet02",
+			"name": "Goblet",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "00098620",
+			"edid": "SilverGoblet01",
+			"name": "Goblet",
+			"weight": "0.5000",
+			"value": 5
+		},
+		{
+			"formid": "00075868",
+			"edid": "dunFrostflowAbyssHabdsSkull",
+			"name": "Habd's Remains",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000747FE",
+			"edid": "Bucket02b",
+			"name": "Bucket",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "000747FB",
+			"edid": "Bucket02a",
+			"name": "Bucket",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "0005E8AD",
+			"edid": "SovRoastOxHead01",
+			"name": "Roasted Ox Head",
+			"weight": "1.0000",
+			"value": 3
+		},
+		{
+			"formid": "0005E52A",
+			"edid": "SovRoastOxLeg01",
+			"name": "Roasted Ox Leg",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "0005CAE1",
+			"edid": "BlacksmithHammer01",
+			"name": "Hammer",
+			"weight": "3.0000",
+			"value": 1
+		},
+		{
+			"formid": "0005CAE0",
+			"edid": "BlacksmithTongs01",
+			"name": "Tongs",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "0005CADF",
+			"edid": "BlacksmithBellows01",
+			"name": "Bellows",
+			"weight": "1.0000",
+			"value": 1
+		},
+		{
+			"formid": "0004286C",
+			"edid": "DA15PelagiusHipBone",
+			"name": "Pelagius' Hip Bone",
+			"weight": "1.0000",
+			"value": 250
+		},
+		{
+			"formid": "0003532C",
+			"edid": "DA04AttunementSphere",
+			"name": "Attunement Sphere",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00027F15",
+			"edid": "DwarvenHighPlate01",
+			"name": "Dwemer Plate",
+			"weight": "1.0000",
+			"value": 8
+		},
+		{
+			"formid": "00027F12",
+			"edid": "DwarvenHighPot01",
+			"name": "Dwemer Pan",
+			"weight": "3.0000",
+			"value": 10
+		},
+		{
+			"formid": "00027F09",
+			"edid": "DwarvenHighCup03",
+			"name": "Dwemer Cup",
+			"weight": "0.5000",
+			"value": 6
+		},
+		{
+			"formid": "00027F08",
+			"edid": "DwarvenHighCup02",
+			"name": "Dwemer Cup",
+			"weight": "0.5000",
+			"value": 6
+		},
+		{
+			"formid": "00027F07",
+			"edid": "DwarvenHighCup01",
+			"name": "Dwemer Cup",
+			"weight": "0.5000",
+			"value": 6
+		},
+		{
+			"formid": "00027F06",
+			"edid": "DwarvenHighBowl02",
+			"name": "Dwemer Dish",
+			"weight": "0.5000",
+			"value": 8
+		},
+		{
+			"formid": "00027F03",
+			"edid": "DwarvenHighBowl01",
+			"name": "Dwemer Pan",
+			"weight": "0.5000",
+			"value": 8
+		},
+		{
+			"formid": "000B634C",
+			"edid": "dunYngolBarrowCoralClaw",
+			"name": "Coral Dragon Claw",
+			"weight": "0.5000",
+			"value": 150,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000AF5FD",
+			"edid": "BoneHumanSkullFull",
+			"name": "Skull",
+			"weight": "2.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "000AEBF7",
+			"edid": "DwarvenKnife",
+			"name": "Knife",
+			"weight": "0.5000",
+			"value": 6
+		},
+		{
+			"formid": "000AEBF4",
+			"edid": "DwarvenSpoon",
+			"name": "Spoon",
+			"weight": "0.5000",
+			"value": 6
+		},
+		{
+			"formid": "000AEBF3",
+			"edid": "DwarvenFork",
+			"name": "Fork",
+			"weight": "0.5000",
+			"value": 3
+		},
+		{
+			"formid": "000AEBF1",
+			"edid": "DwarvenCog",
+			"name": "Dwemer Cog",
+			"weight": "10.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "000AB7BB",
+			"edid": "dunFolgunthurIvoryDragonClaw",
+			"name": "Ivory Dragon Claw",
+			"weight": "0.5000",
+			"value": 200,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000AB375",
+			"edid": "dunSkuldafnDiamondClaw",
+			"name": "Diamond Claw",
+			"weight": "0.5000",
+			"value": 1000,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000AA03E",
+			"edid": "TGTQ01Candlestick",
+			"name": "Silver Candlestick",
+			"weight": "1.0000",
+			"value": 75
+		},
+		{
+			"formid": "000A34F8",
+			"edid": "MG07Keystone",
+			"name": "Torc of Labyrinthian",
+			"weight": "1.0000",
+			"value": 10
+		},
+		{
+			"formid": "0009F7A6",
+			"edid": "MG06Crystal",
+			"name": "Focusing Crystal",
+			"weight": "1.0000",
+			"value": 10
+		},
+		{
+			"formid": "0009E01F",
+			"edid": "MS06PotemasSkull",
+			"name": "Potema's Skull",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0009DFF5",
+			"edid": "TGCrown01",
+			"name": "Crown of Barenziah",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0009DFBB",
+			"edid": "TGCrownGemInventory",
+			"name": "Unusual Gem",
+			"weight": "0.5000",
+			"value": 200
+		},
+		{
+			"formid": "0009DA9E",
+			"edid": "TGCoinpurseLarge",
+			"name": "Coinpurse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0009DA9D",
+			"edid": "TGCoinpurseMed",
+			"name": "Coinpurse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0009DA9C",
+			"edid": "TGCoinpurseSmall",
+			"name": "Coinpurse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0008F997",
+			"edid": "StatueDibellaGold",
+			"name": "Dibella Statue",
+			"weight": "2.0000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0008D770",
+			"edid": "dunValthumeLungs",
+			"name": "Opaque Vessel",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0008CDFA",
+			"edid": "dunValthumeIronClaw",
+			"name": "Iron Claw",
+			"weight": "0.5000",
+			"value": 75,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0006A10A",
+			"edid": "MGRArniel03SoulGem4",
+			"name": "Warped Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0006A109",
+			"edid": "MGRArniel03SoulGem2",
+			"name": "Warped Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0006A108",
+			"edid": "MGRArniel03SoulGem3",
+			"name": "Warped Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0006A107",
+			"edid": "MGRArniel03SoulGem1",
+			"name": "Warped Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0006A106",
+			"edid": "MGRArniel02SoulGem",
+			"name": "Warped Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "000800E4",
+			"edid": "LeatherStrips",
+			"name": "Leather Strips",
+			"weight": "0.1000",
+			"value": 3,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0007C260",
+			"edid": "dunForelhostGlassClaw",
+			"name": "Glass Claw",
+			"weight": "0.5000",
+			"value": 700,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0005ADA1",
+			"edid": "IngotMalachite",
+			"name": "Refined Malachite",
+			"weight": "1.0000",
+			"value": 100,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ADA0",
+			"edid": "IngotQuicksilver",
+			"name": "Quicksilver Ingot",
+			"weight": "1.0000",
+			"value": 60,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005AD9F",
+			"edid": "IngotIMoonstone",
+			"name": "Refined Moonstone",
+			"weight": "1.0000",
+			"value": 75,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005AD9E",
+			"edid": "IngotGold",
+			"name": "Gold Ingot",
+			"weight": "1.0000",
+			"value": 100,
+			"keywords": [
+				"VendorItemOreIngot",
+				"GiftUniversallyValuable"
+			]
+		},
+		{
+			"formid": "0005AD9D",
+			"edid": "IngotEbony",
+			"name": "Ebony Ingot",
+			"weight": "1.0000",
+			"value": 150,
+			"keywords": [
+				"VendorItemOreIngot",
+				"GiftUniversallyValuable"
+			]
+		},
+		{
+			"formid": "0005AD99",
+			"edid": "IngotOrichalcum",
+			"name": "Orichalcum Ingot",
+			"weight": "1.0000",
+			"value": 45,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005AD93",
+			"edid": "IngotCorundum",
+			"name": "Corundum Ingot",
+			"weight": "1.0000",
+			"value": 40,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACE5",
+			"edid": "IngotSteel",
+			"name": "Steel Ingot",
+			"weight": "1.0000",
+			"value": 20,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACE4",
+			"edid": "IngotIron",
+			"name": "Iron Ingot",
+			"weight": "1.0000",
+			"value": 7,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACE3",
+			"edid": "ingotSilver",
+			"name": "Silver Ingot",
+			"weight": "1.0000",
+			"value": 50,
+			"keywords": [
+				"VendorItemOreIngot",
+				"GiftUniversallyValuable"
+			]
+		},
+		{
+			"formid": "0005ACE2",
+			"edid": "OreQuicksilver",
+			"name": "Quicksilver Ore",
+			"weight": "1.0000",
+			"value": 25,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACE1",
+			"edid": "OreMalachite",
+			"name": "Malachite Ore",
+			"weight": "1.0000",
+			"value": 30,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACE0",
+			"edid": "OreMoonstone",
+			"name": "Moonstone Ore",
+			"weight": "1.0000",
+			"value": 30,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACDF",
+			"edid": "OreSilver",
+			"name": "Silver Ore",
+			"weight": "1.0000",
+			"value": 25,
+			"keywords": [
+				"VendorItemOreIngot",
+				"GiftUniversallyValuable"
+			]
+		},
+		{
+			"formid": "0005ACDE",
+			"edid": "OreGold",
+			"name": "Gold Ore",
+			"weight": "1.0000",
+			"value": 50,
+			"keywords": [
+				"VendorItemOreIngot",
+				"GiftUniversallyValuable"
+			]
+		},
+		{
+			"formid": "0005ACDD",
+			"edid": "OreOrichalcum",
+			"name": "Orichalcum Ore",
+			"weight": "1.0000",
+			"value": 20,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005ACDC",
+			"edid": "OreEbony",
+			"name": "Ebony Ore",
+			"weight": "1.0000",
+			"value": 60,
+			"keywords": [
+				"VendorItemOreIngot",
+				"GiftUniversallyValuable"
+			]
+		},
+		{
+			"formid": "0005ACDB",
+			"edid": "OreCorundum",
+			"name": "Corundum Ore",
+			"weight": "1.0000",
+			"value": 20,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0005333B",
+			"edid": "FFRiftenBlackBriarMeadKeg",
+			"name": "Black-Briar Mead Keg",
+			"weight": "20.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00071CF3",
+			"edid": "OreIron",
+			"name": "Iron Ore",
+			"weight": "1.0000",
+			"value": 2,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "00070BC4",
+			"edid": "CivilWarMapFlag01",
+			"name": "Flag",
+			"weight": "4.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00070BC3",
+			"edid": "CivilWarMapFlag02",
+			"name": "Flag",
+			"weight": "4.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0006F993",
+			"edid": "Firewood01",
+			"name": "Firewood",
+			"weight": "5.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemClutter",
+				"VendorItemFireword"
+			]
+		},
+		{
+			"formid": "0006F266",
+			"edid": "TGLT05ShipModel",
+			"name": "Model Ship",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0006E806",
+			"edid": "YsgramorsBladePiece01",
+			"name": "Fragment of Wuuthrad",
+			"weight": "2.0000",
+			"value": 0
+		},
+		{
+			"formid": "0006C9EF",
+			"edid": "T01Chalice",
+			"name": "Statue of Dibella",
+			"weight": "3.0000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0006A712",
+			"edid": "SSDPackageFromDarkwater",
+			"name": "Package for Grelka",
+			"weight": "2.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0006A711",
+			"edid": "SSDPackageToDarkwater",
+			"name": "Package for Verner",
+			"weight": "2.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00068523",
+			"edid": "GemSapphireFlawless",
+			"name": "Flawless Sapphire",
+			"weight": "0.1000",
+			"value": 500,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00068522",
+			"edid": "gemRubyFlawless",
+			"name": "Flawless Ruby",
+			"weight": "0.1000",
+			"value": 350,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00068521",
+			"edid": "GemGarnetFlawless",
+			"name": "Flawless Garnet",
+			"weight": "0.1000",
+			"value": 150,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00068520",
+			"edid": "GemEmeraldFlawless",
+			"name": "Flawless Emerald",
+			"weight": "0.1000",
+			"value": 750,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0006851F",
+			"edid": "GemDiamondFlawless",
+			"name": "Flawless Diamond",
+			"weight": "0.1000",
+			"value": 1000,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0006851E",
+			"edid": "GemAmethystFlawless",
+			"name": "Flawless Amethyst",
+			"weight": "0.1000",
+			"value": 180,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00067185",
+			"edid": "SoulGemPiece005",
+			"name": "Soul Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00067184",
+			"edid": "SoulGemPiece004",
+			"name": "Soul Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00067183",
+			"edid": "SoulGemPiece003",
+			"name": "Soul Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00067182",
+			"edid": "SoulGemPiece002",
+			"name": "Soul Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00067181",
+			"edid": "SoulGemPiece001",
+			"name": "Soul Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00067180",
+			"edid": "ClothesIron",
+			"name": "Clothes Iron",
+			"weight": "3.0000",
+			"value": 7,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0006717F",
+			"edid": "Broom01",
+			"name": "Broom",
+			"weight": "1.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000663D7",
+			"edid": "FFI01Claw",
+			"name": "Sapphire Dragon Claw",
+			"weight": "0.5000",
+			"value": 500,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00063B47",
+			"edid": "GemDiamond",
+			"name": "Diamond",
+			"weight": "0.1000",
+			"value": 800,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00063B46",
+			"edid": "GemAmethyst",
+			"name": "Amethyst",
+			"weight": "0.1000",
+			"value": 120,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00063B45",
+			"edid": "GemGarnet",
+			"name": "Garnet",
+			"weight": "0.1000",
+			"value": 100,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00063B44",
+			"edid": "GemSapphire",
+			"name": "Sapphire",
+			"weight": "0.1000",
+			"value": 400,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00063B43",
+			"edid": "GemEmerald",
+			"name": "Emerald",
+			"weight": "0.1000",
+			"value": 600,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00063B42",
+			"edid": "GemRuby",
+			"name": "Ruby",
+			"weight": "0.1000",
+			"value": 200,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00062F5A",
+			"edid": "FFWinterholdAJar",
+			"name": "Burial Urn",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00059654",
+			"edid": "DB06OlavaToken",
+			"name": "Olava's Token",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0004B56C",
+			"edid": "dunDeadMensRubyDragonClaw",
+			"name": "Ruby Dragon Claw",
+			"weight": "0.5000",
+			"value": 400,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00060CC2",
+			"edid": "TGLT04EastEmpireShippingRoutes",
+			"name": "East Empire Shipping Map",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0005AF48",
+			"edid": "dunKorvanjundEbonyDragonClaw",
+			"name": "Ebony Claw",
+			"weight": "0.5000",
+			"value": 800,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00056189",
+			"edid": "TestJeffLTankard",
+			"name": "TestJeffLTankard",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0005598C",
+			"edid": "TGLT06PuzzleCube",
+			"name": "Dwemer Puzzle Cube",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0005421B",
+			"edid": "TG02HoneyJar",
+			"name": "Honey Jar",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00050E77",
+			"edid": "ShipOar01",
+			"name": "",
+			"weight": "5.0000",
+			"value": 3,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "0004FDB0",
+			"edid": "DB11PaymentItem",
+			"name": "Heart of Winter",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0004E4E6",
+			"edid": "DA09Gem",
+			"name": "Meridia's Beacon",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0004BCE0",
+			"edid": "DB09JarrinRoot",
+			"name": "Jarrin Root",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000457AB",
+			"edid": "highGateRuinsScroll",
+			"name": "Sealed Scroll",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00044E12",
+			"edid": "TGTQ01SilverMold",
+			"name": "Curious Silver Mold",
+			"weight": "1.0000",
+			"value": 250,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0004055F",
+			"edid": "dunVolskyggePuzzlePiece01",
+			"name": "Strange Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0003EC95",
+			"edid": "TG04FirebrandWineCase",
+			"name": "Firebrand Wine Case",
+			"weight": "6.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0003E6BC",
+			"edid": "dunValthumeBrain",
+			"name": "Opaque Vessel",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003E6BB",
+			"edid": "dunValthumeHeart",
+			"name": "Opaque Vessel",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003E4AD",
+			"edid": "MQ201DrinkTEMP",
+			"name": "Colovian Brandy TEMP",
+			"weight": "2.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000319E5",
+			"edid": "WoodenLadle01",
+			"name": "Wooden Ladle",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000319E4",
+			"edid": "BoneTrollSkull01",
+			"name": "Troll Skull",
+			"weight": "3.5000",
+			"value": 5,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "000319E3",
+			"edid": "BasicTankard01",
+			"name": "Tankard",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0003199A",
+			"edid": "BasicWoodenBowl01",
+			"name": "Wooden Bowl",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00031941",
+			"edid": "BasicWoodenPlate01",
+			"name": "Wooden Plate",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000318FB",
+			"edid": "CastIronPotMedium01",
+			"name": "Cast Iron Pot",
+			"weight": "6.0000",
+			"value": 8,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000318FA",
+			"edid": "CastIronPotSmall01",
+			"name": "Cast Iron Pot",
+			"weight": "3.0000",
+			"value": 2,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000318EC",
+			"edid": "Lantern01",
+			"name": "Lantern",
+			"weight": "2.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0003807B",
+			"edid": "Spigot01",
+			"name": "Spigot",
+			"weight": "2.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00035074",
+			"edid": "DB04aLetter",
+			"name": "Sealed Letter",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "00035073",
+			"edid": "DB04aAmulet",
+			"name": "Jeweled Amulet",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0002996F",
+			"edid": "C04HagravenHead",
+			"name": "Glenmoril Witch Head",
+			"weight": "4.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003ADA4",
+			"edid": "DragonBone",
+			"name": "Dragon Bone",
+			"weight": "15.0000",
+			"value": 500,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003ADA3",
+			"edid": "DragonScales",
+			"name": "Dragon Scales",
+			"weight": "10.0000",
+			"value": 250,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003AD93",
+			"edid": "HorseHide",
+			"name": "Horse Hide",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD90",
+			"edid": "DeerHide",
+			"name": "Deer Hide",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD8F",
+			"edid": "CowHide",
+			"name": "Cow Hide",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD8E",
+			"edid": "GoatHide",
+			"name": "Goat Hide",
+			"weight": "1.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD75",
+			"edid": "WolfIcePelt",
+			"name": "Ice Wolf Pelt",
+			"weight": "1.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD74",
+			"edid": "WolfPelt",
+			"name": "Wolf Pelt",
+			"weight": "1.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD6E",
+			"edid": "SabreCatSnowPelt",
+			"name": "Sabre Cat Snow Pelt",
+			"weight": "2.0000",
+			"value": 40,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD6D",
+			"edid": "SabreCatPelt",
+			"name": "Sabre Cat Pelt",
+			"weight": "2.0000",
+			"value": 25,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD6C",
+			"edid": "MammothTusk",
+			"name": "Mammoth Tusk",
+			"weight": "5.0000",
+			"value": 150,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003AD68",
+			"edid": "HorkerTusk",
+			"name": "Horker Tusk",
+			"weight": "1.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003AD57",
+			"edid": "ChaurusChitin",
+			"name": "Chaurus Chitin",
+			"weight": "4.0000",
+			"value": 50,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0003AD54",
+			"edid": "BearSnowPelt",
+			"name": "Snow Bear Pelt",
+			"weight": "3.0000",
+			"value": 75,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD53",
+			"edid": "BearCavePelt",
+			"name": "Cave Bear Pelt",
+			"weight": "3.0000",
+			"value": 60,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003AD52",
+			"edid": "BearPelt",
+			"name": "Bear Pelt",
+			"weight": "3.0000",
+			"value": 50,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0003A070",
+			"edid": "TG08SkeletonKey",
+			"name": "Skeleton Key",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemDaedricArtifact",
+				"DaedricArtifact"
+			]
+		},
+		{
+			"formid": "00039647",
+			"edid": "MS13GoldenClaw",
+			"name": "Golden Claw",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter",
+				"MS13ClawKeyword"
+			]
+		},
+		{
+			"formid": "00037CE9",
+			"edid": "TG07MercersPlans",
+			"name": "Mercer's Plans",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00034CD6",
+			"edid": "RuinsLinenPile01",
+			"name": "Linen Wrap",
+			"weight": "3.0000",
+			"value": 2,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "00034CD4",
+			"edid": "RuinsScissor",
+			"name": "Embalming Tool",
+			"weight": "0.5000",
+			"value": 3,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "00034CD2",
+			"edid": "RuinsEmbalmingPick",
+			"name": "Embalming Tool",
+			"weight": "3.0000",
+			"value": 2,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "00034CD0",
+			"edid": "RuinsScrewTool",
+			"name": "Embalming Tool",
+			"weight": "1.0000",
+			"value": 4,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "00034CCE",
+			"edid": "RuinsScalpel",
+			"name": "Embalming Tool",
+			"weight": "0.5000",
+			"value": 3,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "00033764",
+			"edid": "TG06Rubbing",
+			"name": "Calcelmo's Stone Rubbing",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00033761",
+			"edid": "PaperRoll",
+			"name": "Roll of Paper",
+			"weight": "1.0000",
+			"value": 4,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00033760",
+			"edid": "Charcoal",
+			"name": "Charcoal",
+			"weight": "0.5000",
+			"value": 2,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "0003292F",
+			"edid": "MQ105Horn",
+			"name": "Horn of Jurgen Windcaller",
+			"weight": "4.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00023DF8",
+			"edid": "DB03JeweledPendant",
+			"name": "Jeweled Pendant",
+			"weight": "0.5000",
+			"value": 200,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0001FE9B",
+			"edid": "MGR11GrandSoulGem",
+			"name": "Petty Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "0001CB34",
+			"edid": "DA14Ring",
+			"name": "Wedding Ring",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0001A31C",
+			"edid": "DA04Extractor",
+			"name": "Essence Extractor",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemTool"
+			]
+		},
+		{
+			"formid": "0002C260",
+			"edid": "MS12BriarHeart",
+			"name": "Briar Heart",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0002C25E",
+			"edid": "MS12MammothTuskPowder",
+			"name": "Mammoth Tusk Powder",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0002C25C",
+			"edid": "MS12UnmeltingSnow",
+			"name": "Unmelting Snow",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0002C25A",
+			"edid": "MS12WhitePhial",
+			"name": "The White Phial (Empty)",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"MagicDisallowEnchanting"
+			]
+		},
+		{
+			"formid": "0002C259",
+			"edid": "MS12WhitePhialDamaged",
+			"name": "Cracked White Phial",
+			"weight": "0.5000",
+			"value": 0
+		},
+		{
+			"formid": "0002BAAB",
+			"edid": "TG03Poison",
+			"name": "Pest Poison",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0002AC62",
+			"edid": "DA05SindingsSkin",
+			"name": "Sinding's Skin",
+			"weight": "4.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "00028AD9",
+			"edid": "DA01MalynsBlackSoul",
+			"name": "Malyn's Black Soul Gem",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00028AD7",
+			"edid": "DA01AzurasStarBroken",
+			"name": "Broken Azura's Star",
+			"weight": "0.5000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00026C31",
+			"edid": "MGR01Alembic",
+			"name": "Tolfdir's Alembic",
+			"weight": "2.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000240D6",
+			"edid": "DA07MehrunesRazorScabbard",
+			"name": "Scabbard of Mehrunes' Razor",
+			"weight": "3.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000240D5",
+			"edid": "DA07MehrunesRazorBlade",
+			"name": "Shards of Mehrunes' Razor",
+			"weight": "6.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000240D4",
+			"edid": "DA07MehrunesRazorPommelStone",
+			"name": "Pommel Stone of Mehrunes' Razor",
+			"weight": "2.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "000240D3",
+			"edid": "DA07MehrunesRazorHilt",
+			"name": "Hilt of Mehrunes' Razor",
+			"weight": "2.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00021EA3",
+			"edid": "TG01HaelgaStatue",
+			"name": "Statue of Dibella",
+			"weight": "2.0000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0001F6D4",
+			"edid": "DB01Plate",
+			"name": "Aretino Family Heirloom",
+			"weight": "0.5000",
+			"value": 100,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0001CB81",
+			"edid": "T03EldergleamSapling",
+			"name": "Eldergleam Sapling",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0001C494",
+			"edid": "T03EldergleamSap",
+			"name": "Eldergleam Sap",
+			"weight": "1.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0001BE15",
+			"edid": "TestBanditBossHead",
+			"name": "Kothyr's Head",
+			"weight": "4.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "00012FEC",
+			"edid": "BasketClosed01",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FEB",
+			"edid": "Basket05",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FEA",
+			"edid": "Basket04",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FE9",
+			"edid": "Basket03",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FE8",
+			"edid": "Basket02",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FE7",
+			"edid": "Basket01",
+			"name": "Basket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FE6",
+			"edid": "Kettle01",
+			"name": "Kettle",
+			"weight": "2.0000",
+			"value": 4,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "00012FDF",
+			"edid": "Bucket01",
+			"name": "Bucket",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0000000F",
+			"edid": "Gold001",
+			"name": "Gold",
+			"weight": "0.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0000000A",
+			"edid": "Lockpick",
+			"name": "Lockpick",
+			"weight": "0.0000",
+			"value": 2,
+			"keywords": [
+				"VendorItemTool",
+				"GiftThiefSpecial"
+			]
+		},
+		{
+			"formid": "000C886A",
+			"edid": "DwarvenScrapMetal",
+			"name": "Dwemer Scrap Metal",
+			"weight": "2.0000",
+			"value": 15,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "010030CA",
+			"edid": "CCHorseArmorMiscArmorElven",
+			"name": "Elven Horse Armor",
+			"weight": "25.0000",
+			"value": 500
+		},
+		{
+			"formid": "010030C9",
+			"edid": "CCHorseArmorMiscArmorSteel",
+			"name": "Steel Horse Armor",
+			"weight": "35.0000",
+			"value": 500
+		},
+		{
+			"formid": "0000000A",
+			"edid": "Lockpick",
+			"name": "Lockpick",
+			"weight": "0.1000",
+			"value": 2,
+			"keywords": [
+				"VendorItemTool",
+				"GiftThiefSpecial"
+			]
+		},
+		{
+			"formid": "000F583A",
+			"edid": "DLC1SilverPlatter01IdleFood",
+			"name": "Silver Platter",
+			"weight": "1.0000",
+			"value": 15
+		},
+		{
+			"formid": "000F5839",
+			"edid": "DLC1SilverPlatter01IdleCups",
+			"name": "Silver Platter",
+			"weight": "1.0000",
+			"value": 15
+		},
+		{
+			"formid": "02012FC3",
+			"edid": "PortalGemWhiteKey",
+			"name": "Diamond Paragon",
+			"weight": "0.3000",
+			"value": 2000
+		},
+		{
+			"formid": "02012F97",
+			"edid": "PortalGemPurpleKey",
+			"name": "Amethyst Paragon",
+			"weight": "0.3000",
+			"value": 360
+		},
+		{
+			"formid": "02011DB4",
+			"edid": "DLC1SilverJugBlood01",
+			"name": "Silver Jug",
+			"weight": "2.0000",
+			"value": 30
+		},
+		{
+			"formid": "02011DB3",
+			"edid": "DLC1SilverGobletBlood02",
+			"name": "Silver Goblet",
+			"weight": "1.0000",
+			"value": 15
+		},
+		{
+			"formid": "02011DB2",
+			"edid": "DLC1SilverGobletBlood01",
+			"name": "Silver Goblet",
+			"weight": "1.0000",
+			"value": 15
+		},
+		{
+			"formid": "02011CF7",
+			"edid": "DLC1BoneHawkClaw",
+			"name": "Bone Hawk Claw",
+			"weight": "1.0000",
+			"value": 7,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0201199A",
+			"edid": "DLC1SabreCatHide",
+			"name": "Vale Sabre Cat Hide",
+			"weight": "2.0000",
+			"value": 10
+		},
+		{
+			"formid": "02011999",
+			"edid": "DLC1DeerHide",
+			"name": "Vale Deer Hide",
+			"weight": "2.0000",
+			"value": 10
+		},
+		{
+			"formid": "0200F709",
+			"edid": "DLC1DeathHoundCollar",
+			"name": "Death Hound Collar",
+			"weight": "2.0000",
+			"value": 50
+		},
+		{
+			"formid": "0200EA6A",
+			"edid": "DLC1VQSoulEssenceGemFull",
+			"name": "Soul Essence Gem (Full)",
+			"weight": "0.5000",
+			"value": 250
+		},
+		{
+			"formid": "020066F6",
+			"edid": "DLC01SoulCairnReaperFragment03",
+			"name": "Reaper Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "020066F5",
+			"edid": "DLC01SoulCairnReaperFragment02",
+			"name": "Reaper Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "020066F3",
+			"edid": "DLC01SoulCairnReaperFragment01",
+			"name": "Reaper Gem Fragment",
+			"weight": "0.1000",
+			"value": 5,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "02003D7D",
+			"edid": "DLC1VQ03MagicWidget",
+			"name": "Weystone Focus",
+			"weight": "0.3000",
+			"value": 300
+		},
+		{
+			"formid": "02002B29",
+			"edid": "sc_ArvakSkullUNIQUE",
+			"name": "Arvak's Skull",
+			"weight": "4.0000",
+			"value": 0
+		},
+		{
+			"formid": "02002994",
+			"edid": "DLC1BoneHawkFeathers",
+			"name": "Bone Hawk Feathers",
+			"weight": "1.0000",
+			"value": 7,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "02002993",
+			"edid": "DLC1BoneHawkSkull",
+			"name": "Bone Hawk Skull",
+			"weight": "1.0000",
+			"value": 7,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0201A87F",
+			"edid": "sc_SkeletonHorseLeg00",
+			"name": "Skeleton Horse Leg",
+			"weight": "4.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201A87E",
+			"edid": "sc_SkeletonHorseLeg",
+			"name": "",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02019ABD",
+			"edid": "PortalGemOrangeKey",
+			"name": "Ruby Paragon",
+			"weight": "0.3000",
+			"value": 700
+		},
+		{
+			"formid": "02019ABC",
+			"edid": "PortalGemGreenKey",
+			"name": "Emerald Paragon",
+			"weight": "0.3000",
+			"value": 1500
+		},
+		{
+			"formid": "02019ABB",
+			"edid": "PortalGemBlueKey",
+			"name": "Sapphire Paragon",
+			"weight": "0.3000",
+			"value": 1000
+		},
+		{
+			"formid": "020195AA",
+			"edid": "DLC1ShellbugChitin",
+			"name": "Shellbug Chitin",
+			"weight": "4.0000",
+			"value": 25,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "0201932B",
+			"edid": "DLC1CanticleBarkFake",
+			"name": "Canticle Bark",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020191CB",
+			"edid": "sc_SkeletonHorseHead",
+			"name": "Arvak's Skull",
+			"weight": "4.0000",
+			"value": 0
+		},
+		{
+			"formid": "020191B7",
+			"edid": "DLC1CanticleBark",
+			"name": "Canticle Bark",
+			"weight": "0.0000",
+			"value": 350
+		},
+		{
+			"formid": "0201433E",
+			"edid": "DLC1LD_AetheriumShard02",
+			"name": "Glowing Crystal Shard",
+			"weight": "0.2500",
+			"value": 100,
+			"keywords": [
+				"VendorNoSale"
+			]
+		},
+		{
+			"formid": "0201433D",
+			"edid": "DLC1LD_AetheriumShard04",
+			"name": "Glowing Crystal Shard",
+			"weight": "0.2500",
+			"value": 100,
+			"keywords": [
+				"VendorNoSale"
+			]
+		},
+		{
+			"formid": "0201433C",
+			"edid": "DLC1LD_AetheriumShard03",
+			"name": "Glowing Crystal Shard",
+			"weight": "0.2500",
+			"value": 100,
+			"keywords": [
+				"VendorNoSale"
+			]
+		},
+		{
+			"formid": "020142C4",
+			"edid": "DLC01DweSchematics",
+			"name": "Dwemer Schematics",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201171F",
+			"edid": "CasSecEntranceCrestHM",
+			"name": "Half Moon Crest",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201171E",
+			"edid": "CasSecEntranceCrestFM",
+			"name": "Full Moon Crest",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201171D",
+			"edid": "CasSecEntranceCrestCM",
+			"name": "Crescent Moon Crest",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F1C9",
+			"edid": "DLC1RH05DwarvenTechEnhancedDwarvenCrossbow",
+			"name": "Enhanced Dwarven Crossbow Schematic",
+			"weight": "0.0000",
+			"value": 100
+		},
+		{
+			"formid": "0200F1C8",
+			"edid": "DLC1RH05DwarvenTechDwarvenCrossbow",
+			"name": "Dwarven Crossbow Schematic",
+			"weight": "0.0000",
+			"value": 100
+		},
+		{
+			"formid": "0200F1C7",
+			"edid": "DLC1RH05DwarvenTechEnhancedCrossbow",
+			"name": "Enhanced Crossbow Schematic",
+			"weight": "0.0000",
+			"value": 100
+		},
+		{
+			"formid": "0200F1C5",
+			"edid": "DLC1RH05DwarvenTechBoltExplodingShock",
+			"name": "Dwemer Exploding Shock Bolt Schematic",
+			"weight": "0.0000",
+			"value": 100
+		},
+		{
+			"formid": "0200F1C4",
+			"edid": "DLC1RH05DwarvenTechBoltExplodingIce",
+			"name": "Dwemer Exploding Ice Bolt Schematic",
+			"weight": "0.0000",
+			"value": 100
+		},
+		{
+			"formid": "0200D3EF",
+			"edid": "DLC1VQ04IngredSoulGemShard",
+			"name": "Soul Gem Shards",
+			"weight": "0.1000",
+			"value": 0
+		},
+		{
+			"formid": "0200D3EE",
+			"edid": "DLC1VQ04IngredVoidSalt",
+			"name": "Purified Void Salts",
+			"weight": "0.1000",
+			"value": 0
+		},
+		{
+			"formid": "0200D3ED",
+			"edid": "DLC1VQ04IngredBoneMeal",
+			"name": "Finely Ground Bone Meal",
+			"weight": "0.1000",
+			"value": 0
+		},
+		{
+			"formid": "0200A89E",
+			"edid": "DLC1VQ07InitiatesEwer",
+			"name": "Initiate's Ewer",
+			"weight": "1.5000",
+			"value": 1500
+		},
+		{
+			"formid": "020093F6",
+			"edid": "DLC1WineBottle04Empty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "020093F5",
+			"edid": "DLC1WineBottle03Empty",
+			"name": "Empty Wine Bottle",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "02008E4E",
+			"edid": "DLC01TortureTool01",
+			"name": "Torture Tool",
+			"weight": "1.0000",
+			"value": 2
+		},
+		{
+			"formid": "02008E4A",
+			"edid": "DLC01TankardBloody01",
+			"name": "Bloody Tankard",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "020088EB",
+			"edid": "DLC1VampireChalicewithBlood",
+			"name": "Bloodstone Chalice",
+			"weight": "11.0000",
+			"value": 0
+		},
+		{
+			"formid": "02008426",
+			"edid": "DLC1VampireChalice",
+			"name": "Bloodstone Chalice",
+			"weight": "10.0000",
+			"value": 0
+		},
+		{
+			"formid": "02007A2B",
+			"edid": "DLC01DrawKnife",
+			"name": "Draw Knife",
+			"weight": "5.0000",
+			"value": 0
+		},
+		{
+			"formid": "02006BAD",
+			"edid": "DLC1RH05DwarvenTechBoltExplodingFire",
+			"name": "Dwemer Exploding Fire Bolt Schematic",
+			"weight": "0.0000",
+			"value": 100
+		},
+		{
+			"formid": "0200575C",
+			"edid": "DLC1LD_AetheriumShard01",
+			"name": "Glowing Crystal Shard",
+			"weight": "0.2500",
+			"value": 100,
+			"keywords": [
+				"VendorNoSale"
+			]
+		},
+		{
+			"formid": "0200575B",
+			"edid": "DLC1LD_AetheriumCrest",
+			"name": "Aetherium Crest",
+			"weight": "1.0000",
+			"value": 1000,
+			"keywords": [
+				"VendorNoSale"
+			]
+		},
+		{
+			"formid": "02005707",
+			"edid": "DLC1RV05Remains5",
+			"name": "Ancient Vampire Ribcage",
+			"weight": "1.0000",
+			"value": 250
+		},
+		{
+			"formid": "02005706",
+			"edid": "DLC1RV05Remains4",
+			"name": "Ancient Vampire Arm",
+			"weight": "1.0000",
+			"value": 250
+		},
+		{
+			"formid": "02005705",
+			"edid": "DLC1RV05Remains3",
+			"name": "Ancient Vampire Hands",
+			"weight": "1.0000",
+			"value": 250
+		},
+		{
+			"formid": "02005704",
+			"edid": "DLC1RV05Remains2",
+			"name": "Ancient Vampire Head",
+			"weight": "1.0000",
+			"value": 250
+		},
+		{
+			"formid": "02005703",
+			"edid": "DLC1RV05Remains1",
+			"name": "Ancient Vampire Leg",
+			"weight": "2.0000",
+			"value": 250,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "02018088",
+			"edid": "BYOHHouseInteriorPart196PracticeDummyChild01",
+			"name": "Child's Practice Dummy",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02015BEA",
+			"edid": "BYOHHouseTrophyPart17Goat",
+			"name": "Goat",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02015BE9",
+			"edid": "BYOHHouseTrophyPart12TrollFrost",
+			"name": "Frost Troll",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02015BE8",
+			"edid": "BYOHHouseTrophyPart27FalmerCrouch",
+			"name": "Falmer",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02015BE7",
+			"edid": "BYOHHouseTrophyPart26DraugrMale",
+			"name": "Draugr",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201515D",
+			"edid": "BYOHHouseExteriorPart08Mill",
+			"name": "Mill",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201515C",
+			"edid": "BYOHHouseExteriorPart07Apiary",
+			"name": "Apiary",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9CE",
+			"edid": "BYOHHousePart088Room11CLayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Library",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9CD",
+			"edid": "BYOHHousePart087Room10CLayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Kitchen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9CC",
+			"edid": "BYOHHousePart086Room9CLayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Armory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9CB",
+			"edid": "BYOHHousePart085Room8CLayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Alchemy Laboratory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9CA",
+			"edid": "BYOHHousePart084Room7CLayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Trophy Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C9",
+			"edid": "BYOHHousePart083Room6CLayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Storage Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C8",
+			"edid": "BYOHHousePart082Room5CLayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Enchanter's Tower",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C7",
+			"edid": "BYOHHousePart081Room4CLayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Greenhouse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C6",
+			"edid": "BYOHHousePart080Room3CLayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Bedrooms",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C5",
+			"edid": "BYOHHousePart078Room11BLayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Library",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C4",
+			"edid": "BYOHHousePart077Room10BLayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Kitchen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C3",
+			"edid": "BYOHHousePart076Room9BLayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Armory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C2",
+			"edid": "BYOHHousePart075Room8BLayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Alchemy Laboratory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C1",
+			"edid": "BYOHHousePart074Room7BLayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Trophy Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9C0",
+			"edid": "BYOHHousePart073Room6BLayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Storage Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9BF",
+			"edid": "BYOHHousePart072Room5BLayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Enchanter's Tower",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9BE",
+			"edid": "BYOHHousePart071Room4BLayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Greenhouse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9BD",
+			"edid": "BYOHHousePart070Room3BLayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Bedrooms",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9BB",
+			"edid": "BYOHHousePart068Room11ALayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Library",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9BA",
+			"edid": "BYOHHousePart067Room10ALayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Kitchen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B9",
+			"edid": "BYOHHousePart066Room9ALayoutHouse1TOKEN",
+			"name": "Addition - East Wing - Armory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B8",
+			"edid": "BYOHHousePart065Room8ALayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Alchemy Laboratory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B7",
+			"edid": "BYOHHousePart064Room7ALayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Trophy Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B6",
+			"edid": "BYOHHousePart063Room6ALayoutHouse1TOKEN",
+			"name": "Addition - North Wing - Storage Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B5",
+			"edid": "BYOHHousePart062Room5ALayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Enchanter's Tower",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B4",
+			"edid": "BYOHHousePart061Room4ALayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Greenhouse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B3",
+			"edid": "BYOHHousePart060Room3ALayoutHouse1TOKEN",
+			"name": "Addition - West Wing - Bedrooms",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B2",
+			"edid": "BYOHHousePart012Room2LayoutCTOKEN",
+			"name": "Main Hall - Style C",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B1",
+			"edid": "BYOHHousePart011Room2LayoutBTOKEN",
+			"name": "Main Hall - Stone",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F9B0",
+			"edid": "BYOHHousePart010Room2LayoutATOKEN",
+			"name": "Main Hall",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A9",
+			"edid": "BYOHHouseInteriorPart195ShrineZenithar",
+			"name": "Shrine of Zenithar",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A8",
+			"edid": "BYOHHouseInteriorPart194ShrineTalos",
+			"name": "Shrine of Talos",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A7",
+			"edid": "BYOHHouseInteriorPart193ShrineMara",
+			"name": "Shrine of Mara",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A6",
+			"edid": "BYOHHouseInteriorPart192ShrineAkatosh",
+			"name": "Shrine of Akatosh",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A5",
+			"edid": "BYOHHouseInteriorPart191ShrineArkay",
+			"name": "Shrine of Arkay",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A4",
+			"edid": "BYOHHouseInteriorPart190ShrineStendarr",
+			"name": "Shrine of Stendarr",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A3",
+			"edid": "BYOHHouseInteriorPart189ShrineKynareth",
+			"name": "Shrine of Kynareth",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A2",
+			"edid": "BYOHHouseInteriorPart188ShrineJulianos",
+			"name": "Shrine of Julianos",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A1",
+			"edid": "BYOHHouseInteriorPart187ShrineBase01",
+			"name": "Shrine Base",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F3A0",
+			"edid": "BYOHHouseInteriorPart186WallSconcex2_04",
+			"name": "Wall Sconces (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F39F",
+			"edid": "BYOHHouseInteriorPart185VampireCoffin01",
+			"name": "Coffin",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200F39D",
+			"edid": "BYOHHouseInteriorPart184MeadBarrelsx2_01",
+			"name": "Mead Barrels (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F39C",
+			"edid": "BYOHHouseMead",
+			"name": "Nord Mead (5)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F39A",
+			"edid": "BYOHHouseInteriorPart183WeaponRackx5_01",
+			"name": "Weapon Racks (5)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200F399",
+			"edid": "BYOHHouseInteriorPart182Safex5_02",
+			"name": "Safe (5)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200F398",
+			"edid": "BYOHHouseInteriorPart181Safex5_01",
+			"name": "Safe (5)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200F397",
+			"edid": "BYOHHouseInteriorPart180Forge01",
+			"name": "Blacksmith's Forge",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F396",
+			"edid": "BYOHHouseInteriorPart179Smelter01",
+			"name": "Smelter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F395",
+			"edid": "BYOHHouseInteriorPart178Barrels04",
+			"name": "Barrels",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200F394",
+			"edid": "BYOHHouseInteriorPart177Barrels03",
+			"name": "Barrels",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200F393",
+			"edid": "BYOHHouseInteriorPart176ArcheryTarget01",
+			"name": "Archery Target",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F392",
+			"edid": "BYOHHouseInteriorPart175MountedHeadBear02",
+			"name": "Mounted Bear Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F375",
+			"edid": "BYOHHouseInteriorPart174HangingRack04",
+			"name": "Hanging Rack",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F374",
+			"edid": "BYOHHouseInteriorPart173HangingRack03",
+			"name": "Hanging Rack",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F372",
+			"edid": "BYOHHouseInteriorPart172MountedHeadHorkerFireplace",
+			"name": "Mounted Horker Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200F370",
+			"edid": "BYOHHouseInteriorPart171Oven",
+			"name": "Oven",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD8D",
+			"edid": "BYOHHouseInteriorPart170MountedHeadGoat02",
+			"name": "Mounted Goat Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD8B",
+			"edid": "BYOHHouseInteriorPart169TableNightx2_02",
+			"name": "Night Tables (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200DD7A",
+			"edid": "BYOHHouseInteriorPart168PlanterLarge03",
+			"name": "Large Planter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD79",
+			"edid": "BYOHHouseInteriorPart167PlanterLarge02",
+			"name": "Large Planter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD78",
+			"edid": "BYOHHouseInteriorPart166PlanterLarge01",
+			"name": "Large Planter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD6E",
+			"edid": "BYOHHouseInteriorPart165PlanterSmallWithCupboard06",
+			"name": "Small Planter with Cupboard",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD6D",
+			"edid": "BYOHHouseInteriorPart164PlanterSmallWithCupboard05",
+			"name": "Small Planter with Cupboard",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD6C",
+			"edid": "BYOHHouseInteriorPart163PlanterSmallWithCupboard04",
+			"name": "Small Planter with Cupboard",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD6B",
+			"edid": "BYOHHouseInteriorPart162PlanterSmallWithCupboard03",
+			"name": "Small Planter with Cupboard",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD6A",
+			"edid": "BYOHHouseInteriorPart161PlanterSmallWithCupboard02",
+			"name": "Small Planter with Cupboard",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD69",
+			"edid": "BYOHHouseInteriorPart160PlanterSmallWithCupboard01",
+			"name": "Small Planter with Cupboard",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200DD66",
+			"edid": "BYOHHouseInteriorPart159MountedMudcrab02",
+			"name": "Mounted Mudcrab",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200D16B",
+			"edid": "BYOHHouseInteriorPart158ChestExterior01",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "0200CD7E",
+			"edid": "BYOHHouseInteriorPart157HangingRack02",
+			"name": "Hanging Rack",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200CD76",
+			"edid": "BYOHHouseInteriorPart155SafeWithShelf013",
+			"name": "Safe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200CD75",
+			"edid": "BYOHHouseInteriorPart156SafeWithShelf013",
+			"name": "Safe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200CD6C",
+			"edid": "BYOHHouseInteriorPart154WallSconcex2_03",
+			"name": "Wall Sconces (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200CD59",
+			"edid": "BYOHHouseInteriorPart153Dresser02",
+			"name": "Dresser",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200CD46",
+			"edid": "BYOHHouseInteriorPart152ArmorWorkbench01",
+			"name": "Armorer Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200CD45",
+			"edid": "BYOHHouseInteriorPart151Grindstone01",
+			"name": "Grindstone",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200CD44",
+			"edid": "BYOHHouseInteriorPart150TanningRack01",
+			"name": "Tanning Rack",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200CD3E",
+			"edid": "BYOHHouseInteriorPart149MannequinWithCupboard05",
+			"name": "Armor Mannequin with Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200CD3D",
+			"edid": "BYOHHouseInteriorPart148MannequinWithCupboard04",
+			"name": "Armor Mannequin with Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200CD3C",
+			"edid": "BYOHHouseInteriorPart147MannequinWithCupboard03",
+			"name": "Armor Mannequin with Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200CD3B",
+			"edid": "BYOHHouseInteriorPart146MannequinWithCupboard02",
+			"name": "Armor Mannequin with Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200CD3A",
+			"edid": "BYOHHouseInteriorPart145MannequinWithCupboard01",
+			"name": "Armor Mannequin with Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200CD33",
+			"edid": "BYOHHouseInteriorPart144WeaponRackx4_02",
+			"name": "Weapon Racks (4)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200CD32",
+			"edid": "BYOHHouseInteriorPart143WeaponRackx4_01",
+			"name": "Weapon Racks (4)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200C739",
+			"edid": "BYOHHouseInteriorPart142DisplayCupboard02",
+			"name": "Display Case and Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C738",
+			"edid": "BYOHHouseInteriorPart141DisplayCupboard01",
+			"name": "Display Case and Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C737",
+			"edid": "BYOHHouseInteriorPart140LampStand02",
+			"name": "Lamp Stand",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200C736",
+			"edid": "BYOHHouseInteriorPart139TableRound01",
+			"name": "Round Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200C213",
+			"edid": "BYOHHouseInteriorPart138BarrelsWithTable137",
+			"name": "Barrels",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C20D",
+			"edid": "BYOHHouseInteriorPart137TableEnd02",
+			"name": "End Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C20C",
+			"edid": "BYOHHouseInteriorPart136WallShelvesx2_04",
+			"name": "Wall Shelves (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200C20B",
+			"edid": "BYOHHouseInteriorPart135WallShelvesx2_03",
+			"name": "Wall Shelves (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200C208",
+			"edid": "BYOHHouseInteriorPart134ChestWithTable044",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C206",
+			"edid": "BYOHHouseInteriorPart133ChestWithDisplayShelf039",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C1EF",
+			"edid": "BYOHHouseInteriorPart132ChestWithTable130",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C1EE",
+			"edid": "BYOHHouseInteriorPart131ChestWithTable130",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C1EC",
+			"edid": "BYOHHouseInteriorPart130TableWithChest01",
+			"name": "Large Table with Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200C1E8",
+			"edid": "BYOHHouseInteriorPart129SafeWithDisplayTable127",
+			"name": "Safe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C1E7",
+			"edid": "BYOHHouseInteriorPart128ChestWithDisplayTable127",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200C1E6",
+			"edid": "BYOHHouseInteriorPart127DisplayTableLarge01",
+			"name": "Table with Display Cases",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200C1E2",
+			"edid": "BYOHHouseExteriorPart06Grindstone",
+			"name": "Grindstone",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200C1E1",
+			"edid": "BYOHHouseExteriorPart05ArmorWorkbench",
+			"name": "Armorer Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B695",
+			"edid": "BYOHHouseInteriorPart126ChairExterior01",
+			"name": "Chair",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "0200B693",
+			"edid": "BYOHHouseInteriorPart125Mannequin01",
+			"name": "Armor Mannequin",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200B690",
+			"edid": "BYOHHouseInteriorPart124WallShelf01",
+			"name": "Wall Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B68D",
+			"edid": "BYOHHouseInteriorPart123ChestWithCupboard020",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200B689",
+			"edid": "BYOHHouseInteriorPart122WeaponRackx3_01",
+			"name": "Weapon Racks (3)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "0200B684",
+			"edid": "BYOHHouseInteriorPart121Brazier02",
+			"name": "Brazier",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B683",
+			"edid": "BYOHHouseInteriorPart120Brazier01",
+			"name": "Brazier",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B4D7",
+			"edid": "BYOHHouseInteriorPart119LampStand01",
+			"name": "Lamp Stand",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B4D6",
+			"edid": "BYOHHouseInteriorPart118WallSconce01",
+			"name": "Wall Sconce",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B4D5",
+			"edid": "BYOHHouseInteriorPart117BookshelfTall05",
+			"name": "Tall Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4D4",
+			"edid": "BYOHHouseInteriorPart116BookshelfTall04",
+			"name": "Tall Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4D3",
+			"edid": "BYOHHouseInteriorPart115BookshelfTall03",
+			"name": "Tall Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4D2",
+			"edid": "BYOHHouseInteriorPart114BookshelfTall02",
+			"name": "Tall Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4D1",
+			"edid": "BYOHHouseInteriorPart113BookshelfTall01",
+			"name": "Tall Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4D0",
+			"edid": "BYOHHouseInteriorPart112Bookshelf04",
+			"name": "Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4CF",
+			"edid": "BYOHHouseInteriorPart111Bookshelf03",
+			"name": "Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B4CE",
+			"edid": "BYOHHouseInteriorPart110Bookshelf02",
+			"name": "Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "0200B0E0",
+			"edid": "BYOHHouseInteriorPart109Cupboard04",
+			"name": "Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "0200B0DF",
+			"edid": "BYOHHouseInteriorPart108TrophyBaseLarge03",
+			"name": "Trophy Base, Large",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B0DE",
+			"edid": "BYOHHouseInteriorPart107TrophyBaseLarge02",
+			"name": "Trophy Base, Large",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B0DD",
+			"edid": "BYOHHouseInteriorPart106TrophyBaseLarge01",
+			"name": "Trophy Base, Large",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B0D6",
+			"edid": "BYOHHouseInteriorPart105TrophyBaseSmall04",
+			"name": "Trophy Base, Small",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B0D5",
+			"edid": "BYOHHouseInteriorPart104TrophyBaseSmall03",
+			"name": "Trophy Base, Small",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B0D4",
+			"edid": "BYOHHouseInteriorPart103TrophyBaseSmall02",
+			"name": "Trophy Base, Small",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200B0D3",
+			"edid": "BYOHHouseInteriorPart102TrophyBaseSmall01",
+			"name": "Trophy Base, Small",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A346",
+			"edid": "BYOHHouseTrophyPart25Slaughterfish",
+			"name": "Slaughterfish",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A345",
+			"edid": "BYOHHouseTrophyPart24Skeever",
+			"name": "Skeever",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A344",
+			"edid": "BYOHHouseTrophyPart23Mudcrab",
+			"name": "Mudcrab",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A343",
+			"edid": "BYOHHouseTrophyPart22WolfIce",
+			"name": "Ice Wolf",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A342",
+			"edid": "BYOHHouseTrophyPart21WolfRed",
+			"name": "Wolf",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A341",
+			"edid": "BYOHHouseTrophyPart20FrostbiteSpider",
+			"name": "Frostbite Spider",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A340",
+			"edid": "BYOHHouseTrophyPart19Draugr",
+			"name": "Draugr",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A33F",
+			"edid": "BYOHHouseTrophyPart18DragonSkull",
+			"name": "Dragon Skull",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A33D",
+			"edid": "BYOHHouseTrophyPart16Deer",
+			"name": "Deer",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A33C",
+			"edid": "BYOHHouseTrophyPart15Cow",
+			"name": "Cow",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A33B",
+			"edid": "BYOHHouseTrophyPart14Chaurus",
+			"name": "Chaurus",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A33A",
+			"edid": "BYOHHouseTrophyPart13BearSnow",
+			"name": "Snow Bear",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A32B",
+			"edid": "BYOHHouseTrophyPart11Troll",
+			"name": "Troll",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A32A",
+			"edid": "BYOHHouseTrophyPart10TrollFrost",
+			"name": "Frost Troll",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A329",
+			"edid": "BYOHHouseTrophyPart09Spriggan",
+			"name": "Spriggan",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A328",
+			"edid": "BYOHHouseTrophyPart08DwarvenSphere",
+			"name": "Dwarven Sphere",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A327",
+			"edid": "BYOHHouseTrophyPart07Skeleton",
+			"name": "Skeleton",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A326",
+			"edid": "BYOHHouseTrophyPart05Horker",
+			"name": "Horker",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A325",
+			"edid": "BYOHHouseTrophyPart06SabreCat",
+			"name": "Sabre Cat",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A324",
+			"edid": "BYOHHouseTrophyPart04Hagraven",
+			"name": "Hagraven",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A323",
+			"edid": "BYOHHouseTrophyPart03Falmer",
+			"name": "Falmer",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A322",
+			"edid": "BYOHHouseTrophyPart02DwarvenSpider",
+			"name": "Dwarven Spider",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A31F",
+			"edid": "BYOHHouseTrophyPart01Bear",
+			"name": "Bear",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200A312",
+			"edid": "BYOHHouseInteriorPart101Firepit",
+			"name": "Firepit",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02009B9B",
+			"edid": "BYOHHouseInteriorPart100TableLow02",
+			"name": "Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02009B99",
+			"edid": "BYOHHouseInteriorPart099MountedHeadElkMale02",
+			"name": "Mounted Elk Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02009B95",
+			"edid": "BYOHHouseInteriorPart098WeaponRackx2_02",
+			"name": "Weapon Racks (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "02009B94",
+			"edid": "BYOHHouseInteriorPart097WeaponRackx2_01",
+			"name": "Weapon Racks (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "02009B92",
+			"edid": "BYOHHouseInteriorPart096WallSconcex2_02",
+			"name": "Wall Sconces (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02009B91",
+			"edid": "BYOHHouseInteriorPart095TableLow01",
+			"name": "Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02009B8F",
+			"edid": "BYOHHouseInteriorPart094Bench01",
+			"name": "Bench",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02009B8A",
+			"edid": "BYOHHouseInteriorPart093HangingRack01",
+			"name": "Hanging Rack",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02009B88",
+			"edid": "BYOHHouseInteriorPart092MountedSlaughterfishFireplace",
+			"name": "Mounted Slaughterfish",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02009547",
+			"edid": "BYOHHousePart392Room11BCanopy",
+			"name": "Library, Roof Canopy",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009546",
+			"edid": "BYOHHousePart391Room8BCanopy",
+			"name": "Alchemy Laboratory, Roof Canopy",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009545",
+			"edid": "BYOHHousePart390Room5BCanopy",
+			"name": "Enchanter's Tower, Roof Canopy",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009544",
+			"edid": "BYOHHousePart370Room10BDoor",
+			"name": "Kitchen, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009543",
+			"edid": "BYOHHousePart387Room11BRoof",
+			"name": "Library, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009542",
+			"edid": "BYOHHousePart386Room11BWalls2",
+			"name": "Library, Second Floor Walls",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02009541",
+			"edid": "BYOHHousePart385Room11BWalls1",
+			"name": "Library, First Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009540",
+			"edid": "BYOHHousePart384Room11BWallFraming2",
+			"name": "Library, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200953F",
+			"edid": "BYOHHousePart383Room11BWallFraming1",
+			"name": "Library, Main Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200953E",
+			"edid": "BYOHHousePart382Room11BFloor",
+			"name": "Library, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200953D",
+			"edid": "BYOHHousePart381Room11BFoundation",
+			"name": "Library, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200953C",
+			"edid": "BYOHHousePart380Room11BDoor",
+			"name": "Library, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200953B",
+			"edid": "BYOHHousePart376Room10BRoof",
+			"name": "Kitchen, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200953A",
+			"edid": "BYOHHousePart375Room10BRoofFraming",
+			"name": "Kitchen, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009539",
+			"edid": "BYOHHousePart374Room10BWalls",
+			"name": "Kitchen, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009538",
+			"edid": "BYOHHousePart373Room10BFloor",
+			"name": "Kitchen, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009537",
+			"edid": "BYOHHousePart372Room10BWallFraming",
+			"name": "Kitchen, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009536",
+			"edid": "BYOHHousePart371Room10BFoundation",
+			"name": "Kitchen, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009535",
+			"edid": "BYOHHousePart365Room9BWalls",
+			"name": "Armory, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009534",
+			"edid": "BYOHHousePart364Room9BRoof",
+			"name": "Armory, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009533",
+			"edid": "BYOHHousePart363Room9BFloor",
+			"name": "Armory, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009532",
+			"edid": "BYOHHousePart362Room9BWallFraming",
+			"name": "Armory, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009531",
+			"edid": "BYOHHousePart361Room9BFoundation",
+			"name": "Armory, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009530",
+			"edid": "BYOHHousePart360Room9BDoor",
+			"name": "Armory, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200952F",
+			"edid": "BYOHHousePart357Room8BRoof",
+			"name": "Alchemy Laboratory, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200952E",
+			"edid": "BYOHHousePart356Room8BWalls2",
+			"name": "Alchemy Laboratory, Second Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200952D",
+			"edid": "BYOHHousePart355Room8BWalls1",
+			"name": "Alchemy Laboratory, First Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200952C",
+			"edid": "BYOHHousePart354Room8BWallFraming2",
+			"name": "Alchemy Laboratory, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200952B",
+			"edid": "BYOHHousePart353Room8BWallFraming1",
+			"name": "Alchemy Laboratory, Main Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200952A",
+			"edid": "BYOHHousePart352Room8BFloor",
+			"name": "Alchemy Laboratory, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009529",
+			"edid": "BYOHHousePart351Room8BFoundation",
+			"name": "Alchemy Laboratory, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009528",
+			"edid": "BYOHHousePart350Room8BDoor",
+			"name": "Alchemy Laboratory, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009527",
+			"edid": "BYOHHousePart346Room7BRoof",
+			"name": "Trophy Room, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009526",
+			"edid": "BYOHHousePart345Room7BRoofFraming",
+			"name": "Trophy Room, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009525",
+			"edid": "BYOHHousePart344Room7BWalls",
+			"name": "Trophy Room, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009524",
+			"edid": "BYOHHousePart343Room7BFloor",
+			"name": "Trophy Room, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009523",
+			"edid": "BYOHHousePart342Room7BWallFraming",
+			"name": "Trophy Room, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009522",
+			"edid": "BYOHHousePart341Room7BFoundation",
+			"name": "Trophy Room, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009521",
+			"edid": "BYOHHousePart340Room7BDoor",
+			"name": "Trophy Room, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009520",
+			"edid": "BYOHHousePart335Room6BWalls",
+			"name": "Storage Room, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200951F",
+			"edid": "BYOHHousePart334Room6BRoof",
+			"name": "Storage Room, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200951E",
+			"edid": "BYOHHousePart333Room6BFloor",
+			"name": "Storage Room, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200951D",
+			"edid": "BYOHHousePart332Room6BWallFraming",
+			"name": "Storage Room, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200951C",
+			"edid": "BYOHHousePart331Room6BFoundation",
+			"name": "Storage Room, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200951B",
+			"edid": "BYOHHousePart330Room6BDoor",
+			"name": "Storage Room, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200951A",
+			"edid": "BYOHHousePart327Room5BRoof",
+			"name": "Enchanter's Tower, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009519",
+			"edid": "BYOHHousePart326Room5BWalls2",
+			"name": "Enchanter's Tower, Second Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009518",
+			"edid": "BYOHHousePart325Room5BWalls1",
+			"name": "Enchanter's Tower, First Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009517",
+			"edid": "BYOHHousePart324Room5BWallFraming2",
+			"name": "Enchanter's Tower, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009516",
+			"edid": "BYOHHousePart323Room5BWallFraming1",
+			"name": "Enchanter's Tower, Main Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009515",
+			"edid": "BYOHHousePart322Room5BFloor",
+			"name": "Enchanter's Tower, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009514",
+			"edid": "BYOHHousePart321Room5BFoundation",
+			"name": "Enchanter's Tower, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009513",
+			"edid": "BYOHHousePart320Room5BDoor",
+			"name": "Enchanter's Tower, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009512",
+			"edid": "BYOHHousePart316Room4BRoof",
+			"name": "Greenhouse, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009511",
+			"edid": "BYOHHousePart315Room4BRoofFraming",
+			"name": "Greenhouse, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009510",
+			"edid": "BYOHHousePart314Room4BWalls",
+			"name": "Greenhouse, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200950F",
+			"edid": "BYOHHousePart313Room4BFloor",
+			"name": "Greenhouse, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200950E",
+			"edid": "BYOHHousePart312Room4BWallFraming",
+			"name": "Greenhouse, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200950D",
+			"edid": "BYOHHousePart311Room4BFoundation",
+			"name": "Greenhouse, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200950C",
+			"edid": "BYOHHousePart310Room4BDoor",
+			"name": "Greenhouse, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200950B",
+			"edid": "BYOHHousePart305Room3BWalls",
+			"name": "Bedrooms, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200950A",
+			"edid": "BYOHHousePart304Room3BRoof",
+			"name": "Bedrooms, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009509",
+			"edid": "BYOHHousePart303Room3BFloor",
+			"name": "Bedrooms, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009508",
+			"edid": "BYOHHousePart302Room3BWallFraming",
+			"name": "Bedrooms, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009507",
+			"edid": "BYOHHousePart301Room3BFoundation",
+			"name": "Bedrooms, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009506",
+			"edid": "BYOHHousePart300Room3BDoor",
+			"name": "Bedrooms, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02009063",
+			"edid": "BYOHHouseInteriorPart091ChestWithBed198",
+			"name": "Child's Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02009062",
+			"edid": "BYOHHouseInteriorPart090ChestWithBed197",
+			"name": "Child's Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02008AB9",
+			"edid": "BYOHHouseInteriorPart089ArcheryTargetx2Exterior01",
+			"name": "Archery Targets (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AB8",
+			"edid": "BYOHHouseInteriorPart088TanningRackExterior01",
+			"name": "Tanning Rack",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AB7",
+			"edid": "BYOHHouseInteriorPart087TableSquareExterior01",
+			"name": "Square Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AB4",
+			"edid": "BYOHHouseInteriorPart086TableRoundChairsExterior01",
+			"name": "Round Table and Chairs",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AA5",
+			"edid": "BYOHHouseInteriorPart081TableLowExterior03",
+			"name": "Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AA4",
+			"edid": "BYOHHouseInteriorPart080TableLowExterior02",
+			"name": "Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AA3",
+			"edid": "BYOHHouseInteriorPart079TableLowExterior01",
+			"name": "Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AA2",
+			"edid": "BYOHHouseInteriorPart084BenchExterior03",
+			"name": "Bench",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AA1",
+			"edid": "BYOHHouseInteriorPart083BenchExterior02",
+			"name": "Bench",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008AA0",
+			"edid": "BYOHHouseInteriorPart082BenchExterior01",
+			"name": "Bench",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008A9F",
+			"edid": "BYOHHouseInteriorPart085WashbasinExterior01",
+			"name": "Washbasin on Stand",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02008381",
+			"edid": "BYOHHouseInteriorPart077WallSconcex2_01",
+			"name": "Wall Sconces (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02008380",
+			"edid": "BYOHHouseInteriorPart076MountedHeadBear01",
+			"name": "Mounted Bear Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200837F",
+			"edid": "BYOHHouseInteriorPart075ShelfSmall1",
+			"name": "Small Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02008371",
+			"edid": "BYOHHouseInteriorPart074Chest03",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02007884",
+			"edid": "BYOHHouseExteriorPart04Smelter",
+			"name": "Smelter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020071DE",
+			"edid": "BYOHHouseExteriorPart03AnimalPen",
+			"name": "Animal Pen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020071DD",
+			"edid": "BYOHHouseExteriorPart02Garden",
+			"name": "Garden",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020071DC",
+			"edid": "BYOHHouseExteriorPart01Stable",
+			"name": "Stable",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020068F3",
+			"edid": "BYOHHousePart232Room11ACanopy",
+			"name": "Library, Roof Canopy",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020068F2",
+			"edid": "BYOHHousePart231Room8ACanopy",
+			"name": "Alchemy Laboratory, Roof Canopy",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020068F1",
+			"edid": "BYOHHousePart230Room5ACanopy",
+			"name": "Enchanter's Tower, Roof Canopy",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02005E60",
+			"edid": "BYOHHouseInteriorPart073Barrels02",
+			"name": "Barrels",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005E5F",
+			"edid": "BYOHHouseInteriorPart072Barrels01",
+			"name": "Barrels",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A55",
+			"edid": "BYOHHouseInteriorPart078TableBenchesExterior",
+			"name": "Table with Benches",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "02005A54",
+			"edid": "BYOHHouseInteriorPart070MountedSlaughterfish02",
+			"name": "Mounted Slaughterfish",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A53",
+			"edid": "BYOHHouseInteriorPart069MountedSlaughterfish01",
+			"name": "Mounted Slaughterfish",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A52",
+			"edid": "BYOHHouseInteriorPart068MountedMudcrab01",
+			"name": "Mounted Mudcrab",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A51",
+			"edid": "BYOHHouseInteriorPart067MountedHeadWolf02",
+			"name": "Mounted Wolf Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A50",
+			"edid": "BYOHHouseInteriorPart066MountedHeadWolf01",
+			"name": "Mounted Wolf Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A4F",
+			"edid": "BYOHHouseInteriorPart065MountedHeadSabreCat02",
+			"name": "Mounted Snowy Sabre Cat Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A4E",
+			"edid": "BYOHHouseInteriorPart064MountedHeadSabreCat01",
+			"name": "Mounted Sabre Cat Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A4D",
+			"edid": "BYOHHouseInteriorPart063MountedHeadHorker01",
+			"name": "Mounted Horker Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A4C",
+			"edid": "BYOHHouseInteriorPart062MountedHeadGoat01",
+			"name": "Mounted Goat Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A4B",
+			"edid": "BYOHHouseInteriorPart061MountedHeadElkMale01",
+			"name": "Mounted Elk Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A4A",
+			"edid": "BYOHHouseInteriorPart060MountedHeadElkAntlers01",
+			"name": "Mounted Elk Antlers",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A49",
+			"edid": "BYOHHouseInteriorPart059ChandelierSmall02",
+			"name": "Chandelier, Small",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A48",
+			"edid": "BYOHHouseInteriorPart058ChandelierSmall01",
+			"name": "Chandelier, Small",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A47",
+			"edid": "BYOHHouseInteriorPart057ChandelierLarge01",
+			"name": "Chandelier, Large",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A46",
+			"edid": "BYOHHouseInteriorPart056ShelfTall05",
+			"name": "Tall Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A45",
+			"edid": "BYOHHouseInteriorPart055DisplayTableLow02",
+			"name": "Display Case on Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A44",
+			"edid": "BYOHHouseInteriorPart054WeaponRackSingle01",
+			"name": "Weapon Plaque",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "02005A43",
+			"edid": "BYOHHouseInteriorPart053WardrobeTall03",
+			"name": "Tall Wardrobe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A42",
+			"edid": "BYOHHouseInteriorPart052TableEndx2_01",
+			"name": "End Tables (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A41",
+			"edid": "BYOHHouseInteriorPart051DisplayWardrobeSmall02",
+			"name": "Display Case and Small Wardrobe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A40",
+			"edid": "BYOHHouseInteriorPart050WardrobeTall02",
+			"name": "Tall Wardrobe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A3F",
+			"edid": "BYOHHouseInteriorPart049Chair03",
+			"name": "Chair",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A3E",
+			"edid": "BYOHHouseInteriorPart048Bookshelf01",
+			"name": "Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A3D",
+			"edid": "BYOHHouseInteriorPart047WallShelvesx4_02",
+			"name": "Wall Shelves (4)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A3C",
+			"edid": "BYOHHouseInteriorPart046ChestLongWithBed01",
+			"name": "Chest, Long",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A3B",
+			"edid": "BYOHHouseInteriorPart045BedDouble01",
+			"name": "Double Bed",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A3A",
+			"edid": "BYOHHouseInteriorPart044TableEnd01",
+			"name": "End Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A39",
+			"edid": "BYOHHouseInteriorPart042Dresser01",
+			"name": "Dresser",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A38",
+			"edid": "BYOHHouseInteriorPart041Cupboard03",
+			"name": "Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A37",
+			"edid": "BYOHHouseInteriorPart040Cupboard02",
+			"name": "Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A36",
+			"edid": "BYOHHouseInteriorPart039DisplayShelf01",
+			"name": "Display Case and Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A35",
+			"edid": "BYOHHouseInteriorPart038WallShelvesx3",
+			"name": "Wall Shelves (3)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A34",
+			"edid": "BYOHHouseInteriorPart035ShelfCorner02",
+			"name": "Corner Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A33",
+			"edid": "BYOHHouseInteriorPart034WeaponPlaque02",
+			"name": "Weapon Plaque",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "02005A32",
+			"edid": "BYOHHouseInteriorPart033EnchantingTable01",
+			"name": "Arcane Enchanter",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A31",
+			"edid": "BYOHHouseInteriorPart032WardrobeTall01",
+			"name": "Tall Wardrobe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A2F",
+			"edid": "BYOHHouseInteriorPart030Desk02",
+			"name": "Chair",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A2E",
+			"edid": "BYOHHouseInteriorPart031DisplayCase02",
+			"name": "Display Case",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A2D",
+			"edid": "BYOHHouseInteriorPart027DisplayCase01",
+			"name": "Tall Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A2C",
+			"edid": "BYOHHouseInteriorPart025WardrobeSmall02",
+			"name": "Wardrobe, Small",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A2B",
+			"edid": "BYOHHouseInteriorPart024WeaponPlaque01",
+			"name": "Weapon Plaque",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "02005A2A",
+			"edid": "BYOHHouseInteriorPart023ShelfCorner01",
+			"name": "Corner Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A29",
+			"edid": "BYOHHouseInteriorPart022WallShelvesx4_01",
+			"name": "Wall Shelves (4)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A28",
+			"edid": "BYOHHouseInteriorPart021WallShelvesx2_02",
+			"name": "Wall Shelves (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A27",
+			"edid": "BYOHHouseInteriorPart020Cupboard01",
+			"name": "Cupboard",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A26",
+			"edid": "BYOHHouseInteriorPart019DisplayWardrobeSmall01",
+			"name": "Display Case and Small Wardrobe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A25",
+			"edid": "BYOHHouseInteriorPart018WardrobeSmall01",
+			"name": "Wardrobe, Small",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A24",
+			"edid": "BYOHHouseInteriorPart017Anvil01",
+			"name": "Blacksmith Anvil",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A23",
+			"edid": "BYOHHouseInteriorPart016Safe01",
+			"name": "Safe",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A22",
+			"edid": "BYOHHouseInteriorPart015Desk01",
+			"name": "Desk",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A21",
+			"edid": "BYOHHouseInteriorPart014WeaponPlaquex2_01",
+			"name": "Weapon Plaques (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryWeaponRacks"
+			]
+		},
+		{
+			"formid": "02005A20",
+			"edid": "BYOHHouseInteriorPart043ShelfTallDisplayCase01",
+			"name": "Tall Shelf with Display Case",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A1F",
+			"edid": "BYOHHouseInteriorPart026ShelfTall02",
+			"name": "Tall Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A1E",
+			"edid": "BYOHHouseInteriorPart013ShelfTall01",
+			"name": "Tall Shelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A1D",
+			"edid": "BYOHHouseInteriorPart012TableSquareChairs03",
+			"name": "Square Table and Chairs",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A1C",
+			"edid": "BYOHHouseInteriorPart011TableRoundChairs01",
+			"name": "Round Table and Chairs",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A1B",
+			"edid": "BYOHHouseInteriorPart010Washbasin01",
+			"name": "Washbasin on Stand",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A1A",
+			"edid": "BYOHHouseInteriorPart009AlchemyTable01",
+			"name": "Alchemy Lab",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02005A19",
+			"edid": "BYOHHouseInteriorPart008DisplayTableLow01",
+			"name": "Display Case on Low Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A18",
+			"edid": "BYOHHouseInteriorPart007Chest02",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A17",
+			"edid": "BYOHHouseInteriorPart006Chest01",
+			"name": "Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryContainers"
+			]
+		},
+		{
+			"formid": "02005A15",
+			"edid": "BYOHHouseInteriorPart004TableSquareChairs01",
+			"name": "Square Table and Chairs",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02005A14",
+			"edid": "BYOHHouseInteriorPart003WallShelvesx2_01",
+			"name": "Wall Shelves (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02005A13",
+			"edid": "BYOHHouseInteriorPart002DiningTableChairs",
+			"name": "Dining Table and Chairs",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02003CE8",
+			"edid": "BYOHHousePart187Room11ARoof",
+			"name": "Library, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE7",
+			"edid": "BYOHHousePart186Room11AWalls2",
+			"name": "Library, Second Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE6",
+			"edid": "BYOHHousePart185Room11AWalls1",
+			"name": "Library, First Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE5",
+			"edid": "BYOHHousePart184Room11AWallFraming2",
+			"name": "Library, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE4",
+			"edid": "BYOHHousePart183Room11AWallFraming1",
+			"name": "Library, Main Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE3",
+			"edid": "BYOHHousePart182Room11AFloor",
+			"name": "Library, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE2",
+			"edid": "BYOHHousePart181Room11AFoundation",
+			"name": "Library, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE1",
+			"edid": "BYOHHousePart177Room10AChimney",
+			"name": "Kitchen, Fireplace",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CE0",
+			"edid": "BYOHHousePart176Room10ARoof",
+			"name": "Kitchen, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CDF",
+			"edid": "BYOHHousePart174Room10AWalls",
+			"name": "Kitchen, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CDE",
+			"edid": "BYOHHousePart175Room10ARoofFraming",
+			"name": "Kitchen, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CDD",
+			"edid": "BYOHHousePart173Room10AFloor",
+			"name": "Kitchen, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CDC",
+			"edid": "BYOHHousePart172Room10AWallFraming",
+			"name": "Kitchen, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CDB",
+			"edid": "BYOHHousePart171Room10AFoundation",
+			"name": "Kitchen, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CDA",
+			"edid": "BYOHHousePart165Room9AWalls",
+			"name": "Armory, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CD9",
+			"edid": "BYOHHousePart164Room9ARoof",
+			"name": "Armory, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CD8",
+			"edid": "BYOHHousePart163Room9AFloor",
+			"name": "Armory, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CD7",
+			"edid": "BYOHHousePart162Room9AWallFraming",
+			"name": "Armory, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003CD6",
+			"edid": "BYOHHousePart161Room9AFoundation",
+			"name": "Armory, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003B72",
+			"edid": "BYOHHousePartRoom1RemodelC",
+			"name": "Remodel House into Entryway",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003B71",
+			"edid": "BYOHHousePartRoom1RemodelB",
+			"name": "Remodel House into Entryway",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AED",
+			"edid": "BYOHHousePart219Room12WorkbenchDisable",
+			"name": "Cellar - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AEC",
+			"edid": "BYOHHousePart218Room12Workbench",
+			"name": "Cellar - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AEB",
+			"edid": "BYOHHousePart217Room11WorkbenchDisable",
+			"name": "Library - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AEA",
+			"edid": "BYOHHousePart216Room11Workbench",
+			"name": "Library - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE9",
+			"edid": "BYOHHousePart215Room10WorkbenchDisable",
+			"name": "Kitchen - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE8",
+			"edid": "BYOHHousePart214Room10Workbench",
+			"name": "Kitchen - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE7",
+			"edid": "BYOHHousePart213Room9WorkbenchDisable",
+			"name": "Armory - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE6",
+			"edid": "BYOHHousePart212Room9Workbench",
+			"name": "Armory - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE5",
+			"edid": "BYOHHousePart211Room8WorkbenchDisable",
+			"name": "Alchemy Laboratory - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE4",
+			"edid": "BYOHHousePart210Room8Workbench",
+			"name": "Alchemy Laboratory - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE3",
+			"edid": "BYOHHousePart209Room7WorkbenchDisable",
+			"name": "Trophy Room - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE2",
+			"edid": "BYOHHousePart208Room7Workbench",
+			"name": "Trophy Room - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE1",
+			"edid": "BYOHHousePart207Room6WorkbenchDisable",
+			"name": "Storage Room - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AE0",
+			"edid": "BYOHHousePart206Room6Workbench",
+			"name": "Storage Room - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003ADF",
+			"edid": "BYOHHousePart205Room5WorkbenchDisable",
+			"name": "Enchanter's Tower - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003ADE",
+			"edid": "BYOHHousePart204Room5Workbench",
+			"name": "Enchanter's Tower - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003ADD",
+			"edid": "BYOHHousePart203Room4WorkbenchDisable",
+			"name": "Greenhouse - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003ADC",
+			"edid": "BYOHHousePart202Room4Workbench",
+			"name": "Greenhouse - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003ADB",
+			"edid": "BYOHHousePart201Room3WorkbenchDisable",
+			"name": "Bedrooms - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003ADA",
+			"edid": "BYOHHousePart200Room3Workbench",
+			"name": "Bedrooms - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003AD8",
+			"edid": "BYOHHousePart190Room12Cellar",
+			"name": "Cellar",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003755",
+			"edid": "BYOHHousePart155Room8AWalls1",
+			"name": "Alchemy Laboratory, First Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003754",
+			"edid": "BYOHHousePart157Room8ARoof",
+			"name": "Alchemy Laboratory, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003753",
+			"edid": "BYOHHousePart156Room8AWalls2",
+			"name": "Alchemy Laboratory, Second Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003752",
+			"edid": "BYOHHousePart151Room8AFoundation",
+			"name": "Alchemy Laboratory, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003751",
+			"edid": "BYOHHousePart152Room8AFloor",
+			"name": "Alchemy Laboratory, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003750",
+			"edid": "BYOHHousePart153Room8AWallFraming1",
+			"name": "Alchemy Laboratory, Main Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200374E",
+			"edid": "BYOHHousePart146Room7ARoof",
+			"name": "Trophy Room, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200374D",
+			"edid": "BYOHHousePart145Room7ARoofFraming",
+			"name": "Trophy Room, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200374C",
+			"edid": "BYOHHousePart144Room7AWalls",
+			"name": "Trophy Room, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200374B",
+			"edid": "BYOHHousePart143Room7AFloor",
+			"name": "Trophy Room, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200374A",
+			"edid": "BYOHHousePart142Room7AWallFraming",
+			"name": "Trophy Room, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003749",
+			"edid": "BYOHHousePart141Room7AFoundation",
+			"name": "Trophy Room, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003748",
+			"edid": "BYOHHousePart135Room6AWalls",
+			"name": "Storage Room, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003747",
+			"edid": "BYOHHousePart134Room6ARoof",
+			"name": "Storage Room, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003746",
+			"edid": "BYOHHousePart133Room6AFloor",
+			"name": "Storage Room, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003745",
+			"edid": "BYOHHousePart132Room6AWallFraming",
+			"name": "Storage Room, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003744",
+			"edid": "BYOHHousePart131Room6AFoundation",
+			"name": "Storage Room, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003743",
+			"edid": "BYOHHousePart127Room5ARoof",
+			"name": "Enchanter's Tower, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003742",
+			"edid": "BYOHHousePart126Room5AWalls2",
+			"name": "Enchanter's Tower, Second Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003741",
+			"edid": "BYOHHousePart125Room5AWalls1",
+			"name": "Enchanter's Tower, First Floor Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003740",
+			"edid": "BYOHHousePart124Room5AWallFraming2",
+			"name": "Enchanter's Tower, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200373F",
+			"edid": "BYOHHousePart123Room5AWallFraming1",
+			"name": "Enchanter's Tower, Main Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200373E",
+			"edid": "BYOHHousePart122Room5AFloor",
+			"name": "Enchanter's Tower, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200373D",
+			"edid": "BYOHHousePart121Room5AFoundation",
+			"name": "Enchanter's Tower, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200373C",
+			"edid": "BYOHHousePart154Room8AWallFraming2",
+			"name": "Alchemy Laboratory, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200325C",
+			"edid": "BYOHHousePart117Room4AChimney",
+			"name": "Greenhouse, Fireplace",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200325B",
+			"edid": "BYOHHousePart116Room4ARoof",
+			"name": "Greenhouse, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200325A",
+			"edid": "BYOHHousePart115Room4ARoofFraming",
+			"name": "Greenhouse, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003258",
+			"edid": "BYOHHousePart114Room4AWalls",
+			"name": "Greenhouse, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003257",
+			"edid": "BYOHHousePart113Room4AFloor",
+			"name": "Greenhouse, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003256",
+			"edid": "BYOHHousePart112Room4AWallFraming",
+			"name": "Greenhouse, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003255",
+			"edid": "BYOHHousePart111Room4AFoundation",
+			"name": "Greenhouse, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031DF",
+			"edid": "BYOHHousePart105Room3AWalls",
+			"name": "Bedrooms, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031DE",
+			"edid": "BYOHHousePart104Room3ARoof",
+			"name": "Bedrooms, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031DD",
+			"edid": "BYOHHousePart103Room3AFloor",
+			"name": "Bedrooms, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031DC",
+			"edid": "BYOHHousePart102Room3AWallFraming",
+			"name": "Bedrooms, Wall Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031DB",
+			"edid": "BYOHHousePart101Room3AFoundation",
+			"name": "Bedrooms, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031D2",
+			"edid": "BYOHHousePart180Room11ADoor",
+			"name": "Library, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031D1",
+			"edid": "BYOHHousePart170Room10ADoor",
+			"name": "Kitchen, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031D0",
+			"edid": "BYOHHousePart160Room9ADoor",
+			"name": "Armory, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031CF",
+			"edid": "BYOHHousePart150Room8ADoor",
+			"name": "Alchemy Laboratory, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031CE",
+			"edid": "BYOHHousePart140Room7ADoor",
+			"name": "Trophy Room, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031CD",
+			"edid": "BYOHHousePart130Room6ADoor",
+			"name": "Storage Room, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031CC",
+			"edid": "BYOHHousePart120Room5ADoor",
+			"name": "Enchanter's Tower, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031CB",
+			"edid": "BYOHHousePart110Room4ADoor",
+			"name": "Greenhouse, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031C5",
+			"edid": "BYOHHousePart017Room2AWalls1",
+			"name": "Main Hall, First Level Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031C4",
+			"edid": "BYOHHousePart088Room11CLayoutHouse1",
+			"name": "Addition - East Wing - Library",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031C3",
+			"edid": "BYOHHousePart087Room10CLayoutHouse1",
+			"name": "Addition - East Wing - Kitchen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031C2",
+			"edid": "BYOHHousePart086Room9CLayoutHouse1",
+			"name": "Addition - East Wing - Armory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031C1",
+			"edid": "BYOHHousePart085Room8CLayoutHouse1",
+			"name": "Addition - North Wing - Alchemy Laboratory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031C0",
+			"edid": "BYOHHousePart084Room7CLayoutHouse1",
+			"name": "Addition - North Wing - Trophy Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031BF",
+			"edid": "BYOHHousePart083Room6CLayoutHouse1",
+			"name": "Addition - North Wing - Storage Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031BE",
+			"edid": "BYOHHousePart082Room5CLayoutHouse1",
+			"name": "Addition - West Wing - Enchanter's Tower",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031BD",
+			"edid": "BYOHHousePart081Room4CLayoutHouse1",
+			"name": "Addition - West Wing - Greenhouse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031BC",
+			"edid": "BYOHHousePart080Room3CLayoutHouse1",
+			"name": "Addition - West Wing - Bedrooms",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031BB",
+			"edid": "BYOHHousePart078Room11BLayoutHouse1",
+			"name": "Addition - East Wing - Library",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031BA",
+			"edid": "BYOHHousePart077Room10BLayoutHouse1",
+			"name": "Addition - East Wing - Kitchen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B9",
+			"edid": "BYOHHousePart076Room9BLayoutHouse1",
+			"name": "Addition - East Wing - Armory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B8",
+			"edid": "BYOHHousePart075Room8BLayoutHouse1",
+			"name": "Addition - North Wing - Alchemy Laboratory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B7",
+			"edid": "BYOHHousePart074Room7BLayoutHouse1",
+			"name": "Addition - North Wing - Trophy Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B6",
+			"edid": "BYOHHousePart073Room6BLayoutHouse1",
+			"name": "Addition - North Wing - Storage Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B5",
+			"edid": "BYOHHousePart072Room5BLayoutHouse1",
+			"name": "Addition - West Wing - Enchanter's Tower",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B4",
+			"edid": "BYOHHousePart071Room4BLayoutHouse1",
+			"name": "Addition - West Wing - Greenhouse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B3",
+			"edid": "BYOHHousePart070Room3BLayoutHouse1",
+			"name": "Addition - West Wing - Bedrooms",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B2",
+			"edid": "BYOHHousePart068Room11ALayoutHouse1",
+			"name": "Addition - East Wing - Library",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B1",
+			"edid": "BYOHHousePart067Room10ALayoutHouse1",
+			"name": "Addition - East Wing - Kitchen",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031B0",
+			"edid": "BYOHHousePart066Room9ALayoutHouse1",
+			"name": "Addition - East Wing - Armory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031AF",
+			"edid": "BYOHHousePart065Room8ALayoutHouse1",
+			"name": "Addition - North Wing - Alchemy Laboratory",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031AE",
+			"edid": "BYOHHousePart064Room7ALayoutHouse1",
+			"name": "Addition - North Wing - Trophy Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031AD",
+			"edid": "BYOHHousePart063Room6ALayoutHouse1",
+			"name": "Addition - North Wing - Storage Room",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031AC",
+			"edid": "BYOHHousePart062Room5ALayoutHouse1",
+			"name": "Addition - West Wing - Enchanter's Tower",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031AB",
+			"edid": "BYOHHousePart061Room4ALayoutHouse1",
+			"name": "Addition - West Wing - Greenhouse",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020031A1",
+			"edid": "BYOHHousePart058Room2CFloor",
+			"name": "Main Hall, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020031A0",
+			"edid": "BYOHHousePart057Room2CRoof",
+			"name": "Main Hall, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200319F",
+			"edid": "BYOHHousePart056Room2CRoofFraming",
+			"name": "Main Hall, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200319E",
+			"edid": "BYOHHousePart055Room2CWalls2",
+			"name": "Main Hall, Second Level Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200319D",
+			"edid": "BYOHHousePart054Room2CWalls1",
+			"name": "Main Hall, First Level Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200319C",
+			"edid": "BYOHHousePart053Room2CWallFraming2",
+			"name": "Main Hall, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200319B",
+			"edid": "BYOHHousePart052Room2CWallFraming1",
+			"name": "Main Hall, Wall Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200319A",
+			"edid": "BYOHHousePart051Room2CFoundation",
+			"name": "Main Hall, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003199",
+			"edid": "BYOHHousePart050Room2CDoor",
+			"name": "Main Hall, Door",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003198",
+			"edid": "BYOHHousePart060Room3ALayoutHouse1",
+			"name": "Addition - West Wing - Bedrooms",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003197",
+			"edid": "BYOHHousePart100Room3ADoor",
+			"name": "Bedrooms, Doors",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200312C",
+			"edid": "BYOHHousePart035Room1WorkbenchDisable",
+			"name": "Entryway - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200312B",
+			"edid": "BYOHHousePart034Room1WorkbenchB",
+			"name": "Entryway - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003128",
+			"edid": "BYOHHousePartRoom1RemodelA",
+			"name": "Remodel House into Entryway",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003122",
+			"edid": "BYOHHousePart033Room2WorkbenchDisable",
+			"name": "Main Hall - Remove Workbenches",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003121",
+			"edid": "BYOHHousePart031Room1WorkbenchDisable",
+			"name": "House - Remove Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003117",
+			"edid": "BYOHHousePart048Room2BFloor",
+			"name": "Main Hall, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003116",
+			"edid": "BYOHHousePart047Room2BRoof",
+			"name": "Main Hall, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003115",
+			"edid": "BYOHHousePart046Room2BRoofFraming",
+			"name": "Main Hall, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003114",
+			"edid": "BYOHHousePart045Room2BWalls2",
+			"name": "Main Hall, Second Level Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003113",
+			"edid": "BYOHHousePart044Room2BWalls1",
+			"name": "Main Hall, First Level Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003112",
+			"edid": "BYOHHousePart043Room2BWallFraming2",
+			"name": "Main Hall, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003111",
+			"edid": "BYOHHousePart042Room2BWallFraming1",
+			"name": "Main Hall, Wall Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003110",
+			"edid": "BYOHHousePart041Room2BFoundation",
+			"name": "Main Hall, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200310F",
+			"edid": "BYOHHousePart040Room2BDoor",
+			"name": "Main Hall, Door",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030FE",
+			"edid": "BYOHHouseDummyObject005",
+			"name": "Dummy Object",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030FD",
+			"edid": "BYOHHouseDummyObject004",
+			"name": "Dummy Object",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030FC",
+			"edid": "BYOHHouseDummyObject003",
+			"name": "Dummy Object",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030FB",
+			"edid": "BYOHHouseDummyObject002",
+			"name": "Dummy Object",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030F9",
+			"edid": "BYOHHouseDummyObject001",
+			"name": "Dummy Object",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030ED",
+			"edid": "BYOHHouseInteriorPart037BedSingle02",
+			"name": "Single Bed",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020030EC",
+			"edid": "BYOHHouseInteriorPart036BedSingle01",
+			"name": "Single Bed",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020030E9",
+			"edid": "BYOHHouseInteriorPart029Chair02",
+			"name": "Chair",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020030E8",
+			"edid": "BYOHHouseInteriorPart028Chair01",
+			"name": "Chair",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020030E7",
+			"edid": "BYOHHousePart032Room2Workbench",
+			"name": "Main Hall - Workbenches",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030DF",
+			"edid": "BYOHHousePart030Room1Workbench",
+			"name": "House - Workbench",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030DD",
+			"edid": "BYOHHouseInteriorPart001Fireplace",
+			"name": "Fireplace",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030C8",
+			"edid": "BYOHHousePart020Room2ARoof",
+			"name": "Main Hall, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C7",
+			"edid": "BYOHHousePart019Room2ARoofFraming",
+			"name": "Main Hall, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C6",
+			"edid": "BYOHHousePart021Room2AFloor",
+			"name": "Main Hall, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C5",
+			"edid": "BYOHHousePart015Room2AWallFraming1",
+			"name": "Main Hall, Wall Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C4",
+			"edid": "BYOHHousePart013Room2ADoor",
+			"name": "Main Hall, Door",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C3",
+			"edid": "BYOHHousePart018Room2AWalls2",
+			"name": "Main Hall, Second Level Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C2",
+			"edid": "BYOHHousePart016Room2AWallFraming2",
+			"name": "Main Hall, Second Floor Supports",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030C1",
+			"edid": "BYOHHousePart014Room2AFoundation",
+			"name": "Main Hall, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "020030B5",
+			"edid": "BYOHHousePart012Room2LayoutC",
+			"name": "Main Hall - Style C",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030B4",
+			"edid": "BYOHHousePart011Room2LayoutB",
+			"name": "Main Hall - Stone",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "020030B3",
+			"edid": "BYOHHousePart010Room2LayoutA",
+			"name": "Main Hall",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0200309F",
+			"edid": "BYOHHousePart007Room1Floor",
+			"name": "House, Floor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003080",
+			"edid": "BYOHHousePart008Room1Door",
+			"name": "House, Door",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200307F",
+			"edid": "BYOHHousePart006Room1Roof",
+			"name": "House, Roof",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200307E",
+			"edid": "BYOHHousePart005Room1RoofFraming",
+			"name": "House, Roof Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200307D",
+			"edid": "BYOHHousePart004Room1Walls",
+			"name": "House, Walls",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200307C",
+			"edid": "BYOHHousePart003Room1WallFraming",
+			"name": "House, Wall Framing",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "02003060",
+			"edid": "BYOHHousePart001Room1Layout",
+			"name": "Small House Layout",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02003014",
+			"edid": "BYOHHousePart002Room1Foundation",
+			"name": "House, Foundation",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryBuilding"
+			]
+		},
+		{
+			"formid": "0200300E",
+			"edid": "BYOHMaterialLog",
+			"name": "Sawn Log",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B57",
+			"edid": "BYOHHouseInteriorPart206ShrineDibella",
+			"name": "Shrine of Dibella",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B49",
+			"edid": "BYOHHouseIngredientWheat",
+			"name": "Wheat (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B48",
+			"edid": "BYOHHouseIngredientThistle",
+			"name": "Thistle Branch (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B47",
+			"edid": "BYOHHouseIngredientSpikyGrass",
+			"name": "Grass Pod (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B46",
+			"edid": "BYOHHouseIngredientSnowberry",
+			"name": "Snowberries (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B45",
+			"edid": "BYOHHouseIngredientScalyPholiotaBits",
+			"name": "Scaly Pholiota (5)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B44",
+			"edid": "BYOHHouseIngredientNightshade",
+			"name": "Nightshade (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B43",
+			"edid": "BYOHHouseIngredientMushroom06",
+			"name": "Blisterwort (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B42",
+			"edid": "BYOHHouseIngredientMushroom05",
+			"name": "Namira's Rot (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B41",
+			"edid": "BYOHHouseIngredientMushroom04",
+			"name": "Imp Stool (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B40",
+			"edid": "BYOHHouseIngredientMushroom03",
+			"name": "White Cap (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B3F",
+			"edid": "BYOHHouseIngredientMushroom02",
+			"name": "Bleeding Crown (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B3E",
+			"edid": "BYOHHouseIngredientMushroom01",
+			"name": "Fly Amanita (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B3D",
+			"edid": "BYOHHouseIngredientMountainFlowerRed",
+			"name": "Red Mountain Flower (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B3C",
+			"edid": "BYOHHouseIngredientMountainFlowerPurple",
+			"name": "Purple Mountain Flower (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B3B",
+			"edid": "BYOHHouseIngredientMountainFlowerBlue",
+			"name": "Blue Mountain Flower (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B3A",
+			"edid": "BYOHHouseIngredientMoraTapinella",
+			"name": "Mora Tapinella (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B39",
+			"edid": "BYOHHouseIngredientLavender",
+			"name": "Lavender (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B38",
+			"edid": "BYOHHouseIngredientJuniperBerries",
+			"name": "Juniper Berries (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B37",
+			"edid": "BYOHHouseIngredientJazbay",
+			"name": "Jazbay Grapes (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B36",
+			"edid": "BYOHHouseIngredientGlowingMushroom",
+			"name": "Glowing Mushroom (5)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B35",
+			"edid": "BYOHHouseIngredientGiantLichen",
+			"name": "Giant Lichen (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B34",
+			"edid": "BYOHHouseIngredientFungalPod",
+			"name": "Swamp Fungal Pod (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B33",
+			"edid": "BYOHHouseIngredientDragonsTongue",
+			"name": "Dragon's Tongue (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B32",
+			"edid": "BYOHHouseIngredientDeathbell",
+			"name": "Deathbell (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B31",
+			"edid": "BYOHHouseIngredientCreepCluster",
+			"name": "Creep Cluster (5)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B30",
+			"edid": "BYOHHouseIngredientCotton",
+			"name": "Tundra Cotton (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B2F",
+			"edid": "BYOHHouseIngredientCanisRoot",
+			"name": "Canis Root (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B2E",
+			"edid": "BYOHHouseFoodPotato",
+			"name": "Potato (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B2D",
+			"edid": "BYOHHouseFoodLeek",
+			"name": "Leek (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B2C",
+			"edid": "BYOHHouseFoodGourd",
+			"name": "Gourd (3)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B2B",
+			"edid": "BYOHHouseFoodCarrots",
+			"name": "Carrots (4)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B2A",
+			"edid": "BYOHHouseFoodCabbage",
+			"name": "Cabbage (2)",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000B27",
+			"edid": "BYOHHouseInteriorPart205TableNight01",
+			"name": "Night Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02000A17",
+			"edid": "BYOHHouseInteriorPart204MountedHeadElkFemale01",
+			"name": "Mounted Elk Head",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000A0E",
+			"edid": "BYOHHouseInteriorPart203BookshelfTall06",
+			"name": "Tall Bookshelf",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryShelf"
+			]
+		},
+		{
+			"formid": "02000A0B",
+			"edid": "BYOHHouseInteriorPart202TableNightx2_01",
+			"name": "Night Tables (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020009BC",
+			"edid": "BYOHHouseInteriorPart005TableSquareChairs02new",
+			"name": "Square Table and Chairs",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020009BB",
+			"edid": "BYOHHouseInteriorPart201TableSquare02",
+			"name": "Square Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "020009BA",
+			"edid": "BYOHHouseInteriorPart200TableSquare01",
+			"name": "Square Table",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200090F",
+			"edid": "BYOHHouseInteriorPart199WallSconceExteriorx2",
+			"name": "Wall Sconces (2)",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryExterior"
+			]
+		},
+		{
+			"formid": "020008CA",
+			"edid": "BYOHHouseExteriorPart09FishHatchery",
+			"name": "Fish Hatchery",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02000814",
+			"edid": "BYOHHouseInteriorPart197BedChild01",
+			"name": "Child's Bed",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "02000813",
+			"edid": "BYOHHouseInteriorPart198BedChild02",
+			"name": "Child's Bed",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"BYOHHouseCraftingCategoryFurniture"
+			]
+		},
+		{
+			"formid": "0200D822",
+			"edid": "ClothesChild05Female",
+			"name": "Girl's Yellow Dress",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200D821",
+			"edid": "ClothesChild01Female",
+			"name": "Girl's Red Dress",
+			"weight": "2.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200D820",
+			"edid": "ClothesChild04Female",
+			"name": "Girl's Grey Dress",
+			"weight": "2.0000",
+			"value": 8,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200D81F",
+			"edid": "ClothesChild02Female",
+			"name": "Girl's Green Dress",
+			"weight": "2.0000",
+			"value": 4,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200D81E",
+			"edid": "ClothesChild03Female",
+			"name": "Girl's Blue Dress",
+			"weight": "2.0000",
+			"value": 6,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200C746",
+			"edid": "ClothesChild05Male",
+			"name": "Boy's Yellow Tunic",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200C745",
+			"edid": "ClothesChild04Male",
+			"name": "Boy's Grey Tunic",
+			"weight": "2.0000",
+			"value": 8,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200C744",
+			"edid": "ClothesChild03Male",
+			"name": "Boy's Blue Tunic",
+			"weight": "2.0000",
+			"value": 6,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200C743",
+			"edid": "ClothesChild02Male",
+			"name": "Boy's Green Tunic",
+			"weight": "2.0000",
+			"value": 4,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200C742",
+			"edid": "ClothesChild01Male",
+			"name": "Boy's Red Tunic",
+			"weight": "2.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemClothing",
+				"BYOHAdoptionClothesKeyword"
+			]
+		},
+		{
+			"formid": "0200C1DE",
+			"edid": "BYOHChildrensDoll",
+			"name": "Child's Doll",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"BYOHAdoptionToyKeyword"
+			]
+		},
+		{
+			"formid": "02005A69",
+			"edid": "BYOHMaterialGlass",
+			"name": "Glass",
+			"weight": "1.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "02005A68",
+			"edid": "BYOHMaterialStraw",
+			"name": "Straw",
+			"weight": "1.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0200306C",
+			"edid": "BYOHMaterialStoneBlock",
+			"name": "Quarried Stone",
+			"weight": "1.0000",
+			"value": 2,
+			"keywords": [
+				"VendorItemOreIngot"
+			]
+		},
+		{
+			"formid": "02003043",
+			"edid": "BYOHMaterialClay",
+			"name": "Clay",
+			"weight": "1.0000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0200303F",
+			"edid": "BYOHMaterialHornGoat",
+			"name": "Goat Horns",
+			"weight": "1.0000",
+			"value": 5
+		},
+		{
+			"formid": "02003035",
+			"edid": "BYOHMaterialFittingsIron",
+			"name": "Iron Fittings",
+			"weight": "1.0000",
+			"value": 4,
+			"keywords": [
+				"VendorItemTool",
+				"BYOHHouseCraftingCategorySmithing"
+			]
+		},
+		{
+			"formid": "02003012",
+			"edid": "BYOHMaterialLock",
+			"name": "Lock",
+			"weight": "0.5000",
+			"value": 10,
+			"keywords": [
+				"BYOHHouseCraftingCategorySmithing"
+			]
+		},
+		{
+			"formid": "02003011",
+			"edid": "BYOHMaterialHinge",
+			"name": "Hinge",
+			"weight": "0.5000",
+			"value": 4,
+			"keywords": [
+				"BYOHHouseCraftingCategorySmithing"
+			]
+		},
+		{
+			"formid": "0200300F",
+			"edid": "BYOHMaterialNails",
+			"name": "Nails",
+			"weight": "0.1000",
+			"value": 1,
+			"keywords": [
+				"BYOHHouseCraftingCategorySmithing"
+			]
+		},
+		{
+			"formid": "0203CF16",
+			"edid": "DLC2InvFirewood01",
+			"name": "Firewood",
+			"weight": "0.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemClutter",
+				"VendorItemFireword"
+			]
+		},
+		{
+			"formid": "02039E4E",
+			"edid": "DLC2TGGemSapphire",
+			"name": "Exquisite Sapphire",
+			"weight": "0.2000",
+			"value": 5000,
+			"keywords": [
+				"VendorItemGem"
+			]
+		},
+		{
+			"formid": "02031672",
+			"edid": "DLC2DweKagrumezControlGemInv05",
+			"name": "Kagrumez Resonance Gem",
+			"weight": "0.2000",
+			"value": 500
+		},
+		{
+			"formid": "02031671",
+			"edid": "DLC2DweKagrumezControlGemInv04",
+			"name": "Kagrumez Resonance Gem",
+			"weight": "0.2000",
+			"value": 500
+		},
+		{
+			"formid": "02031670",
+			"edid": "DLC2DweKagrumezControlGemInv03",
+			"name": "Kagrumez Resonance Gem",
+			"weight": "0.2000",
+			"value": 500
+		},
+		{
+			"formid": "0203166F",
+			"edid": "DLC2DweKagrumezControlGemInv02",
+			"name": "Kagrumez Resonance Gem",
+			"weight": "0.2000",
+			"value": 500
+		},
+		{
+			"formid": "0202BAAE",
+			"edid": "DLC2dunHaknirTreasureMap",
+			"name": "Deathbrand Treasure Map",
+			"weight": "0.0000",
+			"value": 500
+		},
+		{
+			"formid": "0202B06B",
+			"edid": "DLC2OreStalhrim",
+			"name": "Stalhrim",
+			"weight": "1.0000",
+			"value": 200
+		},
+		{
+			"formid": "0202B04E",
+			"edid": "DLC2ChitinPlate",
+			"name": "Chitin Plate",
+			"weight": "1.0000",
+			"value": 5,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0202823B",
+			"edid": "DLC2dunKarstaagSkullItemNoName",
+			"name": "",
+			"weight": "3.0000",
+			"value": 25
+		},
+		{
+			"formid": "020247F9",
+			"edid": "DLC2dunKarstaagSkullItem",
+			"name": "Karstaag's Skull",
+			"weight": "3.0000",
+			"value": 25
+		},
+		{
+			"formid": "0202145A",
+			"edid": "DLC2DweKagrumezControlGemInv01",
+			"name": "Kagrumez Resonance Gem",
+			"weight": "0.2000",
+			"value": 500
+		},
+		{
+			"formid": "02020DCF",
+			"edid": "DLC2dunKolbjornSkull",
+			"name": "Skull",
+			"weight": "2.0000",
+			"value": 50,
+			"keywords": [
+				"VendorItemAnimalPart"
+			]
+		},
+		{
+			"formid": "0201EFF9",
+			"edid": "DLC2Bucket02b_NoName",
+			"name": "",
+			"weight": "0.5000",
+			"value": 1
+		},
+		{
+			"formid": "0201CDF4",
+			"edid": "DLC2TTR3aAshExtractor",
+			"name": "Ash Extractor",
+			"weight": "0.5000",
+			"value": 1,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0201CD7C",
+			"edid": "DLC2NetchLeather",
+			"name": "Netch Leather",
+			"weight": "2.0000",
+			"value": 10,
+			"keywords": [
+				"VendorItemAnimalHide"
+			]
+		},
+		{
+			"formid": "0201CAC1",
+			"edid": "DLC2SV01HalfClawRight",
+			"name": "Amethyst Claw, Right Half",
+			"weight": "0.5000",
+			"value": 200,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0201CAC0",
+			"edid": "DLC2SV01HalfClawLeft",
+			"name": "Amethyst Claw, Left Half",
+			"weight": "0.5000",
+			"value": 200,
+			"keywords": [
+				"VendorItemClutter"
+			]
+		},
+		{
+			"formid": "0201B65C",
+			"edid": "DLC2TTR3aAshSample",
+			"name": "Ash Spawn Sample",
+			"weight": "1.0000",
+			"value": 100
+		},
+		{
+			"formid": "0201AAD6",
+			"edid": "DLC2TaprootSoaked",
+			"name": "Soaked Taproot",
+			"weight": "2.0000",
+			"value": 1
+		},
+		{
+			"formid": "020195A9",
+			"edid": "DLC2TT2HeartStone",
+			"name": "Heart Stone",
+			"weight": "1.0000",
+			"value": 100
+		},
+		{
+			"formid": "02017749",
+			"edid": "DLC2HeartStone",
+			"name": "Heart Stone",
+			"weight": "1.0000",
+			"value": 100
+		},
+		{
+			"formid": "02017725",
+			"edid": "AetheriumCrest01",
+			"name": "",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "0201771F",
+			"edid": "DLC2ExpSpiderAlbinoButtDamaged",
+			"name": "Damaged Albino Spider Pod",
+			"weight": "1.0000",
+			"value": 10
+		},
+		{
+			"formid": "02017719",
+			"edid": "DLC2ExpSpiderAlbinoButt",
+			"name": "Albino Spider Pod",
+			"weight": "1.0000",
+			"value": 10
+		},
+		{
+			"formid": "020173BB",
+			"edid": "DLC2dunNchardakCube",
+			"name": "Control Cube",
+			"weight": "0.5000",
+			"value": 50
+		}
+	]
+}

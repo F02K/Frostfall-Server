@@ -1,0 +1,3756 @@
+{
+	"keys": [
+		{
+			"formid": "0010E7E6",
+			"edid": "RiftenConfiscatedGoodsChestKey",
+			"name": "Confiscated Goods Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0010BEFF",
+			"edid": "MzinchaleftKey01",
+			"name": "Maluril's Room Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00108BA5",
+			"edid": "MorthalGuardhouseKey",
+			"name": "Key to Morthal Guardhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00108BA4",
+			"edid": "MorthalFalionsHouseKeyCOPY0000",
+			"name": "Key to Falion's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00107D97",
+			"edid": "DA07ShrineKey",
+			"name": "Key to Mehrunes' Shrine",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00106E24",
+			"edid": "IvarsteadKlimmeksHouseKey",
+			"name": "Key to Klimmek's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00106E23",
+			"edid": "IvarsteadFellstarFarmKey",
+			"name": "Fellstar Farm Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00106E22",
+			"edid": "ShorsStoneOdfelsHouseKey",
+			"name": "Key to Odfel's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00106E21",
+			"edid": "ShorsStoneFilnjarsHouseKey",
+			"name": "Key to Filnjar's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0010480C",
+			"edid": "MorthalJailKey",
+			"name": "Key to Morthal Jail",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00102EBA",
+			"edid": "TGTQ02RedWaveSafeKey",
+			"name": "Red Wave Safe Key",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "00100FA6",
+			"edid": "CidhnaMineJailKey",
+			"name": "Key to Cidhna Mine",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0010080E",
+			"edid": "TG04EECKey",
+			"name": "East Empire Warehouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FF787",
+			"edid": "RiftenEvidenceChestKey",
+			"name": "Riften Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FE2B3",
+			"edid": "PelagiusFarmKey",
+			"name": "Key to Pelagius Farmhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FE2B2",
+			"edid": "ChillfurrowFarmKey",
+			"name": "Key to Chillfurrow Farmhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FE2B1",
+			"edid": "BattleBornFarmKey",
+			"name": "Key to Battle-Born Farmhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEC1",
+			"edid": "RiftenStablesKey",
+			"name": "Riften Stables Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEC0",
+			"edid": "RiftenSnowShodHouseKey",
+			"name": "Snow-Shod House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEBF",
+			"edid": "RiftenFisheryKey",
+			"name": "Riften Fishery Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEBE",
+			"edid": "RiftenScorchedHammerKey",
+			"name": "The Scorched Hammer Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEBD",
+			"edid": "RiftenMariseAravelsHouseKey",
+			"name": "Marise's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEBC",
+			"edid": "RiftenRomlynsHouseKey",
+			"name": "Romlyn's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEBB",
+			"edid": "RiftenValindorsHouseKey",
+			"name": "Valindor's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEBA",
+			"edid": "RiftenElgrimsElixirsKey",
+			"name": "Elgrim's Elixirs Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB9",
+			"edid": "RiftenBlackBriarMeaderyKey",
+			"name": "Black-Briar Meadery Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB8",
+			"edid": "RiftenBlackBriarManorKeySpecial",
+			"name": "Maven's Personal Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB7",
+			"edid": "RiftenBlackBriarManorKey",
+			"name": "Black-Briar Manor Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB6",
+			"edid": "RiftenBolliHouseKey",
+			"name": "Bolli's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB5",
+			"edid": "RiftenAerinsHouseKey",
+			"name": "Aerin's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB4",
+			"edid": "RiftenHaelgasBunkhouseKey",
+			"name": "Haelga's Bunkhouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB3",
+			"edid": "RiftenPawnedPrawnKey",
+			"name": "Pawned Prawn Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FDEB2",
+			"edid": "RiftenBeeandBarbKey",
+			"name": "Bee and Barb Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FB90D",
+			"edid": "WindhelmJailKey",
+			"name": "Windhelm Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000FB90C",
+			"edid": "FalkreathJailKey",
+			"name": "Falkreath Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F9924",
+			"edid": "dunMiddenInvestigatorKey",
+			"name": "Investigator's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F84CB",
+			"edid": "TGTributeChestKey",
+			"name": "Tribute Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F84A5",
+			"edid": "TG07MercerDisplayCaseKey",
+			"name": "Chillrend Case Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F669B",
+			"edid": "dunTrevasWatchPrisonKey",
+			"name": "Treva's Watch Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F4A1A",
+			"edid": "dunTreasMapDBKey",
+			"name": "Dragon Bridge Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F49BE",
+			"edid": "DragonBridgeLumberCampKey",
+			"name": "Lumber Camp Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F232E",
+			"edid": "dunRaldbtharKey",
+			"name": "Raldbthar Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F18F9",
+			"edid": "ShorsStoneSylgjaKey",
+			"name": "Key to Sylgja's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F18F7",
+			"edid": "RiftenRomlynKey",
+			"name": "Key to Romlyn Dreth's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000F18EC",
+			"edid": "MixwaterMillGilfreKey",
+			"name": "Key to Gilfre's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000EF02F",
+			"edid": "dunBilegulchKey01",
+			"name": "Bilegulch Mine Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000ED02D",
+			"edid": "DB08BalagogTrapDoorKey",
+			"name": "Nightgate Inn Cellar Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E9918",
+			"edid": "HagRockRedoubtJailKey",
+			"name": "Hag Rock Ruin Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E94D4",
+			"edid": "dunAbandonedPrisonKey",
+			"name": "Abandoned Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000DD744",
+			"edid": "WindhelmBrunwulfsHouseKey",
+			"name": "Brunwulf's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D8996",
+			"edid": "dunFortSnowhawkRitualRoomKey",
+			"name": "Fort Snowhawk Quarters Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D7772",
+			"edid": "TGTQ04NiranyesSafeKey",
+			"name": "Darkwater Pit Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000CC59C",
+			"edid": "FortNeugradLibraryKey",
+			"name": "Fort Neugrad Library Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C5140",
+			"edid": "CollegeArchMageKey",
+			"name": "Arch-Mage's Quarters Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BECDE",
+			"edid": "DawnstarWindpeakKey",
+			"name": "Key to the Windpeak Inn",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BECD8",
+			"edid": "KolskeggrPavosHouseKey",
+			"name": "Key to Pavo's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BEC39",
+			"edid": "MarkarthWarrensDegaineKey",
+			"name": "Key to Degaine's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BEB82",
+			"edid": "MarkarthStableHouseKey",
+			"name": "Key to Markarth Stables",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BD79C",
+			"edid": "MarkarthTempleDibellaKey",
+			"name": "Key to the Temple of Dibella",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B8F43",
+			"edid": "RiftenMadesiDisplayKey",
+			"name": "Madesi's Market Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B8F42",
+			"edid": "RiftenMadesiStallKey",
+			"name": "Madesi's Market Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B8F35",
+			"edid": "RiftenGrelkaStallKey",
+			"name": "Grelka's Market Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B862F",
+			"edid": "MS03BlackBriarLodgeStashKey",
+			"name": "Sibbi's Stash Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B858A",
+			"edid": "MorthalJorgenLamiKey",
+			"name": "Key to Jorgen and Lami's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000990DF",
+			"edid": "MQDelphineSecretDoorKey",
+			"name": "Delphine's Secret Door Key",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000537F8",
+			"edid": "MarkarthExcavationSiteKey",
+			"name": "Key to Nchuand-Zel",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002C474",
+			"edid": "MS03BlackBriarLodgeKey",
+			"name": "Black-Briar Lodge Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00085D57",
+			"edid": "FFRiften20SarthisKey",
+			"name": "Sarthis's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00085D45",
+			"edid": "RiftenWarehouseKey",
+			"name": "Riften Warehouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065780",
+			"edid": "MarkarthWarrensGarveyKey",
+			"name": "Key to Garvey's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0005B614",
+			"edid": "DaintySloadFootlockerKey",
+			"name": "Dainty Sload Footlocker Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004700D",
+			"edid": "MarkarthJewelryCaseKey",
+			"name": "Kerah's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003E141",
+			"edid": "DA13OrchendorKey",
+			"name": "Key to Bthardamz Elevator",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003C590",
+			"edid": "FFRiften04ChestKey",
+			"name": "Ingun's Supply Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003C514",
+			"edid": "FFRiften02ChestKey",
+			"name": "Sibbi's Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E82C3",
+			"edid": "FFRiften08StrongboxKey",
+			"name": "Brand-Shei's Strongbox Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E6DFE",
+			"edid": "TG02GoldenglowSafeKey",
+			"name": "Goldenglow Safe Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E6C64",
+			"edid": "WindhelmCalixtosKey",
+			"name": "Calixto's Key",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000E6705",
+			"edid": "RiftenNorthGateKey",
+			"name": "Riften North Gate Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E3F98",
+			"edid": "MQ201InterrogationExitKey",
+			"name": "Trap Door Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000E17A8",
+			"edid": "MS02MadanachKey",
+			"name": "Madanach's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000DC175",
+			"edid": "TGTQ02SabineKey",
+			"name": "Sabine's Footlocker Key",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "000DB0E2",
+			"edid": "dunPOITundraWerewolfKey",
+			"name": "Werewolf Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D8F0C",
+			"edid": "WhiterunMainGateKey",
+			"name": "Whiterun Gate Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D81F9",
+			"edid": "dunCragslaneKey02",
+			"name": "Craglane Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D66F9",
+			"edid": "MS01WeylinKey",
+			"name": "Key to Weylin's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D509B",
+			"edid": "dunCragslaneKey01",
+			"name": "Craglane Dog Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D3E6A",
+			"edid": "MS01MargretKey",
+			"name": "Key to Margret's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D2947",
+			"edid": "dunHaltedStreamCampKey",
+			"name": "Key to Halted Stream Mine",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000D1843",
+			"edid": "dunAlftandExitKey",
+			"name": "Key to Alftand Lift",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000CA5EB",
+			"edid": "dunNorthwatchKey01",
+			"name": "Northwatch Captain's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C6321",
+			"edid": "DA16NightcallerKey",
+			"name": "Nightcaller Temple Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C62A1",
+			"edid": "dunKatariahKeyDoesntExist",
+			"name": "Doesn't Exist",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C1405",
+			"edid": "SolitudeWinkingSkeeverKey",
+			"name": "Key to Winking Skeever",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C1402",
+			"edid": "SolitudeVittoriaVicisHouseKey",
+			"name": "Key to Vittoria Vici's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13FF",
+			"edid": "SolitudeTempleoftheDivinesKey",
+			"name": "Key to the Temple of the Divinves",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13FC",
+			"edid": "SolitudeStyrrsHouseKey",
+			"name": "Key to Styrr's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13F9",
+			"edid": "SolitudeStablesKey",
+			"name": "Key to Solitude Stables",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13F6",
+			"edid": "SolitudeSawmillKey",
+			"name": "Key to Solitude Sawmill",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13F3",
+			"edid": "SolitudeRadiantRaimentsKey",
+			"name": "Key to Radiant Raiments",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13F0",
+			"edid": "SolitudeLighthouseKey",
+			"name": "Key to Solitude Lighthouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13ED",
+			"edid": "SolitudeJusticiarsHeadquartersKey",
+			"name": "Key to Justiciar's Headquarter",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13EA",
+			"edid": "SolitudeJalasHouseKey",
+			"name": "Key to Jala's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13E7",
+			"edid": "SolitudeFletcherKey",
+			"name": "Key to Solitude Fletcher",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13E4",
+			"edid": "SolitudeEvetteSansHouseKey",
+			"name": "Key to Evette San's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13E1",
+			"edid": "SolitudeErikursHouseKey",
+			"name": "Key to Erikur's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13DE",
+			"edid": "SolitudeCemetaryKey",
+			"name": "Key to Solitude Cemetary",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13DB",
+			"edid": "SolitudeCastleDourTowerKey",
+			"name": "Key to Castle Dour Tower",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13D8",
+			"edid": "SolitudeCastleDourKey",
+			"name": "Key to Castle Dour",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13D5",
+			"edid": "SolitudeBrylingsHouseKey",
+			"name": "Key to Bryling's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13D2",
+			"edid": "SolitudeBluePalaceKey",
+			"name": "Key to Blue Palace",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13CF",
+			"edid": "SolitudeBlacksmithKey",
+			"name": "Key to Solitude Blacksmith",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13CC",
+			"edid": "SolitudeBitsAndPiecesKey",
+			"name": "Key to Bits and Pieces",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13C9",
+			"edid": "SolitudeBardsCollegeKey",
+			"name": "Key to Bards College",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13C6",
+			"edid": "SolitudeAngelinesAromaticsKey",
+			"name": "Key to Angeline's Aromatics",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13C3",
+			"edid": "SolitudeAddvarsHouseKey",
+			"name": "Key to Addvar's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13C0",
+			"edid": "HalfMoonMillKey",
+			"name": "Key to Half Moon Mill",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13AA",
+			"edid": "FalkreathLodsHouseKey",
+			"name": "Key to Lod's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13A9",
+			"edid": "FalkreathJarlsLonghouseKey",
+			"name": "Key to the Jarl's Longhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13A8",
+			"edid": "FalkreathHosueofArkayKey",
+			"name": "Key to House of Arkay",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13A7",
+			"edid": "FalkreathGrayPineGoodsKey",
+			"name": "Key to Gray Pine Goods",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13A6",
+			"edid": "FalkreathGraveConcoctionsKey",
+			"name": "Key to Grave Concoctions",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C13A5",
+			"edid": "FalkreathDengeirsHallKey",
+			"name": "Key to Dengeir's Hall",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C139E",
+			"edid": "FalkreathDeadMansDrinkKey",
+			"name": "Key to The Dead Man's Drink",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C1395",
+			"edid": "FalkreathCorpselightFarmKey",
+			"name": "Key to Corpselight Farm",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000C007B",
+			"edid": "DunFaldarsToothCageKey",
+			"name": "Faldar's Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C876",
+			"edid": "BrandyMugFarmKey",
+			"name": "Brandy-Mug Farmhouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C875",
+			"edid": "HlaaluFarmKey",
+			"name": "Hlaalu Farmhouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C874",
+			"edid": "HollyfrostFarmKey",
+			"name": "Hollyfrost Farmhouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C872",
+			"edid": "WindhelmWhitePhialKey",
+			"name": "White Phial Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C870",
+			"edid": "WindhelmStablesKey",
+			"name": "Windhelm Stables Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C86F",
+			"edid": "WindhelmSadrisShopKey",
+			"name": "Sadri's Used Wares Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C86E",
+			"edid": "WindhelmNiranyesHouseKey",
+			"name": "Niranye's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C86C",
+			"edid": "WindhelmClanShatterShieldHouseKey",
+			"name": "Clan Shatter-Shield House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C86A",
+			"edid": "WindhelmClanCruelSeaHouseKey",
+			"name": "Clan Cruel-Sea House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C867",
+			"edid": "WindhelmClanShatterShieldOfficeKey",
+			"name": "Clan Shatter-Shield Office Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C865",
+			"edid": "WindhelmBlacksmithKey",
+			"name": "Windhelm Blacksmith Quarters Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C864",
+			"edid": "WindhelmBelynHlaaluHouseKey",
+			"name": "Belyn Hlaalu's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C7DA",
+			"edid": "WindhelmAtheronResidenceKey",
+			"name": "Atheron Residence Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C79B",
+			"edid": "WindhelmArgonianAssemblageKey",
+			"name": "Argonian Assemblage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C795",
+			"edid": "WindhelmAretinoResidenceKey",
+			"name": "Aretino Residence Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C6FD",
+			"edid": "DarkwaterCrossingVernersHouseKey",
+			"name": "Verner and Anneke's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009C6D7",
+			"edid": "DarkwaterCrossingCrossinghouseKey",
+			"name": "Crossinghouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00061AED",
+			"edid": "TG02GoldenglowBasementKey",
+			"name": "Goldenglow Cellar Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0005E4A8",
+			"edid": "dunBloodletThroneCageKey",
+			"name": "Bloodlet Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000835CA",
+			"edid": "dunYngvildKey",
+			"name": "Arondil's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00072B05",
+			"edid": "TG07MercerHouseKey",
+			"name": "Mercer's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0005CDC6",
+			"edid": "TG03MeaderyKey03",
+			"name": "Sabjorn's Dresser Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0005CDBC",
+			"edid": "TG03MeaderyKey02",
+			"name": "Honningbrew Brewhouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004EC50",
+			"edid": "RoriksteadFreeformMralkisChestKey",
+			"name": "Iron Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004E0B7",
+			"edid": "RiftenKeeravasKey",
+			"name": "Keerava's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002E3F9",
+			"edid": "DB02CaptiveShackleKey",
+			"name": "Captive Shackle Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002E3F8",
+			"edid": "DB02AbandonedShackKey",
+			"name": "Abandoned Shack Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BED2D",
+			"edid": "dunFortKastavKey",
+			"name": "Fort Kastav Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BC6FE",
+			"edid": "DunHillgrundsTombChestKey",
+			"name": "Hillgrund's Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000BBB7F",
+			"edid": "dunKatariahKey",
+			"name": "Katariah Master Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B965D",
+			"edid": "MQ101PrisonKey",
+			"name": "Prison Cell Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B8764",
+			"edid": "DragonBridgeLylvieveHouseKey",
+			"name": "Lylvieve House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B8761",
+			"edid": "DragonBridgeHorgeirsHouseKey",
+			"name": "Horgeir's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B7CBC",
+			"edid": "DunIrkngthandKey02",
+			"name": "Irkngthand Arcanex Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B7C00",
+			"edid": "DunIrkngthandKey01",
+			"name": "Irkngthand Consortium Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B6FE5",
+			"edid": "dunEmbershardKey",
+			"name": "Embershard Mine Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B6439",
+			"edid": "TG02GoldenglowGateKey",
+			"name": "Goldenglow Gate Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B5178",
+			"edid": "MQ101KeepDoorKey",
+			"name": "Helgen Keep Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000B48FE",
+			"edid": "SolitudeBluePalaceServantsKey",
+			"name": "Blue Palace Servants Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000AB6FE",
+			"edid": "dunFolgunthurKey",
+			"name": "Folgunthur Catacomb Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000A9F21",
+			"edid": "DunHillgrundsTombKey02",
+			"name": "Hillgrund's Tomb Crypt Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000A7B37",
+			"edid": "SolitudeHouseKey",
+			"name": "Key to Proudspire Manor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000A7B36",
+			"edid": "RiftenHoneysideKey",
+			"name": "Key to Honeyside",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000A0D46",
+			"edid": "dunDeadCroneRockKey",
+			"name": "Dead Crone Rock Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000A035E",
+			"edid": "BarleyDarkFarmHouseKey",
+			"name": "Mithorpa's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009FD51",
+			"edid": "dunRedEagleKey",
+			"name": "Red Eagle Tower Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E2A6",
+			"edid": "StonehillsArgisHouseKey",
+			"name": "Key to Argi's Hut",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E2A5",
+			"edid": "StonehillsAleucsHouseKey",
+			"name": "Key to Aleuc's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E2A4",
+			"edid": "StonehillsLonghouseKey",
+			"name": "Key to Longhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E2A3",
+			"edid": "StonehillsGestursHouseKey",
+			"name": "Key to Gestur's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E2A2",
+			"edid": "StonehillsSorlisHouseKey",
+			"name": "Key to Sorli's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E29A",
+			"edid": "MorthalThaumaturgistsHutKey",
+			"name": "Key to Lami's Hut",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E299",
+			"edid": "MorthalThonnirsHouseKey",
+			"name": "Key to Thonnir's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E298",
+			"edid": "MorthalFalionsHouseKey",
+			"name": "Key to Falion's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E28F",
+			"edid": "WinterholdRanmirsHouseKey",
+			"name": "Key to Ranmir's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E28E",
+			"edid": "WinterholdKraldarsHouseKey",
+			"name": "Key to Kraldar's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E134",
+			"edid": "RoriksteadCowflopFarmKey",
+			"name": "Cowflop Farm Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E133",
+			"edid": "RoriksteadLemkilsHouseKey",
+			"name": "Lemkil's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009E131",
+			"edid": "RoriksteadRoriksManorKey",
+			"name": "Rorik's Manor Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA42",
+			"edid": "DawnstarFrukisHouseKey",
+			"name": "Key to Fruki's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA41",
+			"edid": "DawnstarJailKey",
+			"name": "Key to Dawnstar Jail",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA39",
+			"edid": "DawnstarRustleifsHouseKey",
+			"name": "Key to Rustleif's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA38",
+			"edid": "DawnstarLeigelfsKey",
+			"name": "Key to Leigelf's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA37",
+			"edid": "DawnstarIrgnirsKey",
+			"name": "Key to Irgnir's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA32",
+			"edid": "DawnstarBrinasKey",
+			"name": "Key to Brina's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA31",
+			"edid": "DawnstarMortarAndPestleKey",
+			"name": "Key to The Mortar and Pestle",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009DA2D",
+			"edid": "DawnstarBeitildsHouseKey",
+			"name": "Key to Beitild's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009D392",
+			"edid": "dunHagsEndKey",
+			"name": "Hag's End Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0009AEFF",
+			"edid": "dunDustmansCairnKey",
+			"name": "Dustman's Cairn Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00098B7D",
+			"edid": "KatlasFarmKey",
+			"name": "Key to Katla's Farm",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00098B7C",
+			"edid": "SolitudeSawmillHjorunnRoomKey",
+			"name": "Key to Hjorunn's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00098B7B",
+			"edid": "SolitudeSawmillKharagRoomKey",
+			"name": "Key to Kharag's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00098B7A",
+			"edid": "IrontreeMillHouseKey",
+			"name": "Irontree Mill House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00096573",
+			"edid": "WhiterunSeverioPelagiasHouseKey",
+			"name": "Key to Severio Pelagia's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000960F0",
+			"edid": "DA07SilussHouseKey",
+			"name": "Silus's Museum Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00094392",
+			"edid": "MarkarthMuseumKey",
+			"name": "Dwemer Museum Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00094391",
+			"edid": "MarkarthVlindrelHallKey",
+			"name": "Key to Vlindrel Hall",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093BF4",
+			"edid": "DunAnsilvundKey02",
+			"name": "Ansilvund Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B14",
+			"edid": "WhiterunWintersandManorKey",
+			"name": "Key to Wintersand Manor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B13",
+			"edid": "WhiterunYsoldasHouseKey",
+			"name": "Key to Ysolda's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B12",
+			"edid": "WhiterunWarmaidensKey",
+			"name": "Key to Warmaiden's",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B11",
+			"edid": "WhiterunUthgerdsHouseKey",
+			"name": "Key to Uthgerd the Unbroken's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B10",
+			"edid": "WhiterunUlfbethsKey",
+			"name": "Key to Ulfberth's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B0F",
+			"edid": "WhiterunStablesKey",
+			"name": "Key to Whiterun Stables",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B0E",
+			"edid": "WhiterunOlavasKey",
+			"name": "Key to Olava the Feeble's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B0D",
+			"edid": "WhiterunMaidenLoomManorKey",
+			"name": "Key to Maiden-Loom Manor",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B0C",
+			"edid": "WhiterunHouseBattleBornKey",
+			"name": "Key to House Battle-Born",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B0B",
+			"edid": "WhiterunHouseGrayManeKey",
+			"name": "Key to House Gray-Mane",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B0A",
+			"edid": "WhiterunHeimskrsHouseKey",
+			"name": "Key to Heimskr's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B09",
+			"edid": "WhiterunCarlottaValentiasKey",
+			"name": "Key to Carlotta Valentia's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B08",
+			"edid": "WhiterunBreezehomeKey",
+			"name": "Key to Breezehome",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B07",
+			"edid": "WhiterunBelethorsGoodsKey",
+			"name": "Key to Belethor's General Goods",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B06",
+			"edid": "WhiterunAmrensHouseKey",
+			"name": "Key to Amren's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00093B05",
+			"edid": "WhiterunArcadiasCauldronKey",
+			"name": "Key to Arcadia's Cauldron",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00091F0E",
+			"edid": "dunFortSnowhawkJailKey",
+			"name": "Fort Snowhawk Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000918C6",
+			"edid": "dunMistwatchKey",
+			"name": "Mistwatch Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0008E5D1",
+			"edid": "dunHarmugstahlKey",
+			"name": "Kornalus Frey's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0008B232",
+			"edid": "FortNeugradJailKey",
+			"name": "Fort Neugrad Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0007D94C",
+			"edid": "MarkarthHalloftheDeadKey",
+			"name": "Markarth Hall of the Dead Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0008715F",
+			"edid": "dunAngarvundeKey",
+			"name": "Angarvunde Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0008683B",
+			"edid": "BrokenTowerRedoubtPrisonerKey",
+			"name": "Broken Tower Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0007E019",
+			"edid": "dunSolitudeJailKey",
+			"name": "Castle Dour Dungeon Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000798C1",
+			"edid": "FortSungardJailKey",
+			"name": "Fort Sungard Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00078DC2",
+			"edid": "dunRobbersGorgeCoveKey",
+			"name": "Key to Robber's Cove",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000786BA",
+			"edid": "dunPinewatchTreasKey",
+			"name": "Pinewatch Treasure Room Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000401F4",
+			"edid": "MzulftKeyTelekinesisPuzzle",
+			"name": "Mzulft Room Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002E104",
+			"edid": "dunDarklightTowerClosetKey",
+			"name": "Darklight Tower Closet Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000734C5",
+			"edid": "WhiterunJorrvaskrCeremonyRoomKey",
+			"name": "Jorrvaskr Back Room Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00071C08",
+			"edid": "dunFellglowCallersKey",
+			"name": "Fellglow Ritual Chamber Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00071C07",
+			"edid": "dunFellglowFrontKey",
+			"name": "Fellglow Keep Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00070E80",
+			"edid": "MorthalAlvasHouseKey",
+			"name": "Key to Alva's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006F88C",
+			"edid": "dunShroudHearthKey",
+			"name": "Shroud Hearth Barrows Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006D0AD",
+			"edid": "AvanchnzelKey01",
+			"name": "Avanchnzel Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006B705",
+			"edid": "MS06PotemaCatacombsKey",
+			"name": "Potema's Catacombs Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000695C7",
+			"edid": "OldHroldanInnKey",
+			"name": "Key to Old Hroldan Inn",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006649A",
+			"edid": "GularzKhazgurKeepKey",
+			"name": "Key to Gularz Khazgur Keep",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00066485",
+			"edid": "CrackedTuskKeepVaultKey",
+			"name": "Cracked Tusk Vault Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000656EE",
+			"edid": "MarkarthDibellaInnerSanctumKey",
+			"name": "Key to the Dibella Inner Sanctum",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000656EC",
+			"edid": "MarkarthKeepKey",
+			"name": "Key to Markarth Keep",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000656E8",
+			"edid": "MarkarthOverseersHouseKey",
+			"name": "Key to Overseer's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000656E5",
+			"edid": "MarkarthWarrensCosnachRoomKey",
+			"name": "Key to Cosnach's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000656E3",
+			"edid": "MarkarthWarrensEltrysRoomKey",
+			"name": "Key to Eltrys's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000656E1",
+			"edid": "MarkarthWarrensOmluagRoomKey",
+			"name": "Key to Omluag's Room",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065678",
+			"edid": "MarkarthHagsCureKey",
+			"name": "Key to the Hag's Cure",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065676",
+			"edid": "MarkarthNeposHouseKey",
+			"name": "Key to Nepos's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065674",
+			"edid": "MarkarthOgmundsHouseKey",
+			"name": "Key to Ogmund's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065673",
+			"edid": "MarkarthAbandonedHouseKey",
+			"name": "Key to the Abandoned House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065672",
+			"edid": "MarkarthEndonsHouseKey",
+			"name": "Key to Endon's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065670",
+			"edid": "MarkarthSilverBloodInnKey",
+			"name": "Key to the Silver-Blood Inn",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006566E",
+			"edid": "MarkarthArnleifandSonsKey",
+			"name": "Key to Arnleif and Sons Trading Company",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006566C",
+			"edid": "MarkarthTreasuryHouseKey",
+			"name": "Key to Markarth Treasury House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006566A",
+			"edid": "DushnikhYalBurguksLonghouseKey",
+			"name": "Key to Burguk's Longhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065669",
+			"edid": "MorKhazgurLaraksLonghouseKey",
+			"name": "Key to Larak's Longhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065667",
+			"edid": "LeftHandDaighreKey",
+			"name": "Key to Daighre's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065665",
+			"edid": "LeftHandMinersBarracksKey",
+			"name": "Key to Left Hand Miner's Barracks",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065663",
+			"edid": "LeftHandMineSkaggisHouseKey",
+			"name": "Key to Skaggi's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065661",
+			"edid": "SalviusFarmhouseKey",
+			"name": "Key to Salvius Farmhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065660",
+			"edid": "KarthwastenMinersBarracksKey",
+			"name": "Key to Karthwasten Miners' Barracks",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006565E",
+			"edid": "KarthwastenEnmonsHouseKey",
+			"name": "Key to Enmon's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006565C",
+			"edid": "KarthwastenHallKey",
+			"name": "Key to Karthwasten Hall",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006565B",
+			"edid": "KolskeggrMinePavosHouseKey",
+			"name": "Key to Pavo's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006565A",
+			"edid": "SoljundsSinkholeMinerHouseKey",
+			"name": "Key to Soljund's Miner's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065659",
+			"edid": "HeljarchenTraillusHouseKey",
+			"name": "Key to Traillus's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065658",
+			"edid": "HeljarchenNightgateInnKey",
+			"name": "Key to the Nightgate Inn",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065656",
+			"edid": "HeljarchenJensFarmHouseKey",
+			"name": "Key to Jens' Farmhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065655",
+			"edid": "HeljarchenHeigenFarmHouseKey",
+			"name": "Key to Heigen's Farmhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065653",
+			"edid": "HeljarchenFathendasHouseKey",
+			"name": "Key to Fathendas House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065651",
+			"edid": "LoreiusFarmhouseKey",
+			"name": "Key to Loreius Famhouse",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00065650",
+			"edid": "AngasMillCommonHouseKey",
+			"name": "Key to Anga's Mill Common House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0006564E",
+			"edid": "AngasMillAeriHouseKey",
+			"name": "Key to Aeri's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000648B6",
+			"edid": "dunPotemaSewerKey",
+			"name": "Old Solitude Crypts Key",
+			"weight": "0.1500",
+			"value": 3,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00063B5D",
+			"edid": "MS01OmluagKey",
+			"name": "Sluice Gate Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00062893",
+			"edid": "dunDeadMensTreasuryKey",
+			"name": "King Olaf's Treasury Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002BAE2",
+			"edid": "DA10BasementKey",
+			"name": "Cellar Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000612B8",
+			"edid": "dunRiftenJailKey",
+			"name": "Riften Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0005DCB9",
+			"edid": "MzulftKeyStart",
+			"name": "Mzulft Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0005AEC4",
+			"edid": "WhiterunJailKey",
+			"name": "Whiterun Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00057B66",
+			"edid": "MzulftKey01",
+			"name": "Mzulft Observatory Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00056B90",
+			"edid": "WindhelmViolaGiordanosKey",
+			"name": "Viola Giordano's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00056AF7",
+			"edid": "WindhelmEastEmpireCompanyKey",
+			"name": "East Empire Office Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00055901",
+			"edid": "MarkarthLaboratoryKey",
+			"name": "Calcelmo's Laboratory Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002E5FB",
+			"edid": "JaphetsFollyKey01",
+			"name": "Japhet's Folly Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0001AB5D",
+			"edid": "MS02BorkulKey",
+			"name": "Borkul's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00051988",
+			"edid": "dunRannCageKey",
+			"name": "Rannveigs Fast Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000506D2",
+			"edid": "karthspireRedoubtJailKey",
+			"name": "Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00050341",
+			"edid": "TG04BrinewaterGrottoKey",
+			"name": "Brinewater Grotto Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004D6E2",
+			"edid": "dunValthumeSecPassageKey",
+			"name": "Valthume Chamber Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004C475",
+			"edid": "DunSyncopeSancKey",
+			"name": "Syncope Sanctuary Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004B6D2",
+			"edid": "dunValthumeTrapKey",
+			"name": "Valthume Cellar Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00041965",
+			"edid": "dunDarklightTowerKey",
+			"name": "Darklight Tower Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00028D8B",
+			"edid": "DA08WhisperingDoorKey",
+			"name": "Whispering Door Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00027F7A",
+			"edid": "MS09NorthwatchKeepKey",
+			"name": "Northwatch Keep Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00048141",
+			"edid": "DunFrostflowRoofKey",
+			"name": "Habd's Lighthouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0004811D",
+			"edid": "DunFrostflowAbyssKey",
+			"name": "Mani's Cellar Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00044E78",
+			"edid": "dunPinewatchKey",
+			"name": "Pinewatch Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000446D8",
+			"edid": "FortFellhammerMinesKey",
+			"name": "Fellhammer Mine Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00043A71",
+			"edid": "DunFaldarsToothKey",
+			"name": "Faldar's Tooth Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003E694",
+			"edid": "dunGeirmundsHallKey",
+			"name": "Lord Geirmund's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003E4F2",
+			"edid": "DunAnsilvundKey",
+			"name": "Lu'ah's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003D26B",
+			"edid": "dunRavenscarKey",
+			"name": "Ravenscar Hallow Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00038CE2",
+			"edid": "dunBrokenOarShipKey",
+			"name": "Hargar's Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003718E",
+			"edid": "sightlessPitShamanKey",
+			"name": "Shaman's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00028440",
+			"edid": "dunDeepwoodRedoubtKey",
+			"name": "Deepwood Redoubt Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00016FF1",
+			"edid": "CWFortBlackmoorPrisonKey",
+			"name": "Fort Blackmoor Prison Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0001F147",
+			"edid": "MS06PotemaThrallKey",
+			"name": "Potema's Sanctum Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0001E30D",
+			"edid": "DunLiarsRetreatKey",
+			"name": "Liar's Retreat Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003BB13",
+			"edid": "DarkwaterKey",
+			"name": "Darkwater Pit Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003AD48",
+			"edid": "dunHalldirsKey",
+			"name": "Key to Halldir's Crypt",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003A694",
+			"edid": "DunForelhostEntranceKey",
+			"name": "Forelhost Entrance Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0003A691",
+			"edid": "DunForelhostBossKey",
+			"name": "Forelhost Balcony Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00039F29",
+			"edid": "MQ201InterrogationChamberKey",
+			"name": "Interrogation Chamber Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00036A42",
+			"edid": "RiverwoodFaendalsHouseKey",
+			"name": "Key to Faendal's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00036A41",
+			"edid": "RiverwoodSvensHouseKey",
+			"name": "Key to Sven's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00036A40",
+			"edid": "RiverwoodGerdursHouseKey",
+			"name": "Key to Gerdur's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00036A3F",
+			"edid": "RiverwoodTraderKey",
+			"name": "Key to Riverwood Trader",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00036A3E",
+			"edid": "RiverwoodSleepingGiantInnKey",
+			"name": "Key to Sleeping Giant Inn",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00036A3D",
+			"edid": "RiverwoodAlvorHouseKey",
+			"name": "Key to Alvor's House",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00034C91",
+			"edid": "LostKnifeCageKey",
+			"name": "Lost Knife Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00030B37",
+			"edid": "dunMistwatchJailKey",
+			"name": "Mistwatch Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00022896",
+			"edid": "LabyrinthianCryptKey",
+			"name": "Labyrinthian Crypt Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00019CFF",
+			"edid": "DunHillgrundsTombKey",
+			"name": "Hillgrund's Tomb Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002BAA7",
+			"edid": "TG03MeaderyKey",
+			"name": "Honningbrew Meadery Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0002AC70",
+			"edid": "DA15PelagiusKey",
+			"name": "Pelagius Wing Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00026BC8",
+			"edid": "DA07JorgensKey",
+			"name": "Key to Jorgen's Chest",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "000241B4",
+			"edid": "DunForelhostWaterKey",
+			"name": "Forelhost Well Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00023A70",
+			"edid": "MS07Key",
+			"name": "Jaree's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "00021679",
+			"edid": "MS11HjerimKey",
+			"name": "Key to Hjerim",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0001C250",
+			"edid": "SR01Key",
+			"name": "Cage Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02013833",
+			"edid": "DLC1RuunvaldKey01",
+			"name": "Ruunvald Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02008E20",
+			"edid": "DLC1RedwaterDenKey2",
+			"name": "Redwater Wellspring Key",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02008E1F",
+			"edid": "DLC1RedwaterDenKey1",
+			"name": "Redwater Den Backrooms Key",
+			"weight": "0.0000",
+			"value": 0
+		},
+		{
+			"formid": "02004BD5",
+			"edid": "DLC1VQ05BoneyardKey",
+			"name": "Boneyard Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "020034FB",
+			"edid": "DLC1_WESC_DawnguardCacheKey",
+			"name": "Dawnguard Cache Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0203D23F",
+			"edid": "DLC2TelMithrynStaffEnchanterKey",
+			"name": "Staff Enchanter Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0203BD09",
+			"edid": "DLC2PlayerHouseKey",
+			"name": "Severin Manor Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02034F97",
+			"edid": "DLC2RRJailKey",
+			"name": "Raven Rock Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "020336A0",
+			"edid": "DLC2TelMithrynStewardsKey",
+			"name": "Tel Mithryn Steward's Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0203369F",
+			"edid": "DLC2TelMithrynKitchenKeyNEW",
+			"name": "Tel Mithryn Kitchen Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0203369E",
+			"edid": "DLC2TelMithrynApothelcaryKeyNEW",
+			"name": "Tel Mithryn Apothecary Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0202AD3D",
+			"edid": "DLC2TGGloverKey",
+			"name": "Glover's Guild Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "020297DA",
+			"edid": "DLC2ExpSpiderCageKey",
+			"name": "Merilar's Cage Door Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "020292A8",
+			"edid": "DLC2RR02BossChestKey",
+			"name": "Vendil Ulen's Chest Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02028930",
+			"edid": "DLC2TempleOfMiraak02Key",
+			"name": "Temple of Miraak Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02027E00",
+			"edid": "DLC2SV02AbandonedLodgeKey",
+			"name": "Key to Abandoned Lodge",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02027664",
+			"edid": "WhiterunJailKeyDUPLICATE002",
+			"name": "Whiterun Jail Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02027663",
+			"edid": "DLC2NB01BossJailKey",
+			"name": "Treasure Room Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02024FA7",
+			"edid": "DLC2RRF05StrongboxKey",
+			"name": "Brand-Shei's Strongbox Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02024E02",
+			"edid": "DLC2RRTempleTombKey",
+			"name": "Raven Rock Tomb Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0202481A",
+			"edid": "DLC2dunCastleKarstaagKey",
+			"name": "Castle Karstaag Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02020A43",
+			"edid": "DLC2RR03GateKey",
+			"name": "Raven Rock Mine Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0201F4B4",
+			"edid": "DLC2dunFortFrostmothExitKey",
+			"name": "Fort Frostmoth Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0201F31E",
+			"edid": "DLC2RR02SeverinSafeKey",
+			"name": "Severin Safe Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0201BD06",
+			"edid": "DLC2TelMithrynKitchenKey",
+			"name": "Tel Mithryn Kitchen Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0201BD05",
+			"edid": "DLC2TelMithrynApothecaryKey",
+			"name": "Tel Mithryn Apothecary Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "0201A971",
+			"edid": "DLC2dunBenkongerikeKey01",
+			"name": "Benkongerike Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018FC7",
+			"edid": "DLC2SVGreathallKey",
+			"name": "Skaal Greathall Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018FBB",
+			"edid": "DLC2SVEdlasHouseKey",
+			"name": "Edla's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018FB7",
+			"edid": "DLC2SVBaldorIronShapersHouseKey",
+			"name": "Baldor's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018FB0",
+			"edid": "DLC2SVWulfWildbloodsHouseKey",
+			"name": "Wulf's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018FAD",
+			"edid": "DLC2SVMorwensHouseKey",
+			"name": "Morwen's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018FA4",
+			"edid": "DLC2SVDeorWoodcuttersHouseKey",
+			"name": "Deor's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018F9F",
+			"edid": "DLC2SVOslafsHouseKey",
+			"name": "Oslaf's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018D1C",
+			"edid": "DLC2dunGyldenhulBarrowKey",
+			"name": "Gyldenhul Barrow Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018457",
+			"edid": "DLC2RRIenthFarmKey",
+			"name": "Ienth Farmhouse Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018456",
+			"edid": "DLC2RRSeverinManorKey",
+			"name": "Severin Manor Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018455",
+			"edid": "DLC2RRCaerelliusHouseKey",
+			"name": "Caerellius House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018454",
+			"edid": "DLC2RRGloverHouseKey",
+			"name": "Glover Mallory's House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018453",
+			"edid": "DLC2RRAlorHouseKey",
+			"name": "Alor House Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018452",
+			"edid": "DLC2RRNetchKey",
+			"name": "Retching Netch Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018451",
+			"edid": "DLC2RRTempleKey",
+			"name": "Raven Rock Temple Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		},
+		{
+			"formid": "02018450",
+			"edid": "DLC2RRMorvaynManorKey",
+			"name": "Morvayn Manor Key",
+			"weight": "0.0000",
+			"value": 0,
+			"keywords": [
+				"VendorItemKey"
+			]
+		}
+	]
+}

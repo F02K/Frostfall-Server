@@ -1,0 +1,646 @@
+{
+	"words_of_power": [
+		{
+			"formid": "00106ACB",
+			"edid": "DragonFakeWord",
+			"name": "",
+			"translation": ""
+		},
+		{
+			"formid": "000FF8D7",
+			"edid": "MQFakeWord",
+			"name": "",
+			"translation": ""
+		},
+		{
+			"formid": "000E5F67",
+			"edid": "HowlCallOfTheWild3",
+			"name": "Call Of The Wild",
+			"translation": ""
+		},
+		{
+			"formid": "000E5F66",
+			"edid": "HowlCallOfTheWild2",
+			"name": "Call Of The Wild",
+			"translation": ""
+		},
+		{
+			"formid": "000E5F65",
+			"edid": "HowlCallOfTheWild1",
+			"name": "Call Of The Wild",
+			"translation": ""
+		},
+		{
+			"formid": "000E40D2",
+			"edid": "WordWoodElfBeastTongue",
+			"name": "Beast Tongue",
+			"translation": ""
+		},
+		{
+			"formid": "000E40CC",
+			"edid": "WordImperialVoiceOfTheEmperor",
+			"name": "Voice of the Emperor",
+			"translation": ""
+		},
+		{
+			"formid": "000E40C5",
+			"edid": "WordNordBattleCry",
+			"name": "Battle Cry",
+			"translation": ""
+		},
+		{
+			"formid": "000CF79A",
+			"edid": "HowlSummonWolves3",
+			"name": "Howl Of The Pack",
+			"translation": ""
+		},
+		{
+			"formid": "000CF799",
+			"edid": "HowlSummonWolves2",
+			"name": "Howl Of The Pack",
+			"translation": ""
+		},
+		{
+			"formid": "000CF795",
+			"edid": "HowlFear3",
+			"name": "Howl Of Terror",
+			"translation": ""
+		},
+		{
+			"formid": "000CF794",
+			"edid": "HowlFear2",
+			"name": "Howl Of Terror",
+			"translation": ""
+		},
+		{
+			"formid": "000CF78F",
+			"edid": "HowlSummonWolves1",
+			"name": "Howl Of The Pack",
+			"translation": ""
+		},
+		{
+			"formid": "000CF78E",
+			"edid": "HowlFear1",
+			"name": "Howl Of Terror",
+			"translation": ""
+		},
+		{
+			"formid": "000CE219",
+			"edid": "HowlDetectLife",
+			"name": "Scent Of Blood",
+			"translation": ""
+		},
+		{
+			"formid": "000602A5",
+			"edid": "WordNus",
+			"name": "Nus",
+			"translation": "Statue"
+		},
+		{
+			"formid": "000602A4",
+			"edid": "WordSlen",
+			"name": "Slen",
+			"translation": "Flesh"
+		},
+		{
+			"formid": "000602A3",
+			"edid": "WordIiz",
+			"name": "3z",
+			"translation": "Ice"
+		},
+		{
+			"formid": "000602A2",
+			"edid": "WordGut",
+			"name": "Gut",
+			"translation": "Far"
+		},
+		{
+			"formid": "000602A1",
+			"edid": "WordMey",
+			"name": "M9",
+			"translation": "Fool"
+		},
+		{
+			"formid": "000602A0",
+			"edid": "WordZul",
+			"name": "Zul",
+			"translation": "Voice"
+		},
+		{
+			"formid": "0006029F",
+			"edid": "WordOv",
+			"name": "Ov",
+			"translation": "Trust"
+		},
+		{
+			"formid": "0006029E",
+			"edid": "WordDrem",
+			"name": "Drem",
+			"translation": "Peace"
+		},
+		{
+			"formid": "0006029D",
+			"edid": "WordKaan",
+			"name": "K1n",
+			"translation": "Kyne"
+		},
+		{
+			"formid": "0006029C",
+			"edid": "WordQo",
+			"name": "Qo",
+			"translation": "Lightning"
+		},
+		{
+			"formid": "0006029B",
+			"edid": "WordBah",
+			"name": "B4",
+			"translation": "Wrath"
+		},
+		{
+			"formid": "0006029A",
+			"edid": "WordStrun",
+			"name": "Strun",
+			"translation": "Storm"
+		},
+		{
+			"formid": "00060299",
+			"edid": "WordAus",
+			"name": "Aus",
+			"translation": "Suffer"
+		},
+		{
+			"formid": "00060298",
+			"edid": "WordLun",
+			"name": "Lun",
+			"translation": "Leech"
+		},
+		{
+			"formid": "00060297",
+			"edid": "WordKrii",
+			"name": "Kr3",
+			"translation": "Kill"
+		},
+		{
+			"formid": "00060296",
+			"edid": "WordNir",
+			"name": "N7",
+			"translation": "Hunt"
+		},
+		{
+			"formid": "00060295",
+			"edid": "WordYah",
+			"name": "Y4",
+			"translation": "Seek"
+		},
+		{
+			"formid": "00060294",
+			"edid": "WordLaas",
+			"name": "L1s",
+			"translation": "Life"
+		},
+		{
+			"formid": "00060293",
+			"edid": "WordTah",
+			"name": "T4",
+			"translation": "Pack"
+		},
+		{
+			"formid": "00060292",
+			"edid": "WordMir",
+			"name": "M7",
+			"translation": "Allegiance"
+		},
+		{
+			"formid": "00060291",
+			"edid": "WordRaan",
+			"name": "R1n",
+			"translation": "Animal"
+		},
+		{
+			"formid": "0005FB97",
+			"edid": "WordViik",
+			"name": "V3k",
+			"translation": "Defeat"
+		},
+		{
+			"formid": "0005FB96",
+			"edid": "WordHaal",
+			"name": "H1l",
+			"translation": "Hand"
+		},
+		{
+			"formid": "0005FB95",
+			"edid": "WordZun",
+			"name": "Zun",
+			"translation": "Weapon"
+		},
+		{
+			"formid": "0005D16E",
+			"edid": "WordDiin",
+			"name": "D3n",
+			"translation": "Freeze"
+		},
+		{
+			"formid": "0005D16D",
+			"edid": "WordKrah",
+			"name": "Kr4",
+			"translation": "Cold"
+		},
+		{
+			"formid": "0005D16C",
+			"edid": "WordFo",
+			"name": "Fo",
+			"translation": "Frost"
+		},
+		{
+			"formid": "00051962",
+			"edid": "WordZoor",
+			"name": "Z8r",
+			"translation": "Legend"
+		},
+		{
+			"formid": "00051961",
+			"edid": "WordKaal",
+			"name": "K1l",
+			"translation": "Champion"
+		},
+		{
+			"formid": "00051960",
+			"edid": "WordHun",
+			"name": "Hun",
+			"translation": "Hero"
+		},
+		{
+			"formid": "00048ACC",
+			"edid": "WordUl",
+			"name": "Ul",
+			"translation": "Eternity"
+		},
+		{
+			"formid": "00048ACB",
+			"edid": "WordKlo",
+			"name": "Klo",
+			"translation": "Sand"
+		},
+		{
+			"formid": "00048ACA",
+			"edid": "WordTiid",
+			"name": "T3d",
+			"translation": "Time"
+		},
+		{
+			"formid": "00046B8B",
+			"edid": "WordViing",
+			"name": "V3ng",
+			"translation": "Wing"
+		},
+		{
+			"formid": "00046B8A",
+			"edid": "WordAh",
+			"name": "4",
+			"translation": "Hunter"
+		},
+		{
+			"formid": "00046B89",
+			"edid": "WordOd",
+			"name": "Od",
+			"translation": "Snow"
+		},
+		{
+			"formid": "00044253",
+			"edid": "WordFrul",
+			"name": "Frul",
+			"translation": "Temporary"
+		},
+		{
+			"formid": "00044252",
+			"edid": "WordZah",
+			"name": "Z4",
+			"translation": "Finite"
+		},
+		{
+			"formid": "00044251",
+			"edid": "WordJoor",
+			"name": "J8r",
+			"translation": "Mortal"
+		},
+		{
+			"formid": "0003CD33",
+			"edid": "WordKoor",
+			"name": "K8r",
+			"translation": "Summer"
+		},
+		{
+			"formid": "0003CD32",
+			"edid": "WordVah",
+			"name": "V4",
+			"translation": "Spring"
+		},
+		{
+			"formid": "0003CD31",
+			"edid": "WordLok",
+			"name": "Lok",
+			"translation": "Sky"
+		},
+		{
+			"formid": "0003291F",
+			"edid": "WordDun",
+			"name": "Dun",
+			"translation": "Grace"
+		},
+		{
+			"formid": "0003291E",
+			"edid": "WordGrah",
+			"name": "Gr4",
+			"translation": "Battle"
+		},
+		{
+			"formid": "0003291D",
+			"edid": "WordSu",
+			"name": "Su",
+			"translation": "Air"
+		},
+		{
+			"formid": "0003291C",
+			"edid": "WordMaar",
+			"name": "M1r",
+			"translation": "Terror"
+		},
+		{
+			"formid": "0003291B",
+			"edid": "WordRu",
+			"name": "Ru",
+			"translation": "Run"
+		},
+		{
+			"formid": "0003291A",
+			"edid": "WordFaas",
+			"name": "F1s",
+			"translation": "Fear"
+		},
+		{
+			"formid": "00032919",
+			"edid": "WordGron",
+			"name": "Gron",
+			"translation": "Bind"
+		},
+		{
+			"formid": "00032918",
+			"edid": "WordZii",
+			"name": "Z3",
+			"translation": "Spirit"
+		},
+		{
+			"formid": "00032917",
+			"edid": "WordFeim",
+			"name": "F2m",
+			"translation": "Fade"
+		},
+		{
+			"formid": "0002F7BD",
+			"edid": "WordKest",
+			"name": "Kest",
+			"translation": "Tempest"
+		},
+		{
+			"formid": "0002F7BC",
+			"edid": "WordNah",
+			"name": "N4",
+			"translation": "Fury"
+		},
+		{
+			"formid": "0002F7BB",
+			"edid": "WordWuld",
+			"name": "Wuld",
+			"translation": "Whirlwind"
+		},
+		{
+			"formid": "0002F2CE",
+			"edid": "TestWordSah",
+			"name": "Sah",
+			"translation": "Phantom"
+		},
+		{
+			"formid": "0002F2CD",
+			"edid": "TestWordLo",
+			"name": "Lo",
+			"translation": "Deceive"
+		},
+		{
+			"formid": "0002F2CC",
+			"edid": "TestWordFiik",
+			"name": "Fiik",
+			"translation": "Mirror"
+		},
+		{
+			"formid": "000252C5",
+			"edid": "WordDragonFire03",
+			"name": "DragonFire03",
+			"translation": ""
+		},
+		{
+			"formid": "000252C4",
+			"edid": "WordDragonFire02",
+			"name": "DragonFire02",
+			"translation": ""
+		},
+		{
+			"formid": "000252C3",
+			"edid": "WordDragonFire01",
+			"name": "DragonFire01",
+			"translation": ""
+		},
+		{
+			"formid": "00020E19",
+			"edid": "WordShul",
+			"name": "Shul",
+			"translation": "Sun"
+		},
+		{
+			"formid": "00020E18",
+			"edid": "WordToor",
+			"name": "T8r",
+			"translation": "Inferno"
+		},
+		{
+			"formid": "00020E17",
+			"edid": "WordYol",
+			"name": "Yol",
+			"translation": "Fire"
+		},
+		{
+			"formid": "00013E24",
+			"edid": "WordDah",
+			"name": "D4",
+			"translation": "Push"
+		},
+		{
+			"formid": "00013E23",
+			"edid": "WordRo",
+			"name": "Ro",
+			"translation": "Balance"
+		},
+		{
+			"formid": "00013E22",
+			"edid": "WordFus",
+			"name": "Fus",
+			"translation": "Force"
+		},
+		{
+			"formid": "0201A164",
+			"edid": "DLC1UndeadSummon3",
+			"name": "Z1m",
+			"translation": "Slave"
+		},
+		{
+			"formid": "0201A163",
+			"edid": "DLC1UndeadSummon2",
+			"name": "Qoth",
+			"translation": "Tomb"
+		},
+		{
+			"formid": "0201A162",
+			"edid": "DLC1UndeadSummon1",
+			"name": "D3l",
+			"translation": "Undead"
+		},
+		{
+			"formid": "02008A65",
+			"edid": "DLC1DrainVitality1Gaan",
+			"name": "G1n",
+			"translation": "Stamina"
+		},
+		{
+			"formid": "02008A64",
+			"edid": "DLC1DrainVitality2Lah",
+			"name": "L4",
+			"translation": "Magicka"
+		},
+		{
+			"formid": "02008A63",
+			"edid": "DLC1DrainVitality3Haas",
+			"name": "H1s",
+			"translation": "Health"
+		},
+		{
+			"formid": "02007CB9",
+			"edid": "DLC1SoulTearing3Zol",
+			"name": "Zol",
+			"translation": "Zombie"
+		},
+		{
+			"formid": "02007CB8",
+			"edid": "DLC1SoulTearing2Vaaz",
+			"name": "V1z",
+			"translation": "Tear"
+		},
+		{
+			"formid": "02007CB7",
+			"edid": "DLC1SoulTearing1Rii",
+			"name": "R3",
+			"translation": "Essence"
+		},
+		{
+			"formid": "020030D7",
+			"edid": "DLC1DragonSummon3Viir",
+			"name": "V3r",
+			"translation": "Dying"
+		},
+		{
+			"formid": "020030D6",
+			"edid": "DLC1DragonSummon2Neh",
+			"name": "Neh",
+			"translation": "Never"
+		},
+		{
+			"formid": "020030D4",
+			"edid": "DLC1DragonSummon1Dur",
+			"name": "D6",
+			"translation": "Curse"
+		},
+		{
+			"formid": "02039D29",
+			"edid": "DLC2MKMiraakMaskShoutWord",
+			"name": "Fus",
+			"translation": "Force"
+		},
+		{
+			"formid": "020200E6",
+			"edid": "DLC2BattleFuryWord3",
+			"name": "Sh1n",
+			"translation": "Inspire"
+		},
+		{
+			"formid": "020200E5",
+			"edid": "DLC2BattleFuryWord2",
+			"name": "V6",
+			"translation": "Valor"
+		},
+		{
+			"formid": "020200E4",
+			"edid": "DLC2BattleFuryWord1",
+			"name": "Mid",
+			"translation": "Loyal"
+		},
+		{
+			"formid": "020200C4",
+			"edid": "DLC2CycloneWord3",
+			"name": "Nos",
+			"translation": "Strike"
+		},
+		{
+			"formid": "020200C3",
+			"edid": "DLC2CycloneWord2",
+			"name": "G1r",
+			"translation": "Unleash"
+		},
+		{
+			"formid": "020200C2",
+			"edid": "DLC2CycloneWord1",
+			"name": "Ven",
+			"translation": "Wind"
+		},
+		{
+			"formid": "0201DF95",
+			"edid": "DLC2DragonAspectWord3",
+			"name": "D3v",
+			"translation": "Wyrm"
+		},
+		{
+			"formid": "0201DF94",
+			"edid": "DLC2DragonAspectWord2",
+			"name": "Q4",
+			"translation": "Armor"
+		},
+		{
+			"formid": "0201DF93",
+			"edid": "DLC2DragonAspectWord1",
+			"name": "Mul",
+			"translation": "Strength"
+		},
+		{
+			"formid": "0201BFF2",
+			"edid": "dlc2DBWordRageOfAncients",
+			"name": "Rage Of The Ancients",
+			"translation": ""
+		},
+		{
+			"formid": "020179DB",
+			"edid": "DLC2BendToWillWord3",
+			"name": "Dov",
+			"translation": "Dragon"
+		},
+		{
+			"formid": "020179DA",
+			"edid": "DLC2BendToWillWord2",
+			"name": "H4",
+			"translation": "Mind"
+		},
+		{
+			"formid": "020179D9",
+			"edid": "DLC2BendToWillWord1",
+			"name": "Gol",
+			"translation": "Earth"
+		}
+	]
+}

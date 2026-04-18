@@ -35,14 +35,14 @@ const PROPERTY_REGISTRY = [
 ]
 
 // ── Runtime state ─────────────────────────────────────────────────────────────
-// properties Map: propertyId → { ownerId: null|userId, pendingOwnerId: null|userId }
+// properties Map: propertyId → { ownerId, pendingOwnerId, price }
 
 const properties = new Map()
 
 function _loadRegistry() {
   for (const def of PROPERTY_REGISTRY) {
     if (!properties.has(def.id)) {
-      properties.set(def.id, { ownerId: null, pendingOwnerId: null })
+      properties.set(def.id, { ownerId: null, pendingOwnerId: null, price: null })
     }
   }
 }
@@ -80,7 +80,7 @@ function requestProperty(mp, store, bus, playerId, propertyId, stewardId) {
   if (!isAvailable(propertyId)) return false
   const courier = require('./courier')
   properties.get(propertyId).pendingOwnerId = playerId
-  _persist(mp)
+  _persist()
   const note = courier.createNotification(
     'propertyRequest', playerId, stewardId, null,
     { propertyId, requesterName: store.get(playerId) ? store.get(playerId).name : String(playerId) }
@@ -96,7 +96,7 @@ function approveProperty(mp, store, bus, propertyId, approverId) {
   const newOwnerId = state.pendingOwnerId
   state.ownerId        = newOwnerId
   state.pendingOwnerId = null
-  _persist(mp)
+  _persist()
 
   const player = store.get(newOwnerId)
   if (player) {
@@ -112,7 +112,7 @@ function denyProperty(mp, propertyId) {
   const state = properties.get(propertyId)
   if (!state) return false
   state.pendingOwnerId = null
-  _persist(mp)
+  _persist()
   return true
 }
 
@@ -122,7 +122,7 @@ function revokeProperty(mp, store, propertyId) {
   const prevOwner = state.ownerId
   state.ownerId        = null
   state.pendingOwnerId = null
-  _persist(mp)
+  _persist()
   if (prevOwner !== null) {
     const player = store.get(prevOwner)
     if (player) {
@@ -135,10 +135,28 @@ function revokeProperty(mp, store, propertyId) {
 
 // ── Internal ──────────────────────────────────────────────────────────────────
 
-function _persist(mp) {
+function setPropertyPrice(propertyId, price) {
+  const state = properties.get(propertyId)
+  if (!state) return false
+  state.price = price
+  _persist()
+  return true
+}
+
+function summonProperty(mp, store, bus, propertyId, summonerId) {
+  const state = properties.get(propertyId)
+  if (!state || state.pendingOwnerId === null) return false
+  const requesterId = state.pendingOwnerId
+  const player = store.get(requesterId)
+  if (player) mp.sendCustomPacket(player.actorId, 'propertySummon', { propertyId })
+  bus.dispatch({ type: 'propertySummoned', propertyId, requesterId, summonedBy: summonerId })
+  return true
+}
+
+function _persist() {
   const data = []
   for (const [id, state] of properties) {
-    data.push({ id, ownerId: state.ownerId, pendingOwnerId: state.pendingOwnerId })
+    data.push({ id, ownerId: state.ownerId, pendingOwnerId: state.pendingOwnerId, price: state.price })
   }
   worldStore.set('ff_properties', data)
 }
@@ -154,8 +172,10 @@ function init(mp, store, bus) {
   if (Array.isArray(saved)) {
     for (const entry of saved) {
       if (properties.has(entry.id)) {
-        properties.get(entry.id).ownerId        = entry.ownerId
-        properties.get(entry.id).pendingOwnerId = entry.pendingOwnerId
+        const s = properties.get(entry.id)
+        s.ownerId        = entry.ownerId
+        s.pendingOwnerId = entry.pendingOwnerId
+        s.price          = entry.price !== undefined ? entry.price : null
       }
     }
   }

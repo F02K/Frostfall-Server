@@ -1,8 +1,24 @@
 'use strict'
 
-// ── Constants ─────────────────────────────────────────────────────────────────
-const SKILL_LEVEL_XP  = 10
-const DEFAULT_CAP_XP  = 250  // ~level 25
+// ── Skill tiers ───────────────────────────────────────────────────────────────
+// Cumulative XP required to reach each tier.
+// Designed so an actively playing magic character (~100 XP/h) hits tier 1 in
+// ~24 hours; each subsequent tier doubles the required time from the previous.
+//   Tier 0 → 1: 24h   (2,400 XP)
+//   Tier 1 → 2: +48h  (total 72h  / 7,200 XP)
+//   Tier 2 → 3: +96h  (total 168h / 16,800 XP)
+//   Tier 3 → 4: +192h (total 360h / 36,000 XP)
+//   Tier 4 → 5: +384h (total 744h / 72,000 XP)
+//
+// Study boosts (multipliers) halve time-to-next-tier at any tier, so a 2×
+// boost from a master teacher scales correctly across the entire progression.
+const TIER_XP = [0, 2400, 7200, 16800, 36000, 72000]
+const TIER_NAMES = ['novice', 'apprentice', 'journeyman', 'adept', 'expert', 'master']
+
+// Default cap: tier 1 (Apprentice) — independent practitioners reach this
+// without faction membership. Faction rank unlocks tiers 2–4; tier 5 requires
+// a master teacher event or equivalent IC attainment.
+const DEFAULT_CAP_XP = TIER_XP[1]  // 2,400
 
 const SKILL_IDS = [
   'destruction', 'restoration', 'alteration', 'conjuration', 'illusion',
@@ -11,18 +27,18 @@ const SKILL_IDS = [
 
 // Faction cap bonuses: { factionId, minRank, skills, cap }
 const FACTION_CAPS = [
-  { factionId: 'collegeOfWinterhold', minRank: 1, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: 500 },
-  { factionId: 'collegeOfWinterhold', minRank: 2, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: 750 },
-  { factionId: 'collegeOfWinterhold', minRank: 3, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: 1000 },
-  { factionId: 'companions',          minRank: 1, skills: ['smithing'], cap: 500 },
-  { factionId: 'companions',          minRank: 2, skills: ['smithing'], cap: 750 },
-  { factionId: 'companions',          minRank: 3, skills: ['smithing'], cap: 1000 },
-  { factionId: 'eastEmpireCompany',   minRank: 1, skills: ['smithing','enchanting','alchemy'], cap: 500 },
-  { factionId: 'eastEmpireCompany',   minRank: 2, skills: ['smithing','enchanting','alchemy'], cap: 750 },
-  { factionId: 'thievesGuild',        minRank: 1, skills: ['alchemy'], cap: 500 },
-  { factionId: 'thievesGuild',        minRank: 2, skills: ['alchemy'], cap: 750 },
-  { factionId: 'bardsCollege',        minRank: 1, skills: ['enchanting'], cap: 500 },
-  { factionId: 'bardsCollege',        minRank: 2, skills: ['enchanting'], cap: 750 },
+  { factionId: 'collegeOfWinterhold', minRank: 1, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: TIER_XP[2] },
+  { factionId: 'collegeOfWinterhold', minRank: 2, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: TIER_XP[3] },
+  { factionId: 'collegeOfWinterhold', minRank: 3, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: TIER_XP[4] },
+  { factionId: 'companions',          minRank: 1, skills: ['smithing'],                        cap: TIER_XP[2] },
+  { factionId: 'companions',          minRank: 2, skills: ['smithing'],                        cap: TIER_XP[3] },
+  { factionId: 'companions',          minRank: 3, skills: ['smithing'],                        cap: TIER_XP[4] },
+  { factionId: 'eastEmpireCompany',   minRank: 1, skills: ['smithing','enchanting','alchemy'], cap: TIER_XP[2] },
+  { factionId: 'eastEmpireCompany',   minRank: 2, skills: ['smithing','enchanting','alchemy'], cap: TIER_XP[3] },
+  { factionId: 'thievesGuild',        minRank: 1, skills: ['alchemy'],                        cap: TIER_XP[2] },
+  { factionId: 'thievesGuild',        minRank: 2, skills: ['alchemy'],                        cap: TIER_XP[3] },
+  { factionId: 'bardsCollege',        minRank: 1, skills: ['enchanting'],                     cap: TIER_XP[2] },
+  { factionId: 'bardsCollege',        minRank: 2, skills: ['enchanting'],                     cap: TIER_XP[3] },
 ]
 
 // ── In-memory session tracking ─────────────────────────────────────────────────
@@ -31,8 +47,20 @@ const sessionStart = new Map()
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
+// Returns 0–5 (tier index, i.e. TIER_NAMES index). Used by dice system as a
+// direct bonus: magicMastery = getSkillLevel(xp) + 1.
 function getSkillLevel(xp) {
-  return Math.floor(xp / SKILL_LEVEL_XP)
+  for (let i = TIER_XP.length - 1; i >= 0; i--) {
+    if (xp >= TIER_XP[i]) return i
+  }
+  return 0
+}
+
+// Progress within the current tier, 0.0–1.0. Useful for client progress bars.
+function getSkillProgress(xp) {
+  const tier = getSkillLevel(xp)
+  if (tier >= TIER_XP.length - 1) return 1.0
+  return (xp - TIER_XP[tier]) / (TIER_XP[tier + 1] - TIER_XP[tier])
 }
 
 function getSkillXp(mp, playerId, skillId) {

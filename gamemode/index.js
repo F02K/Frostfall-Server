@@ -16,9 +16,13 @@ const prison   = require(path.join(__dirname, 'prison'))
 const factions = require(path.join(__dirname, 'factions'))
 const college  = require(path.join(__dirname, 'college'))
 const skills   = require(path.join(__dirname, 'skills'))
-const training = require(path.join(__dirname, 'training'))
-const nvfl     = require(path.join(__dirname, 'nvfl'))
-const commands = require(path.join(__dirname, 'commands'))
+const training  = require(path.join(__dirname, 'training'))
+const treasury  = require(path.join(__dirname, 'treasury'))
+const roleplay  = require(path.join(__dirname, 'roleplay'))
+const nvfl      = require(path.join(__dirname, 'nvfl'))
+const inventory = require(path.join(__dirname, 'inventory'))
+const magic     = require(path.join(__dirname, 'magic'))
+const commands  = require(path.join(__dirname, 'commands'))
 
 function init(mp) {
   console.log('[gamemode] Frostfall Roleplay — initializing')
@@ -70,12 +74,15 @@ function init(mp) {
   college.init(mp, store, bus)
   skills.init(mp, store, bus)
   training.init(mp, store, bus)
+  treasury.init(mp, store, bus)
+  roleplay.init(mp, store, bus)
+  magic.init(mp, store, bus)
 
   // ── Command layer ─────────────────────────────────────────────────────────
   commands.registerAll(mp, store, bus, {
     hunger, drunkBar, economy, housing, bounty,
     combat, nvfl, captivity, prison, factions,
-    college, skills, training,
+    college, skills, training, treasury, roleplay, inventory, magic,
   })
 
   console.log('[gamemode] Frostfall Roleplay — ready')

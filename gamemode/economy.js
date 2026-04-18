@@ -1,10 +1,13 @@
 'use strict'
 
+const path = require('path')
+const inv  = require(path.join(__dirname, 'inventory'))
+
 // ── Constants ─────────────────────────────────────────────────────────────────
-const STIPEND_RATE        = 50   // Septims per hour
-const STIPEND_CAP_HOURS   = 24
-const STIPEND_INTERVAL_MIN = 60  // pay every 60 minutes of playtime
-const TICK_INTERVAL_MS    = 60 * 1000
+const STIPEND_RATE         = 50
+const STIPEND_CAP_HOURS    = 24
+const STIPEND_INTERVAL_MIN = 60
+const TICK_INTERVAL_MS     = 60 * 1000
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
@@ -26,33 +29,12 @@ function transferGold(mp, store, fromId, toId, amount) {
   if (!from || !to) return false
   if (from.septims < amount) return false
 
-  const fromGold = from.septims - amount
-  const toGold   = to.septims + amount
+  if (!inv.transferItem(mp, from.actorId, to.actorId, inv.GOLD_BASE_ID, amount)) return false
 
-  store.update(fromId, { septims: fromGold })
-  store.update(toId,   { septims: toGold })
-
-  // Sync to inventory gold
-  mp.set(from.actorId, 'inv', _setGoldInInventory(mp.get(from.actorId, 'inv'), fromGold))
-  mp.set(to.actorId,   'inv', _setGoldInInventory(mp.get(to.actorId,   'inv'), toGold))
+  store.update(fromId, { septims: inv.getItemCount(mp, from.actorId, inv.GOLD_BASE_ID) })
+  store.update(toId,   { septims: inv.getItemCount(mp, to.actorId,   inv.GOLD_BASE_ID) })
 
   return true
-}
-
-// ── Internal ──────────────────────────────────────────────────────────────────
-
-const GOLD_BASE_ID = 0x0000000F
-
-function _getGoldFromInventory(inv) {
-  if (!inv || !inv.entries) return 0
-  const entry = inv.entries.find(e => e.baseId === GOLD_BASE_ID)
-  return entry ? entry.count : 0
-}
-
-function _setGoldInInventory(inv, amount) {
-  const entries = (inv && inv.entries) ? inv.entries.filter(e => e.baseId !== GOLD_BASE_ID) : []
-  if (amount > 0) entries.push({ baseId: GOLD_BASE_ID, count: amount })
-  return { entries }
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
@@ -65,11 +47,10 @@ function init(mp, store, bus) {
       try {
         for (const player of store.getAll()) {
           if (shouldPayStipend(player.minutesOnline, player.stipendPaidHours)) {
-            const newSeptims = player.septims + STIPEND_RATE
-            const newHours   = player.stipendPaidHours + 1
+            const newHours = player.stipendPaidHours + 1
+            inv.addItem(mp, player.actorId, inv.GOLD_BASE_ID, STIPEND_RATE)
+            const newSeptims = inv.getItemCount(mp, player.actorId, inv.GOLD_BASE_ID)
             store.update(player.id, { septims: newSeptims, stipendPaidHours: newHours })
-            const inv = mp.get(player.actorId, 'inv')
-            mp.set(player.actorId, 'inv', _setGoldInInventory(inv, newSeptims))
             mp.set(player.actorId, 'ff_stipendHours', newHours)
             bus.dispatch({ type: 'stipendTick', playerId: player.id, septims: newSeptims, stipendPaidHours: newHours })
           }
@@ -88,9 +69,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const inv  = mp.get(player.actorId, 'inv')
-  const gold = _getGoldFromInventory(inv)
-  store.update(userId, { septims: gold })
+  store.update(userId, { septims: inv.getItemCount(mp, player.actorId, inv.GOLD_BASE_ID) })
 
   const saved = mp.get(player.actorId, 'ff_stipendHours')
   const hours = (saved !== null && saved !== undefined) ? saved : 0

@@ -34,7 +34,8 @@ function reply(mp, store, playerId, message) {
 function registerAll(mp, store, bus, systems) {
   const { hunger, drunkBar, economy, housing, bounty,
           combat, nvfl, captivity, prison, factions,
-          college, skills, training } = systems
+          college, skills, training, treasury, roleplay,
+          inventory: inv, magic } = systems
 
   const handlers = {}
 
@@ -243,6 +244,36 @@ function registerAll(mp, store, bus, systems) {
     reply(mp, store, userId, `${target.name} released.`)
   }
 
+  // ── Combat — player actions ──────────────────────────────────────────────
+  handlers['revive'] = (userId, args) => {
+    if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
+    const target = findPlayer(store, args[0])
+    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
+    if (!target.isDown) return reply(mp, store, userId, `${target.name} is not downed.`)
+    const ok = combat.revivePlayer(mp, store, bus, userId, target.id)
+    if (ok) {
+      reply(mp, store, userId, `You revived ${target.name}.`)
+    }
+  }
+
+  handlers['execute'] = (userId, args) => {
+    if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
+    const target = findPlayer(store, args[0])
+    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
+    if (!target.isDown) return reply(mp, store, userId, `${target.name} is not downed.`)
+    const ok = combat.executePlayer(mp, store, bus, prison, housing, userId, target.id)
+    if (ok) reply(mp, store, userId, `${target.name} executed.`)
+  }
+
+  handlers['loot'] = (userId, args) => {
+    if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
+    const target = findPlayer(store, args[0])
+    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
+    if (!target.isDown) return reply(mp, store, userId, `${target.name} is not downed.`)
+    const ok = combat.openLootSession(mp, store, bus, inv, userId, target.id)
+    if (!ok) reply(mp, store, userId, `Could not open loot menu for ${target.name}.`)
+  }
+
   // ── Combat (staff) ───────────────────────────────────────────────────────
   handlers['down'] = (userId, args) => {
     if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
@@ -332,17 +363,111 @@ function registerAll(mp, store, bus, systems) {
     reply(mp, store, userId, `Fed ${target.name} (${levels} levels).`)
   }
 
+  // ── Treasury ─────────────────────────────────────────────────────────────
+  handlers['treasury'] = (userId, args) => {
+    if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
+    const sub = args[0]
+    if (!sub) {
+      const balances = treasury.getAllBalances()
+      const lines = treasury.ALL_HOLDS.map(h => `${h}: ${balances[h]} Septims`)
+      return reply(mp, store, userId, lines.join('\n'))
+    }
+    if (sub === 'balance') {
+      const holdId = (args[1] || '').toLowerCase()
+      if (!holdId) return reply(mp, store, userId, 'Usage: /treasury balance [holdId]')
+      return reply(mp, store, userId, `${holdId} treasury: ${treasury.getBalance(holdId)} Septims`)
+    }
+    if (sub === 'withdraw') {
+      if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
+      const holdId = (args[1] || '').toLowerCase()
+      const amount = parseInt(args[2])
+      if (!holdId || !amount || amount <= 0) return reply(mp, store, userId, 'Usage: /treasury withdraw [holdId] [amount]')
+      const player = store.get(userId)
+      if (player && player.holdId !== holdId && !player.isStaff) return reply(mp, store, userId, `You can only withdraw from your own hold (${player.holdId}).`)
+      const ok = treasury.withdraw(bus, holdId, amount)
+      reply(mp, store, userId, ok ? `Withdrew ${amount} Septims from ${holdId} treasury.` : `Insufficient funds in ${holdId} treasury.`)
+      return
+    }
+    if (sub === 'deposit') {
+      if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
+      const holdId = (args[1] || '').toLowerCase()
+      const amount = parseInt(args[2])
+      if (!holdId || !amount || amount <= 0) return reply(mp, store, userId, 'Usage: /treasury deposit [holdId] [amount]')
+      treasury.deposit(bus, holdId, amount)
+      reply(mp, store, userId, `Deposited ${amount} Septims into ${holdId} treasury.`)
+      return
+    }
+    reply(mp, store, userId, 'Usage: /treasury | balance [holdId] | withdraw [holdId] [amount] | deposit [holdId] [amount]')
+  }
+
+  // ── Magic — skill dice ────────────────────────────────────────────────────
+  handlers['skill-dice'] = (userId, args) => {
+    magic.handleSkillDice(mp, store, bus, userId, args)
+  }
+
+  // ── Roleplay ──────────────────────────────────────────────────────────────
+  handlers['setdescription'] = (userId, args) => {
+    const player = store.get(userId)
+    if (!player) return
+    const text = args.join(' ').trim()
+    if (!text) return reply(mp, store, userId, 'Usage: /setdescription [text]')
+    const saved = roleplay.setDescription(mp, player.actorId, text)
+    reply(mp, store, userId, `Description set (${saved.length}/${roleplay.DESCRIPTION_MAX} chars).`)
+  }
+
+  handlers['examine'] = (userId, args) => {
+    const target = findPlayer(store, args[0])
+    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
+    const packet = roleplay.examinePlayer(mp, store, userId, target.id, { bounty, prison })
+    if (!packet) return
+    mp.sendCustomPacket(store.get(userId).actorId, 'examine', packet)
+  }
+
+  handlers['racemenu'] = (userId, args) => {
+    const player = store.get(userId)
+    if (!player) return
+    if (args[0] === 'reset') {
+      if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
+      const target = findPlayer(store, args[1])
+      if (!target) return reply(mp, store, userId, `Player "${args[1]}" not found.`)
+      roleplay.resetRaceMenu(mp, target.actorId)
+      reply(mp, store, userId, `Race menu reset for ${target.name}.`)
+      return
+    }
+    const ok = roleplay.openRaceMenu(mp, player.actorId)
+    if (!ok) reply(mp, store, userId, 'Your character is already set up. Contact staff to reset.')
+  }
+
+  // ── Role management (staff only) ─────────────────────────────────────────
+  handlers['role'] = (userId, args) => {
+    if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
+    if (args[0] !== 'set') return reply(mp, store, userId, 'Usage: /role set [name] player|leader|staff')
+    const target = findPlayer(store, args[1])
+    if (!target) return reply(mp, store, userId, `Player "${args[1]}" not found.`)
+    const role = (args[2] || '').toLowerCase()
+    if (!['player', 'leader', 'staff'].includes(role)) return reply(mp, store, userId, 'Role must be: player, leader, or staff')
+    store.update(target.id, {
+      isStaff:  role === 'staff',
+      isLeader: role === 'leader' || role === 'staff',
+    })
+    reply(mp, store, userId, `${target.name} is now ${role}.`)
+    reply(mp, store, target.id, `Your role has been set to ${role} by ${store.get(userId).name}.`)
+  }
+
   // ── Register customPacket handler ────────────────────────────────────────
   mp.on('customPacket', (userId, packet) => {
     try {
-      if (packet.type !== 'chatMessage' || typeof packet.text !== 'string') return
-      const parsed = parseCommand(packet.text)
-      if (!parsed) return
-      const handler = handlers[parsed.cmd]
-      if (!handler) return
-      handler(userId, parsed.args)
+      if (packet.type === 'chatMessage' && typeof packet.text === 'string') {
+        const parsed = parseCommand(packet.text)
+        if (!parsed) return
+        const handler = handlers[parsed.cmd]
+        if (!handler) return
+        handler(userId, parsed.args)
+      } else if (packet.type === 'lootSelection') {
+        combat.completeLootSession(mp, store, bus, inv, userId, packet)
+      }
     } catch (err) {
-      console.error(`[commands] Error handling command from ${userId}: ${err.message}`)
+      console.error(`[commands] Error handling packet from ${userId}: ${err.message}`)
     }
   })
 

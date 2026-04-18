@@ -57,7 +57,6 @@ function sentencePlayer(mp, store, bus, playerId, jarlId, sentence) {
     if (player && fineAmount > 0) {
       const newSeptims = player.septims - fineAmount
       store.update(playerId, { septims: newSeptims })
-      // Clear hold bounty
       const newBounty = Object.assign({}, player.bounty, { [holdId]: 0 })
       store.update(playerId, { bounty: newBounty })
       mp.set(player.actorId, 'ff_bounty', [])
@@ -75,14 +74,27 @@ function sentencePlayer(mp, store, bus, playerId, jarlId, sentence) {
     }
   }
 
+  if (player) appendPrior(mp, player.actorId, { holdId, type: sentence.type, fineAmount: sentence.fineAmount || 0, sentencedAt: Date.now() })
+
   bus.dispatch({ type: 'playerSentenced', playerId, jarlId, holdId, sentence })
   return true
+}
+
+function getPriors(mp, actorId, holdId) {
+  const all = mp.get(actorId, 'ff_priors') || []
+  return holdId ? all.filter(p => p.holdId === holdId) : all
 }
 
 // ── Internal ──────────────────────────────────────────────────────────────────
 
 function _persist(mp) {
   worldStore.set('ff_prison_queue', queue)
+}
+
+function appendPrior(mp, actorId, record) {
+  const existing = mp.get(actorId, 'ff_priors') || []
+  existing.push(record)
+  mp.set(actorId, 'ff_priors', existing)
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
@@ -96,4 +108,4 @@ function init(mp, store, bus) {
   console.log('[prison] Started')
 }
 
-module.exports = { getQueue, isQueued, queueForSentencing, sentencePlayer, init }
+module.exports = { getQueue, isQueued, queueForSentencing, sentencePlayer, getPriors, appendPrior, init }

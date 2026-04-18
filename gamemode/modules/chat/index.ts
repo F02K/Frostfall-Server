@@ -1,1 +1,0 @@
-export { ChatModule } from './ChatModule';

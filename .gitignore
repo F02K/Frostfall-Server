@@ -13,3 +13,5 @@ Dawnguard.esm
 *.esp
 /node_modules
 package-lock.json
+/gamemode-dev
+/gamemode-docs

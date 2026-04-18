@@ -1,1 +1,0 @@
-export { GovernanceModule } from './GovernanceModule';

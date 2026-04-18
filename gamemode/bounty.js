@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const GUARD_KOID_THRESHOLD = 1000  // Septims; guard gets KOID at or above this
 
@@ -65,7 +67,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const records = mp.get(player.actorId, 'ff_bounty') || []
+  const records = safeGet(mp, player.actorId, 'ff_bounty', [])
   const bountyMap = {}
   for (const r of records) bountyMap[r.holdId] = r.amount
   store.update(userId, { bounty: bountyMap })

@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const SKILL_LEVEL_XP  = 10
 const DEFAULT_CAP_XP  = 250  // ~level 25
@@ -147,7 +149,7 @@ function onConnect(mp, store, bus, userId) {
   sessionStart.set(userId, Date.now())
   const player = store.get(userId)
   if (!player) return
-  const xpMap = mp.get(player.actorId, 'ff_skill_xp') || {}
+  const xpMap = safeGet(mp, player.actorId, 'ff_skill_xp', {})
   mp.sendCustomPacket(player.actorId, 'skillsSync', { xpMap })
 }
 

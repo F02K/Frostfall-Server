@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet, safeSet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const HUNGER_MIN           = 0
 const HUNGER_MAX           = 10
@@ -20,10 +22,10 @@ function shouldDrainHunger(minutesOnline) {
 
 function feedPlayer(mp, store, bus, playerId, levels) {
   const player = store.get(playerId)
-  if (!player) return -1
+  if (!player || !player.actorId) return -1
   const newLevel = calcNewHunger(player.hungerLevel, levels)
   store.update(playerId, { hungerLevel: newLevel })
-  mp.set(player.actorId, 'ff_hunger', newLevel)
+  safeSet(mp, player.actorId, 'ff_hunger', newLevel)
   bus.dispatch({ type: 'hungerTick', playerId, hungerLevel: newLevel })
   return newLevel
 }
@@ -54,10 +56,10 @@ function init(mp, store, bus) {
         for (const player of store.getAll()) {
           store.update(player.id, { minutesOnline: player.minutesOnline + 1 })
           const updated = store.get(player.id)
-          if (shouldDrainHunger(updated.minutesOnline)) {
+          if (shouldDrainHunger(updated.minutesOnline) && updated.actorId) {
             const newLevel = calcNewHunger(updated.hungerLevel, -1)
             store.update(player.id, { hungerLevel: newLevel })
-            mp.set(updated.actorId, 'ff_hunger', newLevel)
+            safeSet(mp, updated.actorId, 'ff_hunger', newLevel)
             bus.dispatch({ type: 'hungerTick', playerId: player.id, hungerLevel: newLevel })
           }
         }
@@ -75,8 +77,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const saved = mp.get(player.actorId, 'ff_hunger')
-  const level = (saved !== null && saved !== undefined) ? saved : HUNGER_MAX
+  const level = safeGet(mp, player.actorId, 'ff_hunger', HUNGER_MAX)
   store.update(userId, { hungerLevel: level })
 }
 

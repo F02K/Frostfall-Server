@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const RANK_THRESHOLDS = [
   { rank: 'novice',     xp: 0 },
@@ -188,7 +190,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const xp   = mp.get(player.actorId, 'ff_study_xp') || 0
+  const xp   = safeGet(mp, player.actorId, 'ff_study_xp', 0)
   const rank = getCollegeRank(xp)
   mp.sendCustomPacket(player.actorId, 'collegeSync', { xp, rank })
 }

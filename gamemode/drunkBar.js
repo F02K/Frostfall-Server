@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet, safeSet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const DRUNK_MIN          = 0
 const DRUNK_MAX          = 10
@@ -42,7 +44,7 @@ function drinkAlcohol(mp, store, bus, playerId, baseId) {
   if (!strength) return
   const newLevel = calcNewDrunkLevel(player.drunkLevel, strength)
   store.update(playerId, { drunkLevel: newLevel })
-  mp.set(player.actorId, 'ff_drunk', newLevel)
+  safeSet(mp, player.actorId, 'ff_drunk', newLevel)
   bus.dispatch({ type: 'drunkChanged', playerId, drunkLevel: newLevel })
 }
 
@@ -50,7 +52,7 @@ function soberPlayer(mp, store, bus, playerId) {
   const player = store.get(playerId)
   if (!player) return
   store.update(playerId, { drunkLevel: 0 })
-  mp.set(player.actorId, 'ff_drunk', 0)
+  safeSet(mp, player.actorId, 'ff_drunk', 0)
   bus.dispatch({ type: 'drunkChanged', playerId, drunkLevel: 0 })
 }
 
@@ -79,10 +81,10 @@ function init(mp, store, bus) {
       try {
         for (const player of store.getAll()) {
           if (shouldSober(player.minutesOnline)) {
-            if (player.drunkLevel > 0) {
+            if (player.drunkLevel > 0 && player.actorId) {
               const newLevel = calcNewDrunkLevel(player.drunkLevel, -1)
               store.update(player.id, { drunkLevel: newLevel })
-              mp.set(player.actorId, 'ff_drunk', newLevel)
+              safeSet(mp, player.actorId, 'ff_drunk', newLevel)
               bus.dispatch({ type: 'drunkChanged', playerId: player.id, drunkLevel: newLevel })
             }
           }
@@ -101,8 +103,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const saved = mp.get(player.actorId, 'ff_drunk')
-  const level = (saved !== null && saved !== undefined) ? saved : 0
+  const level = safeGet(mp, player.actorId, 'ff_drunk', 0)
   store.update(userId, { drunkLevel: level })
 }
 

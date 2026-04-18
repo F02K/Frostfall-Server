@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const DEFAULT_EXPIRY_MS = 7 * 24 * 60 * 60 * 1000  // 7 days
 
@@ -73,7 +75,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const notes   = mp.get(player.actorId, 'ff_courier') || []
+  const notes   = safeGet(mp, player.actorId, 'ff_courier', [])
   const pending = getUnread(filterExpired(notes))
   for (const n of pending) {
     mp.sendCustomPacket(player.actorId, 'courierNotification', n)

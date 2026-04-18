@@ -1,5 +1,7 @@
 'use strict'
 
+const { safeGet } = require('./mpUtil')
+
 // ── Constants ─────────────────────────────────────────────────────────────────
 const STIPEND_RATE        = 50   // Septims per hour
 const STIPEND_CAP_HOURS   = 24
@@ -64,11 +66,11 @@ function init(mp, store, bus) {
     setTimeout(() => {
       try {
         for (const player of store.getAll()) {
-          if (shouldPayStipend(player.minutesOnline, player.stipendPaidHours)) {
+          if (shouldPayStipend(player.minutesOnline, player.stipendPaidHours) && player.actorId) {
             const newSeptims = player.septims + STIPEND_RATE
             const newHours   = player.stipendPaidHours + 1
             store.update(player.id, { septims: newSeptims, stipendPaidHours: newHours })
-            const inv = mp.get(player.actorId, 'inv')
+            const inv = safeGet(mp, player.actorId, 'inv', null)
             mp.set(player.actorId, 'inv', _setGoldInInventory(inv, newSeptims))
             mp.set(player.actorId, 'ff_stipendHours', newHours)
             bus.dispatch({ type: 'stipendTick', playerId: player.id, septims: newSeptims, stipendPaidHours: newHours })
@@ -88,12 +90,11 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
   if (!player) return
-  const inv  = mp.get(player.actorId, 'inv')
+  const inv  = safeGet(mp, player.actorId, 'inv', null)
   const gold = _getGoldFromInventory(inv)
   store.update(userId, { septims: gold })
 
-  const saved = mp.get(player.actorId, 'ff_stipendHours')
-  const hours = (saved !== null && saved !== undefined) ? saved : 0
+  const hours = safeGet(mp, player.actorId, 'ff_stipendHours', 0)
   store.update(userId, { stipendPaidHours: hours })
 }
 

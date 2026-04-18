@@ -24,9 +24,8 @@ function checkPermission(store, playerId, level) {
 }
 
 function reply(mp, store, playerId, message) {
-  const player = store.get(playerId)
-  if (!player) return
-  mp.sendCustomPacket(player.actorId, 'chatMessage', { text: message })
+  // sendCustomPacket(userId, jsonString) — userId, not actorId
+  mp.sendCustomPacket(playerId, JSON.stringify({ customPacketType: 'chatMessage', text: message }))
 }
 
 // ── Command registration ──────────────────────────────────────────────────────
@@ -333,9 +332,12 @@ function registerAll(mp, store, bus, systems) {
   }
 
   // ── Register customPacket handler ────────────────────────────────────────
-  mp.on('customPacket', (userId, packet) => {
+  // The C++ layer emits (userId, rawJsonString) — parse before inspecting.
+  // The client embeds the packet type as "customPacketType", not "type".
+  mp.on('customPacket', (userId, rawContent) => {
     try {
-      if (packet.type !== 'chatMessage' || typeof packet.text !== 'string') return
+      const packet = typeof rawContent === 'string' ? JSON.parse(rawContent) : rawContent
+      if (packet.customPacketType !== 'chatMessage' || typeof packet.text !== 'string') return
       const parsed = parseCommand(packet.text)
       if (!parsed) return
       const handler = handlers[parsed.cmd]

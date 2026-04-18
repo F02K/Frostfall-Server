@@ -2,6 +2,7 @@
 
 const path       = require('path')
 const worldStore = require(path.join(__dirname, 'worldStore'))
+const { safeGet, safeSet } = require('./mpUtil')
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
@@ -78,11 +79,11 @@ function getPlayerMemberships(mp, store, playerId) {
 // ── Internal ──────────────────────────────────────────────────────────────────
 
 function _getMemberships(mp, actorId) {
-  return mp.get(actorId, 'ff_memberships') || []
+  return safeGet(mp, actorId, 'ff_memberships', [])
 }
 
 function _saveMemberships(mp, actorId, memberships) {
-  mp.set(actorId, 'ff_memberships', memberships)
+  safeSet(mp, actorId, 'ff_memberships', memberships)
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────

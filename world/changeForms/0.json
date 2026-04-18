@@ -1,8 +1,8 @@
 {
   "angle": [
-    3.1647586822509766,
+    -1.020204782485962,
     0.0,
-    176.56019592285156
+    314.5441589355469
   ],
   "appearanceDump": {
     "hairColor": 1711132,
@@ -211,6 +211,7 @@
   "consoleCommandsAllowed": false,
   "count": 0,
   "dynamicFields": {
+    "ff_study_boosts": [],
     "private.discordRoles": []
   },
   "effects": [],
@@ -339,7 +340,7 @@
   },
   "isDead": false,
   "isDeleted": false,
-  "isDisabled": false,
+  "isDisabled": true,
   "isHarvested": false,
   "isOpen": false,
   "isRaceMenuOpen": false,
@@ -348,9 +349,9 @@
   "magickaRespawnPercentage": 1.0,
   "nextRelootDatetime": 0,
   "position": [
-    176710.0,
-    -30413.255859375,
-    1149.2706298828125
+    160166.8125,
+    -12607.970703125,
+    -5750.11474609375
   ],
   "profileId": 1,
   "recType": 1,

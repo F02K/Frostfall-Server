@@ -2,6 +2,7 @@
 
 const path = require('path')
 
+const chat     = require(path.join(__dirname, 'chat'))
 const store    = require(path.join(__dirname, 'store'))
 const bus      = require(path.join(__dirname, 'bus'))
 const hunger   = require(path.join(__dirname, 'hunger'))
@@ -22,6 +23,10 @@ const commands = require(path.join(__dirname, 'commands'))
 
 function init(mp) {
   console.log('[gamemode] Frostfall Roleplay — initializing')
+
+  // ── Chat — must be first so the property and event source exist before any
+  // other system tries to send a message ────────────────────────────────────
+  chat.init(mp)
 
   // ── Player lifecycle — single listeners, systems called in order ─────────
   mp.on('connect', (userId) => {
@@ -72,11 +77,38 @@ function init(mp) {
   training.init(mp, store, bus)
 
   // ── Command layer ─────────────────────────────────────────────────────────
-  commands.registerAll(mp, store, bus, {
+  const { handle: handleCommand } = commands.registerAll(mp, store, bus, {
     hunger, drunkBar, economy, housing, bounty,
     combat, nvfl, captivity, prison, factions,
     college, skills, training,
+    chat,
   })
+
+  // ── Chat input from the browser ───────────────────────────────────────────
+  // mp['cef::chat:send'] is called by the C++ layer when the event source fires
+  // ctx.sendEvent(text) on the client.  First arg is the actor's refrId, second
+  // is the raw text the player typed.
+  mp['cef_chat_send'] = (refrId, text) => {
+    try {
+      if (typeof text !== 'string' || !text.trim()) return
+      const userId = mp.getUserByActor(refrId)
+      const player = store.get(userId)
+      if (!player) return
+
+      // Commands — handled silently, not broadcast
+      if (text.startsWith('/')) {
+        handleCommand(userId, text)
+        return
+      }
+
+      // Regular chat — broadcast to everyone
+      const message = `${player.name}: ${text}`
+      console.log(`[chat] ${message}`)
+      chat.broadcast(mp, store, message)
+    } catch (err) {
+      console.error(`[chat] cef::chat:send error: ${err.message}`)
+    }
+  }
 
   console.log('[gamemode] Frostfall Roleplay — ready')
 }

@@ -148,7 +148,7 @@ function init(mp, store, bus) {
 function onConnect(mp, store, bus, userId) {
   sessionStart.set(userId, Date.now())
   const player = store.get(userId)
-  if (!player) return
+  if (!player || !player.actorId) return
   const xpMap = safeGet(mp, player.actorId, 'ff_skill_xp', {})
   mp.sendCustomPacket(player.actorId, 'skillsSync', { xpMap })
 }

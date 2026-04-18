@@ -189,7 +189,7 @@ function init(mp, store, bus) {
 
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
-  if (!player) return
+  if (!player || !player.actorId) return
   const xp   = safeGet(mp, player.actorId, 'ff_study_xp', 0)
   const rank = getCollegeRank(xp)
   mp.sendCustomPacket(player.actorId, 'collegeSync', { xp, rank })

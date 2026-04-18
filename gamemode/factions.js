@@ -96,7 +96,7 @@ function init(mp, store, bus) {
 
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
-  if (!player) return
+  if (!player || !player.actorId) return
   const memberships = _getMemberships(mp, player.actorId)
   const factionIds  = memberships.map(m => m.factionId)
   store.update(userId, { factions: factionIds })

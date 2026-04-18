@@ -165,7 +165,7 @@ function init(mp, store, bus) {
 
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
-  if (!player) return
+  if (!player || !player.actorId) return
   const owned = getOwnedProperties(userId).map(p => p.id)
   store.update(userId, { properties: owned })
   if (player.holdId) {

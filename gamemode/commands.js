@@ -23,17 +23,18 @@ function checkPermission(store, playerId, level) {
   return false
 }
 
-function reply(mp, store, playerId, message) {
-  // sendCustomPacket(userId, jsonString) — userId, not actorId
-  mp.sendCustomPacket(playerId, JSON.stringify({ customPacketType: 'chatMessage', text: message }))
-}
+// reply is assigned inside registerAll once we have the chat module.
+let reply = () => {}
 
 // ── Command registration ──────────────────────────────────────────────────────
 
 function registerAll(mp, store, bus, systems) {
   const { hunger, drunkBar, economy, housing, bounty,
           combat, nvfl, captivity, prison, factions,
-          college, skills, training } = systems
+          college, skills, training, chat } = systems
+
+  // Wire reply to the chat module so command responses appear in the UI.
+  reply = (mp_, store_, playerId, message) => chat.sendToPlayer(mp_, store_, playerId, message)
 
   const handlers = {}
 
@@ -331,24 +332,28 @@ function registerAll(mp, store, bus, systems) {
     reply(mp, store, userId, `Fed ${target.name} (${levels} levels).`)
   }
 
-  // ── Register customPacket handler ────────────────────────────────────────
-  // The C++ layer emits (userId, rawJsonString) — parse before inspecting.
-  // The client embeds the packet type as "customPacketType", not "type".
-  mp.on('customPacket', (userId, rawContent) => {
+  console.log(`[commands] Registered ${Object.keys(handlers).length} commands`)
+
+  // Returns a function that index.js calls from the cef::chat:send handler.
+  // Returns true if the text was a known command, false otherwise.
+  function handle(userId, text) {
+    const parsed = parseCommand(text)
+    if (!parsed) return false
+    const handler = handlers[parsed.cmd]
+    if (!handler) {
+      reply(mp, store, userId, `Unknown command: /${parsed.cmd}`)
+      return true
+    }
     try {
-      const packet = typeof rawContent === 'string' ? JSON.parse(rawContent) : rawContent
-      if (packet.customPacketType !== 'chatMessage' || typeof packet.text !== 'string') return
-      const parsed = parseCommand(packet.text)
-      if (!parsed) return
-      const handler = handlers[parsed.cmd]
-      if (!handler) return
       handler(userId, parsed.args)
     } catch (err) {
-      console.error(`[commands] Error handling command from ${userId}: ${err.message}`)
+      console.error(`[commands] Error in /${parsed.cmd} for ${userId}: ${err.message}`)
+      reply(mp, store, userId, 'Command error — see server log.')
     }
-  })
+    return true
+  }
 
-  console.log(`[commands] Registered ${Object.keys(handlers).length} commands`)
+  return { handle }
 }
 
 // ── Private helpers ───────────────────────────────────────────────────────────

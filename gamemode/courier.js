@@ -74,7 +74,7 @@ function init(mp, store, bus) {
 
 function onConnect(mp, store, bus, userId) {
   const player = store.get(userId)
-  if (!player) return
+  if (!player || !player.actorId) return
   const notes   = safeGet(mp, player.actorId, 'ff_courier', [])
   const pending = getUnread(filterExpired(notes))
   for (const n of pending) {

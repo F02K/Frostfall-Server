@@ -1,14 +1,13 @@
-'use strict'
-
-const { safeGet, safeSet } = require('./mpUtil')
-
 // ── Chat System ───────────────────────────────────────────────────────────────
 // Sends chat messages to players via a gamemode property (ff_chatMsg).
 // Initialises the chat widget inside the browser via a makeEventSource that
 // listens for the 'front-loaded' browser message, then forwards every
 // 'cef::chat:send' message back to the server as a customEvent.
 //
-// The server-side handler for mp['cef::chat:send'] is registered in index.js.
+// The server-side handler for mp['cef::chat:send'] is registered in index.ts.
+
+import { safeSet } from '../../core/mpUtil'
+import type { Mp, Store } from '../../types'
 
 const CHAT_MSG_PROP = 'ff_chatMsg'
 
@@ -67,7 +66,7 @@ const EVENT_SOURCE_JS = `
   });
 `.trim()
 
-function init(mp) {
+export function init(mp: Mp): void {
   mp.makeProperty(CHAT_MSG_PROP, {
     isVisibleByOwner: true,
     isVisibleByNeighbors: false,
@@ -80,18 +79,14 @@ function init(mp) {
   console.log('[chat] property and event source registered')
 }
 
-// Send a message to every connected player.
-function broadcast(mp, store, message) {
+export function broadcast(mp: Mp, store: Store, message: string): void {
   for (const player of store.getAll()) {
     safeSet(mp, player.actorId, CHAT_MSG_PROP, message)
   }
 }
 
-// Send a message to one player identified by userId.
-function sendToPlayer(mp, store, userId, message) {
+export function sendToPlayer(mp: Mp, store: Store, userId: number, message: string): void {
   const player = store.get(userId)
   if (!player) return
   safeSet(mp, player.actorId, CHAT_MSG_PROP, message)
 }
-
-module.exports = { init, broadcast, sendToPlayer }

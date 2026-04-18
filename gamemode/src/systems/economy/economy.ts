@@ -1,27 +1,28 @@
-'use strict'
+// ── Economy ───────────────────────────────────────────────────────────────────
 
-const { safeGet } = require('./mpUtil')
+import { safeGet } from '../../core/mpUtil'
+import type { Mp, Store, Bus, Inventory } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
-const STIPEND_RATE        = 50   // Septims per hour
-const STIPEND_CAP_HOURS   = 24
+const STIPEND_RATE         = 50   // Septims per hour
+const STIPEND_CAP_HOURS    = 24
 const STIPEND_INTERVAL_MIN = 60  // pay every 60 minutes of playtime
-const TICK_INTERVAL_MS    = 60 * 1000
+const TICK_INTERVAL_MS     = 60 * 1000
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
-function isStipendEligible(stipendPaidHours) {
+export function isStipendEligible(stipendPaidHours: number): boolean {
   return stipendPaidHours < STIPEND_CAP_HOURS
 }
 
-function shouldPayStipend(minutesOnline, stipendPaidHours) {
+export function shouldPayStipend(minutesOnline: number, stipendPaidHours: number): boolean {
   if (!isStipendEligible(stipendPaidHours)) return false
   return minutesOnline > 0 && minutesOnline % STIPEND_INTERVAL_MIN === 0
 }
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
-function transferGold(mp, store, fromId, toId, amount) {
+export function transferGold(mp: Mp, store: Store, fromId: number, toId: number, amount: number): boolean {
   if (!amount || amount <= 0) return false
   const from = store.get(fromId)
   const to   = store.get(toId)
@@ -45,13 +46,13 @@ function transferGold(mp, store, fromId, toId, amount) {
 
 const GOLD_BASE_ID = 0x0000000F
 
-function _getGoldFromInventory(inv) {
+function _getGoldFromInventory(inv: Inventory | null): number {
   if (!inv || !inv.entries) return 0
   const entry = inv.entries.find(e => e.baseId === GOLD_BASE_ID)
   return entry ? entry.count : 0
 }
 
-function _setGoldInInventory(inv, amount) {
+function _setGoldInInventory(inv: Inventory | null, amount: number): Inventory {
   const entries = (inv && inv.entries) ? inv.entries.filter(e => e.baseId !== GOLD_BASE_ID) : []
   if (amount > 0) entries.push({ baseId: GOLD_BASE_ID, count: amount })
   return { entries }
@@ -59,7 +60,7 @@ function _setGoldInInventory(inv, amount) {
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 
-function init(mp, store, bus) {
+export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[economy] Initializing')
 
   const scheduleTick = () => {
@@ -70,13 +71,13 @@ function init(mp, store, bus) {
             const newSeptims = player.septims + STIPEND_RATE
             const newHours   = player.stipendPaidHours + 1
             store.update(player.id, { septims: newSeptims, stipendPaidHours: newHours })
-            const inv = safeGet(mp, player.actorId, 'inv', null)
+            const inv = safeGet<Inventory | null>(mp, player.actorId, 'inv', null)
             mp.set(player.actorId, 'inv', _setGoldInInventory(inv, newSeptims))
             mp.set(player.actorId, 'ff_stipendHours', newHours)
             bus.dispatch({ type: 'stipendTick', playerId: player.id, septims: newSeptims, stipendPaidHours: newHours })
           }
         }
-      } catch (err) {
+      } catch (err: any) {
         console.error(`[economy] Tick error: ${err.message}`)
       }
       scheduleTick()
@@ -87,15 +88,13 @@ function init(mp, store, bus) {
   console.log('[economy] Started')
 }
 
-function onConnect(mp, store, bus, userId) {
+export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void {
   const player = store.get(userId)
   if (!player) return
-  const inv  = safeGet(mp, player.actorId, 'inv', null)
+  const inv  = safeGet<Inventory | null>(mp, player.actorId, 'inv', null)
   const gold = _getGoldFromInventory(inv)
   store.update(userId, { septims: gold })
 
-  const hours = safeGet(mp, player.actorId, 'ff_stipendHours', 0)
+  const hours = safeGet<number>(mp, player.actorId, 'ff_stipendHours', 0)
   store.update(userId, { stipendPaidHours: hours })
 }
-
-module.exports = { isStipendEligible, shouldPayStipend, transferGold, onConnect, init }

@@ -1,12 +1,12 @@
-'use strict'
-
 // ── Player Store ──────────────────────────────────────────────────────────────
 // In-memory state for all connected players, keyed by SkyMP userId.
 // Cleared on disconnect — persistent data lives in mp.set / mp.get.
 
-const players = new Map()
+import type { PlayerState, Store } from '../types'
 
-function defaultState(id, actorId, name) {
+const players = new Map<number, PlayerState>()
+
+function defaultState(id: number, actorId: number, name: string): PlayerState {
   return {
     id,
     actorId,
@@ -29,26 +29,26 @@ function defaultState(id, actorId, name) {
   }
 }
 
-function register(id, actorId, name) {
+function register(id: number, actorId: number, name: string): void {
   players.set(id, defaultState(id, actorId, name))
 }
 
-function deregister(id) {
+function deregister(id: number): void {
   players.delete(id)
 }
 
-function get(id) {
-  return players.get(id) || null
+function get(id: number): PlayerState | null {
+  return players.get(id) ?? null
 }
 
-function getAll() {
+function getAll(): PlayerState[] {
   return Array.from(players.values())
 }
 
-function update(id, patch) {
+function update(id: number, patch: Partial<PlayerState>): void {
   const player = players.get(id)
   if (!player) throw new Error(`store.update: unknown player ${id}`)
   Object.assign(player, patch)
 }
 
-module.exports = { register, deregister, get, getAll, update }
+export const store: Store = { register, deregister, get, getAll, update }

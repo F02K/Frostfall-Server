@@ -1,0 +1,110 @@
+// ── Frostfall Roleplay — Entry Point ─────────────────────────────────────────
+// Wires all systems together and hands control to the SkyMP runtime.
+
+import { store }    from './core/store'
+import { bus }      from './core/bus'
+import * as chat      from './systems/communication/chat'
+import * as courier   from './systems/communication/courier'
+import * as hunger    from './systems/survival/hunger'
+import * as drunkBar  from './systems/survival/drunkBar'
+import * as economy   from './systems/economy/economy'
+import * as bounty    from './systems/social/bounty'
+import * as factions  from './systems/social/factions'
+import * as housing   from './systems/social/housing'
+import * as combat    from './systems/combat/combat'
+import * as captivity from './systems/combat/captivity'
+import * as prison    from './systems/justice/prison'
+import * as college   from './systems/education/college'
+import * as skills    from './systems/education/skills'
+import * as training  from './systems/education/training'
+import * as commands  from './commands'
+import type { Mp }    from './types'
+
+export function init(mp: Mp): void {
+  console.log('[gamemode] Frostfall Roleplay — initializing')
+
+  // ── Chat must be first — other systems may send messages during init ──────
+  chat.init(mp)
+
+  // ── System init (courier before housing/prison so notifications work) ─────
+  hunger.init(mp, store, bus)
+  drunkBar.init(mp, store, bus)
+  economy.init(mp, store, bus)
+  courier.init(mp, store, bus)
+  housing.init(mp, store, bus)
+  bounty.init(mp, store, bus)
+  combat.init(mp, store, bus)
+  captivity.init(mp, store, bus)
+  prison.init(mp, store, bus)
+  factions.init(mp, store, bus)
+  college.init(mp, store, bus)
+  skills.init(mp, store, bus)
+  training.init(mp, store, bus)
+
+  // ── Command layer ─────────────────────────────────────────────────────────
+  const { handle: handleCommand } = commands.registerAll(mp, store, bus)
+
+  // ── Player lifecycle ──────────────────────────────────────────────────────
+  mp.on('connect', (userId: number) => {
+    try {
+      const actorId = mp.getUserActor(userId)
+      const name    = (actorId && mp.get(actorId, 'name')) || `User${userId}`
+      store.register(userId, actorId, name)
+      console.log(`[gamemode] ${name} (${userId}) connected`)
+
+      // Restore per-system state in dependency order
+      hunger.onConnect(mp, store, bus, userId)
+      drunkBar.onConnect(mp, store, bus, userId)
+      economy.onConnect(mp, store, bus, userId)
+      bounty.onConnect(mp, store, bus, userId)
+      factions.onConnect(mp, store, bus, userId)
+      housing.onConnect(mp, store, bus, userId)
+      college.onConnect(mp, store, bus, userId)
+      skills.onConnect(mp, store, bus, userId)
+      courier.onConnect(mp, store, bus, userId)
+    } catch (err: any) {
+      console.error(`[gamemode] connect error for ${userId}: ${err.message}`)
+    }
+  })
+
+  mp.on('disconnect', (userId: number) => {
+    try {
+      const player = store.get(userId)
+      if (player) console.log(`[gamemode] ${player.name} (${userId}) disconnected`)
+      skills.onSkillPlayerDisconnect(mp, userId)
+      store.deregister(userId)
+    } catch (err: any) {
+      console.error(`[gamemode] disconnect error for ${userId}: ${err.message}`)
+    }
+  })
+
+  // ── Chat input from the browser ───────────────────────────────────────────
+  // Called by the C++ layer when ctx.sendEvent(text) fires on the client.
+  // First arg is the actor's refrId, second is the raw text the player typed.
+  mp['cef_chat_send'] = (refrId: number, text: string) => {
+    try {
+      if (typeof text !== 'string' || !text.trim()) return
+      const userId = mp.getUserByActor(refrId)
+      const player = store.get(userId)
+      if (!player) return
+
+      if (text.startsWith('/')) {
+        handleCommand(userId, text)
+        return
+      }
+
+      const message = `${player.name}: ${text}`
+      console.log(`[chat] ${message}`)
+      chat.broadcast(mp, store, message)
+    } catch (err: any) {
+      console.error(`[chat] cef_chat_send error: ${err.message}`)
+    }
+  }
+
+  console.log('[gamemode] Frostfall Roleplay — ready')
+}
+
+// ── SkyMP runtime bootstrap ───────────────────────────────────────────────────
+// The server sets globalThis.mp before require()-ing this file and never calls
+// init() itself — so we self-execute here using the global mp object.
+init((globalThis as any).mp as Mp)

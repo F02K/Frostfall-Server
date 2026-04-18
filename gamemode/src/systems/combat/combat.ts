@@ -1,4 +1,6 @@
-'use strict'
+// ── Combat ────────────────────────────────────────────────────────────────────
+
+import type { Mp, Store, Bus } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const LOOT_CAP_GOLD  = 500
@@ -6,14 +8,14 @@ const LOOT_CAP_ITEMS = 3
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
-function isDowned(store, playerId) {
+export function isDowned(store: Store, playerId: number): boolean {
   const player = store.get(playerId)
   return player ? player.isDown : false
 }
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
-function downPlayer(mp, store, bus, victimId, attackerId) {
+export function downPlayer(mp: Mp, store: Store, bus: Bus, victimId: number, attackerId: number): void {
   const victim   = store.get(victimId)
   const attacker = store.get(attackerId)
   if (!victim) return
@@ -28,11 +30,11 @@ function downPlayer(mp, store, bus, victimId, attackerId) {
     type:      'playerDowned',
     victimId,
     attackerId,
-    holdId:    victim.holdId,
+    holdId:    victim.holdId as unknown,
   })
 }
 
-function risePlayer(mp, store, bus, playerId) {
+export function risePlayer(mp: Mp, store: Store, bus: Bus, playerId: number): void {
   const player = store.get(playerId)
   if (!player) return
 
@@ -45,10 +47,8 @@ function risePlayer(mp, store, bus, playerId) {
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 
-function init(mp, store, bus) {
+export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[combat] Initializing')
   // No ticks or makeProperty needed — downPlayer/risePlayer are called externally
   console.log('[combat] Started')
 }
-
-module.exports = { isDowned, downPlayer, risePlayer, init }

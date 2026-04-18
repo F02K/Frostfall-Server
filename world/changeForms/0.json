@@ -1,8 +1,8 @@
 {
   "angle": [
-    -1.020204782485962,
+    7.487843036651611,
     0.0,
-    314.5441589355469
+    114.39855194091797
   ],
   "appearanceDump": {
     "hairColor": 1711132,
@@ -247,7 +247,7 @@
       ]
     },
     "leftSpell": 0,
-    "numChanges": 5,
+    "numChanges": 17,
     "rightSpell": 0,
     "voiceSpell": 0
   },
@@ -340,7 +340,7 @@
   },
   "isDead": false,
   "isDeleted": false,
-  "isDisabled": true,
+  "isDisabled": false,
   "isHarvested": false,
   "isOpen": false,
   "isRaceMenuOpen": false,
@@ -349,9 +349,9 @@
   "magickaRespawnPercentage": 1.0,
   "nextRelootDatetime": 0,
   "position": [
-    160166.8125,
-    -12607.970703125,
-    -5750.11474609375
+    142939.1875,
+    11251.376953125,
+    -8730.6259765625
   ],
   "profileId": 1,
   "recType": 1,

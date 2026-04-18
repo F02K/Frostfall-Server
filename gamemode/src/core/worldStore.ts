@@ -1,42 +1,40 @@
-'use strict'
-
 // ── World Store ───────────────────────────────────────────────────────────────
 // File-backed key-value store for world-level data (properties, prison queue,
 // faction docs). Avoids depending on any SkyMP form ID existing.
 // Writes are synchronous to prevent partial-write corruption on crash.
 
-const fs   = require('fs')
-const path = require('path')
+import fs from 'fs'
+import path from 'path'
 
-const FILE = path.join(__dirname, '..', 'world', 'ff-world-data.json')
+const FILE = path.join(__dirname, '..', '..', 'world', 'ff-world-data.json')
 
-let _cache = null
+type WorldData = Record<string, unknown>
 
-function _load() {
+let _cache: WorldData | null = null
+
+function _load(): WorldData {
   if (_cache) return _cache
   try {
-    _cache = JSON.parse(fs.readFileSync(FILE, 'utf8'))
+    _cache = JSON.parse(fs.readFileSync(FILE, 'utf8')) as WorldData
   } catch {
     _cache = {}
   }
   return _cache
 }
 
-function _save() {
+function _save(): void {
   const dir = path.dirname(FILE)
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
   fs.writeFileSync(FILE, JSON.stringify(_cache, null, 2))
 }
 
-function get(key) {
+export function get<T = unknown>(key: string): T | null {
   const data = _load()
-  return data[key] !== undefined ? data[key] : null
+  return data[key] !== undefined ? data[key] as T : null
 }
 
-function set(key, value) {
+export function set(key: string, value: unknown): void {
   _load()
-  _cache[key] = value
+  _cache![key] = value
   _save()
 }
-
-module.exports = { get, set }

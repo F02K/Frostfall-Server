@@ -1,18 +1,29 @@
-'use strict'
+// ── Skills ────────────────────────────────────────────────────────────────────
 
-const { safeGet } = require('./mpUtil')
+import { safeGet } from '../../core/mpUtil'
+import * as factions from '../social/factions'
+import type { Mp, Store, Bus, StudyBoost } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
-const SKILL_LEVEL_XP  = 10
-const DEFAULT_CAP_XP  = 250  // ~level 25
+const SKILL_LEVEL_XP = 10
+const DEFAULT_CAP_XP = 250  // ~level 25
 
-const SKILL_IDS = [
+export const SKILL_IDS = [
   'destruction', 'restoration', 'alteration', 'conjuration', 'illusion',
   'smithing', 'enchanting', 'alchemy',
-]
+] as const
 
-// Faction cap bonuses: { factionId, minRank, skills, cap }
-const FACTION_CAPS = [
+export type SkillId = typeof SKILL_IDS[number]
+
+interface FactionCap {
+  factionId: string
+  minRank: number
+  skills: string[]
+  cap: number
+}
+
+// Faction cap bonuses
+const FACTION_CAPS: FactionCap[] = [
   { factionId: 'collegeOfWinterhold', minRank: 1, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: 500 },
   { factionId: 'collegeOfWinterhold', minRank: 2, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: 750 },
   { factionId: 'collegeOfWinterhold', minRank: 3, skills: ['destruction','restoration','alteration','conjuration','illusion'], cap: 1000 },
@@ -29,21 +40,20 @@ const FACTION_CAPS = [
 
 // ── In-memory session tracking ─────────────────────────────────────────────────
 // userId → session start timestamp (wall clock)
-const sessionStart = new Map()
+const sessionStart = new Map<number, number>()
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
-function getSkillLevel(xp) {
+export function getSkillLevel(xp: number): number {
   return Math.floor(xp / SKILL_LEVEL_XP)
 }
 
-function getSkillXp(mp, playerId, skillId) {
-  const xpMap = mp.get(_actorForPlayer(mp, playerId), 'ff_skill_xp') || {}
-  return xpMap[skillId] || 0
+export function getSkillXp(mp: Mp, playerId: number, skillId: string): number {
+  const xpMap: Record<string, number> = mp.get(_actorForPlayer(mp, playerId), 'ff_skill_xp') ?? {}
+  return xpMap[skillId] ?? 0
 }
 
-function getSkillCap(mp, store, playerId, skillId) {
-  const factions = require('./factions')
+export function getSkillCap(mp: Mp, store: Store, playerId: number, skillId: string): number {
   let cap = DEFAULT_CAP_XP
   for (const rule of FACTION_CAPS) {
     if (!rule.skills.includes(skillId)) continue
@@ -57,75 +67,73 @@ function getSkillCap(mp, store, playerId, skillId) {
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
-function addSkillXp(mp, store, playerId, skillId, baseXp, now) {
-  const player  = store.get(playerId)
+export function addSkillXp(mp: Mp, store: Store, playerId: number, skillId: string, baseXp: number, now?: number): number {
+  const player = store.get(playerId)
   if (!player) return 0
   const cap     = getSkillCap(mp, store, playerId, skillId)
   const current = getSkillXp(mp, playerId, skillId)
   if (current >= cap) return 0
 
-  // Apply any active study boost
   let multiplier = 1
   const boost = getActiveStudyBoost(mp, playerId, skillId, now)
   if (boost) multiplier = boost.multiplier
 
-  const gain     = Math.round(baseXp * multiplier)
-  const newXp    = Math.min(current + gain, cap)
-  const actual   = newXp - current
+  const gain   = Math.round(baseXp * multiplier)
+  const newXp  = Math.min(current + gain, cap)
+  const actual = newXp - current
 
-  const xpMap = mp.get(player.actorId, 'ff_skill_xp') || {}
+  const xpMap: Record<string, number> = mp.get(player.actorId, 'ff_skill_xp') ?? {}
   xpMap[skillId] = newXp
   mp.set(player.actorId, 'ff_skill_xp', xpMap)
   return actual
 }
 
-function grantStudyBoost(mp, playerId, skillId, multiplier, onlineMs) {
+export function grantStudyBoost(mp: Mp, playerId: number, skillId: string, multiplier: number, onlineMs: number): void {
   const actorId = _actorForPlayer(mp, playerId)
-  const boosts  = mp.get(actorId, 'ff_study_boosts') || []
+  const boosts: StudyBoost[] = mp.get(actorId, 'ff_study_boosts') ?? []
   boosts.push({ skillId, multiplier, remainingOnlineMs: onlineMs, sessionStart: Date.now() })
   mp.set(actorId, 'ff_study_boosts', boosts)
 }
 
-function getActiveStudyBoost(mp, playerId, skillId, now) {
+export function getActiveStudyBoost(mp: Mp, playerId: number, skillId: string, now?: number): StudyBoost | null {
   _consumeBoostTime(mp, playerId, now)
   const actorId = _actorForPlayer(mp, playerId)
-  const boosts  = mp.get(actorId, 'ff_study_boosts') || []
-  return boosts.find(b => b.skillId === skillId && b.remainingOnlineMs > 0) || null
+  const boosts: StudyBoost[] = mp.get(actorId, 'ff_study_boosts') ?? []
+  return boosts.find(b => b.skillId === skillId && b.remainingOnlineMs > 0) ?? null
 }
 
-function getStudyBoosts(mp, playerId) {
+export function getStudyBoosts(mp: Mp, playerId: number): StudyBoost[] {
   const actorId = _actorForPlayer(mp, playerId)
-  return mp.get(actorId, 'ff_study_boosts') || []
+  return mp.get(actorId, 'ff_study_boosts') ?? []
 }
 
 // ── Internal ──────────────────────────────────────────────────────────────────
 
-// Drain elapsed online time from all boosts for this player
-function _consumeBoostTime(mp, playerId, now) {
+function _consumeBoostTime(mp: Mp, playerId: number, now?: number): void {
   const actorId = _actorForPlayer(mp, playerId)
-  const boosts  = mp.get(actorId, 'ff_study_boosts') || []
-  const start   = sessionStart.get(playerId)
+  const boosts: StudyBoost[] = mp.get(actorId, 'ff_study_boosts') ?? []
+  const start = sessionStart.get(playerId)
   if (!start) return
-  const elapsed = (now || Date.now()) - start
+  const elapsed = (now ?? Date.now()) - start
   const updated = boosts
     .map(b => Object.assign({}, b, { remainingOnlineMs: Math.max(0, b.remainingOnlineMs - elapsed) }))
     .filter(b => b.remainingOnlineMs > 0)
-  sessionStart.set(playerId, now || Date.now())
+  sessionStart.set(playerId, now ?? Date.now())
   mp.set(actorId, 'ff_study_boosts', updated)
 }
 
-function onSkillPlayerDisconnect(mp, playerId, now) {
+export function onSkillPlayerDisconnect(mp: Mp, playerId: number, now?: number): void {
   _consumeBoostTime(mp, playerId, now)
   sessionStart.delete(playerId)
 }
 
-function _actorForPlayer(mp, playerId) {
-  try { return mp.getUserActor(playerId) } catch { return null }
+function _actorForPlayer(mp: Mp, playerId: number): number {
+  try { return mp.getUserActor(playerId) } catch { return 0 }
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 
-function init(mp, store, bus) {
+export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[skills] Initializing')
 
   mp.makeProperty('ff_skill_xp', {
@@ -145,17 +153,10 @@ function init(mp, store, bus) {
   console.log('[skills] Started')
 }
 
-function onConnect(mp, store, bus, userId) {
+export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void {
   sessionStart.set(userId, Date.now())
   const player = store.get(userId)
   if (!player || !player.actorId) return
-  const xpMap = safeGet(mp, player.actorId, 'ff_skill_xp', {})
+  const xpMap = safeGet<Record<string, number>>(mp, player.actorId, 'ff_skill_xp', {})
   mp.sendCustomPacket(player.actorId, 'skillsSync', { xpMap })
-}
-
-module.exports = {
-  SKILL_IDS, getSkillLevel, getSkillXp, getSkillCap,
-  addSkillXp, grantStudyBoost, getActiveStudyBoost, getStudyBoosts,
-  onSkillPlayerDisconnect, onConnect,
-  init,
 }

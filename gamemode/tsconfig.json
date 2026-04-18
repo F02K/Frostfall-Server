@@ -5,10 +5,10 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "outDir": "gamemode-dist",
-    "rootDir": "gamemode",
-    "baseUrl": "."
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./src"
   },
-  "include": ["gamemode/**/*.ts"],
-  "exclude": ["node_modules", "dist_back"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
 }

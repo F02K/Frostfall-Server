@@ -16,12 +16,25 @@
     "IcePenguinWorldMap.esp",
     "ELFX - Hardcore.esp"
   ],
+  "archives": [
+    "Skyrim - Misc.bsa"
+  ],
   "master": "http://127.0.0.1:4000",
   "masterKey": "frostfall",
-  "maxPlayers": 100,
+  "maxPlayers": 1000,
   "name": "Frostfall Roleplay",
   "npcEnabled": false,
   "npcSettings": {},
   "offlineMode": true,
-  "port": 7777
+  "port": 7777,
+  "isPapyrusHotReloadEnabled": true,
+  "enableGamemodeDataUpdatesBroadcast": true,
+  "enableConsoleCommandsForAll": true,
+  "metricsAuth": {
+    "user": "prometheus",
+    "password": "secret"
+  },
+  "damageMultFormulaSettings": {
+    "multiplier": 1
+  }
 }

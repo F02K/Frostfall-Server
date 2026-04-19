@@ -1,20 +1,36 @@
-'use strict'
+// ── Commands ──────────────────────────────────────────────────────────────────
+
+import type { Mp, Store, Bus, PlayerState, Sentence } from '../types'
+import * as bountyMod from '../systems/social/bounty'
+import * as captivity from '../systems/combat/captivity'
+import * as college from '../systems/education/college'
+import * as combat from '../systems/combat/combat'
+import * as drunkBar from '../systems/survival/drunkBar'
+import * as economy from '../systems/economy/economy'
+import * as factions from '../systems/social/factions'
+import * as housing from '../systems/social/housing'
+import * as hunger from '../systems/survival/hunger'
+import * as nvfl from '../systems/combat/nvfl'
+import * as prison from '../systems/justice/prison'
+import * as skills from '../systems/education/skills'
+import * as training from '../systems/education/training'
+import * as chat from '../systems/communication/chat'
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
-function parseCommand(text) {
+export function parseCommand(text: string): { cmd: string; args: string[] } | null {
   if (!text || !text.startsWith('/')) return null
   const parts = text.trim().slice(1).split(/\s+/)
   return { cmd: parts[0].toLowerCase(), args: parts.slice(1) }
 }
 
-function findPlayer(store, name) {
+export function findPlayer(store: Store, name: string): PlayerState | null {
   if (!name) return null
   const lower = name.toLowerCase()
-  return store.getAll().find(p => p.name.toLowerCase() === lower) || null
+  return store.getAll().find(p => p.name.toLowerCase() === lower) ?? null
 }
 
-function checkPermission(store, playerId, level) {
+export function checkPermission(store: Store, playerId: number, level: 'player' | 'staff' | 'leader'): boolean {
   if (level === 'player') return true
   const player = store.get(playerId)
   if (!player) return false
@@ -23,21 +39,18 @@ function checkPermission(store, playerId, level) {
   return false
 }
 
-function reply(mp, store, playerId, message) {
-  const player = store.get(playerId)
-  if (!player) return
-  mp.sendCustomPacket(player.actorId, 'chatMessage', { text: message })
-}
+type CommandHandler = (userId: number, args: string[]) => void
+
+// reply is assigned inside registerAll once we have the chat module.
+let reply: (mp_: Mp, store_: Store, playerId: number, message: string) => void = () => {}
 
 // ── Command registration ──────────────────────────────────────────────────────
 
-function registerAll(mp, store, bus, systems) {
-  const { hunger, drunkBar, economy, housing, bounty,
-          combat, nvfl, captivity, prison, factions,
-          college, skills, training, treasury, roleplay,
-          inventory: inv, magic } = systems
+export function registerAll(mp: Mp, store: Store, bus: Bus): { handle: (userId: number, text: string) => boolean } {
+  // Wire reply to the chat module so command responses appear in the UI.
+  reply = (mp_, store_, playerId, message) => chat.sendToPlayer(mp_, store_, playerId, message)
 
-  const handlers = {}
+  const handlers: Record<string, CommandHandler> = {}
 
   // ── College ──────────────────────────────────────────────────────────────
   handlers['lecture'] = (userId, args) => {
@@ -71,9 +84,9 @@ function registerAll(mp, store, bus, systems) {
   handlers['train'] = (userId, args) => {
     if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
     const sub = args[0]
-    const skillIds = skills.SKILL_IDS
+    const skillIds = skills.SKILL_IDS as readonly string[]
     if (sub === 'start') {
-      const skillId = (args[1] || '').toLowerCase()
+      const skillId = (args[1] ?? '').toLowerCase()
       if (!skillIds.includes(skillId)) return reply(mp, store, userId, `Valid skills: ${skillIds.join(', ')}`)
       const ok = training.startTraining(mp, store, bus, userId, skillId)
       reply(mp, store, userId, ok ? `Training session started for ${skillId}.` : 'You already have an active session.')
@@ -95,9 +108,9 @@ function registerAll(mp, store, bus, systems) {
     if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
     const player = store.get(userId)
     if (!player) return
-    const target = (args[0] || '').toLowerCase()
-    const list   = target ? [target] : skills.SKILL_IDS
-    const lines  = []
+    const target = (args[0] ?? '').toLowerCase()
+    const list   = target ? [target] : (skills.SKILL_IDS as readonly string[])
+    const lines: string[] = []
     for (const skillId of list) {
       const xp    = skills.getSkillXp(mp, userId, skillId)
       const level = skills.getSkillLevel(xp)
@@ -117,7 +130,7 @@ function registerAll(mp, store, bus, systems) {
     const ok = economy.transferGold(mp, store, userId, target.id, amount)
     if (ok) {
       reply(mp, store, userId, `Paid ${amount} Septims to ${target.name}.`)
-      reply(mp, store, target.id, `Received ${amount} Septims from ${store.get(userId).name}.`)
+      reply(mp, store, target.id, `Received ${amount} Septims from ${store.get(userId)!.name}.`)
     } else {
       reply(mp, store, userId, 'Insufficient funds.')
     }
@@ -131,15 +144,14 @@ function registerAll(mp, store, bus, systems) {
       const player = store.get(userId)
       const holdId = player ? player.holdId : null
       if (!holdId) return reply(mp, store, userId, 'You are not assigned to a hold.')
-      const list = housing.getPropertiesByHold(holdId)
+      const list  = housing.getPropertiesByHold(holdId)
       const lines = list.map(p => `${p.id}: ${p.name} [${p.type}] — ${p.ownerId ? 'Owned' : p.pendingOwnerId ? 'Pending' : 'Available'}`)
       reply(mp, store, userId, lines.length ? lines.join('\n') : 'No properties in this hold.')
     } else if (sub === 'request') {
       if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
       const propertyId = args[1]
       if (!propertyId) return reply(mp, store, userId, 'Usage: /property request [propertyId]')
-      // Find a steward in the hold (simplified: notify all leaders in hold)
-      const stewardId = _findStewardForProperty(store, housing, propertyId)
+      const stewardId = _findStewardForProperty(store, propertyId)
       if (stewardId === null) return reply(mp, store, userId, 'No Steward available in this hold.')
       const ok = housing.requestProperty(mp, store, bus, userId, propertyId, stewardId)
       reply(mp, store, userId, ok ? 'Property request sent to Steward.' : 'Property unavailable.')
@@ -168,30 +180,30 @@ function registerAll(mp, store, bus, systems) {
     const sub = args[0]
     if (!sub) {
       if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
-      const bounties = bounty.getAllBounties(mp, store, userId)
-      const lines = Object.entries(bounties).filter(([,v]) => v > 0).map(([h,v]) => `${h}: ${v}`)
+      const bounties = bountyMod.getAllBounties(mp, store, userId)
+      const lines = Object.entries(bounties).filter(([, v]) => v > 0).map(([h, v]) => `${h}: ${v}`)
       reply(mp, store, userId, lines.length ? lines.join('\n') : 'No bounties.')
     } else if (sub === 'check') {
       if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
       const target = findPlayer(store, args[1])
       if (!target) return reply(mp, store, userId, `Player "${args[1]}" not found.`)
-      const bounties = bounty.getAllBounties(mp, store, target.id)
-      const lines = Object.entries(bounties).filter(([,v]) => v > 0).map(([h,v]) => `${h}: ${v}`)
+      const bounties = bountyMod.getAllBounties(mp, store, target.id)
+      const lines = Object.entries(bounties).filter(([, v]) => v > 0).map(([h, v]) => `${h}: ${v}`)
       reply(mp, store, userId, `Bounties for ${target.name}:\n${lines.length ? lines.join('\n') : 'None'}`)
     } else if (sub === 'add') {
       if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
       const target = findPlayer(store, args[1])
-      const holdId = (args[2] || '').toLowerCase()
+      const holdId = (args[2] ?? '').toLowerCase()
       const amount = parseInt(args[3])
       if (!target || !holdId || !amount) return reply(mp, store, userId, 'Usage: /bounty add [name] [holdId] [amount]')
-      bounty.addBounty(mp, store, bus, target.id, holdId, amount)
+      bountyMod.addBounty(mp, store, bus, target.id, holdId, amount)
       reply(mp, store, userId, `Added ${amount} bounty for ${target.name} in ${holdId}.`)
     } else if (sub === 'clear') {
       if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
       const target = findPlayer(store, args[1])
-      const holdId = (args[2] || '').toLowerCase()
+      const holdId = (args[2] ?? '').toLowerCase()
       if (!target || !holdId) return reply(mp, store, userId, 'Usage: /bounty clear [name] [holdId]')
-      bounty.clearBounty(mp, store, bus, target.id, holdId)
+      bountyMod.clearBounty(mp, store, bus, target.id, holdId)
       reply(mp, store, userId, `Cleared bounty for ${target.name} in ${holdId}.`)
     } else {
       reply(mp, store, userId, 'Usage: /bounty | check [name] | add [name] [hold] [amount] | clear [name] [hold]')
@@ -201,14 +213,13 @@ function registerAll(mp, store, bus, systems) {
   // ── Justice ──────────────────────────────────────────────────────────────
   handlers['arrest'] = (userId, args) => {
     if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
-    const target = findPlayer(store, args[0])
+    const target  = findPlayer(store, args[0])
     if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
     const officer = store.get(userId)
     const holdId  = officer ? officer.holdId : null
     if (!holdId) return reply(mp, store, userId, 'You are not assigned to a hold.')
-    // Find Jarl of this hold to notify
     const jarlId = _findJarlForHold(store, holdId)
-    const ok = prison.queueForSentencing(mp, store, bus, target.id, holdId, userId, jarlId || userId)
+    const ok = prison.queueForSentencing(mp, store, bus, target.id, holdId, userId, jarlId ?? userId)
     reply(mp, store, userId, ok ? `${target.name} queued for sentencing.` : `${target.name} is already in queue.`)
   }
 
@@ -216,12 +227,10 @@ function registerAll(mp, store, bus, systems) {
     if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
     const target = findPlayer(store, args[0])
     if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
-    const type = (args[1] || '').toLowerCase()
+    const type = (args[1] ?? '').toLowerCase()
     if (!['fine','release','banish'].includes(type)) return reply(mp, store, userId, 'Usage: /sentence [name] fine [amount] | release | banish')
-    const sentence = { type }
-    if (type === 'fine') {
-      sentence.fineAmount = parseInt(args[2]) || 0
-    }
+    const sentence: Sentence = { type: type as Sentence['type'] }
+    if (type === 'fine') sentence.fineAmount = parseInt(args[2]) || 0
     const ok = prison.sentencePlayer(mp, store, bus, target.id, userId, sentence)
     reply(mp, store, userId, ok ? `Sentenced ${target.name}: ${type}.` : `${target.name} is not in queue.`)
   }
@@ -242,36 +251,6 @@ function registerAll(mp, store, bus, systems) {
     if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
     captivity.releasePlayer(mp, store, bus, target.id)
     reply(mp, store, userId, `${target.name} released.`)
-  }
-
-  // ── Combat — player actions ──────────────────────────────────────────────
-  handlers['revive'] = (userId, args) => {
-    if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
-    const target = findPlayer(store, args[0])
-    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
-    if (!target.isDown) return reply(mp, store, userId, `${target.name} is not downed.`)
-    const ok = combat.revivePlayer(mp, store, bus, userId, target.id)
-    if (ok) {
-      reply(mp, store, userId, `You revived ${target.name}.`)
-    }
-  }
-
-  handlers['execute'] = (userId, args) => {
-    if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
-    const target = findPlayer(store, args[0])
-    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
-    if (!target.isDown) return reply(mp, store, userId, `${target.name} is not downed.`)
-    const ok = combat.executePlayer(mp, store, bus, prison, housing, userId, target.id)
-    if (ok) reply(mp, store, userId, `${target.name} executed.`)
-  }
-
-  handlers['loot'] = (userId, args) => {
-    if (!checkPermission(store, userId, 'player')) return reply(mp, store, userId, 'No permission.')
-    const target = findPlayer(store, args[0])
-    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
-    if (!target.isDown) return reply(mp, store, userId, `${target.name} is not downed.`)
-    const ok = combat.openLootSession(mp, store, bus, inv, userId, target.id)
-    if (!ok) reply(mp, store, userId, `Could not open loot menu for ${target.name}.`)
   }
 
   // ── Combat (staff) ───────────────────────────────────────────────────────
@@ -309,7 +288,7 @@ function registerAll(mp, store, bus, systems) {
     if (sub === 'join') {
       if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
       const target    = findPlayer(store, args[1])
-      const factionId = (args[2] || '').toLowerCase()
+      const factionId = (args[2] ?? '').toLowerCase()
       const rank      = args[3] !== undefined ? parseInt(args[3]) : 0
       if (!target || !factionId) return reply(mp, store, userId, 'Usage: /faction join [name] [factionId] (rank)')
       factions.joinFaction(mp, store, bus, target.id, factionId, rank)
@@ -317,14 +296,14 @@ function registerAll(mp, store, bus, systems) {
     } else if (sub === 'leave') {
       if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
       const target    = findPlayer(store, args[1])
-      const factionId = (args[2] || '').toLowerCase()
+      const factionId = (args[2] ?? '').toLowerCase()
       if (!target || !factionId) return reply(mp, store, userId, 'Usage: /faction leave [name] [factionId]')
       factions.leaveFaction(mp, store, bus, target.id, factionId)
       reply(mp, store, userId, `${target.name} left ${factionId}.`)
     } else if (sub === 'rank') {
       if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
       const target    = findPlayer(store, args[1])
-      const factionId = (args[2] || '').toLowerCase()
+      const factionId = (args[2] ?? '').toLowerCase()
       const rank      = parseInt(args[3])
       if (!target || !factionId || isNaN(rank)) return reply(mp, store, userId, 'Usage: /faction rank [name] [factionId] [rank]')
       factions.joinFaction(mp, store, bus, target.id, factionId, rank)
@@ -332,10 +311,9 @@ function registerAll(mp, store, bus, systems) {
     } else if (sub === 'bbb') {
       if (args[1] === 'set') {
         if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
-        // Multi-line input not supported yet — stub only
         reply(mp, store, userId, 'BBB set not yet implemented (requires multi-line input).')
       } else {
-        const factionId = (args[1] || '').toLowerCase()
+        const factionId = (args[1] ?? '').toLowerCase()
         const doc = factions.getFactionDocument(mp, factionId)
         if (!doc) return reply(mp, store, userId, `No BBB document for ${factionId}.`)
         reply(mp, store, userId, `[${factionId}] Benefits: ${doc.benefits}\nBurdens: ${doc.burdens}\nBylaws: ${doc.bylaws}`)
@@ -363,136 +341,43 @@ function registerAll(mp, store, bus, systems) {
     reply(mp, store, userId, `Fed ${target.name} (${levels} levels).`)
   }
 
-  // ── Treasury ─────────────────────────────────────────────────────────────
-  handlers['treasury'] = (userId, args) => {
-    if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
-    const sub = args[0]
-    if (!sub) {
-      const balances = treasury.getAllBalances()
-      const lines = treasury.ALL_HOLDS.map(h => `${h}: ${balances[h]} Septims`)
-      return reply(mp, store, userId, lines.join('\n'))
-    }
-    if (sub === 'balance') {
-      const holdId = (args[1] || '').toLowerCase()
-      if (!holdId) return reply(mp, store, userId, 'Usage: /treasury balance [holdId]')
-      return reply(mp, store, userId, `${holdId} treasury: ${treasury.getBalance(holdId)} Septims`)
-    }
-    if (sub === 'withdraw') {
-      if (!checkPermission(store, userId, 'leader')) return reply(mp, store, userId, 'No permission.')
-      const holdId = (args[1] || '').toLowerCase()
-      const amount = parseInt(args[2])
-      if (!holdId || !amount || amount <= 0) return reply(mp, store, userId, 'Usage: /treasury withdraw [holdId] [amount]')
-      const player = store.get(userId)
-      if (player && player.holdId !== holdId && !player.isStaff) return reply(mp, store, userId, `You can only withdraw from your own hold (${player.holdId}).`)
-      const ok = treasury.withdraw(bus, holdId, amount)
-      reply(mp, store, userId, ok ? `Withdrew ${amount} Septims from ${holdId} treasury.` : `Insufficient funds in ${holdId} treasury.`)
-      return
-    }
-    if (sub === 'deposit') {
-      if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
-      const holdId = (args[1] || '').toLowerCase()
-      const amount = parseInt(args[2])
-      if (!holdId || !amount || amount <= 0) return reply(mp, store, userId, 'Usage: /treasury deposit [holdId] [amount]')
-      treasury.deposit(bus, holdId, amount)
-      reply(mp, store, userId, `Deposited ${amount} Septims into ${holdId} treasury.`)
-      return
-    }
-    reply(mp, store, userId, 'Usage: /treasury | balance [holdId] | withdraw [holdId] [amount] | deposit [holdId] [amount]')
-  }
-
-  // ── Magic — skill dice ────────────────────────────────────────────────────
-  handlers['skill-dice'] = (userId, args) => {
-    magic.handleSkillDice(mp, store, bus, userId, args)
-  }
-
-  // ── Roleplay ──────────────────────────────────────────────────────────────
-  handlers['setdescription'] = (userId, args) => {
-    const player = store.get(userId)
-    if (!player) return
-    const text = args.join(' ').trim()
-    if (!text) return reply(mp, store, userId, 'Usage: /setdescription [text]')
-    const saved = roleplay.setDescription(mp, player.actorId, text)
-    reply(mp, store, userId, `Description set (${saved.length}/${roleplay.DESCRIPTION_MAX} chars).`)
-  }
-
-  handlers['examine'] = (userId, args) => {
-    const target = findPlayer(store, args[0])
-    if (!target) return reply(mp, store, userId, `Player "${args[0]}" not found.`)
-    const packet = roleplay.examinePlayer(mp, store, userId, target.id, { bounty, prison })
-    if (!packet) return
-    mp.sendCustomPacket(store.get(userId).actorId, 'examine', packet)
-  }
-
-  handlers['racemenu'] = (userId, args) => {
-    const player = store.get(userId)
-    if (!player) return
-    if (args[0] === 'reset') {
-      if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
-      const target = findPlayer(store, args[1])
-      if (!target) return reply(mp, store, userId, `Player "${args[1]}" not found.`)
-      roleplay.resetRaceMenu(mp, target.actorId)
-      reply(mp, store, userId, `Race menu reset for ${target.name}.`)
-      return
-    }
-    const ok = roleplay.openRaceMenu(mp, player.actorId)
-    if (!ok) reply(mp, store, userId, 'Your character is already set up. Contact staff to reset.')
-  }
-
-  // ── Role management (staff only) ─────────────────────────────────────────
-  handlers['role'] = (userId, args) => {
-    if (!checkPermission(store, userId, 'staff')) return reply(mp, store, userId, 'No permission.')
-    if (args[0] !== 'set') return reply(mp, store, userId, 'Usage: /role set [name] player|leader|staff')
-    const target = findPlayer(store, args[1])
-    if (!target) return reply(mp, store, userId, `Player "${args[1]}" not found.`)
-    const role = (args[2] || '').toLowerCase()
-    if (!['player', 'leader', 'staff'].includes(role)) return reply(mp, store, userId, 'Role must be: player, leader, or staff')
-    store.update(target.id, {
-      isStaff:  role === 'staff',
-      isLeader: role === 'leader' || role === 'staff',
-    })
-    reply(mp, store, userId, `${target.name} is now ${role}.`)
-    reply(mp, store, target.id, `Your role has been set to ${role} by ${store.get(userId).name}.`)
-  }
-
-  // ── Register customPacket handler ────────────────────────────────────────
-  mp.on('customPacket', (userId, packet) => {
-    try {
-      if (packet.type === 'chatMessage' && typeof packet.text === 'string') {
-        const parsed = parseCommand(packet.text)
-        if (!parsed) return
-        const handler = handlers[parsed.cmd]
-        if (!handler) return
-        handler(userId, parsed.args)
-      } else if (packet.type === 'lootSelection') {
-        combat.completeLootSession(mp, store, bus, inv, userId, packet)
-      }
-    } catch (err) {
-      console.error(`[commands] Error handling packet from ${userId}: ${err.message}`)
-    }
-  })
-
   console.log(`[commands] Registered ${Object.keys(handlers).length} commands`)
+
+  function handle(userId: number, text: string): boolean {
+    const parsed = parseCommand(text)
+    if (!parsed) return false
+    const handler = handlers[parsed.cmd]
+    if (!handler) {
+      reply(mp, store, userId, `Unknown command: /${parsed.cmd}`)
+      return true
+    }
+    try {
+      handler(userId, parsed.args)
+    } catch (err: any) {
+      console.error(`[commands] Error in /${parsed.cmd} for ${userId}: ${err.message}`)
+      reply(mp, store, userId, 'Command error — see server log.')
+    }
+    return true
+  }
+
+  return { handle }
 }
 
 // ── Private helpers ───────────────────────────────────────────────────────────
 
-function _findUserIdByName(store, name) {
-  const player = store.getAll().find(p => p.name.toLowerCase() === (name || '').toLowerCase())
+function _findUserIdByName(store: Store, name: string): number | null {
+  const player = store.getAll().find(p => p.name.toLowerCase() === (name ?? '').toLowerCase())
   return player ? player.id : null
 }
 
-function _findStewardForProperty(store, housing, propertyId) {
+function _findStewardForProperty(store: Store, propertyId: string): number | null {
   const prop = housing.getProperty(propertyId)
   if (!prop) return null
-  // Look for an online leader in the same hold — simplified heuristic
   const candidates = store.getAll().filter(p => p.holdId === prop.holdId && p.isLeader)
   return candidates.length ? candidates[0].id : null
 }
 
-function _findJarlForHold(store, holdId) {
-  // Look for online staff in the same hold as a Jarl proxy
+function _findJarlForHold(store: Store, holdId: string): number | null {
   const candidates = store.getAll().filter(p => p.holdId === holdId && p.isLeader)
   return candidates.length ? candidates[0].id : null
 }
-
-module.exports = { parseCommand, findPlayer, checkPermission, registerAll }

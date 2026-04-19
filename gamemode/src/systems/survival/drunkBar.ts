@@ -1,4 +1,7 @@
-'use strict'
+// ── Drunk Bar ─────────────────────────────────────────────────────────────────
+
+import { safeGet, safeSet } from '../../core/mpUtil'
+import type { Mp, Store, Bus } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const DRUNK_MIN          = 0
@@ -8,7 +11,7 @@ const TICK_INTERVAL_MS   = 60 * 1000
 
 // baseId → alcohol strength (1–3)
 // FormIDs verified against skyrim-esm-references/potions.json
-const ALCOHOL_STRENGTHS = {
+const ALCOHOL_STRENGTHS: Record<number, number> = {
   0x0003133B: 1, // Alto Wine          edid: FoodWineAlto
   0x000C5349: 1, // Alto Wine (var.)   edid: FoodWineAltoA
   0x0003133C: 1, // Wine               edid: FoodWineBottle02
@@ -21,42 +24,42 @@ const ALCOHOL_STRENGTHS = {
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
-function calcNewDrunkLevel(current, delta) {
+export function calcNewDrunkLevel(current: number, delta: number): number {
   return Math.max(DRUNK_MIN, Math.min(DRUNK_MAX, current + delta))
 }
 
-function shouldSober(minutesOnline) {
+export function shouldSober(minutesOnline: number): boolean {
   return minutesOnline > 0 && minutesOnline % SOBER_INTERVAL_MIN === 0
 }
 
-function getAlcoholStrength(baseId) {
-  return ALCOHOL_STRENGTHS[baseId] || 0
+export function getAlcoholStrength(baseId: number): number {
+  return ALCOHOL_STRENGTHS[baseId] ?? 0
 }
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
-function drinkAlcohol(mp, store, bus, playerId, baseId) {
+export function drinkAlcohol(mp: Mp, store: Store, bus: Bus, playerId: number, baseId: number): void {
   const player = store.get(playerId)
   if (!player) return
   const strength = getAlcoholStrength(baseId)
   if (!strength) return
   const newLevel = calcNewDrunkLevel(player.drunkLevel, strength)
   store.update(playerId, { drunkLevel: newLevel })
-  mp.set(player.actorId, 'ff_drunk', newLevel)
+  safeSet(mp, player.actorId, 'ff_drunk', newLevel)
   bus.dispatch({ type: 'drunkChanged', playerId, drunkLevel: newLevel })
 }
 
-function soberPlayer(mp, store, bus, playerId) {
+export function soberPlayer(mp: Mp, store: Store, bus: Bus, playerId: number): void {
   const player = store.get(playerId)
   if (!player) return
   store.update(playerId, { drunkLevel: 0 })
-  mp.set(player.actorId, 'ff_drunk', 0)
+  safeSet(mp, player.actorId, 'ff_drunk', 0)
   bus.dispatch({ type: 'drunkChanged', playerId, drunkLevel: 0 })
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 
-function init(mp, store, bus) {
+export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[drunkBar] Initializing')
 
   mp.makeProperty('ff_drunk', {
@@ -79,15 +82,15 @@ function init(mp, store, bus) {
       try {
         for (const player of store.getAll()) {
           if (shouldSober(player.minutesOnline)) {
-            if (player.drunkLevel > 0) {
+            if (player.drunkLevel > 0 && player.actorId) {
               const newLevel = calcNewDrunkLevel(player.drunkLevel, -1)
               store.update(player.id, { drunkLevel: newLevel })
-              mp.set(player.actorId, 'ff_drunk', newLevel)
+              safeSet(mp, player.actorId, 'ff_drunk', newLevel)
               bus.dispatch({ type: 'drunkChanged', playerId: player.id, drunkLevel: newLevel })
             }
           }
         }
-      } catch (err) {
+      } catch (err: any) {
         console.error(`[drunkBar] Tick error: ${err.message}`)
       }
       scheduleTick()
@@ -98,12 +101,9 @@ function init(mp, store, bus) {
   console.log('[drunkBar] Started')
 }
 
-function onConnect(mp, store, bus, userId) {
+export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void {
   const player = store.get(userId)
   if (!player) return
-  const saved = mp.get(player.actorId, 'ff_drunk')
-  const level = (saved !== null && saved !== undefined) ? saved : 0
+  const level = safeGet(mp, player.actorId, 'ff_drunk', 0)
   store.update(userId, { drunkLevel: level })
 }
-
-module.exports = { calcNewDrunkLevel, shouldSober, getAlcoholStrength, drinkAlcohol, soberPlayer, onConnect, init }

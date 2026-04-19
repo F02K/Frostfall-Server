@@ -1,7 +1,10 @@
-'use strict'
+// ── College of Winterhold ─────────────────────────────────────────────────────
+
+import { safeGet } from '../../core/mpUtil'
+import type { Mp, Store, Bus, LectureSession } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
-const RANK_THRESHOLDS = [
+const RANK_THRESHOLDS: Array<{ rank: string; xp: number }> = [
   { rank: 'novice',     xp: 0 },
   { rank: 'apprentice', xp: 100 },
   { rank: 'adept',      xp: 300 },
@@ -9,14 +12,14 @@ const RANK_THRESHOLDS = [
   { rank: 'master',     xp: 1000 },
 ]
 
-const LECTURE_XP_ATTENDEE = 50
-const LECTURE_XP_LECTURER = 25
-const LECTURE_BOOST_MS    = 24 * 60 * 60 * 1000  // 24h
+const LECTURE_XP_ATTENDEE  = 50
+const LECTURE_XP_LECTURER  = 25
+const LECTURE_BOOST_MS     = 24 * 60 * 60 * 1000  // 24h
 const LECTURE_MAGICKA_MULT = 1.15
 
 // baseId → XP gained from studying that tome
 // FormIDs verified against skyrim-esm-references/books.json
-const TOME_XP = {
+const TOME_XP: Record<number, number> = {
   // Novice (15 XP)
   0x0009CD51: 15, // Spell Tome: Flames           edid: SpellTomeFlames
   0x0009CD52: 15, // Spell Tome: Frostbite        edid: SpellTomeFrostbite
@@ -44,11 +47,11 @@ const TOME_XP = {
 
 // ── In-memory lecture sessions ────────────────────────────────────────────────
 // lecturerId → { attendees: Set<userId> }
-const lectures = new Map()
+const lectures = new Map<number, LectureSession>()
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
-function getCollegeRank(xp) {
+export function getCollegeRank(xp: number): string {
   let rank = 'novice'
   for (const t of RANK_THRESHOLDS) {
     if (xp >= t.xp) rank = t.rank
@@ -56,7 +59,7 @@ function getCollegeRank(xp) {
   return rank
 }
 
-function getTomeRank(tomeBaseId) {
+export function getTomeRank(tomeBaseId: number): string | null {
   const xp = TOME_XP[tomeBaseId]
   if (xp === undefined) return null
   if (xp >= 100) return 'master'
@@ -66,20 +69,20 @@ function getTomeRank(tomeBaseId) {
   return 'novice'
 }
 
-function getStudyXp(mp, store, playerId) {
+export function getStudyXp(mp: Mp, store: Store, playerId: number): number {
   const player = store.get(playerId)
   if (!player) return 0
   const saved = mp.get(player.actorId, 'ff_study_xp')
-  return (saved !== null && saved !== undefined) ? saved : 0
+  return (saved !== null && saved !== undefined) ? saved as number : 0
 }
 
-function getCollegeRankForPlayer(mp, store, playerId) {
+export function getCollegeRankForPlayer(mp: Mp, store: Store, playerId: number): string {
   return getCollegeRank(getStudyXp(mp, store, playerId))
 }
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
-function studyTome(mp, store, bus, playerId, tomeBaseId) {
+export function studyTome(mp: Mp, store: Store, bus: Bus, playerId: number, tomeBaseId: number): void {
   const player = store.get(playerId)
   if (!player) return
   const xpGain = TOME_XP[tomeBaseId]
@@ -91,14 +94,14 @@ function studyTome(mp, store, bus, playerId, tomeBaseId) {
   bus.dispatch({ type: 'collegeXpGained', playerId, xpGain, totalXp: newXp })
 }
 
-function startLecture(mp, store, bus, lecturerId) {
+export function startLecture(mp: Mp, store: Store, bus: Bus, lecturerId: number): boolean {
   if (lectures.has(lecturerId)) return false
   lectures.set(lecturerId, { attendees: new Set() })
   bus.dispatch({ type: 'lectureStarted', lecturerId })
   return true
 }
 
-function joinLecture(mp, store, bus, playerId, lecturerId) {
+export function joinLecture(mp: Mp, store: Store, bus: Bus, playerId: number, lecturerId: number): boolean {
   const session = lectures.get(lecturerId)
   if (!session) return false
   if (playerId === lecturerId) return false
@@ -107,11 +110,11 @@ function joinLecture(mp, store, bus, playerId, lecturerId) {
   return true
 }
 
-function endLecture(mp, store, bus, lecturerId, now) {
+export function endLecture(mp: Mp, store: Store, bus: Bus, lecturerId: number, now?: number): boolean {
   const session = lectures.get(lecturerId)
   if (!session) return false
 
-  const boostExpiry = (now || Date.now()) + LECTURE_BOOST_MS
+  const boostExpiry = (now ?? Date.now()) + LECTURE_BOOST_MS
 
   // Award XP + boost to attendees
   for (const attendeeId of session.attendees) {
@@ -136,29 +139,29 @@ function endLecture(mp, store, bus, lecturerId, now) {
   return true
 }
 
-function getActiveLecture(lecturerId) {
-  return lectures.get(lecturerId) || null
+export function getActiveLecture(lecturerId: number): LectureSession | null {
+  return lectures.get(lecturerId) ?? null
 }
 
-function hasLectureBoost(mp, store, playerId, now) {
+export function hasLectureBoost(mp: Mp, store: Store, playerId: number, now?: number): boolean {
   const player = store.get(playerId)
   if (!player) return false
-  const expiry = mp.get(player.actorId, 'ff_lecture_boost')
+  const expiry = mp.get(player.actorId, 'ff_lecture_boost') as number | null
   if (!expiry) return false
-  return (now || Date.now()) < expiry
+  return (now ?? Date.now()) < expiry
 }
 
-function getLectureBoostRemainingMs(mp, store, playerId, now) {
+export function getLectureBoostRemainingMs(mp: Mp, store: Store, playerId: number, now?: number): number {
   const player = store.get(playerId)
   if (!player) return 0
-  const expiry = mp.get(player.actorId, 'ff_lecture_boost')
+  const expiry = mp.get(player.actorId, 'ff_lecture_boost') as number | null
   if (!expiry) return 0
-  return Math.max(0, expiry - (now || Date.now()))
+  return Math.max(0, expiry - (now ?? Date.now()))
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 
-function init(mp, store, bus) {
+export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[college] Initializing')
 
   mp.makeProperty('ff_study_xp', {
@@ -185,17 +188,10 @@ function init(mp, store, bus) {
   console.log('[college] Started')
 }
 
-function onConnect(mp, store, bus, userId) {
+export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void {
   const player = store.get(userId)
-  if (!player) return
-  const xp   = mp.get(player.actorId, 'ff_study_xp') || 0
+  if (!player || !player.actorId) return
+  const xp   = safeGet<number>(mp, player.actorId, 'ff_study_xp', 0)
   const rank = getCollegeRank(xp)
   mp.sendCustomPacket(player.actorId, 'collegeSync', { xp, rank })
-}
-
-module.exports = {
-  getCollegeRank, getTomeRank, getStudyXp, getCollegeRankForPlayer,
-  studyTome, startLecture, joinLecture, endLecture,
-  getActiveLecture, hasLectureBoost, getLectureBoostRemainingMs,
-  onConnect, init,
 }

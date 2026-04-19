@@ -1,32 +1,35 @@
-'use strict'
+// ── Bounty ────────────────────────────────────────────────────────────────────
+
+import { safeGet } from '../../core/mpUtil'
+import type { Mp, Store, Bus } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 const GUARD_KOID_THRESHOLD = 1000  // Septims; guard gets KOID at or above this
 
 // ── Pure helpers ──────────────────────────────────────────────────────────────
 
-function getBounty(mp, store, playerId, holdId) {
+export function getBounty(mp: Mp, store: Store, playerId: number, holdId: string): number {
   const player = store.get(playerId)
   if (!player) return 0
-  return (player.bounty[holdId] || 0)
+  return player.bounty[holdId] ?? 0
 }
 
-function getAllBounties(mp, store, playerId) {
+export function getAllBounties(mp: Mp, store: Store, playerId: number): Record<string, number> {
   const player = store.get(playerId)
   if (!player) return {}
   return Object.assign({}, player.bounty)
 }
 
-function isGuardKoid(mp, store, playerId, holdId) {
+export function isGuardKoid(mp: Mp, store: Store, playerId: number, holdId: string): boolean {
   return getBounty(mp, store, playerId, holdId) >= GUARD_KOID_THRESHOLD
 }
 
 // ── Actions ───────────────────────────────────────────────────────────────────
 
-function addBounty(mp, store, bus, playerId, holdId, amount) {
+export function addBounty(mp: Mp, store: Store, bus: Bus, playerId: number, holdId: string, amount: number): void {
   const player = store.get(playerId)
   if (!player) return
-  const current = player.bounty[holdId] || 0
+  const current = player.bounty[holdId] ?? 0
   const newAmount = current + amount
   const newBounty = Object.assign({}, player.bounty, { [holdId]: newAmount })
   store.update(playerId, { bounty: newBounty })
@@ -35,19 +38,19 @@ function addBounty(mp, store, bus, playerId, holdId, amount) {
   bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount, delta: amount })
 }
 
-function clearBounty(mp, store, bus, playerId, holdId) {
+export function clearBounty(mp: Mp, store: Store, bus: Bus, playerId: number, holdId: string): void {
   const player = store.get(playerId)
   if (!player) return
   const newBounty = Object.assign({}, player.bounty, { [holdId]: 0 })
   store.update(playerId, { bounty: newBounty })
   _persist(mp, player.actorId, newBounty)
   mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: 0 })
-  bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount: 0, delta: -(player.bounty[holdId] || 0) })
+  bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount: 0, delta: -(player.bounty[holdId] ?? 0) })
 }
 
 // ── Internal ──────────────────────────────────────────────────────────────────
 
-function _persist(mp, actorId, bountyMap) {
+function _persist(mp: Mp, actorId: number, bountyMap: Record<string, number>): void {
   const records = Object.entries(bountyMap)
     .filter(([, amount]) => amount > 0)
     .map(([holdId, amount]) => ({ holdId, amount, updatedAt: Date.now() }))
@@ -56,19 +59,16 @@ function _persist(mp, actorId, bountyMap) {
 
 // ── Init ─────────────────────────────────────────────────────────────────────
 
-function init(mp, store, bus) {
+export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[bounty] Initializing')
-
   console.log('[bounty] Started')
 }
 
-function onConnect(mp, store, bus, userId) {
+export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void {
   const player = store.get(userId)
   if (!player) return
-  const records = mp.get(player.actorId, 'ff_bounty') || []
-  const bountyMap = {}
+  const records: Array<{ holdId: string; amount: number }> = safeGet(mp, player.actorId, 'ff_bounty', [])
+  const bountyMap: Record<string, number> = {}
   for (const r of records) bountyMap[r.holdId] = r.amount
   store.update(userId, { bounty: bountyMap })
 }
-
-module.exports = { getBounty, getAllBounties, isGuardKoid, addBounty, clearBounty, onConnect, init }

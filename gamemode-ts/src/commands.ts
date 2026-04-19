@@ -4,6 +4,7 @@ import type { PlayerStore } from './store';
 import type { PlayerId } from './types';
 import type { PlayerRole } from './permissions';
 import { hasPermission } from './permissions';
+import { sendChatMessage } from './chat';
 import { sendPacket } from './skymp';
 
 export interface CommandContext {
@@ -50,6 +51,7 @@ export function resolvePlayer(store: PlayerStore, name: string): PlayerId | null
 }
 
 export function sendFeedback(mp: Mp, playerId: PlayerId, message: string, success = true): void {
+  sendChatMessage(mp, playerId, message);
   sendPacket(mp, playerId, 'commandFeedback', { message, success });
 }
 

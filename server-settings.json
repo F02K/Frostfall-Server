@@ -15,7 +15,7 @@
     "ELFX - Hardcore.esp"
   ],
   "archives": ["Skyrim - Misc.bsa"],
-  "master": "http://127.0.0.1:4000",
+  "master": "https://api.frostfall.online",
   "masterKey": "frostfall",
   "maxPlayers": 1000,
   "name": "Frostfall Roleplay",

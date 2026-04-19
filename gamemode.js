@@ -711,6 +711,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.init = init;
 const store_1 = __webpack_require__(552);
 const bus_1 = __webpack_require__(503);
+const probeGlobals_1 = __webpack_require__(805);
+const wsClient = __importStar(__webpack_require__(862));
 const chat = __importStar(__webpack_require__(809));
 const courier = __importStar(__webpack_require__(924));
 const hunger = __importStar(__webpack_require__(92));
@@ -728,8 +730,21 @@ const training = __importStar(__webpack_require__(491));
 const commands = __importStar(__webpack_require__(592));
 function init(mp) {
     console.log('[gamemode] Frostfall Roleplay — initializing');
+    // ── Dev probe: set PROBE_GLOBALS=1 to check what SkyMP's Chakra exposes ───
+    if (globalThis.process?.env?.PROBE_GLOBALS === '1') {
+        (0, probeGlobals_1.runGlobalProbes)().catch((err) => console.error('[probe] unhandled error: ' + String(err?.message ?? err)));
+    }
     // ── Chat must be first — other systems may send messages during init ──────
     chat.init(mp);
+    // ── WS relay client — init after chat so handleChatInput is available ─────
+    // Defined here as a let so the closure below can capture it once commands
+    // are registered later in this function.
+    let handleCommand = null;
+    wsClient.init(mp, (userId, text) => {
+        if (!chat.handleChatInput(mp, store_1.store, userId, text)) {
+            handleCommand?.(userId, text);
+        }
+    });
     // ── System init (courier before housing/prison so notifications work) ─────
     hunger.init(mp, store_1.store, bus_1.bus);
     drunkBar.init(mp, store_1.store, bus_1.bus);
@@ -745,7 +760,8 @@ function init(mp) {
     skills.init(mp, store_1.store, bus_1.bus);
     training.init(mp, store_1.store, bus_1.bus);
     // ── Command layer ─────────────────────────────────────────────────────────
-    const { handle: handleCommand } = commands.registerAll(mp, store_1.store, bus_1.bus);
+    const { handle: _handleCommand } = commands.registerAll(mp, store_1.store, bus_1.bus);
+    handleCommand = _handleCommand;
     // ── Player lifecycle ──────────────────────────────────────────────────────
     mp.on('connect', (userId) => {
         try {
@@ -753,6 +769,8 @@ function init(mp) {
             const name = (actorId && mp.get(actorId, 'name')) || `User${userId}`;
             store_1.store.register(userId, actorId, name);
             console.log(`[gamemode] ${name} (${userId}) connected`);
+            // Register player with WS relay so the browser can authenticate
+            wsClient.registerPlayer(mp, userId, actorId);
             // Restore per-system state in dependency order
             hunger.onConnect(mp, store_1.store, bus_1.bus, userId);
             drunkBar.onConnect(mp, store_1.store, bus_1.bus, userId);
@@ -783,21 +801,16 @@ function init(mp) {
     // ── Chat input from the browser ───────────────────────────────────────────
     // Called by the C++ layer when ctx.sendEvent(text) fires on the client.
     // First arg is the actor's refrId, second is the raw text the player typed.
+    // handleChatInput handles __reload__, all channels (/me /ooc /w /f), proximity,
+    // history, and returns false only for unknown /commands so we can route them.
     mp['cef_chat_send'] = (refrId, text) => {
         try {
-            if (typeof text !== 'string' || !text.trim())
+            if (typeof text !== 'string')
                 return;
             const userId = mp.getUserByActor(refrId);
-            const player = store_1.store.get(userId);
-            if (!player)
-                return;
-            if (text.startsWith('/')) {
+            if (!chat.handleChatInput(mp, store_1.store, userId, text)) {
                 handleCommand(userId, text);
-                return;
             }
-            const message = `${player.name}: ${text}`;
-            console.log(`[chat] ${message}`);
-            chat.broadcast(mp, store_1.store, message);
         }
         catch (err) {
             console.error(`[chat] cef_chat_send error: ${err.message}`);
@@ -992,71 +1005,226 @@ function clearNvfl(store, playerId) {
 
 
 // ── Chat System ───────────────────────────────────────────────────────────────
-// Sends chat messages to players via a gamemode property (ff_chatMsg).
-// Initialises the chat widget inside the browser via a makeEventSource that
-// listens for the 'front-loaded' browser message, then forwards every
-// 'cef::chat:send' message back to the server as a customEvent.
 //
-// The server-side handler for mp['cef::chat:send'] is registered in index.ts.
+// Channels
+//   IC (default)   proximity speech within SAY_RANGE
+//   /me            roleplay action, proximity
+//   /ooc           global out-of-character
+//   /w <name>      private whisper (must be within WHISPER_RANGE)
+//   /f             faction members only
+//
+// Server → Client flow
+//   deliver() → mp.set(ff_chatMsg, JSON payload) → UPDATE_OWNER_JS (SP runtime)
+//   → executeJavaScript → browser _ffChatPush → widgets.set → React re-render
+//
+// Client → Server flow
+//   Chat input → skyrimPlatform.sendMessage("cef::chat:send", text)
+//   → EVENT_SOURCE_JS browserMessage → ctx.sendEvent(text)
+//   → mp['cef_chat_send'](refrId, text) → handleChatInput()
+//
+// Reload resilience
+//   'front-loaded' → re-runs initChat in browser + ctx.sendEvent('__reload__')
+//   → handleChatInput sees '__reload__' → replayHistory() re-delivers recent msgs
+//
+// Public API
+//   init(mp)
+//   handleChatInput(mp, store, userId, text): boolean  — true = consumed
+//   sendSystem(mp, store, userId, text)
+//   broadcastSystem(mp, store, text)
+//   sendToPlayer(mp, store, userId, text, color?)      — legacy plain-text
+//   broadcast(mp, store, text, color?)                 — legacy plain-text broadcast
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.MAX_MSG_LEN = void 0;
 exports.init = init;
-exports.broadcast = broadcast;
+exports.handleChatInput = handleChatInput;
+exports.sendSystem = sendSystem;
+exports.broadcastSystem = broadcastSystem;
 exports.sendToPlayer = sendToPlayer;
+exports.broadcast = broadcast;
 const mpUtil_1 = __webpack_require__(56);
+const wsClient = __importStar(__webpack_require__(862));
+// ── Config ────────────────────────────────────────────────────────────────────
 const CHAT_MSG_PROP = 'ff_chatMsg';
-// Runs in the Skyrim Platform JS runtime (NOT the browser) when ff_chatMsg is
-// set on the owner's actor.  Uses ctx.sp.browser.executeJavaScript to inject
-// the message into the browser's window.chatMessages and refresh the widget.
-// Runs in the SP runtime on every game tick while ff_chatMsg is set.
-// Only fires executeJavaScript once per unique message value (ctx.state.last dedup).
-// Calls the pre-defined window._ffChatPush helper to keep the IPC payload tiny.
+const SAY_RANGE = 3500; // Skyrim units ≈ 50 m
+const WHISPER_RANGE = 400; // units ≈ 6 m  (must be standing next to someone)
+exports.MAX_MSG_LEN = 300;
+const MAX_HISTORY = 30; // msgs kept server-side per player for reload replay
+const BROWSER_LIMIT = 100; // ring-buffer cap inside the browser
+const RATE_LIMIT_MS = 1000; // minimum ms between messages per player
+// ── Color palette ─────────────────────────────────────────────────────────────
+const C = {
+    nameIc: '#e8c87a', // golden  — IC speaker
+    nameOoc: '#8888bb', // slate   — OOC speaker
+    nameFaction: '#66bb66', // green   — faction chat
+    nameWhisper: '#bb88cc', // purple  — whisper
+    nameSystem: '#ff9933', // orange  — [System] prefix
+    tagIc: '#666666', // dim     — [Say] (unused, kept for future)
+    tagOoc: '#444466', // dim     — [OOC] tag
+    tagFaction: '#335533', // dim grn — [Faction] tag
+    tagWhisper: '#553366', // dim pur — [Whisper] tag
+    msgIc: '#ffffff', // white   — IC speech
+    msgOoc: '#ccccdd', // lavender— OOC text
+    msgMe: '#ccccbb', // pale    — /me action text
+    msgWhisper: '#cc99ff', // light pur
+    msgFaction: '#aaddaa', // light grn
+    system: '#ffcc44', // gold    — system body
+};
+function sp(text, color, types = ['text']) {
+    return { text, color, opacity: 1, type: types };
+}
+function mkMsg(category, ...spans) {
+    return { category, text: spans, opacity: 1 };
+}
+// ── Per-player recent-message history (for reload replay) ─────────────────────
+const playerHistory = new Map();
+const lastMsgTime = new Map();
+function pushHistory(userId, m) {
+    const h = playerHistory.get(userId) ?? [];
+    h.push(m);
+    if (h.length > MAX_HISTORY)
+        h.shift();
+    playerHistory.set(userId, h);
+}
+function replayHistory(mp, store, userId) {
+    const player = store.get(userId);
+    if (!player)
+        return;
+    const history = playerHistory.get(userId) ?? [];
+    for (const m of history) {
+        deliver(mp, player.actorId, userId, m);
+    }
+}
+// ── Delivery ──────────────────────────────────────────────────────────────────
+let _seq = 0;
+function deliver(mp, actorId, userId, m) {
+    if (wsClient.isConnected(userId)) {
+        // Player's browser has an active WS connection — deliver directly.
+        wsClient.deliver(userId, m);
+    }
+    else {
+        // Fallback: push via SkyMP property sync (UPDATE_OWNER_JS → executeJavaScript).
+        // _seq ensures uniqueness so the SP-runtime dedup never suppresses a replay.
+        (0, mpUtil_1.safeSet)(mp, actorId, CHAT_MSG_PROP, JSON.stringify({ msg: m, _: ++_seq }));
+    }
+}
+// ── Proximity helper ──────────────────────────────────────────────────────────
+function dist3(a, b) {
+    if (!a || !b)
+        return Infinity;
+    return Math.sqrt((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2 + (a[2] - b[2]) ** 2);
+}
+function sendProximity(mp, store, senderActorId, m, range) {
+    const origin = mp.getActorPos(senderActorId);
+    for (const p of store.getAll()) {
+        if (dist3(origin, mp.getActorPos(p.actorId)) <= range) {
+            deliver(mp, p.actorId, p.id, m);
+            pushHistory(p.id, m);
+        }
+    }
+}
+// ── Browser-side bootstrap JS ─────────────────────────────────────────────────
+//
+// WIDGET_EXPR is a JS expression (not a string) evaluated *in the browser*
+// whenever widgets.set() is called.  It reads window.chatMessages at call time
+// so each widget update carries the latest snapshot, giving React a new
+// reference and triggering the useEffect([props.messages]) scroll handler.
+const WIDGET_EXPR = '[{type:"chat",' +
+    'messages:window.chatMessages.slice(),' +
+    'send:function(t){window.skyrimPlatform.sendMessage("cef::chat:send",t);},' +
+    'placeholder:"",' +
+    'isInputHidden:false}]';
+// Runs in the SP runtime when ff_chatMsg changes on the owning actor.
+//
+// ctx.value  = JSON string  { msg: ChatMsg, _: seq }
+// Dedup via ctx.state.last so the SP runtime never re-delivers the same payload.
+// If _ffChatPush is not yet defined in the browser (race at session start),
+// messages are queued in window._ffChatPendingMsgs and flushed by initChat.
 const UPDATE_OWNER_JS = `
-  if (ctx.value === undefined || ctx.value === null) return;
-  if (ctx.state.last === ctx.value) return;
-  ctx.state.last = ctx.value;
-  ctx.sp.browser.executeJavaScript('window._ffChatPush(' + JSON.stringify(String(ctx.value)) + ')');
+if (!ctx.value) return;
+if (ctx.state.last === ctx.value) return;
+ctx.state.last = ctx.value;
+var p; try { p = JSON.parse(ctx.value); } catch(e) { return; }
+var enc = JSON.stringify(p.msg);
+ctx.sp.browser.executeJavaScript(
+  'if(typeof window._ffChatPush==="function"){window._ffChatPush(' + enc + ')}' +
+  'else{' +
+  'if(!Array.isArray(window._ffChatPendingMsgs))window._ffChatPendingMsgs=[];' +
+  'window._ffChatPendingMsgs.push(' + enc + ')}'
+);
 `.trim();
-// Runs once per client in the Skyrim Platform JS runtime (NOT the browser).
-// Defines window._ffChatPush in the browser (so UPDATE_OWNER_JS IPC is tiny),
-// sets up the chat widget, and wires the send path back to the server.
+// Runs in the SP runtime once per player session (makeEventSource).
+//
+// initChat (a browser-side JS string) is executed on session start and again
+// on every 'front-loaded' event (browser reload).  It:
+//   1. Defines window._ffChatPush — appends a message and triggers a widget update
+//   2. Flushes window._ffChatPendingMsgs accumulated before _ffChatPush existed
+//   3. Calls widgets.set() so the React tree mounts the chat widget immediately
+//
+// 'cef::chat:send'  — user submitted a message; forwarded to server via sendEvent
+// 'front-loaded'    — browser (re)loaded; re-runs initChat and requests history
+//                     replay via the '__reload__' sentinel passed to sendEvent
 const EVENT_SOURCE_JS = `
-  var initChatJs =
-    'window._ffChatPush = function(msg) {' +
-    '  if (!Array.isArray(window.chatMessages)) window.chatMessages = [];' +
-    '  window.chatMessages.push(msg);' +
-    '  while (window.chatMessages.length > 50) window.chatMessages.shift();' +
-    '  var ws = window.skyrimPlatform.widgets.get();' +
-    '  var found = false;' +
-    '  for (var i = 0; i < ws.length; i++) {' +
-    '    if (ws[i] && ws[i].type === "chat") {' +
-    '      var copy = ws.slice();' +
-    '      copy[i] = Object.assign({}, copy[i], { messages: window.chatMessages.slice() });' +
-    '      window.skyrimPlatform.widgets.set(copy);' +
-    '      found = true; break;' +
-    '    }' +
-    '  }' +
-    '  if (!found) {' +
-    '    window.skyrimPlatform.widgets.set([{type:"chat",messages:window.chatMessages.slice(),' +
-    '      send:function(t){window.skyrimPlatform.sendMessage("cef::chat:send",t);},' +
-    '      placeholder:"",isInputHidden:false}]);' +
-    '  }' +
-    '  if (typeof window.scrollToLastMessage === "function") window.scrollToLastMessage();' +
-    '};' +
-    'if (!Array.isArray(window.chatMessages)) window.chatMessages = [];' +
-    'window.skyrimPlatform.widgets.set([{type:"chat",messages:window.chatMessages,' +
-    '  send:function(t){window.skyrimPlatform.sendMessage("cef::chat:send",t);},' +
-    '  placeholder:"",isInputHidden:false}]);';
-  ctx.sp.browser.executeJavaScript(initChatJs);
-  ctx.sp.on('browserMessage', function(event) {
-    var key = event.arguments[0];
-    if (key === 'front-loaded') {
-      ctx.sp.browser.executeJavaScript(initChatJs);
-    }
-    if (key === 'cef::chat:send') {
-      ctx.sendEvent(event.arguments[1]);
-    }
-  });
+var initChat =
+  'if(!Array.isArray(window.chatMessages))window.chatMessages=[];' +
+  'window._ffChatPush=function(m){' +
+  '  window.chatMessages.push(m);' +
+  '  while(window.chatMessages.length>${BROWSER_LIMIT})window.chatMessages.shift();' +
+  '  window.skyrimPlatform.widgets.set(${WIDGET_EXPR});' +
+  '  if(typeof window.scrollToLastMessage==="function")window.scrollToLastMessage();' +
+  '};' +
+  'if(Array.isArray(window._ffChatPendingMsgs)){' +
+  '  window._ffChatPendingMsgs.forEach(function(m){window._ffChatPush(m);});' +
+  '  window._ffChatPendingMsgs=[];' +
+  '}' +
+  'window.skyrimPlatform.widgets.set(${WIDGET_EXPR});';
+
+ctx.sp.browser.executeJavaScript(initChat);
+
+ctx.sp.on('browserMessage', function(evt) {
+  var key = evt.arguments[0];
+  if (key === 'front-loaded') {
+    ctx.sp.browser.executeJavaScript(initChat);
+    ctx.sendEvent('__reload__');
+  }
+  if (key === 'cef::chat:send') {
+    ctx.sendEvent(evt.arguments[1]);
+  }
+});
 `.trim();
+// ── init ──────────────────────────────────────────────────────────────────────
 function init(mp) {
     mp.makeProperty(CHAT_MSG_PROP, {
         isVisibleByOwner: true,
@@ -1067,16 +1235,161 @@ function init(mp) {
     mp.makeEventSource('cef_chat_send', EVENT_SOURCE_JS);
     console.log('[chat] property and event source registered');
 }
-function broadcast(mp, store, message) {
-    for (const player of store.getAll()) {
-        (0, mpUtil_1.safeSet)(mp, player.actorId, CHAT_MSG_PROP, message);
+// ── handleChatInput ───────────────────────────────────────────────────────────
+//
+// Returns true  → input was consumed (chat channel or IC speech, or __reload__)
+// Returns false → not a chat channel; caller should route to commands
+function handleChatInput(mp, store, userId, text) {
+    // ── Special reload sentinel (fired by EVENT_SOURCE_JS on 'front-loaded') ───
+    if (text === '__reload__') {
+        replayHistory(mp, store, userId);
+        return true;
     }
+    const player = store.get(userId);
+    if (!player)
+        return true; // player not registered yet, silently consume
+    // ── Server-side rate limiting ─────────────────────────────────────────────
+    const now = Date.now();
+    const last = lastMsgTime.get(userId) ?? 0;
+    if (now - last < RATE_LIMIT_MS) {
+        const rateMsg = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp('Please wait before sending another message.', C.system, ['nonrp', 'text']));
+        deliver(mp, player.actorId, userId, rateMsg);
+        return true;
+    }
+    lastMsgTime.set(userId, now);
+    // Strip control characters to prevent rendering artifacts
+    const raw = text.trim().replace(/[\x00-\x1F\x7F]/g, '');
+    if (!raw || raw.length > exports.MAX_MSG_LEN)
+        return true;
+    const lower = raw.toLowerCase();
+    // ── /me <action> ─────────────────────────────────────────────────────────
+    if (lower.startsWith('/me ')) {
+        const action = raw.slice(4).trim();
+        if (!action)
+            return true;
+        const m = mkMsg('rp', sp('* ', C.tagIc, ['nonrp']), sp(player.name, C.nameIc, ['nonrp']), sp(' ' + action + ' *', C.msgMe, ['rp']));
+        sendProximity(mp, store, player.actorId, m, SAY_RANGE);
+        console.log(`[chat:me] ${player.name} ${action}`);
+        return true;
+    }
+    // ── /ooc <text> ───────────────────────────────────────────────────────────
+    if (lower.startsWith('/ooc ') || lower === '/ooc') {
+        const body = raw.slice(5).trim();
+        if (!body)
+            return true;
+        const m = mkMsg('plain', sp('[OOC] ', C.tagOoc, ['nonrp']), sp(player.name + ': ', C.nameOoc, ['nonrp']), sp(body, C.msgOoc, ['nonrp', 'text']));
+        for (const p of store.getAll()) {
+            deliver(mp, p.actorId, p.id, m);
+            pushHistory(p.id, m);
+        }
+        console.log(`[chat:ooc] ${player.name}: ${body}`);
+        return true;
+    }
+    // ── /w <name> <text> ──────────────────────────────────────────────────────
+    if (lower.startsWith('/w ')) {
+        const rest = raw.slice(3).trim();
+        const spaceIdx = rest.indexOf(' ');
+        if (spaceIdx === -1)
+            return true;
+        const targetName = rest.slice(0, spaceIdx).toLowerCase();
+        const body = rest.slice(spaceIdx + 1).trim();
+        if (!body)
+            return true;
+        const target = store.getAll().find(p => p.name.toLowerCase() === targetName);
+        if (!target) {
+            const notFound = mkMsg('plain', sp('[Whisper] ', C.tagWhisper, ['nonrp']), sp(`Player "${rest.slice(0, spaceIdx)}" is not online.`, C.system, ['nonrp', 'text']));
+            deliver(mp, player.actorId, userId, notFound);
+            return true;
+        }
+        const d = dist3(mp.getActorPos(player.actorId), mp.getActorPos(target.actorId));
+        if (d > WHISPER_RANGE) {
+            const tooFar = mkMsg('plain', sp('[Whisper] ', C.tagWhisper, ['nonrp']), sp('Too far away to whisper.', C.system, ['nonrp', 'text']));
+            deliver(mp, player.actorId, userId, tooFar);
+            return true;
+        }
+        const toTarget = mkMsg('plain', sp('[Whisper] ', C.tagWhisper, ['nonrp']), sp(player.name + ' whispers: ', C.nameWhisper, ['nonrp']), sp(body, C.msgWhisper, ['text']));
+        const toSelf = mkMsg('plain', sp('[→ ' + target.name + '] ', C.tagWhisper, ['nonrp']), sp(body, C.msgWhisper, ['text']));
+        deliver(mp, target.actorId, target.id, toTarget);
+        pushHistory(target.id, toTarget);
+        deliver(mp, player.actorId, userId, toSelf);
+        pushHistory(player.id, toSelf);
+        console.log(`[chat:whisper] ${player.name} → ${target.name}: ${body}`);
+        return true;
+    }
+    // ── /f <text> (faction chat) ──────────────────────────────────────────────
+    if (lower.startsWith('/f ') || lower === '/f') {
+        const body = raw.slice(3).trim();
+        if (!body)
+            return true;
+        if (!player.factions.length) {
+            const noFaction = mkMsg('plain', sp('[Faction] ', C.tagFaction, ['nonrp']), sp('You are not in a faction.', C.system, ['nonrp', 'text']));
+            deliver(mp, player.actorId, userId, noFaction);
+            return true;
+        }
+        const m = mkMsg('plain', sp('[Faction] ', C.tagFaction, ['nonrp']), sp(player.name + ': ', C.nameFaction, ['nonrp']), sp(body, C.msgFaction, ['text']));
+        for (const p of store.getAll()) {
+            if (p.factions.some(f => player.factions.includes(f))) {
+                deliver(mp, p.actorId, p.id, m);
+                pushHistory(p.id, m);
+            }
+        }
+        console.log(`[chat:faction] ${player.name}: ${body}`);
+        return true;
+    }
+    // ── Unknown /command → let caller route to command handler ───────────────
+    if (raw.startsWith('/'))
+        return false;
+    // ── IC (proximity speech, default) ───────────────────────────────────────
+    const m = mkMsg('plain', sp(player.name + ': ', C.nameIc, ['text']), sp(raw, C.msgIc, ['text']));
+    sendProximity(mp, store, player.actorId, m, SAY_RANGE);
+    console.log(`[chat:ic] ${player.name}: ${raw}`);
+    return true;
 }
-function sendToPlayer(mp, store, userId, message) {
+// ── Named API ─────────────────────────────────────────────────────────────────
+/**
+ * Send a styled [System] message to a single player.
+ */
+function sendSystem(mp, store, userId, text) {
     const player = store.get(userId);
     if (!player)
         return;
-    (0, mpUtil_1.safeSet)(mp, player.actorId, CHAT_MSG_PROP, message);
+    const m = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp(text, C.system, ['nonrp', 'text']));
+    deliver(mp, player.actorId, userId, m);
+    pushHistory(userId, m);
+}
+/**
+ * Broadcast a styled [System] message to all connected players.
+ */
+function broadcastSystem(mp, store, text) {
+    const m = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp(text, C.system, ['nonrp', 'text']));
+    for (const p of store.getAll()) {
+        deliver(mp, p.actorId, p.id, m);
+        pushHistory(p.id, m);
+    }
+    console.log(`[chat:system] ${text}`);
+}
+/**
+ * Send a plain-text message to a single player.
+ * Kept for backward compatibility with other systems that call this directly.
+ */
+function sendToPlayer(mp, store, userId, text, color = '#ffffff') {
+    const player = store.get(userId);
+    if (!player)
+        return;
+    const m = mkMsg('plain', sp(text, color, ['text']));
+    deliver(mp, player.actorId, userId, m);
+    pushHistory(userId, m);
+}
+/**
+ * Broadcast a plain-text message to all connected players.
+ * Kept for backward compatibility.
+ */
+function broadcast(mp, store, text, color = '#ffffff') {
+    const m = mkMsg('plain', sp(text, color, ['text']));
+    for (const p of store.getAll()) {
+        deliver(mp, p.actorId, p.id, m);
+        pushHistory(p.id, m);
+    }
 }
 
 
@@ -1162,6 +1475,176 @@ function onConnect(mp, store, bus, userId) {
     for (const n of pending) {
         mp.sendCustomPacket(player.actorId, 'courierNotification', n);
     }
+}
+
+
+/***/ },
+
+/***/ 862
+(__unused_webpack_module, exports) {
+
+
+// ── Gamemode WS Relay Client ───────────────────────────────────────────────────
+//
+// Connects the SkyMP gamemode sandbox to the Frostfall-Backend WS relay.
+//
+// Startup flow:
+//   1. init(mp, onChatSend) — registers ff_wsNonce property, opens WS connection
+//   2. registerPlayer(mp, userId, actorId) — generates a one-time nonce,
+//      sends it to the relay (register_nonce), and pushes it to the player's
+//      browser via mp.set so skymp5-front can authenticate itself.
+//
+// Once a player's browser authenticates, the relay sends player_connected and
+// this module marks them as WS-connected. Delivery then routes via WS instead
+// of the mp.set property-sync path. On disconnect the flag is cleared.
+//
+// Environment (read from globalThis.process.env):
+//   RELAY_URL    — default ws://localhost:7778
+//   RELAY_SECRET — default dev-relay-secret
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.init = init;
+exports.registerPlayer = registerPlayer;
+exports.isConnected = isConnected;
+exports.deliver = deliver;
+exports.broadcast = broadcast;
+const g = globalThis;
+const RELAY_URL = g.process?.env?.RELAY_URL ?? 'ws://localhost:7778';
+const RELAY_SECRET = g.process?.env?.RELAY_SECRET ?? 'dev-relay-secret';
+// Property that carries the one-time nonce to the player's browser.
+// UPDATE_OWNER_JS runs in the SP runtime and injects it into window.ffWsNonce,
+// then calls window.ffWsConnect() if the WS client script is already loaded.
+const NONCE_PROP = 'ff_wsNonce';
+const NONCE_UPDATE_JS = `
+if (!ctx.value) return;
+if (ctx.state.nonce === ctx.value) return;
+ctx.state.nonce = ctx.value;
+ctx.sp.browser.executeJavaScript(
+  'window.ffWsNonce=' + JSON.stringify(ctx.value) + ';' +
+  'if(typeof window.ffWsConnect==="function")window.ffWsConnect();'
+);
+`.trim();
+let socket = null;
+let ready = false;
+let onChatSend = null;
+// Players whose browser has completed WS auth — delivery goes over WS for these.
+const connectedPlayers = new Set();
+// Messages queued while socket is not yet ready.
+const sendQueue = [];
+// ── Internal helpers ──────────────────────────────────────────────────────────
+function rawSend(payload) {
+    if (ready && socket && socket.readyState === 1 /* OPEN */) {
+        socket.send(payload);
+    }
+    else {
+        sendQueue.push(payload);
+    }
+}
+function send(msg) {
+    rawSend(JSON.stringify(msg));
+}
+function flushQueue() {
+    while (sendQueue.length > 0) {
+        const payload = sendQueue.shift();
+        if (socket && socket.readyState === 1)
+            socket.send(payload);
+    }
+}
+function connect() {
+    try {
+        socket = new g.WebSocket(RELAY_URL);
+    }
+    catch (err) {
+        console.error('[ws-client] failed to create socket:', err?.message ?? err);
+        setTimeout(connect, 5000);
+        return;
+    }
+    socket.onopen = () => {
+        send({ type: 'auth', role: 'gamemode', secret: RELAY_SECRET });
+    };
+    socket.onmessage = (event) => {
+        let msg;
+        try {
+            msg = JSON.parse(event.data);
+        }
+        catch {
+            return;
+        }
+        if (msg.type === 'auth_ok') {
+            ready = true;
+            console.log('[ws-client] connected to relay at', RELAY_URL);
+            flushQueue();
+            return;
+        }
+        if (msg.type === 'player_connected') {
+            connectedPlayers.add(msg.userId);
+            console.log(`[ws-client] player ${msg.userId} browser connected`);
+            return;
+        }
+        if (msg.type === 'player_disconnected') {
+            connectedPlayers.delete(msg.userId);
+            return;
+        }
+        if (msg.type === 'chat_send' && onChatSend) {
+            onChatSend(msg.userId, msg.text);
+        }
+    };
+    socket.onclose = () => {
+        ready = false;
+        socket = null;
+        connectedPlayers.clear();
+        console.log('[ws-client] relay disconnected — reconnecting in 3s');
+        setTimeout(connect, 3000);
+    };
+    socket.onerror = (err) => {
+        console.error('[ws-client] socket error:', err?.message ?? String(err));
+    };
+}
+// ── Public API ────────────────────────────────────────────────────────────────
+/**
+ * Initialise the WS client. Must be called once during gamemode init.
+ * onChatSendFn is invoked whenever a player sends a chat message over WS.
+ */
+function init(mp, onChatSendFn) {
+    onChatSend = onChatSendFn;
+    mp.makeProperty(NONCE_PROP, {
+        isVisibleByOwner: true,
+        isVisibleByNeighbors: false,
+        updateOwner: NONCE_UPDATE_JS,
+        updateNeighbor: '',
+    });
+    connect();
+    console.log('[ws-client] initialized');
+}
+/**
+ * Call when a player connects to SkyMP.
+ * Generates a nonce, registers it with the relay, and pushes it to the
+ * player's browser so skymp5-front can authenticate its WS connection.
+ */
+function registerPlayer(mp, userId, actorId) {
+    const nonce = Array.from({ length: 16 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
+    send({ type: 'register_nonce', nonce, userId });
+    mp.set(actorId, NONCE_PROP, nonce);
+}
+/**
+ * Returns true if this player's browser has an active WS connection.
+ * Used by chat.ts to choose between WS delivery and mp.set fallback.
+ */
+function isConnected(userId) {
+    return connectedPlayers.has(userId);
+}
+/**
+ * Deliver a chat message to a single player over WS.
+ */
+function deliver(userId, msg) {
+    send({ type: 'chat_deliver', userId, msg });
+}
+/**
+ * Broadcast a chat message to all WS-connected players.
+ * Falls back gracefully — players not on WS won't receive this call,
+ * so callers must still handle non-WS players via mp.set.
+ */
+function broadcast(msg) {
+    send({ type: 'chat_broadcast', msg });
 }
 
 
@@ -2515,6 +2998,135 @@ function onConnect(mp, store, bus, userId) {
         return;
     const level = (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_hunger', HUNGER_MAX);
     store.update(userId, { hungerLevel: level });
+}
+
+
+/***/ },
+
+/***/ 805
+(__unused_webpack_module, exports) {
+
+
+// ── Runtime Global Probe ───────────────────────────────────────────────────────
+//
+// Checks which networking and I/O globals SkyMP's Chakra sandbox exposes.
+// Run once at startup (gated by PROBE_GLOBALS=1 env var or dev mode).
+//
+// Results appear in the SkyMP server console — grep for [probe].
+//
+// What we're looking for:
+//   fetch          → can make outbound HTTP from gamemode directly
+//   WebSocket      → native WS client support
+//   XMLHttpRequest → legacy XHR
+//   require        → Node.js module system (would mean actual Node, not Chakra)
+//   process        → Node.js process object
+//   http / https   → Node.js http modules already required
+//   setInterval    → timer support (needed for polling fallbacks)
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.runGlobalProbes = runGlobalProbes;
+function probe(name, value) {
+    let status;
+    if (value === undefined || value === null) {
+        status = 'missing';
+    }
+    else if (typeof value === 'function') {
+        status = 'function';
+    }
+    else if (typeof value === 'object') {
+        status = 'object';
+    }
+    else {
+        status = 'other';
+    }
+    console.log(`[probe] ${name.padEnd(20)} → ${status}`);
+}
+async function attemptFetch() {
+    // Use httpbin as a neutral echo endpoint — safe, no auth, returns JSON.
+    const url = 'https://httpbin.org/get';
+    try {
+        const g = globalThis;
+        if (typeof g.fetch !== 'function') {
+            console.log('[probe] fetch live test       → skipped (not a function)');
+            return;
+        }
+        console.log('[probe] fetch live test       → attempting GET ' + url);
+        const res = await g.fetch(url);
+        const json = await res.json();
+        console.log('[probe] fetch live test       → OK  status=' + res.status);
+        console.log('[probe] fetch response origin → ' + String(json['origin'] ?? '(none)'));
+    }
+    catch (err) {
+        console.log('[probe] fetch live test       → FAILED  ' + String(err?.message ?? err));
+    }
+}
+/**
+ * Run all runtime global probes and log results to the SkyMP console.
+ * Call this from index.ts init() gated by a dev flag.
+ */
+async function runGlobalProbes() {
+    const g = globalThis;
+    console.log('[probe] ── SkyMP runtime global probe ──────────────────────────');
+    // Networking
+    probe('fetch', g.fetch);
+    probe('WebSocket', g.WebSocket);
+    probe('XMLHttpRequest', g.XMLHttpRequest);
+    // Node.js indicators
+    probe('require', g.require);
+    probe('process', g.process);
+    probe('Buffer', g.Buffer);
+    // Node built-in modules (only resolvable if actual Node.js)
+    try {
+        probe('require("http")', g.require?.('http'));
+    }
+    catch {
+        probe('require("http")', undefined);
+    }
+    try {
+        probe('require("https")', g.require?.('https'));
+    }
+    catch {
+        probe('require("https")', undefined);
+    }
+    try {
+        probe('require("net")', g.require?.('net'));
+    }
+    catch {
+        probe('require("net")', undefined);
+    }
+    // Timer support (important for any polling fallback)
+    probe('setInterval', g.setInterval);
+    probe('setTimeout', g.setTimeout);
+    probe('clearInterval', g.clearInterval);
+    probe('Promise', g.Promise);
+    console.log('[probe] ── live fetch attempt ────────────────────────────────────');
+    await attemptFetch();
+    console.log('[probe] ── WebSocket live test ───────────────────────────────────');
+    attemptWebSocket();
+    console.log('[probe] ── done (ws result will appear asynchronously) ──────────');
+}
+// Test whether the WebSocket constructor actually fires events.
+// Connects to ws://localhost:7778 — start the backend relay before running.
+function attemptWebSocket() {
+    const g = globalThis;
+    if (typeof g.WebSocket !== 'function') {
+        console.log('[probe] WebSocket live test    → skipped (not a function)');
+        return;
+    }
+    try {
+        const ws = new g.WebSocket('ws://localhost:7778');
+        console.log('[probe] WebSocket constructed  → readyState=' + ws.readyState);
+        ws.onopen = () => console.log('[probe] WebSocket onopen       → FIRED (readyState=' + ws.readyState + ')');
+        ws.onclose = (e) => console.log('[probe] WebSocket onclose      → FIRED code=' + e?.code);
+        ws.onerror = (e) => console.log('[probe] WebSocket onerror      → FIRED ' + String(e?.message ?? e));
+        ws.onmessage = (e) => console.log('[probe] WebSocket onmessage    → FIRED data=' + String(e?.data).slice(0, 80));
+        // If no event fires within 5 s, the event loop likely doesn't tick WS callbacks
+        setTimeout(() => {
+            console.log('[probe] WebSocket 5s check     → readyState=' + ws.readyState + ' (0=CONNECTING 1=OPEN 2=CLOSING 3=CLOSED)');
+        }, 5000);
+    }
+    catch (err) {
+        console.log('[probe] WebSocket live test    → FAILED (constructor threw) ' + String(err?.message ?? err));
+    }
 }
 
 

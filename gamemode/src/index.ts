@@ -3,6 +3,8 @@
 
 import { store }    from './core/store'
 import { bus }      from './core/bus'
+import { runGlobalProbes } from './tests/probeGlobals'
+import * as wsClient  from './systems/communication/wsClient'
 import * as chat      from './systems/communication/chat'
 import * as courier   from './systems/communication/courier'
 import * as hunger    from './systems/survival/hunger'
@@ -23,8 +25,25 @@ import type { Mp }    from './types'
 export function init(mp: Mp): void {
   console.log('[gamemode] Frostfall Roleplay — initializing')
 
+  // ── Dev probe: set PROBE_GLOBALS=1 to check what SkyMP's Chakra exposes ───
+  if ((globalThis as any).process?.env?.PROBE_GLOBALS === '1') {
+    runGlobalProbes().catch((err: any) =>
+      console.error('[probe] unhandled error: ' + String(err?.message ?? err)),
+    )
+  }
+
   // ── Chat must be first — other systems may send messages during init ──────
   chat.init(mp)
+
+  // ── WS relay client — init after chat so handleChatInput is available ─────
+  // Defined here as a let so the closure below can capture it once commands
+  // are registered later in this function.
+  let handleCommand: ((userId: number, text: string) => void) | null = null
+  wsClient.init(mp, (userId, text) => {
+    if (!chat.handleChatInput(mp, store, userId, text)) {
+      handleCommand?.(userId, text)
+    }
+  })
 
   // ── System init (courier before housing/prison so notifications work) ─────
   hunger.init(mp, store, bus)
@@ -42,7 +61,8 @@ export function init(mp: Mp): void {
   training.init(mp, store, bus)
 
   // ── Command layer ─────────────────────────────────────────────────────────
-  const { handle: handleCommand } = commands.registerAll(mp, store, bus)
+  const { handle: _handleCommand } = commands.registerAll(mp, store, bus)
+  handleCommand = _handleCommand
 
   // ── Player lifecycle ──────────────────────────────────────────────────────
   mp.on('connect', (userId: number) => {
@@ -51,6 +71,9 @@ export function init(mp: Mp): void {
       const name    = (actorId && mp.get(actorId, 'name')) || `User${userId}`
       store.register(userId, actorId, name)
       console.log(`[gamemode] ${name} (${userId}) connected`)
+
+      // Register player with WS relay so the browser can authenticate
+      wsClient.registerPlayer(mp, userId, actorId)
 
       // Restore per-system state in dependency order
       hunger.onConnect(mp, store, bus, userId)
@@ -81,21 +104,15 @@ export function init(mp: Mp): void {
   // ── Chat input from the browser ───────────────────────────────────────────
   // Called by the C++ layer when ctx.sendEvent(text) fires on the client.
   // First arg is the actor's refrId, second is the raw text the player typed.
+  // handleChatInput handles __reload__, all channels (/me /ooc /w /f), proximity,
+  // history, and returns false only for unknown /commands so we can route them.
   mp['cef_chat_send'] = (refrId: number, text: string) => {
     try {
-      if (typeof text !== 'string' || !text.trim()) return
+      if (typeof text !== 'string') return
       const userId = mp.getUserByActor(refrId)
-      const player = store.get(userId)
-      if (!player) return
-
-      if (text.startsWith('/')) {
+      if (!chat.handleChatInput(mp, store, userId, text)) {
         handleCommand(userId, text)
-        return
       }
-
-      const message = `${player.name}: ${text}`
-      console.log(`[chat] ${message}`)
-      chat.broadcast(mp, store, message)
     } catch (err: any) {
       console.error(`[chat] cef_chat_send error: ${err.message}`)
     }

@@ -1,8 +1,8 @@
 {
   "angle": [
-    7.487843036651611,
+    16.68023681640625,
     0.0,
-    114.39855194091797
+    126.21063232421875
   ],
   "appearanceDump": {
     "hairColor": 1711132,
@@ -247,7 +247,7 @@
       ]
     },
     "leftSpell": 0,
-    "numChanges": 17,
+    "numChanges": 5,
     "rightSpell": 0,
     "voiceSpell": 0
   },
@@ -349,9 +349,9 @@
   "magickaRespawnPercentage": 1.0,
   "nextRelootDatetime": 0,
   "position": [
-    142939.1875,
-    11251.376953125,
-    -8730.6259765625
+    144358.1875,
+    11381.712890625,
+    -8424.7998046875
   ],
   "profileId": 1,
   "recType": 1,

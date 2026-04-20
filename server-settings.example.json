@@ -1,35 +1,39 @@
 {
   "dataDir": "data",
-  "discordAuth" : 
-  {
-    "clientId" : "your-id",
-    "clientSecret" : "your-secret"
-  },
+
+  "name": "Your Server Name",
+  "port": 7777,
+  "maxPlayers": 100,
+
+  "offlineMode": false,
+  "master": "https://api.your-backend.example.com",
+  "masterKey": "replace-with-a-strong-random-secret",
+
   "gamemode": "gamemode.js",
+
   "loadOrder": [
     "Skyrim.esm",
     "Update.esm",
     "Dawnguard.esm",
     "HearthFires.esm",
-    "Dragonborn.esm",
-    "SkyUI_SE.esp",
-    "EnhancedLightsandFX.esp",
-    "ELFX - Exteriors.esp",
-    "ELFX - Weathers.esp",
-    "IcePenguinWorldMap.esp",
-    "ELFX - Hardcore.esp"
+    "Dragonborn.esm"
   ],
   "archives": ["Skyrim - Misc.bsa"],
-  "master": "",
-  "maxPlayers": 1000,
-  "name": "Frostfall Roleplay",
+
   "npcEnabled": false,
   "npcSettings": {},
-  "offlineMode": false,
-  "port": 7777,
+
   "isPapyrusHotReloadEnabled": false,
   "enableGamemodeDataUpdatesBroadcast": true,
   "enableConsoleCommandsForAll": true,
-  "metricsAuth": { "user": "prometheus", "password": "secret" },
-  "damageMultFormulaSettings": { "multiplier": 1.0 }
+
+  "metricsAuth": { "user": "prometheus", "password": "replace-with-a-strong-password" },
+
+  "damageMultFormulaSettings": { "multiplier": 1.0 },
+
+  "discordAuth": {
+    "botToken": "Bot YOUR_BOT_TOKEN_HERE",
+    "guildId": "YOUR_GUILD_ID",
+    "banRoleId": "YOUR_BAN_ROLE_ID"
+  }
 }

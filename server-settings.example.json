@@ -1,22 +1,35 @@
 {
-  "dataDir" : "data",
-  "loadOrder" :
-  [
-    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Skyrim.esm",
-    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Update.esm",
-    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Dawnguard.esm",
-    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/HearthFires.esm",
-    "C:/Program Files (x86)/Steam/steamapps/common/Skyrim Special Edition/Data/Dragonborn.esm"
+  "dataDir": "data",
+  "discordAuth" : 
+  {
+    "clientId" : "your-id",
+    "clientSecret" : "your-secret"
+  },
+  "gamemode": "gamemode.js",
+  "loadOrder": [
+    "Skyrim.esm",
+    "Update.esm",
+    "Dawnguard.esm",
+    "HearthFires.esm",
+    "Dragonborn.esm",
+    "SkyUI_SE.esp",
+    "EnhancedLightsandFX.esp",
+    "ELFX - Exteriors.esp",
+    "ELFX - Weathers.esp",
+    "IcePenguinWorldMap.esp",
+    "ELFX - Hardcore.esp"
   ],
-  "master" : "",
-  "maxPlayers" : 100,
-  "name" : "Frostfall Roleplay",
-  "npcEnabled" : false,
-  "npcSettings" : {},
-  "offlineMode" : true,
-  "port" : 7777,
-  "discordAuth" : {
-    "clientId" : "YOUR_DISCORD_CLIENT_ID",
-    "clientSecret" : "YOUR_DISCORD_CLIENT_SECRET"
-  }
+  "archives": ["Skyrim - Misc.bsa"],
+  "master": "",
+  "maxPlayers": 1000,
+  "name": "Frostfall Roleplay",
+  "npcEnabled": false,
+  "npcSettings": {},
+  "offlineMode": false,
+  "port": 7777,
+  "isPapyrusHotReloadEnabled": false,
+  "enableGamemodeDataUpdatesBroadcast": true,
+  "enableConsoleCommandsForAll": true,
+  "metricsAuth": { "user": "prometheus", "password": "secret" },
+  "damageMultFormulaSettings": { "multiplier": 1.0 }
 }

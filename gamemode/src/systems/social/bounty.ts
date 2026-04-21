@@ -1,6 +1,6 @@
 // ── Bounty ────────────────────────────────────────────────────────────────────
 
-import { safeGet } from '../../core/mpUtil'
+import { safeGet, safeSet } from '../../core/mpUtil'
 import type { Mp, Store, Bus } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -34,7 +34,7 @@ export function addBounty(mp: Mp, store: Store, bus: Bus, playerId: number, hold
   const newBounty = Object.assign({}, player.bounty, { [holdId]: newAmount })
   store.update(playerId, { bounty: newBounty })
   _persist(mp, player.actorId, newBounty)
-  mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: newAmount })
+  if (player.actorId) mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: newAmount })
   bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount, delta: amount })
 }
 
@@ -44,7 +44,7 @@ export function clearBounty(mp: Mp, store: Store, bus: Bus, playerId: number, ho
   const newBounty = Object.assign({}, player.bounty, { [holdId]: 0 })
   store.update(playerId, { bounty: newBounty })
   _persist(mp, player.actorId, newBounty)
-  mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: 0 })
+  if (player.actorId) mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: 0 })
   bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount: 0, delta: -(player.bounty[holdId] ?? 0) })
 }
 
@@ -54,7 +54,7 @@ function _persist(mp: Mp, actorId: number, bountyMap: Record<string, number>): v
   const records = Object.entries(bountyMap)
     .filter(([, amount]) => amount > 0)
     .map(([holdId, amount]) => ({ holdId, amount, updatedAt: Date.now() }))
-  mp.set(actorId, 'ff_bounty', records)
+  safeSet(mp, actorId, 'ff_bounty', records)
 }
 
 // ── Init ─────────────────────────────────────────────────────────────────────

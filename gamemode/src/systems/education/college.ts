@@ -1,6 +1,6 @@
 // ── College of Winterhold ─────────────────────────────────────────────────────
 
-import { safeGet } from '../../core/mpUtil'
+import { safeGet, safeSet } from '../../core/mpUtil'
 import type { Mp, Store, Bus, LectureSession } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -72,8 +72,7 @@ export function getTomeRank(tomeBaseId: number): string | null {
 export function getStudyXp(mp: Mp, store: Store, playerId: number): number {
   const player = store.get(playerId)
   if (!player) return 0
-  const saved = mp.get(player.actorId, 'ff_study_xp')
-  return (saved !== null && saved !== undefined) ? saved as number : 0
+  return safeGet<number>(mp, player.actorId, 'ff_study_xp', 0)
 }
 
 export function getCollegeRankForPlayer(mp: Mp, store: Store, playerId: number): string {
@@ -88,9 +87,10 @@ export function studyTome(mp: Mp, store: Store, bus: Bus, playerId: number, tome
   const xpGain = TOME_XP[tomeBaseId]
   if (xpGain === undefined) return
 
+  if (!player.actorId) return
   const current = getStudyXp(mp, store, playerId)
   const newXp   = current + xpGain
-  mp.set(player.actorId, 'ff_study_xp', newXp)
+  safeSet(mp, player.actorId, 'ff_study_xp', newXp)
   bus.dispatch({ type: 'collegeXpGained', playerId, xpGain, totalXp: newXp })
 }
 
@@ -119,18 +119,18 @@ export function endLecture(mp: Mp, store: Store, bus: Bus, lecturerId: number, n
   // Award XP + boost to attendees
   for (const attendeeId of session.attendees) {
     const attendee = store.get(attendeeId)
-    if (!attendee) continue
+    if (!attendee || !attendee.actorId) continue
     const current = getStudyXp(mp, store, attendeeId)
-    mp.set(attendee.actorId, 'ff_study_xp', current + LECTURE_XP_ATTENDEE)
-    mp.set(attendee.actorId, 'ff_lecture_boost', boostExpiry)
+    safeSet(mp, attendee.actorId, 'ff_study_xp', current + LECTURE_XP_ATTENDEE)
+    safeSet(mp, attendee.actorId, 'ff_lecture_boost', boostExpiry)
     bus.dispatch({ type: 'lectureXpGained', playerId: attendeeId, xpGain: LECTURE_XP_ATTENDEE })
   }
 
   // Award XP only to lecturer
   const lecturer = store.get(lecturerId)
-  if (lecturer) {
+  if (lecturer && lecturer.actorId) {
     const current = getStudyXp(mp, store, lecturerId)
-    mp.set(lecturer.actorId, 'ff_study_xp', current + LECTURE_XP_LECTURER)
+    safeSet(mp, lecturer.actorId, 'ff_study_xp', current + LECTURE_XP_LECTURER)
     bus.dispatch({ type: 'lectureXpGained', playerId: lecturerId, xpGain: LECTURE_XP_LECTURER })
   }
 
@@ -146,7 +146,7 @@ export function getActiveLecture(lecturerId: number): LectureSession | null {
 export function hasLectureBoost(mp: Mp, store: Store, playerId: number, now?: number): boolean {
   const player = store.get(playerId)
   if (!player) return false
-  const expiry = mp.get(player.actorId, 'ff_lecture_boost') as number | null
+  const expiry = safeGet<number>(mp, player.actorId, 'ff_lecture_boost', 0)
   if (!expiry) return false
   return (now ?? Date.now()) < expiry
 }
@@ -154,7 +154,7 @@ export function hasLectureBoost(mp: Mp, store: Store, playerId: number, now?: nu
 export function getLectureBoostRemainingMs(mp: Mp, store: Store, playerId: number, now?: number): number {
   const player = store.get(playerId)
   if (!player) return 0
-  const expiry = mp.get(player.actorId, 'ff_lecture_boost') as number | null
+  const expiry = safeGet<number>(mp, player.actorId, 'ff_lecture_boost', 0)
   if (!expiry) return 0
   return Math.max(0, expiry - (now ?? Date.now()))
 }

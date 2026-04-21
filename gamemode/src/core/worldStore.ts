@@ -23,9 +23,13 @@ function _load(): WorldData {
 }
 
 function _save(): void {
-  const dir = path.dirname(FILE)
-  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
-  fs.writeFileSync(FILE, JSON.stringify(_cache, null, 2))
+  try {
+    const dir = path.dirname(FILE)
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
+    fs.writeFileSync(FILE, JSON.stringify(_cache, null, 2))
+  } catch (err: any) {
+    console.error('[worldStore] Failed to save world data:', err?.message ?? err)
+  }
 }
 
 export function get<T = unknown>(key: string): T | null {

@@ -1,6 +1,6 @@
 // ── Economy ───────────────────────────────────────────────────────────────────
 
-import { safeGet } from '../../core/mpUtil'
+import { safeGet, safeSet } from '../../core/mpUtil'
 import type { Mp, Store, Bus, Inventory } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -36,8 +36,8 @@ export function transferGold(mp: Mp, store: Store, fromId: number, toId: number,
   store.update(toId,   { septims: toGold })
 
   // Sync to inventory gold
-  mp.set(from.actorId, 'inv', _setGoldInInventory(mp.get(from.actorId, 'inv'), fromGold))
-  mp.set(to.actorId,   'inv', _setGoldInInventory(mp.get(to.actorId,   'inv'), toGold))
+  safeSet(mp, from.actorId, 'inv', _setGoldInInventory(safeGet<Inventory | null>(mp, from.actorId, 'inv', null), fromGold))
+  safeSet(mp, to.actorId,   'inv', _setGoldInInventory(safeGet<Inventory | null>(mp, to.actorId,   'inv', null), toGold))
 
   return true
 }
@@ -72,8 +72,8 @@ export function init(mp: Mp, store: Store, bus: Bus): void {
             const newHours   = player.stipendPaidHours + 1
             store.update(player.id, { septims: newSeptims, stipendPaidHours: newHours })
             const inv = safeGet<Inventory | null>(mp, player.actorId, 'inv', null)
-            mp.set(player.actorId, 'inv', _setGoldInInventory(inv, newSeptims))
-            mp.set(player.actorId, 'ff_stipendHours', newHours)
+            safeSet(mp, player.actorId, 'inv', _setGoldInInventory(inv, newSeptims))
+            safeSet(mp, player.actorId, 'ff_stipendHours', newHours)
             bus.dispatch({ type: 'stipendTick', playerId: player.id, septims: newSeptims, stipendPaidHours: newHours })
           }
         }

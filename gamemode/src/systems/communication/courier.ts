@@ -1,6 +1,6 @@
 // ── Courier ───────────────────────────────────────────────────────────────────
 
-import { safeGet } from '../../core/mpUtil'
+import { safeGet, safeSet } from '../../core/mpUtil'
 import type { Mp, Store, Bus, Notification } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -45,28 +45,28 @@ export function getUnread(notifications: Notification[]): Notification[] {
 
 export function sendNotification(mp: Mp, store: Store, notification: Notification): void {
   const recipient = store.get(notification.toPlayerId)
-  if (!recipient) return
+  if (!recipient || !recipient.actorId) return
 
-  const existing: Notification[] = mp.get(recipient.actorId, 'ff_courier') ?? []
+  const existing = safeGet<Notification[]>(mp, recipient.actorId, 'ff_courier', [])
   const pruned = filterExpired(existing)
   pruned.push(notification)
-  mp.set(recipient.actorId, 'ff_courier', pruned)
+  safeSet(mp, recipient.actorId, 'ff_courier', pruned)
 
   mp.sendCustomPacket(recipient.actorId, 'courierNotification', notification as unknown as Record<string, unknown>)
 }
 
 export function markRead(mp: Mp, store: Store, playerId: number, notificationId: number): void {
   const player = store.get(playerId)
-  if (!player) return
-  const notes: Notification[] = mp.get(player.actorId, 'ff_courier') ?? []
+  if (!player || !player.actorId) return
+  const notes = safeGet<Notification[]>(mp, player.actorId, 'ff_courier', [])
   const updated = notes.map(n => n.id === notificationId ? Object.assign({}, n, { read: true }) : n)
-  mp.set(player.actorId, 'ff_courier', updated)
+  safeSet(mp, player.actorId, 'ff_courier', updated)
 }
 
 export function getPendingNotifications(mp: Mp, store: Store, playerId: number): Notification[] {
   const player = store.get(playerId)
-  if (!player) return []
-  const notes: Notification[] = mp.get(player.actorId, 'ff_courier') ?? []
+  if (!player || !player.actorId) return []
+  const notes = safeGet<Notification[]>(mp, player.actorId, 'ff_courier', [])
   return getUnread(filterExpired(notes))
 }
 

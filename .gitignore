@@ -17,3 +17,4 @@ package-lock.json
 /gamemode-docs
 data/Skyrim - Misc.bsa
 /gamemode/node_modules
+signing-private.pem

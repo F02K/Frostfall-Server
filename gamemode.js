@@ -3182,3 +3182,4 @@ module.exports = require("path");
 /******/ 	
 /******/ })()
 ;
+// skymp:sig:y:frostfall:ogJhrWXGqhA//Wx5FPjhfzIHiKRS7MOGeHOiVeUmvFfeBRRQD9QVOIvnwCQGfM1kP2u5DQj/8xHdg/eAQAzuBQ==

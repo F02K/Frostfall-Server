@@ -1508,7 +1508,7 @@ exports.isConnected = isConnected;
 exports.deliver = deliver;
 exports.broadcast = broadcast;
 const g = globalThis;
-const RELAY_URL = g.process?.env?.RELAY_URL ?? 'ws://localhost:7778';
+const RELAY_URL = g.process?.env?.RELAY_URL ?? 'ws://frostfall.online:7778';
 const RELAY_SECRET = g.process?.env?.RELAY_SECRET ?? 'dev-relay-secret';
 // Property that carries the one-time nonce to the player's browser.
 // UPDATE_OWNER_JS runs in the SP runtime and injects it into window.ffWsNonce,
@@ -3182,4 +3182,4 @@ module.exports = require("path");
 /******/ 	
 /******/ })()
 ;
-// skymp:sig:y:frostfall:ogJhrWXGqhA//Wx5FPjhfzIHiKRS7MOGeHOiVeUmvFfeBRRQD9QVOIvnwCQGfM1kP2u5DQj/8xHdg/eAQAzuBQ==
+// skymp:sig:y:frostfall:aPX8ZbkukFgy9Lq65PydCA69E6ou+3keGiZM8YSxJ85phMbvqMf/yovWs6ZK++AR+rt9Rq8LsBW9HntNv0AXCg==

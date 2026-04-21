@@ -1,4 +1,16 @@
 const path = require('path')
+const { signFile } = require('../sign-gamemode')
+
+const outputFile = path.resolve(__dirname, '..', 'gamemode.js')
+
+class SignGamemodePlugin {
+  apply(compiler) {
+    compiler.hooks.done.tap('SignGamemodePlugin', (stats) => {
+      if (stats.hasErrors()) return
+      signFile(outputFile)
+    })
+  }
+}
 
 /** @type {import('webpack').Configuration} */
 module.exports = {
@@ -32,4 +44,5 @@ module.exports = {
   optimization: {
     minimize: false,
   },
+  plugins: [new SignGamemodePlugin()],
 }

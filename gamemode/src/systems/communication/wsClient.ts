@@ -158,7 +158,7 @@ export function registerPlayer(mp: Mp, userId: number, actorId: number): void {
   ).join('')
 
   send({ type: 'register_nonce', nonce, userId })
-  mp.set(actorId, NONCE_PROP, nonce)
+  if (actorId) mp.set(actorId, NONCE_PROP, nonce)
 }
 
 /**

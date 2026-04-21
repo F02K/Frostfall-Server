@@ -1,6 +1,6 @@
 // ── Skills ────────────────────────────────────────────────────────────────────
 
-import { safeGet } from '../../core/mpUtil'
+import { safeGet, safeSet } from '../../core/mpUtil'
 import * as factions from '../social/factions'
 import type { Mp, Store, Bus, StudyBoost } from '../../types'
 
@@ -49,7 +49,9 @@ export function getSkillLevel(xp: number): number {
 }
 
 export function getSkillXp(mp: Mp, playerId: number, skillId: string): number {
-  const xpMap: Record<string, number> = mp.get(_actorForPlayer(mp, playerId), 'ff_skill_xp') ?? {}
+  const actorId = _actorForPlayer(mp, playerId)
+  if (!actorId) return 0
+  const xpMap = safeGet<Record<string, number>>(mp, actorId, 'ff_skill_xp', {})
   return xpMap[skillId] ?? 0
 }
 
@@ -82,36 +84,40 @@ export function addSkillXp(mp: Mp, store: Store, playerId: number, skillId: stri
   const newXp  = Math.min(current + gain, cap)
   const actual = newXp - current
 
-  const xpMap: Record<string, number> = mp.get(player.actorId, 'ff_skill_xp') ?? {}
+  const xpMap: Record<string, number> = safeGet<Record<string, number>>(mp, player.actorId, 'ff_skill_xp', {})
   xpMap[skillId] = newXp
-  mp.set(player.actorId, 'ff_skill_xp', xpMap)
+  safeSet(mp, player.actorId, 'ff_skill_xp', xpMap)
   return actual
 }
 
 export function grantStudyBoost(mp: Mp, playerId: number, skillId: string, multiplier: number, onlineMs: number): void {
   const actorId = _actorForPlayer(mp, playerId)
-  const boosts: StudyBoost[] = mp.get(actorId, 'ff_study_boosts') ?? []
+  if (!actorId) return
+  const boosts: StudyBoost[] = safeGet<StudyBoost[]>(mp, actorId, 'ff_study_boosts', [])
   boosts.push({ skillId, multiplier, remainingOnlineMs: onlineMs, sessionStart: Date.now() })
-  mp.set(actorId, 'ff_study_boosts', boosts)
+  safeSet(mp, actorId, 'ff_study_boosts', boosts)
 }
 
 export function getActiveStudyBoost(mp: Mp, playerId: number, skillId: string, now?: number): StudyBoost | null {
   _consumeBoostTime(mp, playerId, now)
   const actorId = _actorForPlayer(mp, playerId)
-  const boosts: StudyBoost[] = mp.get(actorId, 'ff_study_boosts') ?? []
+  if (!actorId) return null
+  const boosts: StudyBoost[] = safeGet<StudyBoost[]>(mp, actorId, 'ff_study_boosts', [])
   return boosts.find(b => b.skillId === skillId && b.remainingOnlineMs > 0) ?? null
 }
 
 export function getStudyBoosts(mp: Mp, playerId: number): StudyBoost[] {
   const actorId = _actorForPlayer(mp, playerId)
-  return mp.get(actorId, 'ff_study_boosts') ?? []
+  if (!actorId) return []
+  return safeGet<StudyBoost[]>(mp, actorId, 'ff_study_boosts', [])
 }
 
 // ── Internal ──────────────────────────────────────────────────────────────────
 
 function _consumeBoostTime(mp: Mp, playerId: number, now?: number): void {
   const actorId = _actorForPlayer(mp, playerId)
-  const boosts: StudyBoost[] = mp.get(actorId, 'ff_study_boosts') ?? []
+  if (!actorId) return
+  const boosts: StudyBoost[] = safeGet<StudyBoost[]>(mp, actorId, 'ff_study_boosts', [])
   const start = sessionStart.get(playerId)
   if (!start) return
   const elapsed = (now ?? Date.now()) - start
@@ -119,7 +125,7 @@ function _consumeBoostTime(mp: Mp, playerId: number, now?: number): void {
     .map(b => Object.assign({}, b, { remainingOnlineMs: Math.max(0, b.remainingOnlineMs - elapsed) }))
     .filter(b => b.remainingOnlineMs > 0)
   sessionStart.set(playerId, now ?? Date.now())
-  mp.set(actorId, 'ff_study_boosts', updated)
+  safeSet(mp, actorId, 'ff_study_boosts', updated)
 }
 
 export function onSkillPlayerDisconnect(mp: Mp, playerId: number, now?: number): void {

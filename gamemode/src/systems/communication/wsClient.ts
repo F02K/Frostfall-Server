@@ -25,13 +25,15 @@ const RELAY_SECRET = g.process?.env?.RELAY_SECRET ?? 'dev-relay-secret'
 
 // Property that carries the one-time nonce to the player's browser.
 // UPDATE_OWNER_JS runs in the SP runtime and injects it into window.ffWsNonce,
-// then calls window.ffWsConnect() if the WS client script is already loaded.
+// sets window.ffWsUrl so the browser connects to the real relay host instead of
+// the localhost:7778 fallback, then calls window.ffWsConnect().
 const NONCE_PROP = 'ff_wsNonce'
 const NONCE_UPDATE_JS = `
 if (!ctx.value) return;
 if (ctx.state.nonce === ctx.value) return;
 ctx.state.nonce = ctx.value;
 ctx.sp.browser.executeJavaScript(
+  'window.ffWsUrl=${JSON.stringify(RELAY_URL)};' +
   'window.ffWsNonce=' + JSON.stringify(ctx.value) + ';' +
   'if(typeof window.ffWsConnect==="function")window.ffWsConnect();'
 );

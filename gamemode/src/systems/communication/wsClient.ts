@@ -20,7 +20,7 @@ import type { Mp } from '../../types'
 
 const g = globalThis as any
 
-const RELAY_URL    = g.process?.env?.RELAY_URL    ?? 'ws://frostfall.online:7778'
+const RELAY_URL    = g.process?.env?.RELAY_URL    ?? 'ws://ws.frostfall.online:7778'
 const RELAY_SECRET = g.process?.env?.RELAY_SECRET ?? 'dev-relay-secret'
 
 // Property that carries the one-time nonce to the player's browser.

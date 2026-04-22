@@ -65,30 +65,52 @@ export function init(mp: Mp): void {
   handleCommand = _handleCommand
 
   // ── Player lifecycle ──────────────────────────────────────────────────────
-  mp.on('connect', (userId: number) => {
-    try {
-      const actorId = mp.getUserActor(userId)
-      const name    = (actorId && mp.get(actorId, 'name')) || `User${userId}`
-      store.register(userId, actorId, name)
-      console.log(`[gamemode] ${name} (${userId}) connected`)
+  mp.on('connect', (userId) => {
+    const tryFinishConnect = (attempt = 0) => {
+      try {
+        const actorId = mp.getUserActor(userId);
 
-      // Register player with WS relay so the browser can authenticate
-      wsClient.registerPlayer(mp, userId, actorId)
+        // Actor is not ready yet — retry shortly.
+        if (!actorId) {
+          if (attempt < 20) {
+            return setTimeout(() => tryFinishConnect(attempt + 1), 250);
+          }
+          console.error(`[gamemode] connect error for ${userId}: actor never became ready (actorId=0)`);
+          return;
+        }
 
-      // Restore per-system state in dependency order
-      hunger.onConnect(mp, store, bus, userId)
-      drunkBar.onConnect(mp, store, bus, userId)
-      economy.onConnect(mp, store, bus, userId)
-      bounty.onConnect(mp, store, bus, userId)
-      factions.onConnect(mp, store, bus, userId)
-      housing.onConnect(mp, store, bus, userId)
-      college.onConnect(mp, store, bus, userId)
-      skills.onConnect(mp, store, bus, userId)
-      courier.onConnect(mp, store, bus, userId)
-    } catch (err: any) {
-      console.error(`[gamemode] connect error for ${userId}: ${err.message}`)
-    }
-  })
+        const name = mp.get(actorId, 'name') || `User${userId}`;
+
+        // Prevent duplicate registration if the retry fires after they already got registered.
+        const existing = store.get(userId);
+        if (existing && existing.actorId) {
+          console.log(`[gamemode] ${name} (${userId}) already initialized, skipping duplicate connect`);
+          return;
+        }
+
+        store.register(userId, actorId, name);
+        console.log(`[gamemode] ${name} (${userId}) connected`);
+
+        // Register player with WS relay so the browser can authenticate
+        wsClient.registerPlayer(mp, userId, actorId);
+
+        // Restore per-system state in dependency order
+        hunger.onConnect(mp, store, bus, userId);
+        drunkBar.onConnect(mp, store, bus, userId);
+        economy.onConnect(mp, store, bus, userId);
+        bounty.onConnect(mp, store, bus, userId);
+        factions.onConnect(mp, store, bus, userId);
+        housing.onConnect(mp, store, bus, userId);
+        college.onConnect(mp, store, bus, userId);
+        skills.onConnect(mp, store, bus, userId);
+        courier.onConnect(mp, store, bus, userId);
+      }
+      catch (err: any) {
+        console.error(`[gamemode] connect error for ${userId}: ${err.message}`);
+      }
+    };
+    tryFinishConnect();
+  });
 
   mp.on('disconnect', (userId: number) => {
     try {

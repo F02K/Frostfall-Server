@@ -1,6 +1,7 @@
 // ── College of Winterhold ─────────────────────────────────────────────────────
 
 import { safeGet, safeSet } from '../../core/mpUtil'
+import { signScript } from '../../core/signHelper'
 import type { Mp, Store, Bus, LectureSession } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -174,14 +175,14 @@ export function init(mp: Mp, store: Store, bus: Bus): void {
   mp.makeProperty('ff_lecture_boost', {
     isVisibleByOwner: true,
     isVisibleByNeighbors: false,
-    updateOwner: `
+    updateOwner: signScript(`
       (() => {
         const expiry = ctx.value;
         const now    = Date.now();
         if (!expiry || now >= expiry) return { magickaRegenMult: 1.0, boostActive: false };
         return { magickaRegenMult: ${LECTURE_MAGICKA_MULT}, boostActive: true };
       })()
-    `,
+    `),
     updateNeighbor: '',
   })
 

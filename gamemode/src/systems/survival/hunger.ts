@@ -1,6 +1,7 @@
 // ── Hunger ────────────────────────────────────────────────────────────────────
 
 import { safeGet, safeSet } from '../../core/mpUtil'
+import { signScript } from '../../core/signHelper'
 import type { Mp, Store, Bus } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -39,7 +40,7 @@ export function init(mp: Mp, store: Store, bus: Bus): void {
   mp.makeProperty('ff_hunger', {
     isVisibleByOwner: true,
     isVisibleByNeighbors: false,
-    updateOwner: `
+    updateOwner: signScript(`
       (() => {
         const h = ctx.value;
         if (h === null || h === undefined) return;
@@ -47,7 +48,7 @@ export function init(mp: Mp, store: Store, bus: Bus): void {
         if (h >= 10) return { staminaRegenMult: 1.4 };
         return {};
       })()
-    `,
+    `),
     updateNeighbor: '',
   })
 

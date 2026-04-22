@@ -1,6 +1,7 @@
 // ── Drunk Bar ─────────────────────────────────────────────────────────────────
 
 import { safeGet, safeSet } from '../../core/mpUtil'
+import { signScript } from '../../core/signHelper'
 import type { Mp, Store, Bus } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -65,7 +66,7 @@ export function init(mp: Mp, store: Store, bus: Bus): void {
   mp.makeProperty('ff_drunk', {
     isVisibleByOwner: true,
     isVisibleByNeighbors: false,
-    updateOwner: `
+    updateOwner: signScript(`
       (() => {
         const d = ctx.value;
         if (d === null || d === undefined) return;
@@ -73,7 +74,7 @@ export function init(mp: Mp, store: Store, bus: Bus): void {
         if (d >= 5) return { weaponSpeedMult: 0.8 };
         return {};
       })()
-    `,
+    `),
     updateNeighbor: '',
   })
 

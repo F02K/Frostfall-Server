@@ -29,6 +29,7 @@
 //   broadcast(mp, store, text, color?)                 — legacy plain-text broadcast
 
 import { safeSet } from '../../core/mpUtil'
+import { signScript } from '../../core/signHelper'
 import * as wsClient from './wsClient'
 import type { Mp, Store } from '../../types'
 
@@ -144,12 +145,16 @@ function sendProximity(
 // so each widget update carries the latest snapshot, giving React a new
 // reference and triggering the useEffect([props.messages]) scroll handler.
 
+// isInputHidden:true — keep the input hidden until the player explicitly opens
+// chat (e.g. presses Enter).  Showing it immediately on load would focus the
+// input and swallow all keyboard input before the actor is created, making the
+// player unable to move.  The input is shown by the client when needed.
 const WIDGET_EXPR =
   '[{type:"chat",' +
   'messages:window.chatMessages.slice(),' +
   'send:function(t){window.skyrimPlatform.sendMessage("cef::chat:send",t);},' +
   'placeholder:"",' +
-  'isInputHidden:false}]'
+  'isInputHidden:true}]'
 
 // Runs in the SP runtime when ff_chatMsg changes on the owning actor.
 //
@@ -217,11 +222,11 @@ export function init(mp: Mp): void {
   mp.makeProperty(CHAT_MSG_PROP, {
     isVisibleByOwner:    true,
     isVisibleByNeighbors: false,
-    updateOwner:         UPDATE_OWNER_JS,
+    updateOwner:         signScript(UPDATE_OWNER_JS),
     updateNeighbor:      '',
   })
 
-  mp.makeEventSource('cef_chat_send', EVENT_SOURCE_JS)
+  mp.makeEventSource('cef_chat_send', signScript(EVENT_SOURCE_JS))
 
   console.log('[chat] property and event source registered')
 }

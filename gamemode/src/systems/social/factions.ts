@@ -98,5 +98,7 @@ export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void 
   const memberships = _getMemberships(mp, player.actorId)
   const factionIds  = memberships.map(m => m.factionId)
   store.update(userId, { factions: factionIds })
-  mp.sendCustomPacket(player.actorId, 'factionsSync', { memberships })
+  // 3-arg sendCustomPacket is an undeclared native extension — guard so a missing
+  // implementation doesn't abort the rest of the onConnect chain.
+  try { mp.sendCustomPacket(player.actorId, 'factionsSync', { memberships }) } catch { /* noop */ }
 }

@@ -16,6 +16,7 @@
 //   RELAY_URL    — default ws://localhost:7778
 //   RELAY_SECRET — default dev-relay-secret
 
+import { signScript } from '../../core/signHelper'
 import type { Mp } from '../../types'
 
 const g = globalThis as any
@@ -46,6 +47,10 @@ type ChatSendHandler = (userId: number, text: string) => void
 let socket: any = null
 let ready = false
 let onChatSend: ChatSendHandler | null = null
+// Exponential back-off: start at 3 s, double each failure up to 60 s.
+// Resets to 3 s on a successful connection so recovery is fast once the relay
+// comes back.
+let _reconnectDelay = 3000
 
 // Players whose browser has completed WS auth — delivery goes over WS for these.
 const connectedPlayers = new Set<number>()
@@ -79,7 +84,8 @@ function connect(): void {
     socket = new g.WebSocket(RELAY_URL)
   } catch (err: any) {
     console.error('[ws-client] failed to create socket:', err?.message ?? err)
-    setTimeout(connect, 5000)
+    _reconnectDelay = Math.min(_reconnectDelay * 2, 60000)
+    setTimeout(connect, _reconnectDelay)
     return
   }
 
@@ -93,6 +99,7 @@ function connect(): void {
 
     if (msg.type === 'auth_ok') {
       ready = true
+      _reconnectDelay = 3000  // reset back-off on successful connect
       console.log('[ws-client] connected to relay at', RELAY_URL)
       flushQueue()
       return
@@ -118,11 +125,14 @@ function connect(): void {
     ready = false
     socket = null
     connectedPlayers.clear()
-    console.log('[ws-client] relay disconnected — reconnecting in 3s')
-    setTimeout(connect, 3000)
+    _reconnectDelay = Math.min(_reconnectDelay * 2, 60000)
+    console.log(`[ws-client] relay disconnected — reconnecting in ${_reconnectDelay / 1000}s`)
+    setTimeout(connect, _reconnectDelay)
   }
 
   socket.onerror = (err: any) => {
+    // Only log the first error per connection attempt to avoid spamming the log.
+    // The onclose handler fires immediately after and will schedule the retry.
     console.error('[ws-client] socket error:', err?.message ?? String(err))
   }
 }
@@ -139,7 +149,7 @@ export function init(mp: Mp, onChatSendFn: ChatSendHandler): void {
   mp.makeProperty(NONCE_PROP, {
     isVisibleByOwner:     true,
     isVisibleByNeighbors: false,
-    updateOwner:          NONCE_UPDATE_JS,
+    updateOwner:          signScript(NONCE_UPDATE_JS),
     updateNeighbor:       '',
   })
 

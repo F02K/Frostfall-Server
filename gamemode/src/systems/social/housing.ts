@@ -167,8 +167,10 @@ export function onConnect(mp: Mp, store: Store, bus: Bus, userId: number): void 
   if (!player || !player.actorId) return
   const owned = getOwnedProperties(userId).map(p => p.id)
   store.update(userId, { properties: owned })
-  if (player.holdId) {
-    const list = getPropertiesByHold(player.holdId)
-    mp.sendCustomPacket(player.actorId, 'propertyList', { properties: list })
-  }
+  // Send property list for the player's hold (empty list if no hold assigned yet
+  // so the client always gets a sync event and knows state is current).
+  const list = player.holdId ? getPropertiesByHold(player.holdId) : []
+  // 3-arg sendCustomPacket is an undeclared native extension — guard so a missing
+  // implementation doesn't abort the rest of the onConnect chain.
+  try { mp.sendCustomPacket(player.actorId, 'propertyList', { properties: list }) } catch { /* noop */ }
 }

@@ -49,7 +49,26 @@ function signFile(filePath) {
   console.log(`[sign-gamemode] Signed ${path.basename(filePath)} with key "${KEY_ID}"`)
 }
 
-module.exports = { signFile }
+/**
+ * Signs an arbitrary JS string so the client's ServerJsVerificationService
+ * can verify it.  Appends `\n// skymp:sig:y:<keyId>:<base64sig>` to the end.
+ * The verifier reads everything before that separator newline as the payload,
+ * so the signature covers exactly `src` as passed in.  Idempotent — strips
+ * any existing signature before re-signing.
+ *
+ * @param {string} src  The JS source string to sign.
+ * @returns {string}    The signed string (original content + signature line).
+ */
+function signScript(src) {
+  // Strip any existing signature line so re-signing is idempotent.
+  const idx = src.lastIndexOf('\n' + SIG_PREFIX)
+  if (idx !== -1) src = src.substring(0, idx)
+
+  const sig = sign(null, Buffer.from(src, 'utf8'), PRIVATE_KEY).toString('base64')
+  return src + `\n${SIG_PREFIX}${KEY_ID}:${sig}`
+}
+
+module.exports = { signFile, signScript }
 
 // Run as a standalone script when invoked directly.
 if (require.main === module) {

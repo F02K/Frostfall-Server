@@ -565,6 +565,60 @@ function safeSet(mp, actorId, key, value) {
 
 /***/ },
 
+/***/ 720
+(__unused_webpack_module, exports, __webpack_require__) {
+
+
+// ── Script signing helper ─────────────────────────────────────────────────────
+//
+// Signs a JS string so the SkyMP client's ServerJsVerificationService can
+// verify it against the public key advertised in the Frostfall serverinfo.
+//
+// sign-gamemode.js lives one level above the gamemode directory.  We load it
+// at RUNTIME via a dynamic path (eval'd require) so webpack cannot statically
+// analyse the dependency and attempt to bundle it — the file must remain on
+// disk so it can read signing-private.pem relative to its own __dirname.
+//
+// If the file is not present (e.g. dev environment without the key), signScript
+// returns the src unchanged and the client falls back to skipping verification
+// when no publicKeys are configured.
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.signScript = signScript;
+const path_1 = __importDefault(__webpack_require__(928));
+let _sign = undefined;
+function loadSigner() {
+    try {
+        // eval() prevents webpack from resolving the require at bundle time.
+        // eslint-disable-next-line no-eval
+        const mod = eval('require')(path_1.default.join(process.cwd(), 'sign-gamemode.js'));
+        if (typeof mod?.signScript === 'function') {
+            console.log('[signHelper] Loaded sign-gamemode.js — scripts will be signed');
+            return mod.signScript;
+        }
+        console.warn('[signHelper] sign-gamemode.js has no signScript export — scripts will be unsigned');
+    }
+    catch (err) {
+        console.warn('[signHelper] Could not load sign-gamemode.js:', err?.message ?? err, '— scripts will be unsigned');
+    }
+    return null;
+}
+/**
+ * Signs a JS source string so the client can verify it.
+ * Appends `\n// skymp:sig:y:<keyId>:<sig>` to the content.
+ * Returns the original string unchanged if the signer is unavailable.
+ */
+function signScript(src) {
+    if (_sign === undefined)
+        _sign = loadSigner();
+    return _sign ? _sign(src) : src;
+}
+
+
+/***/ },
+
 /***/ 552
 (__unused_webpack_module, exports) {
 
@@ -650,10 +704,15 @@ function _load() {
     return _cache;
 }
 function _save() {
-    const dir = path_1.default.dirname(FILE);
-    if (!fs_1.default.existsSync(dir))
-        fs_1.default.mkdirSync(dir, { recursive: true });
-    fs_1.default.writeFileSync(FILE, JSON.stringify(_cache, null, 2));
+    try {
+        const dir = path_1.default.dirname(FILE);
+        if (!fs_1.default.existsSync(dir))
+            fs_1.default.mkdirSync(dir, { recursive: true });
+        fs_1.default.writeFileSync(FILE, JSON.stringify(_cache, null, 2));
+    }
+    catch (err) {
+        console.error('[worldStore] Failed to save world data:', err?.message ?? err);
+    }
 }
 function get(key) {
     const data = _load();
@@ -764,27 +823,44 @@ function init(mp) {
     handleCommand = _handleCommand;
     // ── Player lifecycle ──────────────────────────────────────────────────────
     mp.on('connect', (userId) => {
-        try {
-            const actorId = mp.getUserActor(userId);
-            const name = (actorId && mp.get(actorId, 'name')) || `User${userId}`;
-            store_1.store.register(userId, actorId, name);
-            console.log(`[gamemode] ${name} (${userId}) connected`);
-            // Register player with WS relay so the browser can authenticate
-            wsClient.registerPlayer(mp, userId, actorId);
-            // Restore per-system state in dependency order
-            hunger.onConnect(mp, store_1.store, bus_1.bus, userId);
-            drunkBar.onConnect(mp, store_1.store, bus_1.bus, userId);
-            economy.onConnect(mp, store_1.store, bus_1.bus, userId);
-            bounty.onConnect(mp, store_1.store, bus_1.bus, userId);
-            factions.onConnect(mp, store_1.store, bus_1.bus, userId);
-            housing.onConnect(mp, store_1.store, bus_1.bus, userId);
-            college.onConnect(mp, store_1.store, bus_1.bus, userId);
-            skills.onConnect(mp, store_1.store, bus_1.bus, userId);
-            courier.onConnect(mp, store_1.store, bus_1.bus, userId);
-        }
-        catch (err) {
-            console.error(`[gamemode] connect error for ${userId}: ${err.message}`);
-        }
+        const tryFinishConnect = (attempt = 0) => {
+            try {
+                const actorId = mp.getUserActor(userId);
+                // Actor is not ready yet — retry shortly.
+                if (!actorId) {
+                    if (attempt < 20) {
+                        return setTimeout(() => tryFinishConnect(attempt + 1), 250);
+                    }
+                    console.error(`[gamemode] connect error for ${userId}: actor never became ready (actorId=0)`);
+                    return;
+                }
+                const name = mp.get(actorId, 'name') || `User${userId}`;
+                // Prevent duplicate registration if the retry fires after they already got registered.
+                const existing = store_1.store.get(userId);
+                if (existing && existing.actorId) {
+                    console.log(`[gamemode] ${name} (${userId}) already initialized, skipping duplicate connect`);
+                    return;
+                }
+                store_1.store.register(userId, actorId, name);
+                console.log(`[gamemode] ${name} (${userId}) connected`);
+                // Register player with WS relay so the browser can authenticate
+                wsClient.registerPlayer(mp, userId, actorId);
+                // Restore per-system state in dependency order
+                hunger.onConnect(mp, store_1.store, bus_1.bus, userId);
+                drunkBar.onConnect(mp, store_1.store, bus_1.bus, userId);
+                economy.onConnect(mp, store_1.store, bus_1.bus, userId);
+                bounty.onConnect(mp, store_1.store, bus_1.bus, userId);
+                factions.onConnect(mp, store_1.store, bus_1.bus, userId);
+                housing.onConnect(mp, store_1.store, bus_1.bus, userId);
+                college.onConnect(mp, store_1.store, bus_1.bus, userId);
+                skills.onConnect(mp, store_1.store, bus_1.bus, userId);
+                courier.onConnect(mp, store_1.store, bus_1.bus, userId);
+            }
+            catch (err) {
+                console.error(`[gamemode] connect error for ${userId}: ${err.message}`);
+            }
+        };
+        tryFinishConnect();
     });
     mp.on('disconnect', (userId) => {
         try {
@@ -799,23 +875,26 @@ function init(mp) {
         }
     });
     // ── Chat input from the browser ───────────────────────────────────────────
-    // Called by the C++ layer when ctx.sendEvent(text) fires on the client.
-    // First arg is the actor's refrId, second is the raw text the player typed.
+    // window.mp.send('cef::chat:send', text) in the browser widget sends a
+    // customPacket with JSON body { type: 'cef::chat:send', data: text }.
     // handleChatInput handles __reload__, all channels (/me /ooc /w /f), proximity,
     // history, and returns false only for unknown /commands so we can route them.
-    mp['cef_chat_send'] = (refrId, text) => {
+    mp.on('customPacket', (userId, content) => {
         try {
-            if (typeof text !== 'string')
+            const packet = JSON.parse(content);
+            if (packet.type !== 'cef::chat:send')
                 return;
-            const userId = mp.getUserByActor(refrId);
+            const text = String(packet.data || '').trim().slice(0, chat.MAX_MSG_LEN);
+            if (!text)
+                return;
             if (!chat.handleChatInput(mp, store_1.store, userId, text)) {
-                handleCommand(userId, text);
+                handleCommand?.(userId, text);
             }
         }
         catch (err) {
-            console.error(`[chat] cef_chat_send error: ${err.message}`);
+            console.error(`[chat] customPacket error: ${err.message}`);
         }
-    };
+    });
     console.log('[gamemode] Frostfall Roleplay — ready');
 }
 // ── SkyMP runtime bootstrap ───────────────────────────────────────────────────
@@ -1014,17 +1093,17 @@ function clearNvfl(store, playerId) {
 //   /f             faction members only
 //
 // Server → Client flow
-//   deliver() → mp.set(ff_chatMsg, JSON payload) → UPDATE_OWNER_JS (SP runtime)
-//   → executeJavaScript → browser _ffChatPush → widgets.set → React re-render
+//   deliver() → mp.set(actorId, 'chatMsg', '#{rrggbb}text…') → updateOwner
+//   → executeJavaScript → parses #{color} codes → widgets.set → React re-render
 //
 // Client → Server flow
-//   Chat input → skyrimPlatform.sendMessage("cef::chat:send", text)
-//   → EVENT_SOURCE_JS browserMessage → ctx.sendEvent(text)
-//   → mp['cef_chat_send'](refrId, text) → handleChatInput()
+//   Chat input → window.mp.send('cef::chat:send', text) → customPacket event
+//   → index.ts mp.on('customPacket', …) → handleChatInput()
 //
 // Reload resilience
-//   'front-loaded' → re-runs initChat in browser + ctx.sendEvent('__reload__')
-//   → handleChatInput sees '__reload__' → replayHistory() re-delivers recent msgs
+//   History is maintained per-player.  If a reload trigger is wired (e.g. via
+//   makeEventSource or another customPacket handler), callers can invoke
+//   handleChatInput(mp, store, userId, '__reload__') to replay recent messages.
 //
 // Public API
 //   init(mp)
@@ -1033,39 +1112,6 @@ function clearNvfl(store, playerId) {
 //   broadcastSystem(mp, store, text)
 //   sendToPlayer(mp, store, userId, text, color?)      — legacy plain-text
 //   broadcast(mp, store, text, color?)                 — legacy plain-text broadcast
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || (function () {
-    var ownKeys = function(o) {
-        ownKeys = Object.getOwnPropertyNames || function (o) {
-            var ar = [];
-            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
-            return ar;
-        };
-        return ownKeys(o);
-    };
-    return function (mod) {
-        if (mod && mod.__esModule) return mod;
-        var result = {};
-        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
-        __setModuleDefault(result, mod);
-        return result;
-    };
-})();
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MAX_MSG_LEN = void 0;
 exports.init = init;
@@ -1074,16 +1120,75 @@ exports.sendSystem = sendSystem;
 exports.broadcastSystem = broadcastSystem;
 exports.sendToPlayer = sendToPlayer;
 exports.broadcast = broadcast;
-const mpUtil_1 = __webpack_require__(56);
-const wsClient = __importStar(__webpack_require__(862));
+const signHelper_1 = __webpack_require__(720);
 // ── Config ────────────────────────────────────────────────────────────────────
-const CHAT_MSG_PROP = 'ff_chatMsg';
+const CHAT_MSG_PROP = 'chatMsg';
 const SAY_RANGE = 3500; // Skyrim units ≈ 50 m
-const WHISPER_RANGE = 400; // units ≈ 6 m  (must be standing next to someone)
+const WHISPER_RANGE = 400; // units ≈ 6 m
 exports.MAX_MSG_LEN = 300;
-const MAX_HISTORY = 30; // msgs kept server-side per player for reload replay
-const BROWSER_LIMIT = 100; // ring-buffer cap inside the browser
+const MAX_HISTORY = 30; // msgs kept per player for reload replay
 const RATE_LIMIT_MS = 1000; // minimum ms between messages per player
+// ── Client-side bridge ────────────────────────────────────────────────────────
+//
+// updateOwner runs in the Skyrim Platform Chakra context (ES5-safe) whenever
+// the server sets a new value on 'chatMsg'.
+//
+// Message format: "#{rrggbb}segment1#{rrggbb}segment2…"
+// The Chakra wrapper reads ctx.value, JSON-encodes it for safe embedding, then
+// passes it to executeJavaScript.  The browser-side (CEF/Chromium) code parses
+// the #{color} codes into Span segments and pushes a new ChatMsg into
+// window.chatMessages, then refreshes the widget.
+//
+// The chat widget's send() calls window.mp.send('cef::chat:send', text) which
+// the server receives as a customPacket event.
+const UPDATE_OWNER_JS = `
+(function(){
+  var rawMsg=String(ctx.value||"");
+  if(!rawMsg)return;
+  var safeMsg=JSON.stringify(rawMsg);
+  ctx.sp.browser.executeJavaScript(
+    "(function(){"+
+    "  try{"+
+    "    var raw="+safeMsg+";"+
+    "    if(!window.chatMessages)window.chatMessages=[];"+
+    "    var segs=[];"+
+    "    var rem=raw;"+
+    "    var col='#fafafa';"+
+    "    var reColor=/^#\\\\{([0-9a-fA-F]{6})\\\\}/;"+
+    "    while(rem.length>0){"+
+    "      var m=rem.match(reColor);"+
+    "      if(m){col='#'+m[1];rem=rem.slice(m[0].length);continue;}"+
+    "      var n=rem.indexOf('#{');"+
+    "      if(n<0){segs.push({text:rem,color:col,opacity:1,type:['default']});rem='';break;}"+
+    "      if(n>0)segs.push({text:rem.slice(0,n),color:col,opacity:1,type:['default']});"+
+    "      rem=rem.slice(n);"+
+    "    }"+
+    "    if(segs.length===0)return;"+
+    "    window.chatMessages.push({text:segs,category:'default',opacity:1});"+
+    "    while(window.chatMessages.length>50)window.chatMessages.shift();"+
+    "    if(window.skyrimPlatform&&window.skyrimPlatform.widgets){"+
+    "      var ws=window.skyrimPlatform.widgets.get();"+
+    "      var found=false;"+
+    "      var newWs=ws.map(function(w){"+
+    "        if(w.type==='chat'){found=true;return Object.assign({},w,{messages:window.chatMessages.slice()});}"+
+    "        return w;"+
+    "      });"+
+    "      if(!found){"+
+    "        newWs.push({"+
+    "          type:'chat',"+
+    "          messages:window.chatMessages.slice(),"+
+    "          send:function(m){window.mp&&window.mp.send('cef::chat:send',m);}"+
+    "        });"+
+    "      }"+
+    "      window.skyrimPlatform.widgets.set(newWs);"+
+    "    }"+
+    "    window.needToScroll=true;"+
+    "    if(typeof window.scrollToLastMessage==='function')window.scrollToLastMessage();"+
+    "  }catch(e){}"+
+    "})();"
+  );
+})();
+`.trim();
 // ── Color palette ─────────────────────────────────────────────────────────────
 const C = {
     nameIc: '#e8c87a', // golden  — IC speaker
@@ -1108,6 +1213,11 @@ function sp(text, color, types = ['text']) {
 function mkMsg(category, ...spans) {
     return { category, text: spans, opacity: 1 };
 }
+// Converts the server-side Span array to the "#{rrggbb}text" wire format.
+// Colors in the palette are "#rrggbb"; we strip the leading "#" for the tag.
+function spansToColorString(spans) {
+    return spans.map(s => `#{${s.color.slice(1)}}${s.text}`).join('');
+}
 // ── Per-player recent-message history (for reload replay) ─────────────────────
 const playerHistory = new Map();
 const lastMsgTime = new Map();
@@ -1124,20 +1234,18 @@ function replayHistory(mp, store, userId) {
         return;
     const history = playerHistory.get(userId) ?? [];
     for (const m of history) {
-        deliver(mp, player.actorId, userId, m);
+        deliver(mp, player.actorId, m);
     }
 }
 // ── Delivery ──────────────────────────────────────────────────────────────────
-let _seq = 0;
-function deliver(mp, actorId, userId, m) {
-    if (wsClient.isConnected(userId)) {
-        // Player's browser has an active WS connection — deliver directly.
-        wsClient.deliver(userId, m);
+function deliver(mp, actorId, m) {
+    if (!actorId)
+        return;
+    try {
+        mp.set(actorId, CHAT_MSG_PROP, spansToColorString(m.text));
     }
-    else {
-        // Fallback: push via SkyMP property sync (UPDATE_OWNER_JS → executeJavaScript).
-        // _seq ensures uniqueness so the SP-runtime dedup never suppresses a replay.
-        (0, mpUtil_1.safeSet)(mp, actorId, CHAT_MSG_PROP, JSON.stringify({ msg: m, _: ++_seq }));
+    catch {
+        // actor not ready yet — silently skip
     }
 }
 // ── Proximity helper ──────────────────────────────────────────────────────────
@@ -1150,97 +1258,27 @@ function sendProximity(mp, store, senderActorId, m, range) {
     const origin = mp.getActorPos(senderActorId);
     for (const p of store.getAll()) {
         if (dist3(origin, mp.getActorPos(p.actorId)) <= range) {
-            deliver(mp, p.actorId, p.id, m);
+            deliver(mp, p.actorId, m);
             pushHistory(p.id, m);
         }
     }
 }
-// ── Browser-side bootstrap JS ─────────────────────────────────────────────────
-//
-// WIDGET_EXPR is a JS expression (not a string) evaluated *in the browser*
-// whenever widgets.set() is called.  It reads window.chatMessages at call time
-// so each widget update carries the latest snapshot, giving React a new
-// reference and triggering the useEffect([props.messages]) scroll handler.
-const WIDGET_EXPR = '[{type:"chat",' +
-    'messages:window.chatMessages.slice(),' +
-    'send:function(t){window.skyrimPlatform.sendMessage("cef::chat:send",t);},' +
-    'placeholder:"",' +
-    'isInputHidden:false}]';
-// Runs in the SP runtime when ff_chatMsg changes on the owning actor.
-//
-// ctx.value  = JSON string  { msg: ChatMsg, _: seq }
-// Dedup via ctx.state.last so the SP runtime never re-delivers the same payload.
-// If _ffChatPush is not yet defined in the browser (race at session start),
-// messages are queued in window._ffChatPendingMsgs and flushed by initChat.
-const UPDATE_OWNER_JS = `
-if (!ctx.value) return;
-if (ctx.state.last === ctx.value) return;
-ctx.state.last = ctx.value;
-var p; try { p = JSON.parse(ctx.value); } catch(e) { return; }
-var enc = JSON.stringify(p.msg);
-ctx.sp.browser.executeJavaScript(
-  'if(typeof window._ffChatPush==="function"){window._ffChatPush(' + enc + ')}' +
-  'else{' +
-  'if(!Array.isArray(window._ffChatPendingMsgs))window._ffChatPendingMsgs=[];' +
-  'window._ffChatPendingMsgs.push(' + enc + ')}'
-);
-`.trim();
-// Runs in the SP runtime once per player session (makeEventSource).
-//
-// initChat (a browser-side JS string) is executed on session start and again
-// on every 'front-loaded' event (browser reload).  It:
-//   1. Defines window._ffChatPush — appends a message and triggers a widget update
-//   2. Flushes window._ffChatPendingMsgs accumulated before _ffChatPush existed
-//   3. Calls widgets.set() so the React tree mounts the chat widget immediately
-//
-// 'cef::chat:send'  — user submitted a message; forwarded to server via sendEvent
-// 'front-loaded'    — browser (re)loaded; re-runs initChat and requests history
-//                     replay via the '__reload__' sentinel passed to sendEvent
-const EVENT_SOURCE_JS = `
-var initChat =
-  'if(!Array.isArray(window.chatMessages))window.chatMessages=[];' +
-  'window._ffChatPush=function(m){' +
-  '  window.chatMessages.push(m);' +
-  '  while(window.chatMessages.length>${BROWSER_LIMIT})window.chatMessages.shift();' +
-  '  window.skyrimPlatform.widgets.set(${WIDGET_EXPR});' +
-  '  if(typeof window.scrollToLastMessage==="function")window.scrollToLastMessage();' +
-  '};' +
-  'if(Array.isArray(window._ffChatPendingMsgs)){' +
-  '  window._ffChatPendingMsgs.forEach(function(m){window._ffChatPush(m);});' +
-  '  window._ffChatPendingMsgs=[];' +
-  '}' +
-  'window.skyrimPlatform.widgets.set(${WIDGET_EXPR});';
-
-ctx.sp.browser.executeJavaScript(initChat);
-
-ctx.sp.on('browserMessage', function(evt) {
-  var key = evt.arguments[0];
-  if (key === 'front-loaded') {
-    ctx.sp.browser.executeJavaScript(initChat);
-    ctx.sendEvent('__reload__');
-  }
-  if (key === 'cef::chat:send') {
-    ctx.sendEvent(evt.arguments[1]);
-  }
-});
-`.trim();
 // ── init ──────────────────────────────────────────────────────────────────────
 function init(mp) {
     mp.makeProperty(CHAT_MSG_PROP, {
         isVisibleByOwner: true,
         isVisibleByNeighbors: false,
-        updateOwner: UPDATE_OWNER_JS,
+        updateOwner: (0, signHelper_1.signScript)(UPDATE_OWNER_JS),
         updateNeighbor: '',
     });
-    mp.makeEventSource('cef_chat_send', EVENT_SOURCE_JS);
-    console.log('[chat] property and event source registered');
+    console.log('[chat] property registered');
 }
 // ── handleChatInput ───────────────────────────────────────────────────────────
 //
 // Returns true  → input was consumed (chat channel or IC speech, or __reload__)
 // Returns false → not a chat channel; caller should route to commands
 function handleChatInput(mp, store, userId, text) {
-    // ── Special reload sentinel (fired by EVENT_SOURCE_JS on 'front-loaded') ───
+    // ── Special reload sentinel ───────────────────────────────────────────────
     if (text === '__reload__') {
         replayHistory(mp, store, userId);
         return true;
@@ -1253,7 +1291,7 @@ function handleChatInput(mp, store, userId, text) {
     const last = lastMsgTime.get(userId) ?? 0;
     if (now - last < RATE_LIMIT_MS) {
         const rateMsg = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp('Please wait before sending another message.', C.system, ['nonrp', 'text']));
-        deliver(mp, player.actorId, userId, rateMsg);
+        deliver(mp, player.actorId, rateMsg);
         return true;
     }
     lastMsgTime.set(userId, now);
@@ -1279,7 +1317,7 @@ function handleChatInput(mp, store, userId, text) {
             return true;
         const m = mkMsg('plain', sp('[OOC] ', C.tagOoc, ['nonrp']), sp(player.name + ': ', C.nameOoc, ['nonrp']), sp(body, C.msgOoc, ['nonrp', 'text']));
         for (const p of store.getAll()) {
-            deliver(mp, p.actorId, p.id, m);
+            deliver(mp, p.actorId, m);
             pushHistory(p.id, m);
         }
         console.log(`[chat:ooc] ${player.name}: ${body}`);
@@ -1298,20 +1336,20 @@ function handleChatInput(mp, store, userId, text) {
         const target = store.getAll().find(p => p.name.toLowerCase() === targetName);
         if (!target) {
             const notFound = mkMsg('plain', sp('[Whisper] ', C.tagWhisper, ['nonrp']), sp(`Player "${rest.slice(0, spaceIdx)}" is not online.`, C.system, ['nonrp', 'text']));
-            deliver(mp, player.actorId, userId, notFound);
+            deliver(mp, player.actorId, notFound);
             return true;
         }
         const d = dist3(mp.getActorPos(player.actorId), mp.getActorPos(target.actorId));
         if (d > WHISPER_RANGE) {
             const tooFar = mkMsg('plain', sp('[Whisper] ', C.tagWhisper, ['nonrp']), sp('Too far away to whisper.', C.system, ['nonrp', 'text']));
-            deliver(mp, player.actorId, userId, tooFar);
+            deliver(mp, player.actorId, tooFar);
             return true;
         }
         const toTarget = mkMsg('plain', sp('[Whisper] ', C.tagWhisper, ['nonrp']), sp(player.name + ' whispers: ', C.nameWhisper, ['nonrp']), sp(body, C.msgWhisper, ['text']));
         const toSelf = mkMsg('plain', sp('[→ ' + target.name + '] ', C.tagWhisper, ['nonrp']), sp(body, C.msgWhisper, ['text']));
-        deliver(mp, target.actorId, target.id, toTarget);
+        deliver(mp, target.actorId, toTarget);
         pushHistory(target.id, toTarget);
-        deliver(mp, player.actorId, userId, toSelf);
+        deliver(mp, player.actorId, toSelf);
         pushHistory(player.id, toSelf);
         console.log(`[chat:whisper] ${player.name} → ${target.name}: ${body}`);
         return true;
@@ -1323,13 +1361,13 @@ function handleChatInput(mp, store, userId, text) {
             return true;
         if (!player.factions.length) {
             const noFaction = mkMsg('plain', sp('[Faction] ', C.tagFaction, ['nonrp']), sp('You are not in a faction.', C.system, ['nonrp', 'text']));
-            deliver(mp, player.actorId, userId, noFaction);
+            deliver(mp, player.actorId, noFaction);
             return true;
         }
         const m = mkMsg('plain', sp('[Faction] ', C.tagFaction, ['nonrp']), sp(player.name + ': ', C.nameFaction, ['nonrp']), sp(body, C.msgFaction, ['text']));
         for (const p of store.getAll()) {
             if (p.factions.some(f => player.factions.includes(f))) {
-                deliver(mp, p.actorId, p.id, m);
+                deliver(mp, p.actorId, m);
                 pushHistory(p.id, m);
             }
         }
@@ -1354,7 +1392,7 @@ function sendSystem(mp, store, userId, text) {
     if (!player)
         return;
     const m = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp(text, C.system, ['nonrp', 'text']));
-    deliver(mp, player.actorId, userId, m);
+    deliver(mp, player.actorId, m);
     pushHistory(userId, m);
 }
 /**
@@ -1363,7 +1401,7 @@ function sendSystem(mp, store, userId, text) {
 function broadcastSystem(mp, store, text) {
     const m = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp(text, C.system, ['nonrp', 'text']));
     for (const p of store.getAll()) {
-        deliver(mp, p.actorId, p.id, m);
+        deliver(mp, p.actorId, m);
         pushHistory(p.id, m);
     }
     console.log(`[chat:system] ${text}`);
@@ -1377,7 +1415,7 @@ function sendToPlayer(mp, store, userId, text, color = '#ffffff') {
     if (!player)
         return;
     const m = mkMsg('plain', sp(text, color, ['text']));
-    deliver(mp, player.actorId, userId, m);
+    deliver(mp, player.actorId, m);
     pushHistory(userId, m);
 }
 /**
@@ -1387,7 +1425,7 @@ function sendToPlayer(mp, store, userId, text, color = '#ffffff') {
 function broadcast(mp, store, text, color = '#ffffff') {
     const m = mkMsg('plain', sp(text, color, ['text']));
     for (const p of store.getAll()) {
-        deliver(mp, p.actorId, p.id, m);
+        deliver(mp, p.actorId, m);
         pushHistory(p.id, m);
     }
 }
@@ -1410,6 +1448,7 @@ exports.getPendingNotifications = getPendingNotifications;
 exports.init = init;
 exports.onConnect = onConnect;
 const mpUtil_1 = __webpack_require__(56);
+const signHelper_1 = __webpack_require__(720);
 // ── Constants ─────────────────────────────────────────────────────────────────
 const DEFAULT_EXPIRY_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 // ── Pure helpers ──────────────────────────────────────────────────────────────
@@ -1438,32 +1477,41 @@ function getUnread(notifications) {
 // ── Actions ───────────────────────────────────────────────────────────────────
 function sendNotification(mp, store, notification) {
     const recipient = store.get(notification.toPlayerId);
-    if (!recipient)
+    if (!recipient || !recipient.actorId)
         return;
-    const existing = mp.get(recipient.actorId, 'ff_courier') ?? [];
+    const existing = (0, mpUtil_1.safeGet)(mp, recipient.actorId, 'ff_courier', []);
     const pruned = filterExpired(existing);
     pruned.push(notification);
-    mp.set(recipient.actorId, 'ff_courier', pruned);
+    (0, mpUtil_1.safeSet)(mp, recipient.actorId, 'ff_courier', pruned);
     mp.sendCustomPacket(recipient.actorId, 'courierNotification', notification);
 }
 function markRead(mp, store, playerId, notificationId) {
     const player = store.get(playerId);
-    if (!player)
+    if (!player || !player.actorId)
         return;
-    const notes = mp.get(player.actorId, 'ff_courier') ?? [];
+    const notes = (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_courier', []);
     const updated = notes.map(n => n.id === notificationId ? Object.assign({}, n, { read: true }) : n);
-    mp.set(player.actorId, 'ff_courier', updated);
+    (0, mpUtil_1.safeSet)(mp, player.actorId, 'ff_courier', updated);
 }
 function getPendingNotifications(mp, store, playerId) {
     const player = store.get(playerId);
-    if (!player)
+    if (!player || !player.actorId)
         return [];
-    const notes = mp.get(player.actorId, 'ff_courier') ?? [];
+    const notes = (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_courier', []);
     return getUnread(filterExpired(notes));
 }
 // ── Init ─────────────────────────────────────────────────────────────────────
 function init(mp, store, bus) {
     console.log('[courier] Initializing');
+    // Register ff_courier as a synced property so the FF plugin can receive
+    // notification updates via the globalThis._ff.courier bridge.
+    // The property value (Notification[]) is also persisted automatically.
+    mp.makeProperty('ff_courier', {
+        isVisibleByOwner: true,
+        isVisibleByNeighbors: false,
+        updateOwner: (0, signHelper_1.signScript)('var ff=globalThis._ff;if(ff&&ff.courier)ff.courier.recv(ctx.value);'),
+        updateNeighbor: '',
+    });
     console.log('[courier] Started');
 }
 function onConnect(mp, store, bus, userId) {
@@ -1481,7 +1529,7 @@ function onConnect(mp, store, bus, userId) {
 /***/ },
 
 /***/ 862
-(__unused_webpack_module, exports) {
+(__unused_webpack_module, exports, __webpack_require__) {
 
 
 // ── Gamemode WS Relay Client ───────────────────────────────────────────────────
@@ -1507,27 +1555,24 @@ exports.registerPlayer = registerPlayer;
 exports.isConnected = isConnected;
 exports.deliver = deliver;
 exports.broadcast = broadcast;
+const signHelper_1 = __webpack_require__(720);
 const g = globalThis;
-const RELAY_URL = g.process?.env?.RELAY_URL ?? 'ws://frostfall.online:7778';
+const RELAY_URL = g.process?.env?.RELAY_URL ?? 'ws://ws.frostfall.online:7778';
 const RELAY_SECRET = g.process?.env?.RELAY_SECRET ?? 'dev-relay-secret';
 // Property that carries the one-time nonce to the player's browser.
-// UPDATE_OWNER_JS runs in the SP runtime and injects it into window.ffWsNonce,
-// sets window.ffWsUrl so the browser connects to the real relay host instead of
-// the localhost:7778 fallback, then calls window.ffWsConnect().
+// The updateOwner bridge delegates to the FF plugin (plugin/src/systems/ws.ts)
+// which calls browser.executeJavaScript to inject the nonce and trigger
+// window.ffWsConnect().  The relay URL is passed as a literal so the plugin
+// does not need its own copy of the server environment config.
 const NONCE_PROP = 'ff_wsNonce';
-const NONCE_UPDATE_JS = `
-if (!ctx.value) return;
-if (ctx.state.nonce === ctx.value) return;
-ctx.state.nonce = ctx.value;
-ctx.sp.browser.executeJavaScript(
-  'window.ffWsUrl=${JSON.stringify(RELAY_URL)};' +
-  'window.ffWsNonce=' + JSON.stringify(ctx.value) + ';' +
-  'if(typeof window.ffWsConnect==="function")window.ffWsConnect();'
-);
-`.trim();
+const NONCE_UPDATE_JS = `var ff=globalThis._ff;if(ff&&ff.ws)ff.ws.recv(ctx.value,${JSON.stringify(RELAY_URL)});`;
 let socket = null;
 let ready = false;
 let onChatSend = null;
+// Exponential back-off: start at 3 s, double each failure up to 60 s.
+// Resets to 3 s on a successful connection so recovery is fast once the relay
+// comes back.
+let _reconnectDelay = 3000;
 // Players whose browser has completed WS auth — delivery goes over WS for these.
 const connectedPlayers = new Set();
 // Messages queued while socket is not yet ready.
@@ -1557,7 +1602,8 @@ function connect() {
     }
     catch (err) {
         console.error('[ws-client] failed to create socket:', err?.message ?? err);
-        setTimeout(connect, 5000);
+        _reconnectDelay = Math.min(_reconnectDelay * 2, 60000);
+        setTimeout(connect, _reconnectDelay);
         return;
     }
     socket.onopen = () => {
@@ -1573,6 +1619,7 @@ function connect() {
         }
         if (msg.type === 'auth_ok') {
             ready = true;
+            _reconnectDelay = 3000; // reset back-off on successful connect
             console.log('[ws-client] connected to relay at', RELAY_URL);
             flushQueue();
             return;
@@ -1594,10 +1641,13 @@ function connect() {
         ready = false;
         socket = null;
         connectedPlayers.clear();
-        console.log('[ws-client] relay disconnected — reconnecting in 3s');
-        setTimeout(connect, 3000);
+        _reconnectDelay = Math.min(_reconnectDelay * 2, 60000);
+        console.log(`[ws-client] relay disconnected — reconnecting in ${_reconnectDelay / 1000}s`);
+        setTimeout(connect, _reconnectDelay);
     };
     socket.onerror = (err) => {
+        // Only log the first error per connection attempt to avoid spamming the log.
+        // The onclose handler fires immediately after and will schedule the retry.
         console.error('[ws-client] socket error:', err?.message ?? String(err));
     };
 }
@@ -1611,7 +1661,7 @@ function init(mp, onChatSendFn) {
     mp.makeProperty(NONCE_PROP, {
         isVisibleByOwner: true,
         isVisibleByNeighbors: false,
-        updateOwner: NONCE_UPDATE_JS,
+        updateOwner: (0, signHelper_1.signScript)(NONCE_UPDATE_JS),
         updateNeighbor: '',
     });
     connect();
@@ -1625,7 +1675,8 @@ function init(mp, onChatSendFn) {
 function registerPlayer(mp, userId, actorId) {
     const nonce = Array.from({ length: 16 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
     send({ type: 'register_nonce', nonce, userId });
-    mp.set(actorId, NONCE_PROP, nonce);
+    if (actorId)
+        mp.set(actorId, NONCE_PROP, nonce);
 }
 /**
  * Returns true if this player's browser has an active WS connection.
@@ -1693,8 +1744,8 @@ function transferGold(mp, store, fromId, toId, amount) {
     store.update(fromId, { septims: fromGold });
     store.update(toId, { septims: toGold });
     // Sync to inventory gold
-    mp.set(from.actorId, 'inv', _setGoldInInventory(mp.get(from.actorId, 'inv'), fromGold));
-    mp.set(to.actorId, 'inv', _setGoldInInventory(mp.get(to.actorId, 'inv'), toGold));
+    (0, mpUtil_1.safeSet)(mp, from.actorId, 'inv', _setGoldInInventory((0, mpUtil_1.safeGet)(mp, from.actorId, 'inv', null), fromGold));
+    (0, mpUtil_1.safeSet)(mp, to.actorId, 'inv', _setGoldInInventory((0, mpUtil_1.safeGet)(mp, to.actorId, 'inv', null), toGold));
     return true;
 }
 // ── Internal ──────────────────────────────────────────────────────────────────
@@ -1723,8 +1774,8 @@ function init(mp, store, bus) {
                         const newHours = player.stipendPaidHours + 1;
                         store.update(player.id, { septims: newSeptims, stipendPaidHours: newHours });
                         const inv = (0, mpUtil_1.safeGet)(mp, player.actorId, 'inv', null);
-                        mp.set(player.actorId, 'inv', _setGoldInInventory(inv, newSeptims));
-                        mp.set(player.actorId, 'ff_stipendHours', newHours);
+                        (0, mpUtil_1.safeSet)(mp, player.actorId, 'inv', _setGoldInInventory(inv, newSeptims));
+                        (0, mpUtil_1.safeSet)(mp, player.actorId, 'ff_stipendHours', newHours);
                         bus.dispatch({ type: 'stipendTick', playerId: player.id, septims: newSeptims, stipendPaidHours: newHours });
                     }
                 }
@@ -1772,6 +1823,7 @@ exports.getLectureBoostRemainingMs = getLectureBoostRemainingMs;
 exports.init = init;
 exports.onConnect = onConnect;
 const mpUtil_1 = __webpack_require__(56);
+const signHelper_1 = __webpack_require__(720);
 // ── Constants ─────────────────────────────────────────────────────────────────
 const RANK_THRESHOLDS = [
     { rank: 'novice', xp: 0 },
@@ -1841,8 +1893,7 @@ function getStudyXp(mp, store, playerId) {
     const player = store.get(playerId);
     if (!player)
         return 0;
-    const saved = mp.get(player.actorId, 'ff_study_xp');
-    return (saved !== null && saved !== undefined) ? saved : 0;
+    return (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_study_xp', 0);
 }
 function getCollegeRankForPlayer(mp, store, playerId) {
     return getCollegeRank(getStudyXp(mp, store, playerId));
@@ -1855,9 +1906,11 @@ function studyTome(mp, store, bus, playerId, tomeBaseId) {
     const xpGain = TOME_XP[tomeBaseId];
     if (xpGain === undefined)
         return;
+    if (!player.actorId)
+        return;
     const current = getStudyXp(mp, store, playerId);
     const newXp = current + xpGain;
-    mp.set(player.actorId, 'ff_study_xp', newXp);
+    (0, mpUtil_1.safeSet)(mp, player.actorId, 'ff_study_xp', newXp);
     bus.dispatch({ type: 'collegeXpGained', playerId, xpGain, totalXp: newXp });
 }
 function startLecture(mp, store, bus, lecturerId) {
@@ -1885,18 +1938,18 @@ function endLecture(mp, store, bus, lecturerId, now) {
     // Award XP + boost to attendees
     for (const attendeeId of session.attendees) {
         const attendee = store.get(attendeeId);
-        if (!attendee)
+        if (!attendee || !attendee.actorId)
             continue;
         const current = getStudyXp(mp, store, attendeeId);
-        mp.set(attendee.actorId, 'ff_study_xp', current + LECTURE_XP_ATTENDEE);
-        mp.set(attendee.actorId, 'ff_lecture_boost', boostExpiry);
+        (0, mpUtil_1.safeSet)(mp, attendee.actorId, 'ff_study_xp', current + LECTURE_XP_ATTENDEE);
+        (0, mpUtil_1.safeSet)(mp, attendee.actorId, 'ff_lecture_boost', boostExpiry);
         bus.dispatch({ type: 'lectureXpGained', playerId: attendeeId, xpGain: LECTURE_XP_ATTENDEE });
     }
     // Award XP only to lecturer
     const lecturer = store.get(lecturerId);
-    if (lecturer) {
+    if (lecturer && lecturer.actorId) {
         const current = getStudyXp(mp, store, lecturerId);
-        mp.set(lecturer.actorId, 'ff_study_xp', current + LECTURE_XP_LECTURER);
+        (0, mpUtil_1.safeSet)(mp, lecturer.actorId, 'ff_study_xp', current + LECTURE_XP_LECTURER);
         bus.dispatch({ type: 'lectureXpGained', playerId: lecturerId, xpGain: LECTURE_XP_LECTURER });
     }
     lectures.delete(lecturerId);
@@ -1910,7 +1963,7 @@ function hasLectureBoost(mp, store, playerId, now) {
     const player = store.get(playerId);
     if (!player)
         return false;
-    const expiry = mp.get(player.actorId, 'ff_lecture_boost');
+    const expiry = (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_lecture_boost', 0);
     if (!expiry)
         return false;
     return (now ?? Date.now()) < expiry;
@@ -1919,7 +1972,7 @@ function getLectureBoostRemainingMs(mp, store, playerId, now) {
     const player = store.get(playerId);
     if (!player)
         return 0;
-    const expiry = mp.get(player.actorId, 'ff_lecture_boost');
+    const expiry = (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_lecture_boost', 0);
     if (!expiry)
         return 0;
     return Math.max(0, expiry - (now ?? Date.now()));
@@ -1936,14 +1989,14 @@ function init(mp, store, bus) {
     mp.makeProperty('ff_lecture_boost', {
         isVisibleByOwner: true,
         isVisibleByNeighbors: false,
-        updateOwner: `
+        updateOwner: (0, signHelper_1.signScript)(`
       (() => {
         const expiry = ctx.value;
         const now    = Date.now();
         if (!expiry || now >= expiry) return { magickaRegenMult: 1.0, boostActive: false };
         return { magickaRegenMult: ${LECTURE_MAGICKA_MULT}, boostActive: true };
       })()
-    `,
+    `),
         updateNeighbor: '',
     });
     console.log('[college] Started');
@@ -2042,7 +2095,10 @@ function getSkillLevel(xp) {
     return Math.floor(xp / SKILL_LEVEL_XP);
 }
 function getSkillXp(mp, playerId, skillId) {
-    const xpMap = mp.get(_actorForPlayer(mp, playerId), 'ff_skill_xp') ?? {};
+    const actorId = _actorForPlayer(mp, playerId);
+    if (!actorId)
+        return 0;
+    const xpMap = (0, mpUtil_1.safeGet)(mp, actorId, 'ff_skill_xp', {});
     return xpMap[skillId] ?? 0;
 }
 function getSkillCap(mp, store, playerId, skillId) {
@@ -2073,31 +2129,39 @@ function addSkillXp(mp, store, playerId, skillId, baseXp, now) {
     const gain = Math.round(baseXp * multiplier);
     const newXp = Math.min(current + gain, cap);
     const actual = newXp - current;
-    const xpMap = mp.get(player.actorId, 'ff_skill_xp') ?? {};
+    const xpMap = (0, mpUtil_1.safeGet)(mp, player.actorId, 'ff_skill_xp', {});
     xpMap[skillId] = newXp;
-    mp.set(player.actorId, 'ff_skill_xp', xpMap);
+    (0, mpUtil_1.safeSet)(mp, player.actorId, 'ff_skill_xp', xpMap);
     return actual;
 }
 function grantStudyBoost(mp, playerId, skillId, multiplier, onlineMs) {
     const actorId = _actorForPlayer(mp, playerId);
-    const boosts = mp.get(actorId, 'ff_study_boosts') ?? [];
+    if (!actorId)
+        return;
+    const boosts = (0, mpUtil_1.safeGet)(mp, actorId, 'ff_study_boosts', []);
     boosts.push({ skillId, multiplier, remainingOnlineMs: onlineMs, sessionStart: Date.now() });
-    mp.set(actorId, 'ff_study_boosts', boosts);
+    (0, mpUtil_1.safeSet)(mp, actorId, 'ff_study_boosts', boosts);
 }
 function getActiveStudyBoost(mp, playerId, skillId, now) {
     _consumeBoostTime(mp, playerId, now);
     const actorId = _actorForPlayer(mp, playerId);
-    const boosts = mp.get(actorId, 'ff_study_boosts') ?? [];
+    if (!actorId)
+        return null;
+    const boosts = (0, mpUtil_1.safeGet)(mp, actorId, 'ff_study_boosts', []);
     return boosts.find(b => b.skillId === skillId && b.remainingOnlineMs > 0) ?? null;
 }
 function getStudyBoosts(mp, playerId) {
     const actorId = _actorForPlayer(mp, playerId);
-    return mp.get(actorId, 'ff_study_boosts') ?? [];
+    if (!actorId)
+        return [];
+    return (0, mpUtil_1.safeGet)(mp, actorId, 'ff_study_boosts', []);
 }
 // ── Internal ──────────────────────────────────────────────────────────────────
 function _consumeBoostTime(mp, playerId, now) {
     const actorId = _actorForPlayer(mp, playerId);
-    const boosts = mp.get(actorId, 'ff_study_boosts') ?? [];
+    if (!actorId)
+        return;
+    const boosts = (0, mpUtil_1.safeGet)(mp, actorId, 'ff_study_boosts', []);
     const start = sessionStart.get(playerId);
     if (!start)
         return;
@@ -2106,7 +2170,7 @@ function _consumeBoostTime(mp, playerId, now) {
         .map(b => Object.assign({}, b, { remainingOnlineMs: Math.max(0, b.remainingOnlineMs - elapsed) }))
         .filter(b => b.remainingOnlineMs > 0);
     sessionStart.set(playerId, now ?? Date.now());
-    mp.set(actorId, 'ff_study_boosts', updated);
+    (0, mpUtil_1.safeSet)(mp, actorId, 'ff_study_boosts', updated);
 }
 function onSkillPlayerDisconnect(mp, playerId, now) {
     _consumeBoostTime(mp, playerId, now);
@@ -2310,6 +2374,7 @@ exports.sentencePlayer = sentencePlayer;
 exports.init = init;
 const worldStore = __importStar(__webpack_require__(100));
 const courier = __importStar(__webpack_require__(924));
+const mpUtil_1 = __webpack_require__(56);
 // ── State ─────────────────────────────────────────────────────────────────────
 let queue = [];
 // ── Accessors ─────────────────────────────────────────────────────────────────
@@ -2348,7 +2413,7 @@ function sentencePlayer(mp, store, bus, playerId, jarlId, sentence) {
             store.update(playerId, { septims: newSeptims });
             const newBounty = Object.assign({}, player.bounty, { [holdId]: 0 });
             store.update(playerId, { bounty: newBounty });
-            mp.set(player.actorId, 'ff_bounty', []);
+            (0, mpUtil_1.safeSet)(mp, player.actorId, 'ff_bounty', []);
         }
     }
     else if (sentence.type === 'release') {
@@ -2425,7 +2490,8 @@ function addBounty(mp, store, bus, playerId, holdId, amount) {
     const newBounty = Object.assign({}, player.bounty, { [holdId]: newAmount });
     store.update(playerId, { bounty: newBounty });
     _persist(mp, player.actorId, newBounty);
-    mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: newAmount });
+    if (player.actorId)
+        mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: newAmount });
     bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount, delta: amount });
 }
 function clearBounty(mp, store, bus, playerId, holdId) {
@@ -2435,7 +2501,8 @@ function clearBounty(mp, store, bus, playerId, holdId) {
     const newBounty = Object.assign({}, player.bounty, { [holdId]: 0 });
     store.update(playerId, { bounty: newBounty });
     _persist(mp, player.actorId, newBounty);
-    mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: 0 });
+    if (player.actorId)
+        mp.sendCustomPacket(player.actorId, 'bountyChanged', { holdId, amount: 0 });
     bus.dispatch({ type: 'bountyChanged', playerId, holdId, newAmount: 0, delta: -(player.bounty[holdId] ?? 0) });
 }
 // ── Internal ──────────────────────────────────────────────────────────────────
@@ -2443,7 +2510,7 @@ function _persist(mp, actorId, bountyMap) {
     const records = Object.entries(bountyMap)
         .filter(([, amount]) => amount > 0)
         .map(([holdId, amount]) => ({ holdId, amount, updatedAt: Date.now() }));
-    mp.set(actorId, 'ff_bounty', records);
+    (0, mpUtil_1.safeSet)(mp, actorId, 'ff_bounty', records);
 }
 // ── Init ─────────────────────────────────────────────────────────────────────
 function init(mp, store, bus) {
@@ -2594,7 +2661,12 @@ function onConnect(mp, store, bus, userId) {
     const memberships = _getMemberships(mp, player.actorId);
     const factionIds = memberships.map(m => m.factionId);
     store.update(userId, { factions: factionIds });
-    mp.sendCustomPacket(player.actorId, 'factionsSync', { memberships });
+    // 3-arg sendCustomPacket is an undeclared native extension — guard so a missing
+    // implementation doesn't abort the rest of the onConnect chain.
+    try {
+        mp.sendCustomPacket(player.actorId, 'factionsSync', { memberships });
+    }
+    catch { /* noop */ }
 }
 
 
@@ -2797,10 +2869,15 @@ function onConnect(mp, store, bus, userId) {
         return;
     const owned = getOwnedProperties(userId).map(p => p.id);
     store.update(userId, { properties: owned });
-    if (player.holdId) {
-        const list = getPropertiesByHold(player.holdId);
+    // Send property list for the player's hold (empty list if no hold assigned yet
+    // so the client always gets a sync event and knows state is current).
+    const list = player.holdId ? getPropertiesByHold(player.holdId) : [];
+    // 3-arg sendCustomPacket is an undeclared native extension — guard so a missing
+    // implementation doesn't abort the rest of the onConnect chain.
+    try {
         mp.sendCustomPacket(player.actorId, 'propertyList', { properties: list });
     }
+    catch { /* noop */ }
 }
 
 
@@ -2820,6 +2897,7 @@ exports.soberPlayer = soberPlayer;
 exports.init = init;
 exports.onConnect = onConnect;
 const mpUtil_1 = __webpack_require__(56);
+const signHelper_1 = __webpack_require__(720);
 // ── Constants ─────────────────────────────────────────────────────────────────
 const DRUNK_MIN = 0;
 const DRUNK_MAX = 10;
@@ -2874,7 +2952,7 @@ function init(mp, store, bus) {
     mp.makeProperty('ff_drunk', {
         isVisibleByOwner: true,
         isVisibleByNeighbors: false,
-        updateOwner: `
+        updateOwner: (0, signHelper_1.signScript)(`
       (() => {
         const d = ctx.value;
         if (d === null || d === undefined) return;
@@ -2882,7 +2960,7 @@ function init(mp, store, bus) {
         if (d >= 5) return { weaponSpeedMult: 0.8 };
         return {};
       })()
-    `,
+    `),
         updateNeighbor: '',
     });
     const scheduleTick = () => {
@@ -2931,6 +3009,7 @@ exports.feedPlayer = feedPlayer;
 exports.init = init;
 exports.onConnect = onConnect;
 const mpUtil_1 = __webpack_require__(56);
+const signHelper_1 = __webpack_require__(720);
 // ── Constants ─────────────────────────────────────────────────────────────────
 const HUNGER_MIN = 0;
 const HUNGER_MAX = 10;
@@ -2960,7 +3039,7 @@ function init(mp, store, bus) {
     mp.makeProperty('ff_hunger', {
         isVisibleByOwner: true,
         isVisibleByNeighbors: false,
-        updateOwner: `
+        updateOwner: (0, signHelper_1.signScript)(`
       (() => {
         const h = ctx.value;
         if (h === null || h === undefined) return;
@@ -2968,7 +3047,7 @@ function init(mp, store, bus) {
         if (h >= 10) return { staminaRegenMult: 1.4 };
         return {};
       })()
-    `,
+    `),
         updateNeighbor: '',
     });
     const scheduleTick = () => {
@@ -3184,4 +3263,4 @@ module.exports = require("path");
 /******/ 	
 /******/ })()
 ;
-// skymp:sig:y:frostfall:z+4xCmeMy5rkufnuiCOSIVNwjHav3DCTKkl7rKvH5hZHislK9u1kxlgE5WnvErcqe7t7dnvYT0SJ2+cn22ITDQ==
+// skymp:sig:y:frostfall:PlELbOMiWTNrQpN3hoQcdenTA4OVe5esW7dyvj/J7Z3BcbqxMOmpih6guN7ovzUs2vW9oQv1H5s587MtBuYDBw==

@@ -8,17 +8,17 @@
 //   /f             faction members only
 //
 // Server → Client flow
-//   deliver() → mp.set(ff_chatMsg, JSON payload) → UPDATE_OWNER_JS (SP runtime)
-//   → executeJavaScript → browser _ffChatPush → widgets.set → React re-render
+//   deliver() → mp.set(actorId, 'chatMsg', '#{rrggbb}text…') → updateOwner
+//   → executeJavaScript → parses #{color} codes → widgets.set → React re-render
 //
 // Client → Server flow
-//   Chat input → skyrimPlatform.sendMessage("cef::chat:send", text)
-//   → EVENT_SOURCE_JS browserMessage → ctx.sendEvent(text)
-//   → mp['cef_chat_send'](refrId, text) → handleChatInput()
+//   Chat input → window.mp.send('cef::chat:send', text) → customPacket event
+//   → index.ts mp.on('customPacket', …) → handleChatInput()
 //
 // Reload resilience
-//   'front-loaded' → re-runs initChat in browser + ctx.sendEvent('__reload__')
-//   → handleChatInput sees '__reload__' → replayHistory() re-delivers recent msgs
+//   History is maintained per-player.  If a reload trigger is wired (e.g. via
+//   makeEventSource or another customPacket handler), callers can invoke
+//   handleChatInput(mp, store, userId, '__reload__') to replay recent messages.
 //
 // Public API
 //   init(mp)
@@ -28,20 +28,80 @@
 //   sendToPlayer(mp, store, userId, text, color?)      — legacy plain-text
 //   broadcast(mp, store, text, color?)                 — legacy plain-text broadcast
 
-import { safeSet } from '../../core/mpUtil'
 import { signScript } from '../../core/signHelper'
-import * as wsClient from './wsClient'
 import type { Mp, Store } from '../../types'
 
 // ── Config ────────────────────────────────────────────────────────────────────
 
-const CHAT_MSG_PROP  = 'ff_chatMsg'
+const CHAT_MSG_PROP  = 'chatMsg'
 const SAY_RANGE      = 3500    // Skyrim units ≈ 50 m
-const WHISPER_RANGE  = 400     // units ≈ 6 m  (must be standing next to someone)
+const WHISPER_RANGE  = 400     // units ≈ 6 m
 export const MAX_MSG_LEN = 300
-const MAX_HISTORY    = 30      // msgs kept server-side per player for reload replay
-const BROWSER_LIMIT  = 100    // ring-buffer cap inside the browser
+const MAX_HISTORY    = 30      // msgs kept per player for reload replay
 const RATE_LIMIT_MS  = 1000   // minimum ms between messages per player
+
+// ── Client-side bridge ────────────────────────────────────────────────────────
+//
+// updateOwner runs in the Skyrim Platform Chakra context (ES5-safe) whenever
+// the server sets a new value on 'chatMsg'.
+//
+// Message format: "#{rrggbb}segment1#{rrggbb}segment2…"
+// The Chakra wrapper reads ctx.value, JSON-encodes it for safe embedding, then
+// passes it to executeJavaScript.  The browser-side (CEF/Chromium) code parses
+// the #{color} codes into Span segments and pushes a new ChatMsg into
+// window.chatMessages, then refreshes the widget.
+//
+// The chat widget's send() calls window.mp.send('cef::chat:send', text) which
+// the server receives as a customPacket event.
+
+const UPDATE_OWNER_JS = `
+(function(){
+  var rawMsg=String(ctx.value||"");
+  if(!rawMsg)return;
+  var safeMsg=JSON.stringify(rawMsg);
+  ctx.sp.browser.executeJavaScript(
+    "(function(){"+
+    "  try{"+
+    "    var raw="+safeMsg+";"+
+    "    if(!window.chatMessages)window.chatMessages=[];"+
+    "    var segs=[];"+
+    "    var rem=raw;"+
+    "    var col='#fafafa';"+
+    "    var reColor=/^#\\\\{([0-9a-fA-F]{6})\\\\}/;"+
+    "    while(rem.length>0){"+
+    "      var m=rem.match(reColor);"+
+    "      if(m){col='#'+m[1];rem=rem.slice(m[0].length);continue;}"+
+    "      var n=rem.indexOf('#{');"+
+    "      if(n<0){segs.push({text:rem,color:col,opacity:1,type:['default']});rem='';break;}"+
+    "      if(n>0)segs.push({text:rem.slice(0,n),color:col,opacity:1,type:['default']});"+
+    "      rem=rem.slice(n);"+
+    "    }"+
+    "    if(segs.length===0)return;"+
+    "    window.chatMessages.push({text:segs,category:'default',opacity:1});"+
+    "    while(window.chatMessages.length>50)window.chatMessages.shift();"+
+    "    if(window.skyrimPlatform&&window.skyrimPlatform.widgets){"+
+    "      var ws=window.skyrimPlatform.widgets.get();"+
+    "      var found=false;"+
+    "      var newWs=ws.map(function(w){"+
+    "        if(w.type==='chat'){found=true;return Object.assign({},w,{messages:window.chatMessages.slice()});}"+
+    "        return w;"+
+    "      });"+
+    "      if(!found){"+
+    "        newWs.push({"+
+    "          type:'chat',"+
+    "          messages:window.chatMessages.slice(),"+
+    "          send:function(m){window.mp&&window.mp.send('cef::chat:send',m);}"+
+    "        });"+
+    "      }"+
+    "      window.skyrimPlatform.widgets.set(newWs);"+
+    "    }"+
+    "    window.needToScroll=true;"+
+    "    if(typeof window.scrollToLastMessage==='function')window.scrollToLastMessage();"+
+    "  }catch(e){}"+
+    "})();"
+  );
+})();
+`.trim()
 
 // ── Color palette ─────────────────────────────────────────────────────────────
 
@@ -76,6 +136,12 @@ function mkMsg(category: 'plain' | 'rp', ...spans: Span[]): ChatMsg {
   return { category, text: spans, opacity: 1 }
 }
 
+// Converts the server-side Span array to the "#{rrggbb}text" wire format.
+// Colors in the palette are "#rrggbb"; we strip the leading "#" for the tag.
+function spansToColorString(spans: Span[]): string {
+  return spans.map(s => `#{${s.color.slice(1)}}${s.text}`).join('')
+}
+
 // ── Per-player recent-message history (for reload replay) ─────────────────────
 
 const playerHistory = new Map<number, ChatMsg[]>()
@@ -93,22 +159,18 @@ function replayHistory(mp: Mp, store: Store, userId: number): void {
   if (!player) return
   const history = playerHistory.get(userId) ?? []
   for (const m of history) {
-    deliver(mp, player.actorId, userId, m)
+    deliver(mp, player.actorId, m)
   }
 }
 
 // ── Delivery ──────────────────────────────────────────────────────────────────
 
-let _seq = 0
-
-function deliver(mp: Mp, actorId: number, userId: number, m: ChatMsg): void {
-  if (wsClient.isConnected(userId)) {
-    // Player's browser has an active WS connection — deliver directly.
-    wsClient.deliver(userId, m)
-  } else {
-    // Fallback: push via SkyMP property sync (UPDATE_OWNER_JS → executeJavaScript).
-    // _seq ensures uniqueness so the SP-runtime dedup never suppresses a replay.
-    safeSet(mp, actorId, CHAT_MSG_PROP, JSON.stringify({ msg: m, _: ++_seq }))
+function deliver(mp: Mp, actorId: number, m: ChatMsg): void {
+  if (!actorId) return
+  try {
+    mp.set(actorId, CHAT_MSG_PROP, spansToColorString(m.text))
+  } catch {
+    // actor not ready yet — silently skip
   }
 }
 
@@ -132,89 +194,11 @@ function sendProximity(
   const origin = mp.getActorPos(senderActorId)
   for (const p of store.getAll()) {
     if (dist3(origin, mp.getActorPos(p.actorId)) <= range) {
-      deliver(mp, p.actorId, p.id, m)
+      deliver(mp, p.actorId, m)
       pushHistory(p.id, m)
     }
   }
 }
-
-// ── Browser-side bootstrap JS ─────────────────────────────────────────────────
-//
-// WIDGET_EXPR is a JS expression (not a string) evaluated *in the browser*
-// whenever widgets.set() is called.  It reads window.chatMessages at call time
-// so each widget update carries the latest snapshot, giving React a new
-// reference and triggering the useEffect([props.messages]) scroll handler.
-
-// isInputHidden:true — keep the input hidden until the player explicitly opens
-// chat (e.g. presses Enter).  Showing it immediately on load would focus the
-// input and swallow all keyboard input before the actor is created, making the
-// player unable to move.  The input is shown by the client when needed.
-const WIDGET_EXPR =
-  '[{type:"chat",' +
-  'messages:window.chatMessages.slice(),' +
-  'send:function(t){window.skyrimPlatform.sendMessage("cef::chat:send",t);},' +
-  'placeholder:"",' +
-  'isInputHidden:true}]'
-
-// Runs in the SP runtime when ff_chatMsg changes on the owning actor.
-//
-// ctx.value  = JSON string  { msg: ChatMsg, _: seq }
-// Dedup via ctx.state.last so the SP runtime never re-delivers the same payload.
-// If _ffChatPush is not yet defined in the browser (race at session start),
-// messages are queued in window._ffChatPendingMsgs and flushed by initChat.
-const UPDATE_OWNER_JS = `
-if (!ctx.value) return;
-if (ctx.state.last === ctx.value) return;
-ctx.state.last = ctx.value;
-var p; try { p = JSON.parse(ctx.value); } catch(e) { return; }
-var enc = JSON.stringify(p.msg);
-ctx.sp.browser.executeJavaScript(
-  'if(typeof window._ffChatPush==="function"){window._ffChatPush(' + enc + ')}' +
-  'else{' +
-  'if(!Array.isArray(window._ffChatPendingMsgs))window._ffChatPendingMsgs=[];' +
-  'window._ffChatPendingMsgs.push(' + enc + ')}'
-);
-`.trim()
-
-// Runs in the SP runtime once per player session (makeEventSource).
-//
-// initChat (a browser-side JS string) is executed on session start and again
-// on every 'front-loaded' event (browser reload).  It:
-//   1. Defines window._ffChatPush — appends a message and triggers a widget update
-//   2. Flushes window._ffChatPendingMsgs accumulated before _ffChatPush existed
-//   3. Calls widgets.set() so the React tree mounts the chat widget immediately
-//
-// 'cef::chat:send'  — user submitted a message; forwarded to server via sendEvent
-// 'front-loaded'    — browser (re)loaded; re-runs initChat and requests history
-//                     replay via the '__reload__' sentinel passed to sendEvent
-const EVENT_SOURCE_JS = `
-var initChat =
-  'if(!Array.isArray(window.chatMessages))window.chatMessages=[];' +
-  'window._ffChatPush=function(m){' +
-  '  window.chatMessages.push(m);' +
-  '  while(window.chatMessages.length>${BROWSER_LIMIT})window.chatMessages.shift();' +
-  '  window.skyrimPlatform.widgets.set(${WIDGET_EXPR});' +
-  '  if(typeof window.scrollToLastMessage==="function")window.scrollToLastMessage();' +
-  '};' +
-  'if(Array.isArray(window._ffChatPendingMsgs)){' +
-  '  window._ffChatPendingMsgs.forEach(function(m){window._ffChatPush(m);});' +
-  '  window._ffChatPendingMsgs=[];' +
-  '}' +
-  'window.skyrimPlatform.widgets.set(${WIDGET_EXPR});';
-
-ctx.sp.browser.executeJavaScript(initChat);
-
-ctx.sp.on('browserMessage', function(evt) {
-  var key = evt.arguments[0];
-  if (key === 'front-loaded') {
-    ctx.sp.browser.executeJavaScript(initChat);
-    ctx.sendEvent('__reload__');
-  }
-  if (key === 'cef::chat:send') {
-    ctx.sendEvent(evt.arguments[1]);
-  }
-});
-`.trim()
 
 // ── init ──────────────────────────────────────────────────────────────────────
 
@@ -226,9 +210,7 @@ export function init(mp: Mp): void {
     updateNeighbor:      '',
   })
 
-  mp.makeEventSource('cef_chat_send', signScript(EVENT_SOURCE_JS))
-
-  console.log('[chat] property and event source registered')
+  console.log('[chat] property registered')
 }
 
 // ── handleChatInput ───────────────────────────────────────────────────────────
@@ -242,7 +224,7 @@ export function handleChatInput(
   userId: number,
   text: string,
 ): boolean {
-  // ── Special reload sentinel (fired by EVENT_SOURCE_JS on 'front-loaded') ───
+  // ── Special reload sentinel ───────────────────────────────────────────────
   if (text === '__reload__') {
     replayHistory(mp, store, userId)
     return true
@@ -259,7 +241,7 @@ export function handleChatInput(
       sp('[System] ', C.nameSystem, ['nonrp']),
       sp('Please wait before sending another message.', C.system, ['nonrp', 'text']),
     )
-    deliver(mp, player.actorId, userId, rateMsg)
+    deliver(mp, player.actorId, rateMsg)
     return true
   }
   lastMsgTime.set(userId, now)
@@ -294,7 +276,7 @@ export function handleChatInput(
       sp(body, C.msgOoc, ['nonrp', 'text']),
     )
     for (const p of store.getAll()) {
-      deliver(mp, p.actorId, p.id, m)
+      deliver(mp, p.actorId, m)
       pushHistory(p.id, m)
     }
     console.log(`[chat:ooc] ${player.name}: ${body}`)
@@ -316,7 +298,7 @@ export function handleChatInput(
         sp('[Whisper] ', C.tagWhisper, ['nonrp']),
         sp(`Player "${rest.slice(0, spaceIdx)}" is not online.`, C.system, ['nonrp', 'text']),
       )
-      deliver(mp, player.actorId, userId, notFound)
+      deliver(mp, player.actorId, notFound)
       return true
     }
 
@@ -326,7 +308,7 @@ export function handleChatInput(
         sp('[Whisper] ', C.tagWhisper, ['nonrp']),
         sp('Too far away to whisper.', C.system, ['nonrp', 'text']),
       )
-      deliver(mp, player.actorId, userId, tooFar)
+      deliver(mp, player.actorId, tooFar)
       return true
     }
 
@@ -339,9 +321,9 @@ export function handleChatInput(
       sp('[→ ' + target.name + '] ', C.tagWhisper, ['nonrp']),
       sp(body, C.msgWhisper, ['text']),
     )
-    deliver(mp, target.actorId, target.id, toTarget)
+    deliver(mp, target.actorId, toTarget)
     pushHistory(target.id, toTarget)
-    deliver(mp, player.actorId, userId, toSelf)
+    deliver(mp, player.actorId, toSelf)
     pushHistory(player.id, toSelf)
     console.log(`[chat:whisper] ${player.name} → ${target.name}: ${body}`)
     return true
@@ -357,7 +339,7 @@ export function handleChatInput(
         sp('[Faction] ', C.tagFaction, ['nonrp']),
         sp('You are not in a faction.', C.system, ['nonrp', 'text']),
       )
-      deliver(mp, player.actorId, userId, noFaction)
+      deliver(mp, player.actorId, noFaction)
       return true
     }
 
@@ -368,7 +350,7 @@ export function handleChatInput(
     )
     for (const p of store.getAll()) {
       if (p.factions.some(f => player.factions.includes(f))) {
-        deliver(mp, p.actorId, p.id, m)
+        deliver(mp, p.actorId, m)
         pushHistory(p.id, m)
       }
     }
@@ -401,7 +383,7 @@ export function sendSystem(mp: Mp, store: Store, userId: number, text: string): 
     sp('[System] ', C.nameSystem, ['nonrp']),
     sp(text, C.system, ['nonrp', 'text']),
   )
-  deliver(mp, player.actorId, userId, m)
+  deliver(mp, player.actorId, m)
   pushHistory(userId, m)
 }
 
@@ -414,7 +396,7 @@ export function broadcastSystem(mp: Mp, store: Store, text: string): void {
     sp(text, C.system, ['nonrp', 'text']),
   )
   for (const p of store.getAll()) {
-    deliver(mp, p.actorId, p.id, m)
+    deliver(mp, p.actorId, m)
     pushHistory(p.id, m)
   }
   console.log(`[chat:system] ${text}`)
@@ -434,7 +416,7 @@ export function sendToPlayer(
   const player = store.get(userId)
   if (!player) return
   const m = mkMsg('plain', sp(text, color, ['text']))
-  deliver(mp, player.actorId, userId, m)
+  deliver(mp, player.actorId, m)
   pushHistory(userId, m)
 }
 
@@ -445,7 +427,7 @@ export function sendToPlayer(
 export function broadcast(mp: Mp, store: Store, text: string, color = '#ffffff'): void {
   const m = mkMsg('plain', sp(text, color, ['text']))
   for (const p of store.getAll()) {
-    deliver(mp, p.actorId, p.id, m)
+    deliver(mp, p.actorId, m)
     pushHistory(p.id, m)
   }
 }

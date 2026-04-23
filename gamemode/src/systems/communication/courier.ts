@@ -1,6 +1,7 @@
 // ── Courier ───────────────────────────────────────────────────────────────────
 
 import { safeGet, safeSet } from '../../core/mpUtil'
+import { signScript } from '../../core/signHelper'
 import type { Mp, Store, Bus, Notification } from '../../types'
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -74,6 +75,19 @@ export function getPendingNotifications(mp: Mp, store: Store, playerId: number):
 
 export function init(mp: Mp, store: Store, bus: Bus): void {
   console.log('[courier] Initializing')
+
+  // Register ff_courier as a synced property so the FF plugin can receive
+  // notification updates via the globalThis._ff.courier bridge.
+  // The property value (Notification[]) is also persisted automatically.
+  mp.makeProperty('ff_courier', {
+    isVisibleByOwner:     true,
+    isVisibleByNeighbors: false,
+    updateOwner: signScript(
+      'var ff=globalThis._ff;if(ff&&ff.courier)ff.courier.recv(ctx.value);'
+    ),
+    updateNeighbor: '',
+  })
+
   console.log('[courier] Started')
 }
 

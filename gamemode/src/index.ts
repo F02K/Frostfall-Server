@@ -4,7 +4,6 @@
 import { store }    from './core/store'
 import { bus }      from './core/bus'
 import { runGlobalProbes } from './tests/probeGlobals'
-import * as wsClient  from './systems/communication/wsClient'
 import * as chat      from './systems/communication/chat'
 import * as courier   from './systems/communication/courier'
 import * as hunger    from './systems/survival/hunger'
@@ -35,15 +34,9 @@ export function init(mp: Mp): void {
   // ── Chat must be first — other systems may send messages during init ──────
   chat.init(mp)
 
-  // ── WS relay client — init after chat so handleChatInput is available ─────
-  // Defined here as a let so the closure below can capture it once commands
-  // are registered later in this function.
+  // handleCommand is assigned once commands are registered later in this function.
+  // The customPacket handler (below) captures it by reference.
   let handleCommand: ((userId: number, text: string) => void) | null = null
-  wsClient.init(mp, (userId, text) => {
-    if (!chat.handleChatInput(mp, store, userId, text)) {
-      handleCommand?.(userId, text)
-    }
-  })
 
   // ── System init (courier before housing/prison so notifications work) ─────
   hunger.init(mp, store, bus)
@@ -91,9 +84,6 @@ export function init(mp: Mp): void {
         store.register(userId, actorId, name);
         console.log(`[gamemode] ${name} (${userId}) connected`);
 
-        // Register player with WS relay so the browser can authenticate
-        wsClient.registerPlayer(mp, userId, actorId);
-
         // Restore per-system state in dependency order
         hunger.onConnect(mp, store, bus, userId);
         drunkBar.onConnect(mp, store, bus, userId);
@@ -124,21 +114,23 @@ export function init(mp: Mp): void {
   })
 
   // ── Chat input from the browser ───────────────────────────────────────────
-  // Called by the C++ layer when ctx.sendEvent(text) fires on the client.
-  // First arg is the actor's refrId, second is the raw text the player typed.
+  // window.mp.send('cef::chat:send', text) in the browser widget sends a
+  // customPacket with JSON body { type: 'cef::chat:send', data: text }.
   // handleChatInput handles __reload__, all channels (/me /ooc /w /f), proximity,
   // history, and returns false only for unknown /commands so we can route them.
-  mp['cef_chat_send'] = (refrId: number, text: string) => {
+  mp.on('customPacket', (userId: number, content: string) => {
     try {
-      if (typeof text !== 'string') return
-      const userId = mp.getUserByActor(refrId)
+      const packet = JSON.parse(content)
+      if (packet.type !== 'cef::chat:send') return
+      const text = String(packet.data || '').trim().slice(0, chat.MAX_MSG_LEN)
+      if (!text) return
       if (!chat.handleChatInput(mp, store, userId, text)) {
-        handleCommand(userId, text)
+        handleCommand?.(userId, text)
       }
     } catch (err: any) {
-      console.error(`[chat] cef_chat_send error: ${err.message}`)
+      console.error(`[chat] customPacket error: ${err.message}`)
     }
-  }
+  })
 
   console.log('[gamemode] Frostfall Roleplay — ready')
 }

@@ -18,3 +18,4 @@ package-lock.json
 data/Skyrim - Misc.bsa
 /gamemode/node_modules
 signing-private.pem
+/plugin

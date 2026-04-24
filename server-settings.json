@@ -1,0 +1,18 @@
+{
+  "dataDir" : "data",
+  "loadOrder" : 
+  [
+    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Skyrim.esm",
+    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Update.esm",
+    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Dawnguard.esm",
+    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/HearthFires.esm",
+    "F:/Steam/steamapps/common/Skyrim Special Edition/Data/Dragonborn.esm"
+  ],
+  "master" : "",
+  "maxPlayers" : 100,
+  "name" : "My Server",
+  "npcEnabled" : false,
+  "npcSettings" : {},
+  "offlineMode" : true,
+  "port" : 7777
+}

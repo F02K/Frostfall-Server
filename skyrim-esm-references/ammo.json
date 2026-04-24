@@ -1,0 +1,861 @@
+{
+	"ammo": [
+		{
+			"formid": "0010EC8C",
+			"edid": "DwarvenSphereBolt02",
+			"name": "Dwemer Bolt",
+			"description": "",
+			"damage": "15.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0010E2DE",
+			"edid": "FollowerIronArrow",
+			"name": "Iron Arrow",
+			"description": "",
+			"damage": "8.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0010B0A7",
+			"edid": "boundArrow",
+			"name": "Bound Arrow",
+			"description": "",
+			"damage": "24.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapTypeBoundArrow"
+			]
+		},
+		{
+			"formid": "00109AB7",
+			"edid": "TrapDweBallistaBoltAmmo05",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "00109AB6",
+			"edid": "TrapDweBallistaBoltAmmo06",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "00109AB5",
+			"edid": "TrapDweBallistaBoltAmmo04",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "00109AB4",
+			"edid": "TrapDweBallistaBoltAmmo03",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "00109AB3",
+			"edid": "TrapDweBallistaBoltAmmo02",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "00105EE7",
+			"edid": "MQ101SteelArrow",
+			"name": "Steel Arrow",
+			"description": "",
+			"damage": "10.0000",
+			"value": 2,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000EAFDF",
+			"edid": "NordHeroArrow",
+			"name": "Nord Hero Arrow",
+			"description": "",
+			"damage": "24.0000",
+			"value": 5,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000E738A",
+			"edid": "dunGeirmundSigdisArrowsIllusion",
+			"name": "Rusty Arrow",
+			"description": "",
+			"damage": "4.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000CEE9E",
+			"edid": "ForswornArrow",
+			"name": "Forsworn Arrow",
+			"description": "",
+			"damage": "7.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000CAB52",
+			"edid": "dunArcherPracticeArrow",
+			"name": "Practice Arrow",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000961D6",
+			"edid": "dunJaphetsFollyCWCatapultAmmo",
+			"name": "",
+			"description": "",
+			"damage": "10.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0007B935",
+			"edid": "DwarvenSphereBolt01",
+			"name": "Dwemer Bolt",
+			"description": "",
+			"damage": "10.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0007B932",
+			"edid": "DwarvenSphereArrow",
+			"name": "Dwarven Sphere Centurion Arrow",
+			"description": "",
+			"damage": "20.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "00020F02",
+			"edid": "CWArrowShort",
+			"name": "Iron Arrow",
+			"description": "",
+			"damage": "1.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "00020DDF",
+			"edid": "CWArrow",
+			"name": "Iron Arrow",
+			"description": "",
+			"damage": "1.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "00073FE6",
+			"edid": "CWCatapultAmmo",
+			"name": "",
+			"description": "",
+			"damage": "5.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0006DA4F",
+			"edid": "TrapDweBallistaBoltAmmo01",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "0006A0BF",
+			"edid": "DummyArrow",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow",
+				"Dummy"
+			]
+		},
+		{
+			"formid": "00052E99",
+			"edid": "FXDustDropAmmoTiny",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "00052E97",
+			"edid": "FXDustDropAmmoSm",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0003BDF7",
+			"edid": "FXDustDropAmmoMed",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000236DD",
+			"edid": "TrapDart",
+			"name": "Dart",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "00038341",
+			"edid": "FalmerArrow",
+			"name": "Falmer Arrow",
+			"description": "",
+			"damage": "7.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "00034182",
+			"edid": "DraugrArrow",
+			"name": "Ancient Nord Arrow",
+			"description": "",
+			"damage": "10.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139C0",
+			"edid": "DaedricArrow",
+			"name": "Daedric Arrow",
+			"description": "",
+			"damage": "24.0000",
+			"value": 8,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BF",
+			"edid": "EbonyArrow",
+			"name": "Ebony Arrow",
+			"description": "",
+			"damage": "20.0000",
+			"value": 7,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BE",
+			"edid": "GlassArrow",
+			"name": "Glass Arrow",
+			"description": "",
+			"damage": "18.0000",
+			"value": 6,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BD",
+			"edid": "ElvenArrow",
+			"name": "Elven Arrow",
+			"description": "",
+			"damage": "16.0000",
+			"value": 5,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BC",
+			"edid": "DwarvenArrow",
+			"name": "Dwarven Arrow",
+			"description": "",
+			"damage": "14.0000",
+			"value": 4,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BB",
+			"edid": "OrcishArrow",
+			"name": "Orcish Arrow",
+			"description": "",
+			"damage": "12.0000",
+			"value": 3,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0001397F",
+			"edid": "SteelArrow",
+			"name": "Steel Arrow",
+			"description": "",
+			"damage": "10.0000",
+			"value": 2,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0001397D",
+			"edid": "IronArrow",
+			"name": "Iron Arrow",
+			"description": "",
+			"damage": "8.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0010B0A7",
+			"edid": "boundArrow",
+			"name": "Bound Arrow",
+			"description": "",
+			"damage": "24.0000",
+			"value": 0,
+			"weight": "0.0000",
+			"flags": "001",
+			"keywords": [
+				"WeapTypeBoundArrow"
+			]
+		},
+		{
+			"formid": "0200FF03",
+			"edid": "DLC1SoulCairnKeeperArrow",
+			"name": "Dragonbone Arrow",
+			"description": "",
+			"damage": "14.0000",
+			"value": 4,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"ArmorMaterialDragonplate",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139C0",
+			"edid": "DaedricArrow",
+			"name": "Daedric Arrow",
+			"description": "",
+			"damage": "24.0000",
+			"value": 8,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialDaedric",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0201A958",
+			"edid": "DLC1ElderScrollBack",
+			"name": "Elder Scroll",
+			"description": "",
+			"damage": "10.0000",
+			"value": 2,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"WeapMaterialSteel",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "020176F4",
+			"edid": "DLC1DragonboneArrow",
+			"name": "Dragonbone Arrow",
+			"description": "",
+			"damage": "25.0000",
+			"value": 9,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow",
+				"DLC1WeapMaterialDragonbone"
+			]
+		},
+		{
+			"formid": "0200F1BC",
+			"edid": "DLC1BoltSteelExplodingShock",
+			"name": "Exploding Steel Bolt of Shock",
+			"description": "Explodes for <10> points of shock damage to Health and half that to Magicka.",
+			"damage": "10.0000",
+			"value": 5,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialSteel",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200F1BB",
+			"edid": "DLC1BoltSteelExplodingIce",
+			"name": "Exploding Steel Bolt of Ice",
+			"description": "Explodes for <10> points of frost damage to Health and Stamina.",
+			"damage": "10.0000",
+			"value": 5,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialSteel",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200F1B9",
+			"edid": "DLC1BoltDwarvenExplodingShock",
+			"name": "Exploding Dwarven Bolt of Shock",
+			"description": "Explodes for <15> points of shock damage to Health and half that to Magicka.",
+			"damage": "14.0000",
+			"value": 15,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialDwarven",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200F1B7",
+			"edid": "DLC1BoltDwarvenExplodingIce",
+			"name": "Exploding Dwarven Bolt of Ice",
+			"description": "Explodes for <15> points of frost damage to Health and Stamina.",
+			"damage": "14.0000",
+			"value": 15,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialDwarven",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200F1B1",
+			"edid": "DLC1BoltDwarvenExplodingFire",
+			"name": "Exploding Dwarven Bolt of Fire",
+			"description": "Explodes for <15> points of fire damage.",
+			"damage": "14.0000",
+			"value": 15,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialDwarven",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200F1A0",
+			"edid": "DLC1BoltSteelExplodingFire",
+			"name": "Exploding Steel Bolt of Fire",
+			"description": "Explodes for <10> points of fire damage.",
+			"damage": "10.0000",
+			"value": 5,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialSteel",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0010EC8C",
+			"edid": "DwarvenSphereBolt02",
+			"name": "Dwemer Bolt",
+			"description": "",
+			"damage": "15.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0007B935",
+			"edid": "DwarvenSphereBolt01",
+			"name": "Dwemer Bolt",
+			"description": "",
+			"damage": "10.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0006DA4F",
+			"edid": "TrapDweBallistaBoltAmmo01",
+			"name": "",
+			"description": "",
+			"damage": "0.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "000139BF",
+			"edid": "EbonyArrow",
+			"name": "Ebony Arrow",
+			"description": "",
+			"damage": "20.0000",
+			"value": 7,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialEbony",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BE",
+			"edid": "GlassArrow",
+			"name": "Glass Arrow",
+			"description": "",
+			"damage": "18.0000",
+			"value": 6,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialGlass",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BD",
+			"edid": "ElvenArrow",
+			"name": "Elven Arrow",
+			"description": "",
+			"damage": "16.0000",
+			"value": 5,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialElven",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BC",
+			"edid": "DwarvenArrow",
+			"name": "Dwarven Arrow",
+			"description": "",
+			"damage": "14.0000",
+			"value": 4,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialDwarven",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "000139BB",
+			"edid": "OrcishArrow",
+			"name": "Orcish Arrow",
+			"description": "",
+			"damage": "12.0000",
+			"value": 3,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialOrcish",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0001397F",
+			"edid": "SteelArrow",
+			"name": "Steel Arrow",
+			"description": "",
+			"damage": "10.0000",
+			"value": 2,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialSteel",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0001397D",
+			"edid": "IronArrow",
+			"name": "Iron Arrow",
+			"description": "",
+			"damage": "8.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"WeapMaterialIron",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200D099",
+			"edid": "DLC1BoltDwarven",
+			"name": "Dwarven Bolt",
+			"description": "",
+			"damage": "14.0000",
+			"value": 3,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialDwarven",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "020098A1",
+			"edid": "DLC1ElvenArrowBlessed",
+			"name": "Sunhallowed Elven Arrow",
+			"description": "Causes sunburst attacks to nearby targets if shot at the sun with Auriel's Bow.",
+			"damage": "16.0000",
+			"value": 16,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow",
+				"DLC1AurielsConditionalExplosionKeyword"
+			]
+		},
+		{
+			"formid": "020098A0",
+			"edid": "DLC1ElvenArrowBlood",
+			"name": "Bloodcursed Elven Arrow",
+			"description": "Shrouds the sun in darkness if shot with Auriel's Bow.",
+			"damage": "16.0000",
+			"value": 6,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0200590C",
+			"edid": "TestDLC1Bolt",
+			"name": "Test Bolt",
+			"description": "",
+			"damage": "10.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "02000BB3",
+			"edid": "DLC1BoltSteel",
+			"name": "Steel Bolt",
+			"description": "",
+			"damage": "10.0000",
+			"value": 1,
+			"weight": "0.1000",
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"keywords": [
+				"WeapMaterialSteel",
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "020339A1",
+			"edid": "DLC2DwarvenBallistaBolt",
+			"name": "Ballista Bolt",
+			"description": "",
+			"damage": "12.0000",
+			"value": 2,
+			"weight": "0.1000",
+			"flags": "111",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		},
+		{
+			"formid": "0202623B",
+			"edid": "DLC2NordicArrow",
+			"name": "Nordic Arrow",
+			"description": "",
+			"damage": "14.0000",
+			"value": 4,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow",
+				"DLC2WeaponMaterialNordic"
+			]
+		},
+		{
+			"formid": "02026239",
+			"edid": "DLC2StalhrimArrow",
+			"name": "Stalhrim Arrow",
+			"description": "",
+			"damage": "20.0000",
+			"value": 7,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow",
+				"DLC2WeaponMaterialStalhrim"
+			]
+		},
+		{
+			"formid": "0201AECF",
+			"edid": "DLC2BloodskalAmmo",
+			"name": "",
+			"description": "",
+			"damage": "15.0000",
+			"value": 0,
+			"weight": "0.1000",
+			"flags": "011"
+		},
+		{
+			"formid": "02017720",
+			"edid": "DLC2RieklingSpearThrown",
+			"name": "Riekling Spear",
+			"description": "",
+			"damage": "10.0000",
+			"value": 2,
+			"weight": "0.1000",
+			"flags": "001",
+			"keywords": [
+				"VendorItemArrow"
+			]
+		}
+	]
+}

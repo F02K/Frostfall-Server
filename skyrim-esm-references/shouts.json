@@ -1,0 +1,1291 @@
+{
+	"shouts": [
+		{
+			"formid": "0010FE24",
+			"edid": "L_DragonFrostIceStormShout",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE23",
+			"edid": "L_DragonFrostBreathShout",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE22",
+			"edid": "L_DragonFireBallShout",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE21",
+			"edid": "L_DragonFireBreathShout",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010FE1B",
+			"edid": "LShoutDragonFrostBreath",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F734",
+			"edid": "GreybeardElementalFuryShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F733",
+			"edid": "GreybeardDismay",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F732",
+			"edid": "GreybeardUnrelentingForceShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F731",
+			"edid": "GreybeardWhirlwindSprintShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F730",
+			"edid": "GreybeardIceFormShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F72F",
+			"edid": "GreybeardFrostBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F72E",
+			"edid": "GreybeardFireBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010F72D",
+			"edid": "GreybeardDisarmShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010E755",
+			"edid": "crCenturionBreathWeaponMal",
+			"name": "Steam Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4E2",
+			"edid": "DragonFrostIceStormShout05",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4E1",
+			"edid": "DragonFrostBreathShout05",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4E0",
+			"edid": "DragonFireBreathShout05",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0010C4DF",
+			"edid": "DragonFireBallShout05",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00107580",
+			"edid": "MQ101DragonUnrelentingForceShout",
+			"name": "Dragon Unrelenting Force",
+			"description": "Staggers targets and knocks over loose objects.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00101CEC",
+			"edid": "MQ206AlduinFirestormShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000FF8D8",
+			"edid": "MQAlduinResurrectShout",
+			"name": "ResurrectionShout",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000FEAA0",
+			"edid": "DragonFireBallShout03",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000FEA9D",
+			"edid": "DragonFireBreathShout03",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F810B",
+			"edid": "DragonFrostIceStormShout04",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F810A",
+			"edid": "DragonFrostBreathShout04",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8109",
+			"edid": "DragonFireBreathShout04",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8108",
+			"edid": "DragonFireBallShout04",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8101",
+			"edid": "DragonFrostIceStormShout03",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F8100",
+			"edid": "DragonFrostBreathShout03",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80FB",
+			"edid": "DragonFrostBreathShout01",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80F9",
+			"edid": "DragonFrostIceStormShout01",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80F8",
+			"edid": "DragonFireBreathShout02",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000F80F7",
+			"edid": "DragonFireBallShout02",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000DD607",
+			"edid": "DragonFrostIceStormShout02",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000B2387",
+			"edid": "dunCGDragonStormCallShout",
+			"name": "Dragon Storm Call",
+			"description": "Changes clear weather into stormy weather.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0009DE93",
+			"edid": "UnrelentingForceShoutDraugr",
+			"name": "Unrelenting Force",
+			"description": "Staggers targets and knocks over loose objects.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0004C40B",
+			"edid": "AlduinFirestormShout",
+			"name": "Dragon Storm Call",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00016CF0",
+			"edid": "DragonUnrelentingForceShout",
+			"name": "Dragon Unrelenting Force",
+			"description": "Staggers targets and knocks over loose objects.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00016C40",
+			"edid": "DragonDisarmShout",
+			"name": "Dragon Disarm",
+			"description": "Targets in mid swing drop their weapons.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007A4C8",
+			"edid": "MQ105WhirlwindSprintShout",
+			"name": "Whirlwind Sprint",
+			"description": "You rush forward almost instantaneously.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E5F68",
+			"edid": "HowlWerewolfCallOfTheWild",
+			"name": "Call of the Wild",
+			"description": "An area effect knockdown with a slight regen component.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E4908",
+			"edid": "dunCGAlduinFireBreathShout",
+			"name": "Fire Breath (for DRAGONS only)",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E40D1",
+			"edid": "WoodElfBeastTongue",
+			"name": "Beast Tongue",
+			"description": "Once a day, affected animals will be your allies.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E40CB",
+			"edid": "ImperialVoiceOfTheEmperor",
+			"name": "Voice of the Emperor",
+			"description": "Once a day, nearby people are calmed and will not start combat.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000E40C4",
+			"edid": "NordBattleCry",
+			"name": "Battle Cry",
+			"description": "Once a day, affected enemies do half damage.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000CF79B",
+			"edid": "HowlWerewolfSummonWolves",
+			"name": "Howl of the Pack",
+			"description": "Werewolf howls calling for companions.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000CF790",
+			"edid": "HowlWerewolfFear",
+			"name": "Howl of Terror",
+			"description": "Werewolf howls instilling terror into all living creatures nearby.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000CE218",
+			"edid": "HowlWerewolfDetectLife",
+			"name": "Scent of Blood",
+			"description": "Werewolf howls and is able to detect the blood of nearby living creatures.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000A82BC",
+			"edid": "crCenturionBreathWeapon",
+			"name": "Steam Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00070981",
+			"edid": "DisarmShout",
+			"name": "Disarm",
+			"description": "Shout defies steel, as you rip the weapon from an opponent's grasp.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00070980",
+			"edid": "IceFormShout",
+			"name": "Ice Form",
+			"description": "Your Thu'um freezes an opponent solid.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097F",
+			"edid": "ThrowVoiceShout",
+			"name": "Throw Voice",
+			"description": "The Thu'um is heard, but its source unknown, fooling those into seeking it out.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097E",
+			"edid": "KynesPeaceShout",
+			"name": "Kyne's Peace",
+			"description": "The Voice soothes wild beasts, who lose their desire to fight or flee.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097D",
+			"edid": "StormCallShout",
+			"name": "Storm Call",
+			"description": "A Shout to the skies, a cry to the clouds, that awakens the destructive force of Skyrim's lightning.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097C",
+			"edid": "MarkedforDeathShout",
+			"name": "Marked for Death",
+			"description": "Speak, and let your Voice herald doom, as an opponent's armor and lifeforce are weakened.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0007097B",
+			"edid": "AuraWhisperShout",
+			"name": "Aura Whisper",
+			"description": "Your Voice is not a Shout, but a whisper, revealing the life forces of any and all.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0002395A",
+			"edid": "Dismay",
+			"name": "Dismay",
+			"description": "And the weak shall fear the Thu'um, and flee in terror.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0005FC77",
+			"edid": "animalAllegianceShout",
+			"name": "Animal Allegiance",
+			"description": "A Shout for help from the beasts of the wild, who come to fight in your defense.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0005D16B",
+			"edid": "FrostBreathShout",
+			"name": "Frost Breath",
+			"description": "Your breath is winter, you Thu'um a blizzard.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00059327",
+			"edid": "DA13AfflictedBreathShout",
+			"name": "Vile Vapor",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000549B2",
+			"edid": "DragonFrostBreathShout02",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000549B1",
+			"edid": "MQDragonIceSpikeVolleyShout",
+			"name": "Ice Spike (for DRAGONS only)",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0004DBA5",
+			"edid": "DragonFireBallShout01",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0005196A",
+			"edid": "CallofValorShout",
+			"name": "Call of Valor",
+			"description": "The valiant of Sovngarde hear your Voice, and journey beyond space and time to lend aid.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00048AC9",
+			"edid": "SlowTimeShout",
+			"name": "Slow Time",
+			"description": "Shout at time, and command it to obey, as the world around you stands still.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00046B8C",
+			"edid": "CallDragonShout",
+			"name": "Call Dragon",
+			"description": "Odahviing! Hear my Voice and come forth. I summon you in my time of need.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00044250",
+			"edid": "DragonrendShout",
+			"name": "Dragonrend",
+			"description": "Your Voice lashes out at a dragon's very soul, forcing the beast to land.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0003F9EA",
+			"edid": "FireBreathShout",
+			"name": "Fire Breath",
+			"description": "Inhale air, exhale flame, and behold the Thu'um as inferno.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0003CD34",
+			"edid": "ClearSkiesShout",
+			"name": "Clear Skies",
+			"description": "Skyrim itself yields before the Thu'um, as you clear away fog and inclement weather.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00032921",
+			"edid": "ElementalFuryShout",
+			"name": "Elemental Fury",
+			"description": "The Thu'um imbues your arms with the speed of wind, allowing for faster weapon strikes.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00032920",
+			"edid": "BecomeEtherealShout",
+			"name": "Become Ethereal",
+			"description": "The Thu'um reaches out to the Void, changing your form to one that cannot harm, or be harmed.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0002F7BA",
+			"edid": "WhirlwindSprintShout",
+			"name": "Whirlwind Sprint",
+			"description": "The Thu'um rushes forward, carrying you in its wake with the speed of a tempest.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0002F2DF",
+			"edid": "MQ105PhantomFormShout",
+			"name": "Phantom Form",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "000252C0",
+			"edid": "DragonFireBreathShout01",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "00013E07",
+			"edid": "UnrelentingForceShout",
+			"name": "Unrelenting Force",
+			"description": "Your Voice is raw power, pushing aside anything - or anyone - who stands in your path.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0201A165",
+			"edid": "DLC1DragonUndeadSummonShout",
+			"name": "Soul Cairn Summon",
+			"description": "Summon undead from the Soul Cairn.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02018244",
+			"edid": "DLC1DragonDrainVitalityShout02",
+			"name": "Drain Vitality",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020181B8",
+			"edid": "DLC1DragonDrainVitalityShout03",
+			"name": "Drain Vitality",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020181B7",
+			"edid": "DLC1DragonDrainVitalityShout04",
+			"name": "Drain Vitality",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020181B6",
+			"edid": "DLC1DragonDrainVitalityShout05",
+			"name": "Drain Vitality",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4D",
+			"edid": "DLC1LD_ForgemasterFireballShout03",
+			"name": "Forgemaster Fireball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4C",
+			"edid": "DLC1LD_ForgemasterFireBreathShout03",
+			"name": "Forgemaster Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4B",
+			"edid": "DLC1LD_ForgemasterFireballShout02",
+			"name": "Forgemaster Fireball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C4A",
+			"edid": "DLC1LD_ForgemasterFireBreathShout02",
+			"name": "Forgemaster Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C43",
+			"edid": "DLC1LD_ForgemasterFlameCloakShout",
+			"name": "Forgemaster Flame Cloak",
+			"description": "Targets in mid swing drop their weapons.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C3E",
+			"edid": "DLC1LD_ForgemasterFireBreathShout01",
+			"name": "Forgemaster Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02015C39",
+			"edid": "DLC1LD_ForgemasterFireballShout01",
+			"name": "Forgemaster Fireball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200C5FB",
+			"edid": "DLC1DragonFrostBreathShout07",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200C5FA",
+			"edid": "DLC1DragonFireBreathShout07",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200C5F9",
+			"edid": "DLC1DragonDrainVitalityShout07",
+			"name": "Drain Vitality",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200BFED",
+			"edid": "DLC1VQ05DurnehviirShout",
+			"name": "Raise Dead",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02008A62",
+			"edid": "DLC1DrainVitalityShout",
+			"name": "Drain Vitality",
+			"description": "Coax both magical and mortal energies from your hapless opponent.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02008442",
+			"edid": "DLC1DragonDrainVitalityShout06",
+			"name": "Drain Vitality",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843D",
+			"edid": "DLC1DragonFrostIceStormShout06",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843C",
+			"edid": "DLC1DragonFrostBreathShout06",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843B",
+			"edid": "DLC1DragonFireBreathShout06",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0200843A",
+			"edid": "DLC1DragonFireBallShout06",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02007CB6",
+			"edid": "DLC1SoulTearShout",
+			"name": "Soul Tear",
+			"description": "Your Thu'um cuts through flesh and shatters soul, commanding the will of the fallen.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020030D2",
+			"edid": "DLC1SummonDragonShout",
+			"name": "Summon Durnehviir",
+			"description": "Durnehviir! Hear my Voice and come forth from the Soul Cairn. I summon you in my time of need.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02039D28",
+			"edid": "dlc2MKMiraakMaskShoutShout",
+			"name": "Benthic Scream",
+			"description": "Your Voice power is corrupted by the influence of Hermaeus Mora.\r\n",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0F",
+			"edid": "DLC2MiraakDragonAspectShout",
+			"name": "Dragon Aspect",
+			"description": "Once a day, take on the mighty aspect of a dragon, delivering colossal blows, with an armored hide, and more powerful shouts.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0E",
+			"edid": "DLC2MiraakUnrelentingForceShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0D",
+			"edid": "DLC2MiraakFrostBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0C",
+			"edid": "DLC2MiraakFireBreathShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02038B0B",
+			"edid": "DLC2MiraakElementalFuryShout",
+			"name": "",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020382F9",
+			"edid": "DLC2MiraakFakeKillShout",
+			"name": "Whirlwind Sprint",
+			"description": "You rush forward almost instantaneously.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02036132",
+			"edid": "DLC2DragonFireBallShout06",
+			"name": "Fire Ball",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02036131",
+			"edid": "DLC2DragonFireBreathShout06",
+			"name": "Fire Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0203612C",
+			"edid": "DLC2DragonFrostIceStormShout06",
+			"name": "Ice Storm",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0203612B",
+			"edid": "DLC2DragonFrostBreathShout06",
+			"name": "Frost Breath",
+			"description": "",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0203547B",
+			"edid": "DLC2MiraakWhirlwindSprintShout",
+			"name": "Whirlwind Sprint",
+			"description": "You rush forward almost instantaneously.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0202AD09",
+			"edid": "DLC2BattleFuryShout",
+			"name": "Battle Fury",
+			"description": "Your Thu'um enchants your nearby allies' weapons, allowing them to attack faster.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02023F7A",
+			"edid": "DLC2MiraakBecomeEtherealShout",
+			"name": "Become Ethereal",
+			"description": "The Thu'um reaches out to the Void, changing your form to one that cannot harm, or be harmed.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "02023F79",
+			"edid": "DLC2MiraakCycloneShout",
+			"name": "Cyclone",
+			"description": "Your Thu'um creates a whirling cyclone that sows chaos among your enemies.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020200C0",
+			"edid": "DLC2CycloneShout",
+			"name": "Cyclone",
+			"description": "Your Thu'um creates a whirling cyclone that sows chaos among your enemies.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "0201DF92",
+			"edid": "DLC2DragonAspectShout",
+			"name": "Dragon Aspect",
+			"description": "Once a day, take on the mighty aspect of a dragon, delivering colossal blows, with an armored hide, and more powerful shouts.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		},
+		{
+			"formid": "020179D8",
+			"edid": "DLC2BendWillShout",
+			"name": "Bend Will",
+			"description": "Your Voice bends the very stones to your will. As it gains power, animals, people and even dragons must do your bidding.",
+			"words": [
+				{},
+				{},
+				{}
+			]
+		}
+	]
+}

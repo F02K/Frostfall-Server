@@ -1,0 +1,5194 @@
+{
+	"ingredients": [
+		{
+			"formid": "00106E1C",
+			"edid": "CritterPondFish01Ingredient",
+			"name": "Silverside Perch",
+			"weight": "0.2500",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00106E1B",
+			"edid": "CritterPondFish02Ingredient",
+			"name": "Abecean Longfin",
+			"weight": "0.5000",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2E",
+					"effect_edid": "AlchWeaknessFrost",
+					"effect_name": "Weakness to Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00106E1A",
+			"edid": "CritterPondFish03Ingredient",
+			"name": "River Betty",
+			"weight": "0.2500",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB24",
+					"effect_edid": "AlchFortifyAlteration",
+					"effect_name": "Fortify Alteration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00106E19",
+			"edid": "CritterPondFish04Ingredient",
+			"name": "Cyrodilic Spadetail",
+			"weight": "0.2500",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00106E18",
+			"edid": "CritterPondFish05Ingredient",
+			"name": "Histcarp",
+			"weight": "0.2500",
+			"value": 6,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003AC2D",
+					"effect_edid": "AlchWaterbreathing",
+					"effect_name": "Waterbreathing",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "001016B3",
+			"edid": "HumanFlesh",
+			"name": "Human Flesh",
+			"weight": "0.2500",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000F11C0",
+			"edid": "DwarvenOil",
+			"name": "Dwarven Oil",
+			"weight": "0.2500",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB27",
+					"effect_edid": "AlchFortifyIllusion",
+					"effect_name": "Fortify Illusion",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000EC870",
+			"edid": "MoraTapinellaBits",
+			"name": "Mora Tapinella",
+			"weight": "0.2500",
+			"value": 4,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB08",
+					"effect_edid": "AlchFortifyStaminaRate",
+					"effect_name": "Regenerate Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB27",
+					"effect_edid": "AlchFortifyIllusion",
+					"effect_name": "Fortify Illusion",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000D8E3F",
+			"edid": "MoonSugar",
+			"name": "Moon Sugar",
+			"weight": "0.2500",
+			"value": 50,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000B701A",
+			"edid": "NirnrootRed",
+			"name": "Crimson Nirnroot",
+			"weight": "0.2000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "6.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "9.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				},
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"isNirnroot"
+			]
+		},
+		{
+			"formid": "000B08C5",
+			"edid": "BeeHoneyComb",
+			"name": "Honeycomb",
+			"weight": "1.0000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			]
+		},
+		{
+			"formid": "000A9195",
+			"edid": "CritterBeeIngredient",
+			"name": "Bee",
+			"weight": "0.1000",
+			"value": 3,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB08",
+					"effect_edid": "AlchFortifyStaminaRate",
+					"effect_name": "Regenerate Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F2F",
+					"effect_edid": "AlchWeaknessShock",
+					"effect_name": "Weakness to Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000A9191",
+			"edid": "BeeHiveHusk",
+			"name": "Beehive Husk",
+			"weight": "1.0000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "00085500",
+			"edid": "PearlSmall",
+			"name": "Small Pearl",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB19",
+					"effect_edid": "AlchFortifyOneHanded",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000854FE",
+			"edid": "Pearl",
+			"name": "Pearl",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "000705B7",
+			"edid": "FavorThadgeirAshes",
+			"name": "Berit's Ashes",
+			"weight": "0.2000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0006BC10",
+			"edid": "PowderedMammothTusk",
+			"name": "Powdered Mammoth Tusk",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "0006BC0E",
+			"edid": "WispWrappings",
+			"name": "Wisp Wrappings",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "0006BC0B",
+			"edid": "AntlersSmall",
+			"name": "Small Antlers",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010DE5E",
+					"effect_edid": "AlchDamageStaminaDuration",
+					"effect_name": "Lingering Damage Stamina",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				}
+			]
+		},
+		{
+			"formid": "0006BC0A",
+			"edid": "AntlersLarge",
+			"name": "Large Antlers",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			]
+		},
+		{
+			"formid": "0006BC07",
+			"edid": "SabrecatEyeball",
+			"name": "Eye of Sabre Cat",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			]
+		},
+		{
+			"formid": "0006BC04",
+			"edid": "SabrecatTooth",
+			"name": "Sabre Cat Tooth",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1E",
+					"effect_edid": "AlchFortifyHeavyArmor",
+					"effect_name": "Fortify Heavy Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1D",
+					"effect_edid": "AlchFortifySmithing",
+					"effect_name": "Fortify Smithing",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "0006BC02",
+			"edid": "BearClaws",
+			"name": "Bear Claws",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB19",
+					"effect_edid": "AlchFortifyOneHanded",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			]
+		},
+		{
+			"formid": "0006BC00",
+			"edid": "MudcrabChitin",
+			"name": "Mudcrab Chitin",
+			"weight": "0.2500",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "000AE722",
+					"effect_edid": "AlchCureDisease",
+					"effect_name": "Cure Disease",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "00023D77",
+			"edid": "BirdEgg03",
+			"name": "Chicken's Egg",
+			"weight": "0.5000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003AC2D",
+					"effect_edid": "AlchWaterbreathing",
+					"effect_name": "Waterbreathing",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0010DE5E",
+					"effect_edid": "AlchDamageStaminaDuration",
+					"effect_name": "Lingering Damage Stamina",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemFood",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "00023D6F",
+			"edid": "BirdEgg02",
+			"name": "Pine Thrush Egg",
+			"weight": "0.5000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB21",
+					"effect_edid": "AlchFortifyLockpicking",
+					"effect_name": "Fortify Lockpicking",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemFood",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "000E7ED0",
+			"edid": "HawkFeathers",
+			"name": "Hawk Feathers",
+			"weight": "0.1000",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "000AE722",
+					"effect_edid": "AlchCureDisease",
+					"effect_name": "Cure Disease",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB19",
+					"effect_edid": "AlchFortifyOneHanded",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000E7EBC",
+			"edid": "HawkBeak",
+			"name": "Hawk Beak",
+			"weight": "0.2500",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000E4F0C",
+			"edid": "DragonflyBlue",
+			"name": "Blue Dartwing",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB20",
+					"effect_edid": "AlchFortifyPickpocket",
+					"effect_name": "Fortify Pickpocket",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "0004DA73",
+			"edid": "FireflyThorax",
+			"name": "Torchbug Thorax",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0010DE5F",
+					"effect_edid": "AlchDamageMagickaDuration",
+					"effect_name": "Lingering Damage Magicka",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			]
+		},
+		{
+			"formid": "0004DA25",
+			"edid": "Mushroom06",
+			"name": "Blisterwort",
+			"weight": "0.2000",
+			"value": 12,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1D",
+					"effect_edid": "AlchFortifySmithing",
+					"effect_name": "Fortify Smithing",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0004DA24",
+			"edid": "Mushroom05",
+			"name": "Namira's Rot",
+			"weight": "0.2500",
+			"value": 0,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB21",
+					"effect_edid": "AlchFortifyLockpicking",
+					"effect_name": "Fortify Lockpicking",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0004DA23",
+			"edid": "Mushroom04",
+			"name": "Imp Stool",
+			"weight": "0.3000",
+			"value": 0,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0004DA22",
+			"edid": "Mushroom03",
+			"name": "White Cap",
+			"weight": "0.3000",
+			"value": 0,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2E",
+					"effect_edid": "AlchWeaknessFrost",
+					"effect_name": "Weakness to Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB1E",
+					"effect_edid": "AlchFortifyHeavyArmor",
+					"effect_name": "Fortify Heavy Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0004DA20",
+			"edid": "Mushroom02",
+			"name": "Bleeding Crown",
+			"weight": "0.3000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0004DA00",
+			"edid": "Mushroom01",
+			"name": "Fly Amanita",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1A",
+					"effect_edid": "AlchFortifyTwoHanded",
+					"effect_name": "Fortify Two-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB08",
+					"effect_edid": "AlchFortifyStaminaRate",
+					"effect_name": "Regenerate Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0001BCBC",
+			"edid": "DBJarrinRoot",
+			"name": "Jarrin Root",
+			"weight": "0.5000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "200.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000BB956",
+			"edid": "DragonflyOrange",
+			"name": "Orange Dartwing",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB20",
+					"effect_edid": "AlchFortifyPickpocket",
+					"effect_name": "Fortify Pickpocket",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			]
+		},
+		{
+			"formid": "000B2183",
+			"edid": "CreepClusterRoot",
+			"name": "Creep Cluster",
+			"weight": "0.2000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000B18CD",
+			"edid": "HumanHeart",
+			"name": "Human Heart",
+			"weight": "1.0000",
+			"value": 0,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0009151B",
+			"edid": "SpiderEgg",
+			"name": "Spider Egg",
+			"weight": "0.2000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB21",
+					"effect_edid": "AlchFortifyLockpicking",
+					"effect_name": "Fortify Lockpicking",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB1B",
+					"effect_edid": "AlchFortifyMarksman",
+					"effect_name": "Fortify Marksman",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0006AC4A",
+			"edid": "JazBay",
+			"name": "Jazbay Grapes",
+			"weight": "0.2000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000889A2",
+			"edid": "DragonsTongue",
+			"name": "Dragon's Tongue",
+			"weight": "0.1000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB23",
+					"effect_edid": "AlchFortifyBarter",
+					"effect_name": "Fortify Barter",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB27",
+					"effect_edid": "AlchFortifyIllusion",
+					"effect_name": "Fortify Illusion",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1A",
+					"effect_edid": "AlchFortifyTwoHanded",
+					"effect_name": "Fortify Two-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "00083E64",
+			"edid": "SpikyGrass01",
+			"name": "Grass Pod",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB24",
+					"effect_edid": "AlchFortifyAlteration",
+					"effect_name": "Fortify Alteration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0007EE01",
+			"edid": "GlowingMushroom",
+			"name": "Glowing Mushroom",
+			"weight": "0.2000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1D",
+					"effect_edid": "AlchFortifySmithing",
+					"effect_name": "Fortify Smithing",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0007EDF5",
+			"edid": "NordicBarnacles",
+			"name": "Nordic Barnacle",
+			"weight": "0.2000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003AC2D",
+					"effect_edid": "AlchWaterbreathing",
+					"effect_name": "Waterbreathing",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB20",
+					"effect_edid": "AlchFortifyPickpocket",
+					"effect_name": "Fortify Pickpocket",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0007E8C8",
+			"edid": "BirdEgg01",
+			"name": "Rock Warbler Egg",
+			"weight": "0.5000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB19",
+					"effect_edid": "AlchFortifyOneHanded",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemFood",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "0007E8C5",
+			"edid": "SlaughterfishEgg01",
+			"name": "Slaughterfish Egg",
+			"weight": "0.2000",
+			"value": 3,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB20",
+					"effect_edid": "AlchFortifyPickpocket",
+					"effect_name": "Fortify Pickpocket",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemFoodRaw"
+			]
+		},
+		{
+			"formid": "0007E8C1",
+			"edid": "GiantLichen",
+			"name": "Giant Lichen",
+			"weight": "0.2500",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2F",
+					"effect_edid": "AlchWeaknessShock",
+					"effect_name": "Weakness to Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0007E8B7",
+			"edid": "SwampFungalPod01",
+			"name": "Swamp Fungal Pod",
+			"weight": "0.2500",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010DE5F",
+					"effect_edid": "AlchDamageMagickaDuration",
+					"effect_name": "Lingering Damage Magicka",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00077E1E",
+			"edid": "MountainFlower01Purple",
+			"name": "Purple Mountain Flower",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010DE5F",
+					"effect_edid": "AlchDamageMagickaDuration",
+					"effect_name": "Lingering Damage Magicka",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "00077E1D",
+			"edid": "MountainFlower01Red",
+			"name": "Red Mountain Flower",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "00077E1C",
+			"edid": "MountainFlower01Blue",
+			"name": "Blue Mountain Flower",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "000727E0",
+			"edid": "MothWingMonarch",
+			"name": "Butterfly Wing",
+			"weight": "0.1000",
+			"value": 3,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB23",
+					"effect_edid": "AlchFortifyBarter",
+					"effect_name": "Fortify Barter",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0010DE5E",
+					"effect_edid": "AlchDamageStaminaDuration",
+					"effect_name": "Lingering Damage Stamina",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "000727DF",
+			"edid": "MothWingLuna",
+			"name": "Luna Moth Wing",
+			"weight": "0.1000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "000727DE",
+			"edid": "MothWingBlue",
+			"name": "Blue Butterfly Wing",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "0006B689",
+			"edid": "HagravenClaw",
+			"name": "Hagraven Claw",
+			"weight": "0.2500",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010DE5F",
+					"effect_edid": "AlchDamageMagickaDuration",
+					"effect_name": "Lingering Damage Magicka",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB23",
+					"effect_edid": "AlchFortifyBarter",
+					"effect_name": "Fortify Barter",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0006ABCB",
+			"edid": "CanisRoot01",
+			"name": "Canis Root",
+			"weight": "0.1000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB19",
+					"effect_edid": "AlchFortifyOneHanded",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1B",
+					"effect_edid": "AlchFortifyMarksman",
+					"effect_name": "Fortify Marksman",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000516C8",
+			"edid": "deathBell",
+			"name": "Deathbell",
+			"weight": "0.1000",
+			"value": 4,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 20
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00074A19",
+			"edid": "MS03BlackBriarSecretIngredient",
+			"name": "Salt Pile",
+			"weight": "0.2000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0006F950",
+			"edid": "ScalyPholiotaBits",
+			"name": "Scaly Pholiota",
+			"weight": "0.2500",
+			"value": 4,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB27",
+					"effect_edid": "AlchFortifyIllusion",
+					"effect_name": "Fortify Illusion",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB08",
+					"effect_edid": "AlchFortifyStaminaRate",
+					"effect_name": "Regenerate Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00063B5F",
+			"edid": "SprigganSap",
+			"name": "Spriggan Sap",
+			"weight": "0.2000",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB1D",
+					"effect_edid": "AlchFortifySmithing",
+					"effect_name": "Fortify Smithing",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB24",
+					"effect_edid": "AlchFortifyAlteration",
+					"effect_name": "Fortify Alteration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00059B86",
+			"edid": "Nirnroot",
+			"name": "Nirnroot",
+			"weight": "0.2000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				},
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"isNirnroot"
+			]
+		},
+		{
+			"formid": "00057F91",
+			"edid": "HangingMoss",
+			"name": "Hanging Moss",
+			"weight": "0.2500",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB19",
+					"effect_edid": "AlchFortifyOneHanded",
+					"effect_name": "Fortify One-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00052695",
+			"edid": "CharredSkeeverHide",
+			"name": "Charred Skeever Hide",
+			"weight": "0.5000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "000AE722",
+					"effect_edid": "AlchCureDisease",
+					"effect_name": "Cure Disease",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemFood"
+			]
+		},
+		{
+			"formid": "0005076E",
+			"edid": "JuniperBerries",
+			"name": "Juniper Berries",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB1B",
+					"effect_edid": "AlchFortifyMarksman",
+					"effect_name": "Fortify Marksman",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemFoodRaw",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "0004B0BA",
+			"edid": "Wheat",
+			"name": "Wheat",
+			"weight": "0.1000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0010DE5F",
+					"effect_edid": "AlchDamageMagickaDuration",
+					"effect_name": "Lingering Damage Magicka",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemFoodRaw"
+			]
+		},
+		{
+			"formid": "00045C28",
+			"edid": "Lavender",
+			"name": "Lavender",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "0003F7F8",
+			"edid": "TundraCotton",
+			"name": "Tundra Cotton",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB23",
+					"effect_edid": "AlchFortifyBarter",
+					"effect_name": "Fortify Barter",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD76",
+			"edid": "vampireDust",
+			"name": "Vampire Dust",
+			"weight": "0.2000",
+			"value": 25,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "000AE722",
+					"effect_edid": "AlchCureDisease",
+					"effect_name": "Cure Disease",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD73",
+			"edid": "glowDust",
+			"name": "Glow Dust",
+			"weight": "0.5000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD72",
+			"edid": "TrollFat",
+			"name": "Troll Fat",
+			"weight": "1.0000",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1A",
+					"effect_edid": "AlchFortifyTwoHanded",
+					"effect_name": "Fortify Two-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD71",
+			"edid": "Taproot",
+			"name": "Taproot",
+			"weight": "0.5000",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB27",
+					"effect_edid": "AlchFortifyIllusion",
+					"effect_name": "Fortify Illusion",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD70",
+			"edid": "SlaughterfishScales",
+			"name": "Slaughterfish Scales",
+			"weight": "0.1000",
+			"value": 3,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB1E",
+					"effect_edid": "AlchFortifyHeavyArmor",
+					"effect_name": "Fortify Heavy Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD6F",
+			"edid": "SkeeverTail",
+			"name": "Skeever Tail",
+			"weight": "0.2000",
+			"value": 3,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD6A",
+			"edid": "IceWraithTeeth",
+			"name": "Ice Wraith Teeth",
+			"weight": "0.2500",
+			"value": 30,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2E",
+					"effect_edid": "AlchWeaknessFrost",
+					"effect_name": "Weakness to Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB1E",
+					"effect_edid": "AlchFortifyHeavyArmor",
+					"effect_name": "Fortify Heavy Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				},
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD66",
+			"edid": "HagravenFeathers",
+			"name": "Hagraven Feathers",
+			"weight": "0.1000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F2F",
+					"effect_edid": "AlchWeaknessShock",
+					"effect_name": "Weakness to Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD64",
+			"edid": "GiantToes",
+			"name": "Giant's Toe",
+			"weight": "1.0000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD63",
+			"edid": "Ectoplasm",
+			"name": "Ectoplasm",
+			"weight": "0.1000",
+			"value": 25,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD61",
+			"edid": "BriarHeart",
+			"name": "Briar Heart",
+			"weight": "0.5000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD60",
+			"edid": "VoidSalts",
+			"name": "Void Salts",
+			"weight": "0.2000",
+			"value": 125,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2F",
+					"effect_edid": "AlchWeaknessShock",
+					"effect_name": "Weakness to Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD5F",
+			"edid": "FrostSalts",
+			"name": "Frost Salts",
+			"weight": "0.2500",
+			"value": 100,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD5E",
+			"edid": "FireSalts",
+			"name": "Fire Salts",
+			"weight": "0.2500",
+			"value": 50,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2E",
+					"effect_edid": "AlchWeaknessFrost",
+					"effect_name": "Weakness to Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD5D",
+			"edid": "FalmerEar",
+			"name": "Falmer Ear",
+			"weight": "0.2000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB21",
+					"effect_edid": "AlchFortifyLockpicking",
+					"effect_name": "Fortify Lockpicking",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD5B",
+			"edid": "DaedraHeart",
+			"name": "Daedra Heart",
+			"weight": "0.5000",
+			"value": 250,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0003AD56",
+			"edid": "ChaurusEggs",
+			"name": "Chaurus Eggs",
+			"weight": "0.2000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090042",
+					"effect_edid": "AlchWeaknessPoison",
+					"effect_name": "Weakness to Poison",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00034D32",
+			"edid": "FrostMirriam",
+			"name": "Frost Mirriam",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00034D31",
+			"edid": "ElvesEar",
+			"name": "Elves Ear",
+			"weight": "0.1000",
+			"value": 10,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB17",
+					"effect_edid": "AlchRestoreMagicka",
+					"effect_name": "Restore Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1B",
+					"effect_edid": "AlchFortifyMarksman",
+					"effect_name": "Fortify Marksman",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2E",
+					"effect_edid": "AlchWeaknessFrost",
+					"effect_name": "Weakness to Frost",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "00034D22",
+			"edid": "Garlic",
+			"name": "Garlic",
+			"weight": "0.2500",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemFoodRaw"
+			]
+		},
+		{
+			"formid": "00034CDF",
+			"edid": "SaltPile",
+			"name": "Salt Pile",
+			"weight": "0.2000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F51",
+					"effect_edid": "AlchWeaknessMagic",
+					"effect_name": "Weakness to Magic",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"VendorItemFoodRaw"
+			]
+		},
+		{
+			"formid": "00034CDD",
+			"edid": "BoneMeal",
+			"name": "Bone Meal",
+			"weight": "0.5000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0002F44C",
+			"edid": "Nightshade",
+			"name": "Nightshade",
+			"weight": "0.1000",
+			"value": 8,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0010DE5E",
+					"effect_edid": "AlchDamageStaminaDuration",
+					"effect_name": "Lingering Damage Stamina",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0001B3BD",
+			"edid": "Snowberry",
+			"name": "Snowberries",
+			"weight": "0.1000",
+			"value": 4,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemFood",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "000134AA",
+			"edid": "Thistle01",
+			"name": "Thistle Branch",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEB",
+					"effect_edid": "AlchResistFrost",
+					"effect_name": "Resist Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1E",
+					"effect_edid": "AlchFortifyHeavyArmor",
+					"effect_name": "Fortify Heavy Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "000B08C5",
+			"edid": "BeeHoneyComb",
+			"name": "Honeycomb",
+			"weight": "1.0000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemFoodRaw"
+			]
+		},
+		{
+			"formid": "0100306F",
+			"edid": "ccBGS_RootThornHookIngredient",
+			"name": "Thorn Hook",
+			"weight": "0.1000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 180
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 180
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0100306E",
+			"edid": "ccBGS_RootScreamingMawIngredient",
+			"name": "Screaming Maw",
+			"weight": "0.1000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "20.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB24",
+					"effect_edid": "AlchFortifyAlteration",
+					"effect_name": "Fortify Alteration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "20.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0100306D",
+			"edid": "ccBGS_RootRotScaleIngredient",
+			"name": "Rot Scale",
+			"weight": "0.1000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "02002A78",
+			"edid": "DLC1MountainFlower01Yellow",
+			"name": "Yellow Mountain Flower",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00090041",
+					"effect_edid": "AlchResistPoison",
+					"effect_name": "Resist Poison",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB28",
+					"effect_edid": "AlchFortifyRestoration",
+					"effect_name": "Fortify Restoration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2C",
+					"effect_edid": "AlchDamageStaminaRate",
+					"effect_name": "Damage Stamina Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftFlower"
+			]
+		},
+		{
+			"formid": "020185FB",
+			"edid": "DLC01PoisonBloom",
+			"name": "Poison Bloom",
+			"weight": "0.2500",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			]
+		},
+		{
+			"formid": "020183B7",
+			"edid": "DLC01ChaurusHunterAntennae",
+			"name": "Chaurus Hunter Antennae",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "0200B097",
+			"edid": "DLC01GlowPlant01Ingredient",
+			"name": "Gleamblossom",
+			"weight": "0.1000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "020059BA",
+			"edid": "DLC01MothWingAncestor",
+			"name": "Ancestor Moth Wing",
+			"weight": "0.1000",
+			"value": 2,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB25",
+					"effect_edid": "AlchFortifyConjuration",
+					"effect_name": "Fortify Conjuration",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "0200F1CC",
+			"edid": "BYOHHawkEgg01",
+			"name": "Hawk's Egg",
+			"weight": "0.5000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003AC2D",
+					"effect_edid": "AlchWaterbreathing",
+					"effect_name": "Waterbreathing",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0010DE5E",
+					"effect_edid": "AlchDamageStaminaDuration",
+					"effect_name": "Lingering Damage Stamina",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemFood",
+				"GiftChildSpecial"
+			]
+		},
+		{
+			"formid": "02003545",
+			"edid": "BYOHSalmonRoe01",
+			"name": "Salmon Roe",
+			"weight": "0.2000",
+			"value": 5,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003AC2D",
+					"effect_edid": "AlchWaterbreathing",
+					"effect_name": "Waterbreathing",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "0003EB07",
+					"effect_edid": "AlchFortifyMagickaRate",
+					"effect_name": "Regenerate Magicka",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient",
+				"VendorItemFoodRaw"
+			]
+		},
+		{
+			"formid": "0203CD8E",
+			"edid": "DLC2TernFeathers",
+			"name": "Felsaad Tern Feathers",
+			"weight": "0.1000",
+			"value": 15,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "000AE722",
+					"effect_edid": "AlchCureDisease",
+					"effect_name": "Cure Disease",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00039E51",
+					"effect_edid": "AlchResistMagic",
+					"effect_name": "Resist Magic",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201FF75",
+			"edid": "DLC2HangingMoss",
+			"name": "Emperor Parasol Moss",
+			"weight": "0.2500",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB42",
+					"effect_edid": "AlchDamageHealth",
+					"effect_name": "Damage Health",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EAF8",
+					"effect_edid": "AlchFortifyMagicka",
+					"effect_name": "Fortify Magicka",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB06",
+					"effect_edid": "AlchFortifyHealRate",
+					"effect_name": "Regenerate Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB1A",
+					"effect_edid": "AlchFortifyTwoHanded",
+					"effect_name": "Fortify Two-handed",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201CD74",
+			"edid": "DLC2AshCreepCluster",
+			"name": "Ash Creep Cluster",
+			"weight": "0.2500",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003A2C6",
+					"effect_edid": "AlchDamageStamina",
+					"effect_name": "Damage Stamina",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB3D",
+					"effect_edid": "AlchInvisibillity",
+					"effect_name": "Invisibility",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 4
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB26",
+					"effect_edid": "AlchFortifyDestruction",
+					"effect_name": "Fortify Destruction",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201CD72",
+			"edid": "DLC2NetchJelly",
+			"name": "Netch Jelly",
+			"weight": "0.5000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F30",
+					"effect_edid": "AlchParalysis",
+					"effect_name": "Paralysis",
+					"magnitude": "0.0000",
+					"area": 0,
+					"duration": 1
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB16",
+					"effect_edid": "AlchRestoreStamina",
+					"effect_name": "Restore Stamina",
+					"magnitude": "10.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F20",
+					"effect_edid": "AlchInfluenceConfDown",
+					"effect_name": "Fear",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201CD71",
+			"edid": "DLC2AshHopperJelly",
+			"name": "Ash Hopper Jelly",
+			"weight": "0.2500",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EB15",
+					"effect_edid": "AlchRestoreHealth",
+					"effect_name": "Restore Health",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "0003EB1F",
+					"effect_edid": "AlchFortifyLightArmor",
+					"effect_name": "Fortify Light Armor",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EAEC",
+					"effect_edid": "AlchResistShock",
+					"effect_name": "Resist Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2E",
+					"effect_edid": "AlchWeaknessFrost",
+					"effect_name": "Weakness to Frost",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201CD6F",
+			"edid": "DLC2BoarTusk",
+			"name": "Boar Tusk",
+			"weight": "0.5000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAF9",
+					"effect_edid": "AlchFortifyStamina",
+					"effect_name": "Fortify Stamina",
+					"magnitude": "5.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EAF3",
+					"effect_edid": "AlchFortifyHealth",
+					"effect_name": "Fortify Health",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003EB1C",
+					"effect_edid": "AlchFortifyBlock",
+					"effect_name": "Fortify Block",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F29",
+					"effect_edid": "AlchInfluenceAggUp",
+					"effect_name": "Frenzy",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201CD6E",
+			"edid": "DLC2BurntSprigganWood",
+			"name": "Burnt Spriggan Wood",
+			"weight": "0.5000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2D",
+					"effect_edid": "AlchWeaknessFire",
+					"effect_name": "Weakness to Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB24",
+					"effect_edid": "AlchFortifyAlteration",
+					"effect_name": "Fortify Alteration",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2B",
+					"effect_edid": "AlchDamageMagickaRate",
+					"effect_name": "Damage Magicka Regen",
+					"magnitude": "100.0000",
+					"area": 0,
+					"duration": 5
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "0201CD6D",
+			"edid": "DLC2GhoulAsh",
+			"name": "Spawn Ash",
+			"weight": "0.1000",
+			"value": 20,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "0003EB29",
+					"effect_edid": "AlchFortifyEnchanting",
+					"effect_name": "Fortify Enchanting",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "02017E97",
+			"edid": "DLC2Scathecraw01",
+			"name": "Scathecraw",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F26",
+					"effect_edid": "AlchDamageHealthRavage",
+					"effect_name": "Ravage Health",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F23",
+					"effect_edid": "AlchDamageStaminaRavage",
+					"effect_name": "Ravage Stamina",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "00073F27",
+					"effect_edid": "AlchDamageMagickaRavage",
+					"effect_name": "Ravage Magicka",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 10
+				},
+				{
+					"effect_formid": "0010AA4A",
+					"effect_edid": "AlchDamageHealthDuration",
+					"effect_name": "Lingering Damage Health",
+					"magnitude": "1.0000",
+					"area": 0,
+					"duration": 10
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "02017008",
+			"edid": "DLC2TramaRoot01",
+			"name": "Trama Root",
+			"weight": "0.2000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "00073F2F",
+					"effect_edid": "AlchWeaknessShock",
+					"effect_name": "Weakness to Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB01",
+					"effect_edid": "AlchFortifyCarryWeight",
+					"effect_name": "Fortify Carry Weight",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 300
+				},
+				{
+					"effect_formid": "0003A2B6",
+					"effect_edid": "AlchDamageMagicka",
+					"effect_name": "Damage Magicka",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 0
+				},
+				{
+					"effect_formid": "00073F25",
+					"effect_edid": "AlchDamageSpeed",
+					"effect_name": "Slow",
+					"magnitude": "50.0000",
+					"area": 0,
+					"duration": 5
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		},
+		{
+			"formid": "02016E26",
+			"edid": "DLC2SpikyGrassAsh01",
+			"name": "Ashen Grass Pod",
+			"weight": "0.1000",
+			"value": 1,
+			"flags": "0000000000000000000000000000000000000000000000000000000000000000",
+			"effects": [
+				{
+					"effect_formid": "0003EAEA",
+					"effect_edid": "AlchResistFire",
+					"effect_name": "Resist Fire",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				},
+				{
+					"effect_formid": "00073F2F",
+					"effect_edid": "AlchWeaknessShock",
+					"effect_name": "Weakness to Shock",
+					"magnitude": "3.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB21",
+					"effect_edid": "AlchFortifyLockpicking",
+					"effect_name": "Fortify Lockpicking",
+					"magnitude": "2.0000",
+					"area": 0,
+					"duration": 30
+				},
+				{
+					"effect_formid": "0003EB22",
+					"effect_edid": "AlchFortifySneak",
+					"effect_name": "Fortify Sneak",
+					"magnitude": "4.0000",
+					"area": 0,
+					"duration": 60
+				}
+			],
+			"keywords": [
+				"VendorItemIngredient"
+			]
+		}
+	]
+}

@@ -1,0 +1,21 @@
+/.claude
+/world
+
+# Generated from .env — contains credentials, never commit
+/server-settings.json
+/server-settings-merged.json
+/server-settings-dump.json
+
+# Local environment variables
+/.env
+Dawnguard.esm
+*.esm
+*.esp
+/node_modules
+package-lock.json
+/gamemode-dev
+/gamemode-docs
+data/Skyrim - Misc.bsa
+/gamemode/node_modules
+signing-private.pem
+/plugin

@@ -771,7 +771,6 @@ exports.init = init;
 const store_1 = __webpack_require__(552);
 const bus_1 = __webpack_require__(503);
 const probeGlobals_1 = __webpack_require__(805);
-const wsClient = __importStar(__webpack_require__(862));
 const chat = __importStar(__webpack_require__(809));
 const courier = __importStar(__webpack_require__(924));
 const hunger = __importStar(__webpack_require__(92));
@@ -795,15 +794,9 @@ function init(mp) {
     }
     // ── Chat must be first — other systems may send messages during init ──────
     chat.init(mp);
-    // ── WS relay client — init after chat so handleChatInput is available ─────
-    // Defined here as a let so the closure below can capture it once commands
-    // are registered later in this function.
+    // handleCommand is assigned once commands are registered later in this function.
+    // The customPacket handler (below) captures it by reference.
     let handleCommand = null;
-    wsClient.init(mp, (userId, text) => {
-        if (!chat.handleChatInput(mp, store_1.store, userId, text)) {
-            handleCommand?.(userId, text);
-        }
-    });
     // ── System init (courier before housing/prison so notifications work) ─────
     hunger.init(mp, store_1.store, bus_1.bus);
     drunkBar.init(mp, store_1.store, bus_1.bus);
@@ -843,8 +836,6 @@ function init(mp) {
                 }
                 store_1.store.register(userId, actorId, name);
                 console.log(`[gamemode] ${name} (${userId}) connected`);
-                // Register player with WS relay so the browser can authenticate
-                wsClient.registerPlayer(mp, userId, actorId);
                 // Restore per-system state in dependency order
                 hunger.onConnect(mp, store_1.store, bus_1.bus, userId);
                 drunkBar.onConnect(mp, store_1.store, bus_1.bus, userId);
@@ -1083,7 +1074,10 @@ function clearNvfl(store, playerId) {
 (__unused_webpack_module, exports, __webpack_require__) {
 
 
-// ── Chat System ───────────────────────────────────────────────────────────────
+// ── skymp5-chat — Server-side chat module ─────────────────────────────────────
+//
+// Drop-in replacement for skymp5-gamemode/src/systems/communication/chat.ts.
+// Deploy to that path (via `npm run deploy:server` in skymp5-chat/) to use.
 //
 // Channels
 //   IC (default)   proximity speech within SAY_RANGE
@@ -1097,23 +1091,25 @@ function clearNvfl(store, playerId) {
 //   → executeJavaScript → parses #{color} codes → widgets.set → React re-render
 //
 // Client → Server flow
-//   Chat input → window.mp.send('cef::chat:send', text) → customPacket event
-//   → index.ts mp.on('customPacket', …) → handleChatInput()
+//   Chat input → window.mp.send('cef::chat:send', text) → BrowserMessage
+//   → BrowserService forwards allowed browser messages as CustomPacket
+//   → mp.on('customPacket', …) → handleChatInput()
 //
-// Reload resilience
-//   History is maintained per-player.  If a reload trigger is wired (e.g. via
-//   makeEventSource or another customPacket handler), callers can invoke
-//   handleChatInput(mp, store, userId, '__reload__') to replay recent messages.
-//
-// Public API
+// Public API (same as original chat.ts — no gamemode changes needed)
 //   init(mp)
 //   handleChatInput(mp, store, userId, text): boolean  — true = consumed
 //   sendSystem(mp, store, userId, text)
 //   broadcastSystem(mp, store, text)
 //   sendToPlayer(mp, store, userId, text, color?)      — legacy plain-text
-//   broadcast(mp, store, text, color?)                 — legacy plain-text broadcast
+//   broadcast(mp, store, text, color?)                 — legacy plain-text
+//   registerChannel(channel)                           — add custom channel
+//
+// Extensibility
+//   Use registerChannel({ prefix, handle }) to add new channels without
+//   modifying this file. Channels are matched by prefix before IC fallback.
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MAX_MSG_LEN = void 0;
+exports.registerChannel = registerChannel;
 exports.init = init;
 exports.handleChatInput = handleChatInput;
 exports.sendSystem = sendSystem;
@@ -1126,21 +1122,17 @@ const CHAT_MSG_PROP = 'chatMsg';
 const SAY_RANGE = 3500; // Skyrim units ≈ 50 m
 const WHISPER_RANGE = 400; // units ≈ 6 m
 exports.MAX_MSG_LEN = 300;
-const MAX_HISTORY = 30; // msgs kept per player for reload replay
-const RATE_LIMIT_MS = 1000; // minimum ms between messages per player
+const MAX_HISTORY = 30;
+const RATE_LIMIT_MS = 1000;
 // ── Client-side bridge ────────────────────────────────────────────────────────
 //
 // updateOwner runs in the Skyrim Platform Chakra context (ES5-safe) whenever
 // the server sets a new value on 'chatMsg'.
 //
-// Message format: "#{rrggbb}segment1#{rrggbb}segment2…"
-// The Chakra wrapper reads ctx.value, JSON-encodes it for safe embedding, then
-// passes it to executeJavaScript.  The browser-side (CEF/Chromium) code parses
-// the #{color} codes into Span segments and pushes a new ChatMsg into
-// window.chatMessages, then refreshes the widget.
-//
-// The chat widget's send() calls window.mp.send('cef::chat:send', text) which
-// the server receives as a customPacket event.
+// Message wire format: "#{rrggbb}segment1#{rrggbb}segment2…"
+// The browser-side code parses #{color} codes into Span segments and pushes a
+// new ChatMsg into window.chatMessages, then refreshes the widgets array so
+// the React chat component re-renders.
 const UPDATE_OWNER_JS = `
 (function(){
   var rawMsg=String(ctx.value||"");
@@ -1149,63 +1141,33 @@ const UPDATE_OWNER_JS = `
   ctx.sp.browser.executeJavaScript(
     "(function(){"+
     "  try{"+
-    "    var raw="+safeMsg+";"+
-    "    if(!window.chatMessages)window.chatMessages=[];"+
-    "    var segs=[];"+
-    "    var rem=raw;"+
-    "    var col='#fafafa';"+
-    "    var reColor=/^#\\\\{([0-9a-fA-F]{6})\\\\}/;"+
-    "    while(rem.length>0){"+
-    "      var m=rem.match(reColor);"+
-    "      if(m){col='#'+m[1];rem=rem.slice(m[0].length);continue;}"+
-    "      var n=rem.indexOf('#{');"+
-    "      if(n<0){segs.push({text:rem,color:col,opacity:1,type:['default']});rem='';break;}"+
-    "      if(n>0)segs.push({text:rem.slice(0,n),color:col,opacity:1,type:['default']});"+
-    "      rem=rem.slice(n);"+
+    "    if(window.skympChat&&typeof window.skympChat.addMessage==='function'){"+
+    "      window.skympChat.addMessage("+safeMsg+");"+
+    "    }else{"+
+    "      console.error('[chat] window.skympChat.addMessage is not available');"+
     "    }"+
-    "    if(segs.length===0)return;"+
-    "    window.chatMessages.push({text:segs,category:'default',opacity:1});"+
-    "    while(window.chatMessages.length>50)window.chatMessages.shift();"+
-    "    if(window.skyrimPlatform&&window.skyrimPlatform.widgets){"+
-    "      var ws=window.skyrimPlatform.widgets.get();"+
-    "      var found=false;"+
-    "      var newWs=ws.map(function(w){"+
-    "        if(w.type==='chat'){found=true;return Object.assign({},w,{messages:window.chatMessages.slice()});}"+
-    "        return w;"+
-    "      });"+
-    "      if(!found){"+
-    "        newWs.push({"+
-    "          type:'chat',"+
-    "          messages:window.chatMessages.slice(),"+
-    "          send:function(m){window.mp&&window.mp.send('cef::chat:send',m);}"+
-    "        });"+
-    "      }"+
-    "      window.skyrimPlatform.widgets.set(newWs);"+
-    "    }"+
-    "    window.needToScroll=true;"+
-    "    if(typeof window.scrollToLastMessage==='function')window.scrollToLastMessage();"+
-    "  }catch(e){}"+
+    "  }catch(e){console.error('[chat] Failed to render message',e&&e.stack?e.stack:e);}"+
     "})();"
   );
 })();
 `.trim();
 // ── Color palette ─────────────────────────────────────────────────────────────
 const C = {
-    nameIc: '#e8c87a', // golden  — IC speaker
-    nameOoc: '#8888bb', // slate   — OOC speaker
-    nameFaction: '#66bb66', // green   — faction chat
-    nameWhisper: '#bb88cc', // purple  — whisper
-    nameSystem: '#ff9933', // orange  — [System] prefix
-    tagIc: '#666666', // dim     — [Say] (unused, kept for future)
-    tagOoc: '#444466', // dim     — [OOC] tag
-    tagFaction: '#335533', // dim grn — [Faction] tag
-    tagWhisper: '#553366', // dim pur — [Whisper] tag
-    msgIc: '#ffffff', // white   — IC speech
-    msgOoc: '#ccccdd', // lavender— OOC text
-    msgMe: '#ccccbb', // pale    — /me action text
-    msgWhisper: '#cc99ff', // light pur
-    msgFaction: '#aaddaa', // light grn
-    system: '#ffcc44', // gold    — system body
+    nameIc: '#e8c87a',
+    nameOoc: '#8888bb',
+    nameFaction: '#66bb66',
+    nameWhisper: '#bb88cc',
+    nameSystem: '#ff9933',
+    tagIc: '#666666',
+    tagOoc: '#444466',
+    tagFaction: '#335533',
+    tagWhisper: '#553366',
+    msgIc: '#ffffff',
+    msgOoc: '#ccccdd',
+    msgMe: '#ccccbb',
+    msgWhisper: '#cc99ff',
+    msgFaction: '#aaddaa',
+    system: '#ffcc44',
 };
 function sp(text, color, types = ['text']) {
     return { text, color, opacity: 1, type: types };
@@ -1213,12 +1175,28 @@ function sp(text, color, types = ['text']) {
 function mkMsg(category, ...spans) {
     return { category, text: spans, opacity: 1 };
 }
-// Converts the server-side Span array to the "#{rrggbb}text" wire format.
-// Colors in the palette are "#rrggbb"; we strip the leading "#" for the tag.
 function spansToColorString(spans) {
-    return spans.map(s => `#{${s.color.slice(1)}}${s.text}`).join('');
+    return spans.map(s => `#{${normalizeColor(s.color)}}${escapeColorMarkers(s.text)}`).join('');
 }
-// ── Per-player recent-message history (for reload replay) ─────────────────────
+function normalizeColor(color) {
+    const raw = color.startsWith('#') ? color.slice(1) : color;
+    return /^[0-9a-fA-F]{6}$/.test(raw) ? raw : 'ffffff';
+}
+function matchesChannelPrefix(text, prefix) {
+    return text === prefix || text.startsWith(prefix + ' ');
+}
+function escapeColorMarkers(text) {
+    return text.replace(/#\{/g, '# {');
+}
+const extraChannels = [];
+/**
+ * Register a custom channel without modifying this file.
+ * Channels are tried by prefix match before the IC fallback.
+ */
+function registerChannel(channel) {
+    extraChannels.push(channel);
+}
+// ── Per-player state ──────────────────────────────────────────────────────────
 const playerHistory = new Map();
 const lastMsgTime = new Map();
 function pushHistory(userId, m) {
@@ -1244,8 +1222,8 @@ function deliver(mp, actorId, m) {
     try {
         mp.set(actorId, CHAT_MSG_PROP, spansToColorString(m.text));
     }
-    catch {
-        // actor not ready yet — silently skip
+    catch (err) {
+        console.error(`[chat] failed to deliver to actor ${actorId}: ${err?.message ?? String(err)}`);
     }
 }
 // ── Proximity helper ──────────────────────────────────────────────────────────
@@ -1275,18 +1253,19 @@ function init(mp) {
 }
 // ── handleChatInput ───────────────────────────────────────────────────────────
 //
-// Returns true  → input was consumed (chat channel or IC speech, or __reload__)
-// Returns false → not a chat channel; caller should route to commands
+// Returns true  → input was consumed (chat channel, IC, or __reload__)
+// Returns false → unknown /command; caller should route to command handler
 function handleChatInput(mp, store, userId, text) {
-    // ── Special reload sentinel ───────────────────────────────────────────────
     if (text === '__reload__') {
         replayHistory(mp, store, userId);
         return true;
     }
     const player = store.get(userId);
     if (!player)
-        return true; // player not registered yet, silently consume
-    // ── Server-side rate limiting ─────────────────────────────────────────────
+        return true;
+    const raw = text.trim().replace(/[\x00-\x1F\x7F]/g, '');
+    if (!raw || raw.length > exports.MAX_MSG_LEN)
+        return true;
     const now = Date.now();
     const last = lastMsgTime.get(userId) ?? 0;
     if (now - last < RATE_LIMIT_MS) {
@@ -1295,12 +1274,9 @@ function handleChatInput(mp, store, userId, text) {
         return true;
     }
     lastMsgTime.set(userId, now);
-    // Strip control characters to prevent rendering artifacts
-    const raw = text.trim().replace(/[\x00-\x1F\x7F]/g, '');
-    if (!raw || raw.length > exports.MAX_MSG_LEN)
-        return true;
     const lower = raw.toLowerCase();
-    // ── /me <action> ─────────────────────────────────────────────────────────
+    const ctx = { mp, store, userId, text: raw, player };
+    // ── /me ───────────────────────────────────────────────────────────────────
     if (lower.startsWith('/me ')) {
         const action = raw.slice(4).trim();
         if (!action)
@@ -1310,7 +1286,7 @@ function handleChatInput(mp, store, userId, text) {
         console.log(`[chat:me] ${player.name} ${action}`);
         return true;
     }
-    // ── /ooc <text> ───────────────────────────────────────────────────────────
+    // ── /ooc ──────────────────────────────────────────────────────────────────
     if (lower.startsWith('/ooc ') || lower === '/ooc') {
         const body = raw.slice(5).trim();
         if (!body)
@@ -1374,19 +1350,25 @@ function handleChatInput(mp, store, userId, text) {
         console.log(`[chat:faction] ${player.name}: ${body}`);
         return true;
     }
-    // ── Unknown /command → let caller route to command handler ───────────────
+    // ── Custom registered channels ────────────────────────────────────────────
+    for (const ch of extraChannels) {
+        const prefix = ch.prefix.toLowerCase();
+        if (prefix && matchesChannelPrefix(lower, prefix)) {
+            ch.handle({ ...ctx, text: raw.slice(ch.prefix.length).trim() });
+            return true;
+        }
+    }
+    // ── Unknown /command → let caller route ───────────────────────────────────
     if (raw.startsWith('/'))
         return false;
-    // ── IC (proximity speech, default) ───────────────────────────────────────
+    // ── IC (proximity speech, default) ────────────────────────────────────────
     const m = mkMsg('plain', sp(player.name + ': ', C.nameIc, ['text']), sp(raw, C.msgIc, ['text']));
     sendProximity(mp, store, player.actorId, m, SAY_RANGE);
     console.log(`[chat:ic] ${player.name}: ${raw}`);
     return true;
 }
 // ── Named API ─────────────────────────────────────────────────────────────────
-/**
- * Send a styled [System] message to a single player.
- */
+/** Send a styled [System] message to a single player. */
 function sendSystem(mp, store, userId, text) {
     const player = store.get(userId);
     if (!player)
@@ -1395,9 +1377,7 @@ function sendSystem(mp, store, userId, text) {
     deliver(mp, player.actorId, m);
     pushHistory(userId, m);
 }
-/**
- * Broadcast a styled [System] message to all connected players.
- */
+/** Broadcast a styled [System] message to all connected players. */
 function broadcastSystem(mp, store, text) {
     const m = mkMsg('plain', sp('[System] ', C.nameSystem, ['nonrp']), sp(text, C.system, ['nonrp', 'text']));
     for (const p of store.getAll()) {
@@ -1408,7 +1388,7 @@ function broadcastSystem(mp, store, text) {
 }
 /**
  * Send a plain-text message to a single player.
- * Kept for backward compatibility with other systems that call this directly.
+ * Kept for backward compatibility with other systems.
  */
 function sendToPlayer(mp, store, userId, text, color = '#ffffff') {
     const player = store.get(userId);
@@ -1418,10 +1398,7 @@ function sendToPlayer(mp, store, userId, text, color = '#ffffff') {
     deliver(mp, player.actorId, m);
     pushHistory(userId, m);
 }
-/**
- * Broadcast a plain-text message to all connected players.
- * Kept for backward compatibility.
- */
+/** Broadcast a plain-text message to all connected players. */
 function broadcast(mp, store, text, color = '#ffffff') {
     const m = mkMsg('plain', sp(text, color, ['text']));
     for (const p of store.getAll()) {
@@ -1523,181 +1500,6 @@ function onConnect(mp, store, bus, userId) {
     for (const n of pending) {
         mp.sendCustomPacket(player.actorId, 'courierNotification', n);
     }
-}
-
-
-/***/ },
-
-/***/ 862
-(__unused_webpack_module, exports, __webpack_require__) {
-
-
-// ── Gamemode WS Relay Client ───────────────────────────────────────────────────
-//
-// Connects the SkyMP gamemode sandbox to the Frostfall-Backend WS relay.
-//
-// Startup flow:
-//   1. init(mp, onChatSend) — registers ff_wsNonce property, opens WS connection
-//   2. registerPlayer(mp, userId, actorId) — generates a one-time nonce,
-//      sends it to the relay (register_nonce), and pushes it to the player's
-//      browser via mp.set so skymp5-front can authenticate itself.
-//
-// Once a player's browser authenticates, the relay sends player_connected and
-// this module marks them as WS-connected. Delivery then routes via WS instead
-// of the mp.set property-sync path. On disconnect the flag is cleared.
-//
-// Environment (read from globalThis.process.env):
-//   RELAY_URL    — default ws://localhost:7778
-//   RELAY_SECRET — default dev-relay-secret
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.init = init;
-exports.registerPlayer = registerPlayer;
-exports.isConnected = isConnected;
-exports.deliver = deliver;
-exports.broadcast = broadcast;
-const signHelper_1 = __webpack_require__(720);
-const g = globalThis;
-const RELAY_URL = g.process?.env?.RELAY_URL ?? 'ws://ws.frostfall.online:7778';
-const RELAY_SECRET = g.process?.env?.RELAY_SECRET ?? 'dev-relay-secret';
-// Property that carries the one-time nonce to the player's browser.
-// The updateOwner bridge delegates to the FF plugin (plugin/src/systems/ws.ts)
-// which calls browser.executeJavaScript to inject the nonce and trigger
-// window.ffWsConnect().  The relay URL is passed as a literal so the plugin
-// does not need its own copy of the server environment config.
-const NONCE_PROP = 'ff_wsNonce';
-const NONCE_UPDATE_JS = `var ff=globalThis._ff;if(ff&&ff.ws)ff.ws.recv(ctx.value,${JSON.stringify(RELAY_URL)});`;
-let socket = null;
-let ready = false;
-let onChatSend = null;
-// Exponential back-off: start at 3 s, double each failure up to 60 s.
-// Resets to 3 s on a successful connection so recovery is fast once the relay
-// comes back.
-let _reconnectDelay = 3000;
-// Players whose browser has completed WS auth — delivery goes over WS for these.
-const connectedPlayers = new Set();
-// Messages queued while socket is not yet ready.
-const sendQueue = [];
-// ── Internal helpers ──────────────────────────────────────────────────────────
-function rawSend(payload) {
-    if (ready && socket && socket.readyState === 1 /* OPEN */) {
-        socket.send(payload);
-    }
-    else {
-        sendQueue.push(payload);
-    }
-}
-function send(msg) {
-    rawSend(JSON.stringify(msg));
-}
-function flushQueue() {
-    while (sendQueue.length > 0) {
-        const payload = sendQueue.shift();
-        if (socket && socket.readyState === 1)
-            socket.send(payload);
-    }
-}
-function connect() {
-    try {
-        socket = new g.WebSocket(RELAY_URL);
-    }
-    catch (err) {
-        console.error('[ws-client] failed to create socket:', err?.message ?? err);
-        _reconnectDelay = Math.min(_reconnectDelay * 2, 60000);
-        setTimeout(connect, _reconnectDelay);
-        return;
-    }
-    socket.onopen = () => {
-        send({ type: 'auth', role: 'gamemode', secret: RELAY_SECRET });
-    };
-    socket.onmessage = (event) => {
-        let msg;
-        try {
-            msg = JSON.parse(event.data);
-        }
-        catch {
-            return;
-        }
-        if (msg.type === 'auth_ok') {
-            ready = true;
-            _reconnectDelay = 3000; // reset back-off on successful connect
-            console.log('[ws-client] connected to relay at', RELAY_URL);
-            flushQueue();
-            return;
-        }
-        if (msg.type === 'player_connected') {
-            connectedPlayers.add(msg.userId);
-            console.log(`[ws-client] player ${msg.userId} browser connected`);
-            return;
-        }
-        if (msg.type === 'player_disconnected') {
-            connectedPlayers.delete(msg.userId);
-            return;
-        }
-        if (msg.type === 'chat_send' && onChatSend) {
-            onChatSend(msg.userId, msg.text);
-        }
-    };
-    socket.onclose = () => {
-        ready = false;
-        socket = null;
-        connectedPlayers.clear();
-        _reconnectDelay = Math.min(_reconnectDelay * 2, 60000);
-        console.log(`[ws-client] relay disconnected — reconnecting in ${_reconnectDelay / 1000}s`);
-        setTimeout(connect, _reconnectDelay);
-    };
-    socket.onerror = (err) => {
-        // Only log the first error per connection attempt to avoid spamming the log.
-        // The onclose handler fires immediately after and will schedule the retry.
-        console.error('[ws-client] socket error:', err?.message ?? String(err));
-    };
-}
-// ── Public API ────────────────────────────────────────────────────────────────
-/**
- * Initialise the WS client. Must be called once during gamemode init.
- * onChatSendFn is invoked whenever a player sends a chat message over WS.
- */
-function init(mp, onChatSendFn) {
-    onChatSend = onChatSendFn;
-    mp.makeProperty(NONCE_PROP, {
-        isVisibleByOwner: true,
-        isVisibleByNeighbors: false,
-        updateOwner: (0, signHelper_1.signScript)(NONCE_UPDATE_JS),
-        updateNeighbor: '',
-    });
-    connect();
-    console.log('[ws-client] initialized');
-}
-/**
- * Call when a player connects to SkyMP.
- * Generates a nonce, registers it with the relay, and pushes it to the
- * player's browser so skymp5-front can authenticate its WS connection.
- */
-function registerPlayer(mp, userId, actorId) {
-    const nonce = Array.from({ length: 16 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
-    send({ type: 'register_nonce', nonce, userId });
-    if (actorId)
-        mp.set(actorId, NONCE_PROP, nonce);
-}
-/**
- * Returns true if this player's browser has an active WS connection.
- * Used by chat.ts to choose between WS delivery and mp.set fallback.
- */
-function isConnected(userId) {
-    return connectedPlayers.has(userId);
-}
-/**
- * Deliver a chat message to a single player over WS.
- */
-function deliver(userId, msg) {
-    send({ type: 'chat_deliver', userId, msg });
-}
-/**
- * Broadcast a chat message to all WS-connected players.
- * Falls back gracefully — players not on WS won't receive this call,
- * so callers must still handle non-WS players via mp.set.
- */
-function broadcast(msg) {
-    send({ type: 'chat_broadcast', msg });
 }
 
 
@@ -3263,4 +3065,3 @@ module.exports = require("path");
 /******/ 	
 /******/ })()
 ;
-// skymp:sig:y:frostfall:PlELbOMiWTNrQpN3hoQcdenTA4OVe5esW7dyvj/J7Z3BcbqxMOmpih6guN7ovzUs2vW9oQv1H5s587MtBuYDBw==
